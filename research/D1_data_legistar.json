@@ -1,0 +1,79 @@
+{
+  "run_id": "trun_3cad0ebea15c480e83b9bc9d2fdd8b31",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Legistar Web API | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Web-API"
+    },
+    {
+      "title": "Examples - Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/Home/Examples"
+    },
+    {
+      "title": "Access the Legistar Web API \u2022 legistarapi",
+      "url": "https://elipousson.github.io/legistarapi/index.html"
+    },
+    {
+      "title": "Legistar Tutorial for Council Meetings on Computers - YouTube",
+      "url": "https://www.youtube.com/watch?v=yDljr0RQNQk"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "opencivicdata/python-legistar-scraper: Scrapes municipal ...",
+      "url": "https://github.com/opencivicdata/python-legistar-scraper"
+    },
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/"
+    },
+    {
+      "title": "How to identify my city's legistar client name?",
+      "url": "https://groups.google.com/g/open-civic-data/c/sMxWQs2JwZU"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://richmondva.legistar.com/Legislation.aspx"
+    },
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/Calendar.aspx?From=RSS&Mode=Next%20Month"
+    },
+    {
+      "title": "README.md",
+      "url": "https://gist.github.com/grifx/95a99ad062945f8fe359cb6c8b8ddf40"
+    },
+    {
+      "title": "GET v1/{Client}/Matters",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Matters"
+    },
+    {
+      "title": "Error",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Events-EventId-EventItems"
+    },
+    {
+      "title": "GET v1/{Client}/Bodies",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Bodies"
+    },
+    {
+      "title": "GET v1/{Client}/Matters/{MatterId}/Attachments",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Matters-MatterId-Attachments"
+    },
+    {
+      "title": "GET v1/{Client}/Events",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Events"
+    },
+    {
+      "title": "Including Attachments When Exporting a Legistar Agenda to MediaManager | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Including-Attachments-When-Exporting-a-Legistar-Agenda-to-MediaManager"
+    },
+    {
+      "title": "LEGISLATIVE SERVICES DIVISION",
+      "url": "https://county.milwaukee.gov/files/county/administrative-services/AMOP/Chapter-12-Department-of-Administrative-Services-DAS/Appendix12.02ELegislativeProcedureManual.pdf"
+    }
+  ]
+}

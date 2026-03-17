@@ -1,0 +1,163 @@
+{
+  "run_id": "trun_3cad0ebea15c480ea5ff4ac049a94396",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Fair Market Rents (40th PERCENTILE RENTS) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr.html"
+    },
+    {
+      "title": "Fair Market Rents | HUD Open Data Site",
+      "url": "https://hudgis-hud.opendata.arcgis.com/datasets/fair-market-rents?geometry=-131.520%2C-%090.614%2C132.152%2C76.538"
+    },
+    {
+      "title": "Small Area Fair Market Rents (SAFMRs) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+    },
+    {
+      "title": "FMR IL Dataset API Documentation | HUD USER",
+      "url": "https://www.huduser.gov/portal/dataset/fmr-api.html"
+    },
+    {
+      "title": "Small Area Fair Market Rents - HUD Open Data Site - ArcGIS",
+      "url": "https://hudgis-hud.opendata.arcgis.com/maps/6458c67bad2a4cc7aa97514ef7ba8a0e"
+    },
+    {
+      "title": "Legistar Web API | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Web-API"
+    },
+    {
+      "title": "Examples - Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/Home/Examples"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "GET v1/{Client}/Matters/{MatterId}/Attachments",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Matters-MatterId-Attachments"
+    },
+    {
+      "title": "GET v1/{Client}/Matters/{MatterId}/Attachments ...",
+      "url": "https://webapi.legistar.com/Help/Api/GET-v1-Client-Matters-MatterId-Attachments-MatterAttachmentId-File"
+    },
+    {
+      "title": "Data Dictionary - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/documentation/data-dictionary/"
+    },
+    {
+      "title": "Terms of Use - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/terms-and-conditions/"
+    },
+    {
+      "title": "Updates to the NHPD - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/documentation/updates-to-the-nhpd/"
+    },
+    {
+      "title": "National Housing Preservation Database Updated to ...",
+      "url": "https://nlihc.org/resource/national-housing-preservation-database-updated-include-national-housing-trust-fund"
+    },
+    {
+      "title": "National-Housing-Preservation-Database-User-Guide.pdf",
+      "url": "https://preservationdatabase.org/wp-content/uploads/2025/09/National-Housing-Preservation-Database-User-Guide.pdf"
+    },
+    {
+      "title": "Register as a new user - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/register-as-a-new-user/"
+    },
+    {
+      "title": "Synthetic data & GDPR compliance (Guest blog by Hazy)",
+      "url": "https://www.techuk.org/resource/aiweek2023-hazy-thu.html"
+    },
+    {
+      "title": "About this guidance | ICO",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/about-this-guidance"
+    },
+    {
+      "title": "How to use AI and personal data appropriately and lawfully",
+      "url": "https://ico.org.uk/media2/migrated/4022261/how-to-use-ai-and-personal-data.pdf"
+    },
+    {
+      "title": "How do we ensure anonymisation is effective? | ICO",
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/how-do-we-ensure-anonymisation-is-effective/?search=photos"
+    },
+    {
+      "title": "Anonymisation and synthetic data: towards trustworthy data | The ODI",
+      "url": "https://theodi.org/news-and-events/blog/anonymisation-and-synthetic-data-towards-trustworthy-data/"
+    },
+    {
+      "title": "A framework for AI-ready data",
+      "url": "https://theodi.cdn.ngo/media/documents/A_framework_for_AI-ready_data.pdf"
+    },
+    {
+      "title": "Towards the ethical use of synthetic data in health research | The ODI",
+      "url": "https://theodi.org/insights/reports/towards-the-ethical-use-of-synthetic-data-in-health-research/"
+    },
+    {
+      "title": "A data for AI taxonomy | The ODI",
+      "url": "https://theodi.org/news-and-events/blog/a-data-for-ai-taxonomy/"
+    },
+    {
+      "title": "Mapping the Role of Data Work in AI Supply Chains",
+      "url": "https://theodi.hacdn.io/media/documents/Mapping_the_role_of_data_work_in_AI_supply_chains.pdf"
+    },
+    {
+      "title": "Reducing Risks Posed by Synthetic Content An Overview of Technical Approaches to Digital Content Transparency | NIST",
+      "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content"
+    },
+    {
+      "title": "United States: AI Safety Institute releases its first synthetic ...",
+      "url": "https://connectontech.bakermckenzie.com/united-states-ai-safety-institute-releases-its-first-synthetic-content-guidance-report-nist-ai-100-4/"
+    },
+    {
+      "title": "NIST Synthetic Content Labeling/Detection Report ...",
+      "url": "https://downloads.regulations.gov/NIST-2024-0001-0029/attachment_1.pdf"
+    },
+    {
+      "title": "Data Governance and Management (DGM) Profile | NIST",
+      "url": "https://www.nist.gov/privacy-framework/new-projects/data-governance-and-management-profile"
+    },
+    {
+      "title": "SP 1800-39, Data Classification Practices - CSRC - NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/1800/39/ipd"
+    },
+    {
+      "title": "The query Option - Socrata",
+      "url": "https://dev.socrata.com/docs/queries/query"
+    },
+    {
+      "title": "The WHERE Clause - Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/queries/where.html"
+    },
+    {
+      "title": "Queries using SODA3 - Socrata",
+      "url": "https://dev.socrata.com/docs/queries"
+    },
+    {
+      "title": "The SELECT Clause | Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/queries/select"
+    },
+    {
+      "title": "date_extract_y(...) - Socrata - Data & Insights",
+      "url": "https://dev.socrata.com/docs/functions/date_extract_y"
+    },
+    {
+      "title": "Building Permits | City of Chicago | Data Portal",
+      "url": "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu"
+    },
+    {
+      "title": "Building Permits - Data Catalog",
+      "url": "https://catalog.data.gov/dataset/building-permits"
+    },
+    {
+      "title": "\n    City of Chicago :: Building Permits\n",
+      "url": "https://www.chicago.gov/city/en/depts/bldgs/dataset/building_permits.html"
+    },
+    {
+      "title": "API Endpoints - Socrata",
+      "url": "https://dev.socrata.com/docs/endpoints.html"
+    }
+  ]
+}

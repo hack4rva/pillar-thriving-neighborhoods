@@ -1,0 +1,155 @@
+{
+  "run_id": "trun_3cad0ebea15c480ea393f8554bfee257",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Harvard Graduate School of Design Students Win 24-hour Hack-a-thon with Creative Solution to Address America\u2019s Housing Crisis - Harvard Graduate School of Design",
+      "url": "https://www.gsd.harvard.edu/2025/10/harvard-graduate-school-of-design-students-win-24-hour-hack-a-thon-with-creative-solution-to-address-americas-housing-crisis/"
+    },
+    {
+      "title": "Congressional Hackathon 6.0",
+      "url": "https://congressionaldata.org/congressional-hackathon-6-0/"
+    },
+    {
+      "title": "Hack-A-House House | A Housing Affordability Hackathon",
+      "url": "https://www.hackahouse.org/"
+    },
+    {
+      "title": "June | 2013 | Steve Spiker",
+      "url": "https://stevespiker.com/2013/06/"
+    },
+    {
+      "title": "CITY COUNCIL CITY OF NEW YORK",
+      "url": "https://legistar.council.nyc.gov/View.ashx?M=F&ID=3127921&GUID=BCF9BE1F-AD7A-481F-98C5-2A824A6F2F75"
+    },
+    {
+      "title": "GitHub - opencivicdata/python-legistar-scraper: Scrapes municipal data from Legistar websites \u00b7 GitHub",
+      "url": "https://github.com/opencivicdata/python-legistar-scraper"
+    },
+    {
+      "title": "Councilmatic, MuralApp: Your city needs these Philly-built open data apps, Mashable says [LINKS]",
+      "url": "https://technical.ly/software-development/councilmatic-muralapp-your-city-needs-these-philly-built-open-data-apps-mashable-says-links/"
+    },
+    {
+      "title": "Open Data and the Future of Civic Innovation",
+      "url": "https://beyondtransparency.org/pdf/BeyondTransparency.pdf"
+    },
+    {
+      "title": "Great American Civic Hack: Code for America chooses Councilmatic, OpenTreeMap as national projects",
+      "url": "https://technical.ly/software-development/code-for-america-councilmatic-opentreemap/"
+    },
+    {
+      "title": "python-legistar-scraper/legistar/events.py at master \u00b7 opencivicdata/python-legistar-scraper \u00b7 GitHub",
+      "url": "https://github.com/opencivicdata/python-legistar-scraper/blob/master/legistar/events.py"
+    },
+    {
+      "title": "GitHub - datamade/second-city-zoning: \ud83c\udfd9 2nd City Zoning is an interactive map that lets you find out how your building is zoned, learn where to locate your business and explore zoning patterns throughout Chicago \u00b7 GitHub",
+      "url": "https://github.com/datamade/second-city-zoning"
+    },
+    {
+      "title": "\n      Open City - Civic apps built with open data\n    ",
+      "url": "http://opencityapps.org/"
+    },
+    {
+      "title": "\n      \n      2nd City Zoning\n    ",
+      "url": "https://secondcityzoning.org/"
+    },
+    {
+      "title": "\n      \n        Projects -\n      \n      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.\n    ",
+      "url": "https://chihacknight.org/open-source-projects"
+    },
+    {
+      "title": "About - 2nd City Zoning - An interactive map of Chicago's ...",
+      "url": "https://secondcityzoning.org/about/"
+    },
+    {
+      "title": "2nd City Zoning",
+      "url": "https://datamade.us/our-work/second-city-zoning/"
+    },
+    {
+      "title": "Apps For Metro Chicago",
+      "url": "https://www.appsformetrochicago.org/"
+    },
+    {
+      "title": "GitHub - datamade/councilmatic-starter-template: :clipboard: Starter code & documentation for new councilmatic instances \u00b7 GitHub",
+      "url": "https://github.com/datamade/councilmatic-starter-template"
+    },
+    {
+      "title": "Mjumbe Poe",
+      "url": "https://about.mjumbepoe.com/"
+    },
+    {
+      "title": "GitHub - datamade/django-councilmatic: :heartpulse: Django app providing core functions for *.councilmatic.org \u00b7 GitHub",
+      "url": "https://github.com/datamade/django-councilmatic"
+    },
+    {
+      "title": "Councilmatic: 18 months in the making, use this web app to track City Council legislation",
+      "url": "https://technical.ly/civic-news/councilmatic-18-months-in-the-making-use-this-web-app-to-track-city-council-legislation/"
+    },
+    {
+      "title": "\n      \n        Events -\n      \n      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.\n    ",
+      "url": "https://chihacknight.org/events"
+    },
+    {
+      "title": "ZoningCheck - Planning & Zoning Software",
+      "url": "https://www.opencounter.com/products/zoningcheck/"
+    },
+    {
+      "title": "20 new projects are awarded $35,000 Knight Prototype Fund grants | Nieman Journalism Lab",
+      "url": "https://www.niemanlab.org/2015/11/20-new-projects-are-awarded-35000-knight-prototype-fund-grants/"
+    },
+    {
+      "title": "WE THE - UNC School of Government",
+      "url": "https://www.sog.unc.edu/sites/default/files/reports/2017-12-11_20170797_Civic%20Technology_Stephens.pdf"
+    },
+    {
+      "title": "Planning Charlotte",
+      "url": "https://planning-charlotte-bria2.hub.arcgis.com/"
+    },
+    {
+      "title": "Team Charlotte",
+      "url": "https://team-charlotte.tumblr.com/"
+    },
+    {
+      "title": "Statement from Marisa Lago, Chair of the NYC Planning ...",
+      "url": "https://legistar.council.nyc.gov/View.ashx?M=F&ID=9245388&GUID=0F1AA308-68C9-43D9-BB3D-6CF2995206AC"
+    },
+    {
+      "title": "Join the Code for Philly Hackathon Planning Committee! \u2014 Code for Philly",
+      "url": "https://codeforphilly.org/blog/join_the_code_for_philly_hackathon_planning_committee"
+    },
+    {
+      "title": "Announcing NYC 311 Data Jam \u2013 NYC\u2019s National Day of Civic Hacking event - BetaNYC",
+      "url": "https://www.beta.nyc/2017/09/07/announcing-nyc-311-data-jam-nycs-national-day-of-civic-hacking-event/"
+    },
+    {
+      "title": "Code for Philly",
+      "url": "https://codeforphilly.org/"
+    },
+    {
+      "title": "This week in NYC\u2019s #civictech \u2013 29 Jan 2026 - BetaNYC",
+      "url": "https://www.beta.nyc/2026/01/29/newsletter-2026-week5/"
+    },
+    {
+      "title": "Grounded In Philly | Resource Ecosystem for Urban Agriculture",
+      "url": "https://groundedinphilly.org/"
+    },
+    {
+      "title": "Unicorns, Janitors, and Rock Stars",
+      "url": "https://edtechbooks.org/intro_to_data_science/chapter_6_philosophical"
+    },
+    {
+      "title": "Grounded in Philly | The Public Interest Law Center",
+      "url": "https://pubintlaw.org/cases-and-projects/grounded-in-philly/"
+    },
+    {
+      "title": "Mapping-the-Anti-Eviction-Struggle-in-the-San-Francisco- ...",
+      "url": "https://notanatlas.org/wp-content/uploads/2019/06/Mapping-the-Anti-Eviction-Struggle-in-the-San-Francisco-Bay-Area.pdf"
+    },
+    {
+      "title": "The Anti-Eviction Mapping Project // Notes From Below",
+      "url": "https://notesfrombelow.org/article/anti-eviction-mapping-project"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "run_id": "trun_3cad0ebea15c480e968add7ac621797d",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "\n\tCity of Richmond - File #: ORD. 2025-215\n",
+      "url": "https://richmondva.legistar.com/LegislationDetail.aspx?ID=7652181&GUID=F704C3C4-9AEC-4831-B636-C5BD64112338&FullText=1"
+    },
+    {
+      "title": "City of Richmond - Legislation",
+      "url": "https://richmondva.legistar.com/Legislation.aspx"
+    },
+    {
+      "title": "\n\tCity of Richmond - Planning Commission\n",
+      "url": "https://richmondva.legistar.com/DepartmentDetail.aspx?ID=24014&GUID=CFDDD5D6-AE26-43ED-8747-A02A21FD9362"
+    },
+    {
+      "title": "Interactive Mapping Tools | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools"
+    },
+    {
+      "title": "Development Map",
+      "url": "https://geohub-planrva.hub.arcgis.com/datasets/development-map"
+    },
+    {
+      "title": "Plans of Development | Richmond GeoHub - ArcGIS Online",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about"
+    },
+    {
+      "title": "Richmond GeoHub",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/"
+    },
+    {
+      "title": "Richmond, VA - ArcGIS Online",
+      "url": "https://cor.maps.arcgis.com/"
+    },
+    {
+      "title": "Open Data Portal | City of Richmond, Virginia | Open Data Portal | City of Richmond, Virginia",
+      "url": "https://data.richmondgov.com/"
+    },
+    {
+      "title": "Open Data Portal | Richmond",
+      "url": "https://www.rva.gov/information-technology/open-data-portal"
+    },
+    {
+      "title": "Planning Districts | Richmond GeoHub - ArcGIS",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/cor::planning-districts/about"
+    },
+    {
+      "title": "Legislation Details (With Text) - ORD. 2026-045",
+      "url": "https://richmondva.legistar.com/ViewReport.ashx?M=R&N=Master&GID=387&ID=7873363&GUID=68BB35C1-7386-4022-B4B0-2002A554CAAC&Extra=WithText&Title=Legislation+Details+(With+Text)"
+    },
+    {
+      "title": "\n\tCity of Richmond - File #: ORD. 2024-184\n",
+      "url": "https://richmondva.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=37135"
+    },
+    {
+      "title": "\n\tCity of Richmond - File #: ORD. 2025-063\n",
+      "url": "https://richmondva.legistar.com/LegislationDetail.aspx?ID=7283765&GUID=F52AE4AB-EBF8-42F4-946B-38154EE62DBE&FullText=1"
+    },
+    {
+      "title": "\n\tCity of Richmond - File #: ORD. 2026-001\n",
+      "url": "https://richmondva.legistar.com/LegislationDetail.aspx?ID=7868926&GUID=3ECE1988-CA4F-4699-8BD3-242D6AAC6906&Options=&Search="
+    },
+    {
+      "title": "Legislation Details (With Text) - ORD. 2026-018",
+      "url": "https://richmondva.legistar.com/ViewReport.ashx?M=R&N=Master&GID=387&ID=7801395&GUID=C4FDE755-551E-4C60-9981-530BA2CF165B&Extra=WithText&Title=Legislation+Details+(With+Text)"
+    },
+    {
+      "title": "\n\tCity of Richmond - File #: ORD. 2025-063\n",
+      "url": "https://richmondva.legistar.com/LegislationDetail.aspx?ID=7283765&GUID=F52AE4AB-EBF8-42F4-946B-38154EE62DBE"
+    },
+    {
+      "title": "Fair Market Rents (40th PERCENTILE RENTS) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr.html"
+    },
+    {
+      "title": "Consolidated Planning/CHAS Data | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/cp.html"
+    },
+    {
+      "title": "HCVP Federal Fair Market Rents in Virginia",
+      "url": "https://www.virginiahousing.com/partners/housing-choice-vouchers/federal-fair-market-rents"
+    },
+    {
+      "title": "FY 2026 Schedule of METROPOLITAN & NON- ...",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY2026_FMR_Schedule.pdf"
+    },
+    {
+      "title": "ACS 5YR CHAS Estimate Data by County - HUD - ArcGIS Online",
+      "url": "https://hudgis-hud.opendata.arcgis.com/datasets/dbcc9ba4a4144a6d823b4d429d2b97c6_4/about"
+    },
+    {
+      "title": "Home - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/"
+    },
+    {
+      "title": "National Housing Preservation Database (NLIHC/PAHRC ...",
+      "url": "https://housingforwardva.org/research/national-housing-preservation-database/"
+    },
+    {
+      "title": "NHPD in the News - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/nhpd-in-the-news/"
+    },
+    {
+      "title": "Richmond Regional Housing Framework Data Update",
+      "url": "https://pharva.com/wp-content/uploads/pha-data-update-FINAL-DRAFT-2023-01-25.pdf"
+    },
+    {
+      "title": "VIRGINIA",
+      "url": "https://preservationdatabase.org/wp-content/uploads/2023/12/PD-Profile_2023_MERGED-VA.pdf"
+    },
+    {
+      "title": "Planning Commission | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/planning-commission"
+    },
+    {
+      "title": "Boards & Commissions | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/boards-commissions"
+    },
+    {
+      "title": "Land Use Administration | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/land-use-administration"
+    },
+    {
+      "title": "Public Access and Participation Instructions - Planning ...",
+      "url": "https://richmondva.legistar.com/View.ashx?M=F&ID=12153050&GUID=97741C1B-B484-4C8C-90F3-D859D8510008"
+    },
+    {
+      "title": "Informational Meeting Guide | Richmond",
+      "url": "https://www.rva.gov/office-city-clerk/informational-meeting-guide"
+    },
+    {
+      "title": "Urban Design Committee | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/urban-design-committee"
+    },
+    {
+      "title": "Board of Zoning Appeals | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/board-zoning-appeals"
+    },
+    {
+      "title": "BZA Agendas and Minutes | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/bza-agendas-and-minutes"
+    },
+    {
+      "title": "THE BOARD OF ZONING APPEALS RICHMOND, ...",
+      "url": "https://www.rva.gov/sites/default/files/2019-12/Rules%20of%20Procedure.pdf"
+    },
+    {
+      "title": "Commission of Architectural Review | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/commission-architectural-review"
+    },
+    {
+      "title": "urban design committee",
+      "url": "https://www.rva.gov/sites/default/files/2024-11/UDC%20Operating%20Procedures.pdf"
+    },
+    {
+      "title": "Application for Urban Design Committee Review",
+      "url": "https://rva.gov/sites/default/files/2026-01/UDC%20Application%20-%202026.pdf"
+    },
+    {
+      "title": "board of zoning appeals presentation suggestions",
+      "url": "https://www.rva.gov/sites/default/files/2020-11/BZA%20Presentation%20Handout%20-%20November%202020.pdf"
+    },
+    {
+      "title": "Commission for Architectural Review",
+      "url": "https://www.rva.gov/sites/default/files/2021-06/Commission%20for%20Architectural%20Review%20COA%20Application.pdf"
+    },
+    {
+      "title": "Board of Zoning Appeals | Richmond GeoHub - ArcGIS",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/board-of-zoning-appeals/about"
+    },
+    {
+      "title": "Dataset - Richmond GeoHub - ArcGIS",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/search?tags=planning"
+    },
+    {
+      "title": "Dataset - Richmond GeoHub - ArcGIS",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/search"
+    },
+    {
+      "title": "Board of Zoning Appeals",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/board-of-zoning-appeals/explore"
+    },
+    {
+      "title": "Affordable Housing Trust Fund | Richmond",
+      "url": "https://www.rva.gov/housing-and-community-development/affordable-housing-trust-fund"
+    },
+    {
+      "title": "The Affordable Housing Trust Fund | Richmond",
+      "url": "https://www.rva.gov/mayors-office/affordable-housing-trust-fund"
+    },
+    {
+      "title": "Affordable Housing Trust Fund (AHTF) | Richmond",
+      "url": "https://rva.gov/housing-and-community-development/affordable-housing-trust-fund-ahtf"
+    },
+    {
+      "title": "Program Guidelines \u2013 AHTF | Affordable Housing Trust Fund",
+      "url": "https://rva.gov/sites/default/files/2025-11/AHTF%20Program%20Guidelines%20%28upd%2011.5.25%29.pdf"
+    },
+    {
+      "title": "Housing and Community Development | Richmond",
+      "url": "https://www.rva.gov/housing-and-community-development"
+    }
+  ]
+}

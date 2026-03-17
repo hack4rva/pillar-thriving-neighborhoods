@@ -1,0 +1,155 @@
+{
+  "run_id": "trun_3cad0ebea15c480e86345c6c126ad958",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Fair Market Rents (40th PERCENTILE RENTS) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr.html"
+    },
+    {
+      "title": "FMR IL Dataset API Documentation | HUD USER",
+      "url": "https://www.huduser.gov/portal/dataset/fmr-api.html"
+    },
+    {
+      "title": "Small Area Fair Market Rents (SAFMRs) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+    },
+    {
+      "title": "FY25_FMRs_revised",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2025/FY25_FMRs_revised.xlsx"
+    },
+    {
+      "title": "Areas Where FY 2026 Fair Market Rents (FMRs) Become ...",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY-2026-FMR-Areas-Without-Reevaluation-Data.pdf"
+    },
+    {
+      "title": "USDA Rural Development Multifamily Section 515 Rural Rental Housing and Section 514 Farm Labor Housing Properties Transfers, Consolidations, and Sales - Catalog",
+      "url": "https://catalog.data.gov/dataset/usda-rural-development-multifamily-section-515-rural-rental-housing-and-section-514-farm-l"
+    },
+    {
+      "title": "Low-Income Housing Tax Credit (LIHTC): Property Level Data | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/lihtc/property.html"
+    },
+    {
+      "title": "USDA Service Center Agencies Online Services",
+      "url": "https://www.sc.egov.usda.gov/data/MFH.html"
+    },
+    {
+      "title": "Home - National Housing Preservation Database (NHPD)",
+      "url": "https://preservationdatabase.org/"
+    },
+    {
+      "title": "USDA Service Center Agencies Online Services",
+      "url": "https://www.sc.egov.usda.gov/data/MFH_section_515.html"
+    },
+    {
+      "title": "DATASETS | HUD USER",
+      "url": "https://www.huduser.gov/portal/pdrdatas_landing.html"
+    },
+    {
+      "title": "USDA Rural Housing Assets - HUD Open Data Site",
+      "url": "https://hudgis-hud.opendata.arcgis.com/datasets/HUD::usda-rural-housing-assets?layer=29"
+    },
+    {
+      "title": "LIHTC",
+      "url": "https://www.huduser.gov/lihtc/"
+    },
+    {
+      "title": "Legistar Web API | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Web-API"
+    },
+    {
+      "title": "Examples - Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/Home/Examples"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "Legistar User Guide",
+      "url": "https://support.granicus.com/s/article/Legistar"
+    },
+    {
+      "title": "Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/"
+    },
+    {
+      "title": "Inclusionary Affordable Housing Program Monitoring and ...",
+      "url": "https://www.sf.gov/sites/default/files/2024-08/Inclusionary%20Affordable%20Housing%20Monitoring%20and%20Procedures%20Manual%20Final%207.25.24.pdf"
+    },
+    {
+      "title": "Inclusionary Housing and Development Incentive Project Compliance | Portland.gov",
+      "url": "https://www.portland.gov/phb/rac/ih-and-development-incentive-compliance"
+    },
+    {
+      "title": "Inclusionary Affordable Housing Program Monitoring and ...",
+      "url": "https://www.sf.gov/sites/default/files/2024-05/Inclusionary%20Affordable%20Housing%20Program%20Manual_DRAFT_POSTED%20ONLINE_5.13.2024.pdf"
+    },
+    {
+      "title": "Inclusionary Housing Program Manuals | SF.gov",
+      "url": "https://www.sf.gov/information--inclusionary-housing-program-manuals"
+    },
+    {
+      "title": "Housing Compliance and Asset Management | Boston.gov",
+      "url": "https://www.boston.gov/departments/housing/housing-compliance-and-asset-management"
+    },
+    {
+      "title": "Office of Housing releases updated Compliance Manual for Multi-Family Tax Exemption(MFTE), Incentive Zoning (IZ) and Mandatory Housing Affordability (MHA) programs - at Home",
+      "url": "https://housing.seattle.gov/office-of-housing-releases-updated-compliance-manual-for-multi-family-tax-exemptionmfte-incentive-zoning-iz-and-mandatory-housing-affordability-mha-programs/"
+    },
+    {
+      "title": "Inclusionary Zoning | Boston.gov",
+      "url": "https://www.boston.gov/departments/housing/inclusionary-zoning"
+    },
+    {
+      "title": "Multi-Family Housing Property Tax Exemption Program (MFTE)",
+      "url": "https://www.commerce.wa.gov/growth-management/housing-planning/mfte/"
+    },
+    {
+      "title": "Inclusionary Development Policy: 2022/2023 Update | Boston.gov",
+      "url": "https://www.boston.gov/departments/housing/inclusionary-development-policy-20222023-update"
+    },
+    {
+      "title": "Multifamily Assistance & Section 8 Database | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "url": "http://www.hud.gov/hud-partners/multifamily-assist-section8-database"
+    },
+    {
+      "title": "Multifamily Data | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "url": "http://www.hud.gov/hud-partners/multifamily-data"
+    },
+    {
+      "title": "Multifamily Property / Contract / Rent & Utility Allowance Datasets /\u00a0Insured Active Multifamily FHA Property Addresses | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "url": "http://www.hud.gov/hud-partners/multifamily-preservation"
+    },
+    {
+      "title": "Active Multifamily Portfolio-Property Level Data - Catalog",
+      "url": "https://catalog.data.gov/dataset/active-multifamily-portfolio-property-level-data"
+    },
+    {
+      "title": "Atlas | phila.gov",
+      "url": "https://atlas.phila.gov/"
+    },
+    {
+      "title": "Subscribe to ZAP Updates - Zoning Application Portal - NYC.gov",
+      "url": "https://zap.planning.nyc.gov/subscribe"
+    },
+    {
+      "title": "NYC Planning - Zoning Application Search",
+      "url": "https://zap.planning.nyc.gov/"
+    },
+    {
+      "title": "City of Chicago | Inspection, Permitting & Licensing Portal",
+      "url": "https://ipi.cityofchicago.org/"
+    },
+    {
+      "title": "Department of Licenses and Inspections | Homepage",
+      "url": "https://www.phila.gov/departments/department-of-licenses-and-inspections/"
+    },
+    {
+      "title": "A New Way to Be Informed on Land Use Applications in ...",
+      "url": "https://cbsix.org/announcement/a-new-way-to-be-informed-on-land-use-applications-in-our-district/"
+    }
+  ]
+}

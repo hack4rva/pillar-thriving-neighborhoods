@@ -1,0 +1,99 @@
+{
+  "run_id": "trun_3cad0ebea15c480eb4b82a79f3631ffe",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/"
+    },
+    {
+      "title": "\n\tCity of Richmond - Planning Commission\n",
+      "url": "https://richmondva.legistar.com/DepartmentDetail.aspx?ID=24014&GUID=CFDDD5D6-AE26-43ED-8747-A02A21FD9362"
+    },
+    {
+      "title": "City of Richmond - Legislation",
+      "url": "https://richmondva.legistar.com/Legislation.aspx"
+    },
+    {
+      "title": "Planning Commission | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/planning-commission"
+    },
+    {
+      "title": "\n\tCity of Richmond - Meeting of Planning Commission on 3/3/2026 at 6:00 PM\n",
+      "url": "https://richmondva.legistar.com/MeetingDetail.aspx?ID=1387231&GUID=6F26AD4D-7396-4ED5-85FC-C1794E567306&Options=info%7C&Search="
+    },
+    {
+      "title": "Legistar Web API | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Web-API"
+    },
+    {
+      "title": "Examples - Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/Home/Examples"
+    },
+    {
+      "title": "Legistar User Guide | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar"
+    },
+    {
+      "title": "Access the Legistar Web API \u2022 legistarapi",
+      "url": "https://elipousson.github.io/legistarapi/index.html"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Matters?$top=1"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/MatterTypes"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Bodies"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Matters/1129/Attachments"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Events?$top=1"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Bodies?$filter=substringof('Planning',BodyName)%20eq%20true"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Bodies?$filter=substringof('Zoning',BodyName)%20eq%20true"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Bodies?$filter=substringof('Architectural',BodyName)%20eq%20true"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Bodies?$filter=substringof('Urban%20Design',BodyName)%20eq%20true"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://webapi.legistar.com/v1/richmondva/Bodies?$filter=substringof('Land%20Use,%20Housing%20and%20Transportation',BodyName)%20eq%20true"
+    },
+    {
+      "title": "Agenda Posting Procedures and Publishing Checks | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Agenda-Posting-Procedures-and-Publishing-Checks"
+    },
+    {
+      "title": "Publishing to InSite | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Publishing-to-InSite"
+    },
+    {
+      "title": "Changes to Legistar Agenda not Appearing in MediaManager or iLegislate | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Changes-to-Legistar-Agenda-not-Appearing-in-MediaManager-or-iLegislate"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "run_id": "trun_3cad0ebea15c480ebb050df382666c46",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "FMR IL Dataset API Documentation | HUD USER",
+      "url": "https://www.huduser.gov/portal/dataset/fmr-api.html"
+    },
+    {
+      "title": "HUD User Python API Docs | dltHub",
+      "url": "https://dlthub.com/context/source/hud-user"
+    },
+    {
+      "title": "Fair Market Rents (40th PERCENTILE RENTS) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr.html"
+    },
+    {
+      "title": "Help for package hudr",
+      "url": "https://cran.r-project.org/web/packages/hudr/refman/hudr.html"
+    },
+    {
+      "title": "etam4260/hudpy: A Python interface for the US Department ...",
+      "url": "https://github.com/etam4260/hudpy"
+    },
+    {
+      "title": "FY 2026 Schedule of METROPOLITAN & NON- ...",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY2026_FMR_Schedule.pdf"
+    },
+    {
+      "title": "Housing Choice Voucher Program Payment Standards ...",
+      "url": "https://www.rrha.com/wp-content/uploads/2026/01/2026-Payment-Standards.docx.pdf"
+    },
+    {
+      "title": "HCVP Federal Fair Market Rents in Virginia",
+      "url": "https://www.virginiahousing.com/partners/housing-choice-vouchers/federal-fair-market-rents"
+    },
+    {
+      "title": "FY26_FMRs",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY26_FMRs.xlsx"
+    },
+    {
+      "title": "Calculation of HUD Fair Market Rents",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/fmr2026/FY26-Public-FMR-Methodology.pdf"
+    },
+    {
+      "title": "Small Area Fair Market Rents (SAFMRs) | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+    },
+    {
+      "title": "Fair Market Rents Introductory Overview",
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/fmr-overviewFY24.pdf"
+    },
+    {
+      "title": "Fair Market Rents Introductory Overview",
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/fmr-overview.pdf"
+    },
+    {
+      "title": "Consolidated Planning/CHAS Data | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/cp.html"
+    },
+    {
+      "title": "CHAS Data Documentation | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/cp/CHAS/data_doc_chas.html"
+    },
+    {
+      "title": "ACS 5YR CHAS Estimate Data by Tract - HUD - ArcGIS",
+      "url": "https://hudgis-hud.opendata.arcgis.com/datasets/HUD::acs-5yr-chas-estimate-data-by-tract/about"
+    },
+    {
+      "title": "CHAS: Background | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/cp/CHAS/bg_chas.html"
+    },
+    {
+      "title": "Housing Cost Burden & Affordability - Microsoft Power BI",
+      "url": "https://app.powerbigov.us/view?r=eyJrIjoiZDc3ZDMwNjktYzExYS00ZGZmLWE4ZjUtMjliNmE1NzE5Y2ZhIiwidCI6ImMwNmE4YmU3LTg0NzktNGQ3My1iMzUxLTkzYmM5YmE4Mjk1YyJ9"
+    },
+    {
+      "title": "Income Limits | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/il.html"
+    },
+    {
+      "title": "Statement on FY 2026 Median Family Income Estimates ...",
+      "url": "https://www.huduser.gov/portal/datasets/il/il26/Statement-on-FY-2026-Income-Limits.pdf"
+    },
+    {
+      "title": "FY2025 ADJUSTED HOME INCOME LIMITS",
+      "url": "https://www.huduser.gov/portal/datasets/home-datasets/files/HOME_IncomeLmts_State_VA_2025.pdf"
+    },
+    {
+      "title": "Home Income Limits | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/HOME-Income-limits.html"
+    },
+    {
+      "title": "\n            \n                \n                    What to Expect with 2026 Income Limits\n                \n            \n            \n                \n                | Novogradac\n            \n        ",
+      "url": "https://www.novoco.com/notes-from-novogradac/what-to-expect-with-2026-income-limits"
+    },
+    {
+      "title": "Voucher Management Systems (VMS) User Manual",
+      "url": "https://www.hud.gov/sites/dfiles/PIH/documents/INSTRUCTIONS.pdf"
+    },
+    {
+      "title": "Housing Choice Voucher (HCV) Data Dashboard | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "url": "http://www.hud.gov/helping-americans/public-indian-housing-hcv-dashboard"
+    },
+    {
+      "title": "Housing Voucher Program Support Division (PSD) | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "url": "http://www.hud.gov/helping-americans/public-indian-housing-program-support-division"
+    },
+    {
+      "title": "DATASETS | HUD USER",
+      "url": "https://www.huduser.gov/portal/pdrdatas_landing.html"
+    },
+    {
+      "title": "Voucher Management Systems (VMS) User Manual",
+      "url": "https://www.hud.gov/sites/documents/instructions.pdf"
+    },
+    {
+      "title": "A Picture of Subsidized Households General Description of the Data and Bibliography | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/assthsg/statedata98/descript.html"
+    },
+    {
+      "title": "Public Housing Authorities | HUD Open Data Site",
+      "url": "https://hudgis-hud.opendata.arcgis.com/datasets/HUD::public-housing-authorities-1/about?share=link"
+    },
+    {
+      "title": "Assisted Housing: National and Local | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/assthsg.html"
+    },
+    {
+      "title": "Picture of Subsidized Households - Dataset - Catalog",
+      "url": "https://catalog.data.gov/dataset/a-picture-of-subsidized-households-2009"
+    }
+  ]
+}

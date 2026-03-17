@@ -1,0 +1,151 @@
+{
+  "run_id": "trun_3cad0ebea15c480e9f7000197385407c",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/"
+    },
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "Examples - Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/Home/Examples"
+    },
+    {
+      "title": "City of Richmond - Legislation",
+      "url": "https://richmondva.legistar.com/Legislation.aspx"
+    },
+    {
+      "title": "\n\tCity of Richmond - Planning Commission\n",
+      "url": "https://richmondva.legistar.com/DepartmentDetail.aspx?ID=24014&GUID=CFDDD5D6-AE26-43ED-8747-A02A21FD9362"
+    },
+    {
+      "title": "richmond",
+      "url": "https://richmondva.legistar.com/gateway.aspx?M=F&ID=9de6c651-f301-4284-9927-79bc63f01e8c.pdf"
+    },
+    {
+      "title": "Application for SPECIAL USE PERMIT",
+      "url": "https://richmondva.legistar.com/gateway.aspx?M=F&ID=44ea30ef-8d53-4081-a90d-adc68c599b8a.pdf"
+    },
+    {
+      "title": "City of Richmond - Legislation Details",
+      "url": "https://richmondva.legistar.com/ViewReport.ashx?M=R&N=Master&GID=387&ID=7745570&GUID=3CDA165E-1BD8-4802-B7A4-43AC299FDAE8&Title=Legislation+Details"
+    },
+    {
+      "title": "Application for SPECIAL USE PERMIT Zoning Proposed Use",
+      "url": "https://richmondva.legistar.com/View.ashx?M=F&ID=12749965&GUID=ACC872C1-688D-4F37-9141-907A3D241D1A"
+    },
+    {
+      "title": "Interactive Mapping Tools | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools"
+    },
+    {
+      "title": "Plans of Development | Richmond GeoHub - ArcGIS Online",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about"
+    },
+    {
+      "title": "GIS/Mapping | Richmond",
+      "url": "https://www.rva.gov/assessor-real-estate/gismapping"
+    },
+    {
+      "title": "Richmond GeoHub",
+      "url": "https://richmond-geo-hub-cor.hub.arcgis.com/"
+    },
+    {
+      "title": "How to identify my city's legistar client name?",
+      "url": "https://groups.google.com/g/open-civic-data/c/sMxWQs2JwZU"
+    },
+    {
+      "title": "\n\tCity of Richmond - Meeting of City Council on 5/23/2022 at 6:00 PM\n",
+      "url": "https://richmondva.legistar.com/MeetingDetail.aspx?ID=902225&GUID=19408F3F-482B-4F6F-B35A-DFF1ED978714&Search="
+    },
+    {
+      "title": "Affordable Housing Trust Fund | Richmond",
+      "url": "https://www.rva.gov/housing-and-community-development/affordable-housing-trust-fund"
+    },
+    {
+      "title": "The Affordable Housing Trust Fund | Richmond",
+      "url": "https://www.rva.gov/mayors-office/affordable-housing-trust-fund"
+    },
+    {
+      "title": "\n\tCity of Richmond - File #: ORD. 2025-236\n",
+      "url": "https://richmondva.legistar.com/LegislationDetail.aspx?ID=7702635&GUID=C3582192-7BB5-41B0-B8A9-81CD6F5C0445&Options=&Search="
+    },
+    {
+      "title": "City awards $9 million through Affordable Housing Trust Fund | Richmond",
+      "url": "https://www.rva.gov/press-releases-and-announcements/news/city-awards-9-million-through-affordable-housing-trust-fund"
+    },
+    {
+      "title": "2022-2023 AHTF Board Annual Report",
+      "url": "https://www.rva.gov/sites/default/files/2025-08/AHTF%20Annual%20Report%202024%2012-23-2024%20%282%29.pdf"
+    },
+    {
+      "title": "HCD Affordable Housing Goals",
+      "url": "http://www.rva.gov/sites/default/files/2025-09/HCD%20Presentation%20-%20AHTF%20Open%20Round%20%28Sep%202025%29.pdf"
+    },
+    {
+      "title": "Legislation Details (With Text) - ORD. 2026-045",
+      "url": "https://richmondva.legistar.com/ViewReport.ashx?M=R&N=Master&GID=387&ID=7873363&GUID=68BB35C1-7386-4022-B4B0-2002A554CAAC&Extra=WithText&Title=Legislation+Details+(With+Text)"
+    },
+    {
+      "title": "Richmond to invest more than $40 million in affordable ...",
+      "url": "https://www.12onyourside.com/2026/02/27/richmond-invest-more-than-40-million-affordable-housing/"
+    },
+    {
+      "title": "City of Richmond - File #: ORD. 2025-043",
+      "url": "https://richmondva.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=38366"
+    },
+    {
+      "title": "Federally Funded Programs | Richmond",
+      "url": "https://www.rva.gov/housing-and-community-development/federally-funded-programs"
+    },
+    {
+      "title": "procedures manual for federal entitlement funds for fiscal ...",
+      "url": "https://www.rva.gov/sites/default/files/2020-08/PD-ProceduresManual2019-20.pdf"
+    },
+    {
+      "title": "PY 2024/FY 2025 Consolidated Annual Performance ...",
+      "url": "https://www.rva.gov/sites/default/files/2025-09/PY2024%20FY2025%20CAPER%20-%20For%20Public%20Review_0.pdf"
+    },
+    {
+      "title": "PY 2025/FY 2026 Annual Action Plan",
+      "url": "https://rva.gov/sites/default/files/2025-04/PY25FY26%20AAP%20for%20Public%20Comment%20-%204-8-25.pdf"
+    },
+    {
+      "title": "Final RVA CAPER 20-21",
+      "url": "https://www.rva.gov/sites/default/files/2021-10/Working%20Copy%20CAPER%202020-2021%20%23E%20100821%20website%20version.docx.pdf"
+    },
+    {
+      "title": "Consolidated Planning/CHAS Data | HUD USER",
+      "url": "https://www.huduser.gov/portal/datasets/cp.html"
+    },
+    {
+      "title": "broadband - Census Bureau Tables",
+      "url": "https://data.census.gov/cedsci/table?q=broadband&g=0400000US10"
+    },
+    {
+      "title": "Richmond city, Virginia - Census Bureau Profile",
+      "url": "https://data.census.gov/profile/Richmond_city,_Virginia?g=050XX00US51760"
+    },
+    {
+      "title": "Commonwealth Connection - Virginia Broadband Map",
+      "url": "https://commonwealth-connection.com/"
+    },
+    {
+      "title": "Richmond, Virginia",
+      "url": "https://www.huduser.gov/portal/publications/pdf/RichmondVA-CHMA-22.pdf"
+    },
+    {
+      "title": "B28011: Internet Subscriptions ... - Census Bureau Table",
+      "url": "https://data.census.gov/table/ACSDT5Y2024.B28011?text=internet&g=050XX00US27007"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "run_id": "trun_3cad0ebea15c480e857f109ac8bfcbfc",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Examples - Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/Home/Examples"
+    },
+    {
+      "title": "Access the Legistar Web API \u2022 legistarapi",
+      "url": "https://elipousson.github.io/legistarapi/index.html"
+    },
+    {
+      "title": "Legistar Web API Help Page",
+      "url": "https://webapi.legistar.com/Help"
+    },
+    {
+      "title": "\n\tCity of Richmond - Meeting of City Council on 2/9/2026 at 6:00 PM\n",
+      "url": "https://richmondva.legistar.com/MeetingDetail.aspx?ID=1354754&GUID=A4B23248-6E7B-40CD-B86E-0C172F7CD5D9&Options=info%7C&Search="
+    },
+    {
+      "title": "Legistar Web API - Granicus",
+      "url": "https://webapi.legistar.com/"
+    },
+    {
+      "title": "Interactive Mapping Tools | Richmond",
+      "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools"
+    },
+    {
+      "title": "Richmond, VA - ArcGIS Online",
+      "url": "https://cor.maps.arcgis.com/"
+    },
+    {
+      "title": "Give the REST a Rest",
+      "url": "https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/give-the-rest-a-rest"
+    },
+    {
+      "title": "ArcGIS Web Application",
+      "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=83214c006f4247cea3f68867496a0e4e"
+    },
+    {
+      "title": "Natural Resources Plan",
+      "url": "https://storymaps.arcgis.com/stories/45377745bc9246d782d5cf2fe5a056b0"
+    },
+    {
+      "title": "Build powerful apps with ArcGIS services | Esri Developer REST APIs documentation | Esri Developer",
+      "url": "https://developers.arcgis.com/rest/"
+    },
+    {
+      "title": "Enterprise GIS Development Project - Ci.richmond.ca.us",
+      "url": "https://www.ci.richmond.ca.us/DocumentCenter/View/47185/Enterprise-GIS-Development-Project-Strategic-Plan-PDF"
+    },
+    {
+      "title": "Status (Service) | ArcGIS REST APIs | Esri Developer",
+      "url": "https://developers.arcgis.com/rest/enterprise-administration/enterprise/service-status/"
+    },
+    {
+      "title": "Richmond Connects: Map Collection Overview",
+      "url": "https://storymaps.arcgis.com/stories/f97d698bdb1e4be79d0bce1717c3bc27"
+    },
+    {
+      "title": "https://gisweb.pwcva.gov/arcgis/rest/services/Planning/ ...",
+      "url": "https://gisweb.pwcva.gov/arcgis/rest/services/Planning/Comprehensive_Plan/MapServer/4/metadata"
+    },
+    {
+      "title": "Legistar Web API | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Web-API"
+    },
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/"
+    },
+    {
+      "title": "\n\tCity of Richmond - Planning Commission\n",
+      "url": "https://richmondva.legistar.com/DepartmentDetail.aspx?ID=24014&GUID=CFDDD5D6-AE26-43ED-8747-A02A21FD9362"
+    },
+    {
+      "title": "\n\tCity of Richmond - Calendar\n",
+      "url": "https://richmondva.legistar.com/Calendar.aspx?From=RSS&Mode=Next%20Month"
+    },
+    {
+      "title": "Legistar Tutorial for Council Meetings on Computers - YouTube",
+      "url": "https://www.youtube.com/watch?v=yDljr0RQNQk"
+    },
+    {
+      "title": "ORD. 2025-081 - Staff Report",
+      "url": "https://richmondva.legistar.com/View.ashx?M=F&ID=14736567&GUID=C833E551-D4DB-4E35-9F45-53A5A8560128"
+    },
+    {
+      "title": "Richmond Interactive Map - Overview",
+      "url": "https://www.arcgis.com/home/item.html?id=885b2329814741639440d60f9af50488"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/777f2b6383fe42da9c6aaeac8df77c8c?f=pjson"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/777f2b6383fe42da9c6aaeac8df77c8c/data?f=pjson"
+    },
+    {
+      "title": "Richmond Hill Land Use-Copy - Overview",
+      "url": "https://www.arcgis.com/home/item.html?id=30796ebdcfee4b9b81cfc903664ad126"
+    },
+    {
+      "title": "Richmond 300 Future Land Use",
+      "url": "https://www.arcgis.com/home/webmap/viewer.html?webmap=27fd3df5199f469f872eb28647e47c02&extent=-77.558,37.4951,-77.3579,37.5759"
+    },
+    {
+      "title": "The resource cannot be found.",
+      "url": "http://webapi.legistar.com/v1/clients"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "http://webapi.legistar.com/v1/richmondva/matters?$top=1"
+    },
+    {
+      "title": "Fetched web page",
+      "url": "http://webapi.legistar.com/v1/richmondva/events?$top=1"
+    }
+  ]
+}

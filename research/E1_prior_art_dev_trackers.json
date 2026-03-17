@@ -1,0 +1,175 @@
+{
+  "run_id": "trun_3cad0ebea15c480e84b0c7aa9e1373e0",
+  "processor": "pro",
+  "status": "completed",
+  "citations": [
+    {
+      "title": "Councilmatic - Your local city council, demystified",
+      "url": "https://www.councilmatic.org/"
+    },
+    {
+      "title": "Legistar Web API | Granicus Support",
+      "url": "https://support.granicus.com/s/article/Legistar-Web-API"
+    },
+    {
+      "title": "Chicago City Council, demystified - Chicago Councilmatic",
+      "url": "https://chicago.councilmatic.org/"
+    },
+    {
+      "title": "GitHub - codeforamerica/councilmatic: A subscription service for city council legislative information, started in Philadelphia. \u00b7 GitHub",
+      "url": "https://github.com/codeforamerica/councilmatic"
+    },
+    {
+      "title": "Access the Legislative API - NYC Council",
+      "url": "https://council.nyc.gov/legislation/api/"
+    },
+    {
+      "title": "Neighborhood Notification | SF Planning",
+      "url": "https://sfplanning.org/resource/neighborhood-notification"
+    },
+    {
+      "title": "Reports Library | SPUR",
+      "url": "https://www.spur.org/featured-project/spur-regional-strategy/reports-library"
+    },
+    {
+      "title": "Home | SPUR",
+      "url": "https://www.spur.org/"
+    },
+    {
+      "title": "SF is sending out upzoning notices; here's how to find out what's really going on - 48 hills",
+      "url": "https://48hills.org/2025/08/sf-is-sending-out-upzoning-notices-heres-how-to-find-out-whats-really-going-on/"
+    },
+    {
+      "title": "Article 80 Development Projects (website) - Dataset - Analyze Boston",
+      "url": "https://data.boston.gov/dataset/article80-development-projects"
+    },
+    {
+      "title": "GIS Data & Mapping Resources",
+      "url": "http://www.bostonplans.org/3d-data-maps/resources"
+    },
+    {
+      "title": "\n\tDevelopment Projects & Plans | Bostonplans.org\n",
+      "url": "http://www.bostonplans.org/projects/development-projects"
+    },
+    {
+      "title": "BostonMaps Open Data Site",
+      "url": "https://bostonopendata-boston.opendata.arcgis.com/datasets"
+    },
+    {
+      "title": "3D Data & Maps",
+      "url": "http://www.bostonplans.org/3d-data-maps"
+    },
+    {
+      "title": "Improving Our Development Review Process",
+      "url": "http://www.bostonplans.org/projects/improving-development-review-process-article-80"
+    },
+    {
+      "title": "Shaping Seattle: Property & Building Permits | seattle.gov",
+      "url": "https://web.seattle.gov/sdci/ShapingSeattle/buildings"
+    },
+    {
+      "title": "\n    \n      Seattle in Progress\n    \n    ",
+      "url": "https://www.seattleinprogress.com/pro/support/about_data"
+    },
+    {
+      "title": "Research a Project, Permit, or Property - SDCI | seattle.gov",
+      "url": "https://www.seattle.gov/sdci/resources/research-a-project"
+    },
+    {
+      "title": "Seattle In Progress Gets An Update",
+      "url": "https://www.theurbanist.org/seattle-in-progress-gets-an-update/"
+    },
+    {
+      "title": "Shaping Seattle: Maps Menu | seattle.gov",
+      "url": "https://web.seattle.gov/sdci/ShapingSeattle/home"
+    },
+    {
+      "title": "\n    \n      Seattle in Progress\n    \n    ",
+      "url": "https://www.seattleinprogress.com/"
+    },
+    {
+      "title": "City launches Shaping Seattle Map for finding construction permits - My Ballard",
+      "url": "https://myballard.com/2020/07/28/city-launches-shaping-seattle-map-for-finding-construction-permits/"
+    },
+    {
+      "title": "ZIMAS - City of Los Angeles",
+      "url": "https://zimas.lacity.org/"
+    },
+    {
+      "title": "LADBS Go - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=gov.dbs.lacity.ladbsgo"
+    },
+    {
+      "title": "Zoning Search | Los Angeles City Planning",
+      "url": "https://planning.lacity.gov/zoning/zoning-search"
+    },
+    {
+      "title": "Case Reports and Mapping | Los Angeles City Planning",
+      "url": "https://planning.lacity.gov/resources/case-reports"
+    },
+    {
+      "title": "LADBS - City of Los Angeles",
+      "url": "http://dbs.lacity.gov/"
+    },
+    {
+      "title": "City Clerk - City of Los Angeles",
+      "url": "https://cityclerk.lacity.org/onlinedocs/2025/25-0572_misc_2_09-03-25.pdf"
+    },
+    {
+      "title": "ZoLa | NYC's Zoning & Land Use Map",
+      "url": "https://zola.planning.nyc.gov/"
+    },
+    {
+      "title": "GitHub - NYCPlanning/labs-zola: NYC Planning's Zoning and Land Use App \u00b7 GitHub",
+      "url": "https://github.com/NYCPlanning/labs-zola"
+    },
+    {
+      "title": "NYC GeoSearch Makes ZoLa Better. Almost every New Yorker who uses ZoLa\u2026 | by Andy Cochran | NYC Planning Tech | Medium",
+      "url": "https://medium.com/nyc-planning-digital/nyc-geosearch-makes-zola-better-681660758369"
+    },
+    {
+      "title": "NYC Planning - Zoning Application Search",
+      "url": "https://zap.planning.nyc.gov/"
+    },
+    {
+      "title": "Zoning Application Portal (ZAP) - Project Data - Catalog",
+      "url": "https://catalog.data.gov/dataset/zoning-application-portal-zap-project-data"
+    },
+    {
+      "title": "Data - ZoLa | NYC's Zoning & Land Use Map",
+      "url": "https://zola.planninglabs.nyc/data"
+    },
+    {
+      "title": "GitHub - NYCPlanning/labs-zap-search: Search application for the DCP Zoning Application Search \u00b7 GitHub",
+      "url": "https://github.com/NYCPlanning/labs-zap-search"
+    },
+    {
+      "title": "New Tool: Mayor de Blasio and DCP Announce Real Time Information on NYC Land Use Proposals Now Just a Click Away | Ben Kallos, New York City Council Member",
+      "url": "https://benkallos.com/press-release/new-tool-mayor-de-blasio-and-dcp-announce-real-time-information-nyc-land-use"
+    },
+    {
+      "title": "A Fully Committed Lexington. Inspiration from the civic commons in\u2026 | by Reimagining the Civic Commons | Reimagining the Civic Commons | Medium",
+      "url": "https://medium.com/reimagining-the-civic-commons/a-fully-committed-lexington-e29e8dd314ad"
+    },
+    {
+      "title": "Land Development Office | Chattanooga.gov",
+      "url": "https://chattanooga.gov/government/public-works/land-development-office"
+    },
+    {
+      "title": "Administration | City of Lexington",
+      "url": "https://cityoflex.com/administration"
+    },
+    {
+      "title": "GitHub - codeforamerica/citygram: Subscribe to your city. \u00b7 GitHub",
+      "url": "https://github.com/codeforamerica/citygram"
+    },
+    {
+      "title": "Nyc civic tech group is closing",
+      "url": "https://www.facebook.com/groups/betanyc/posts/3243899725760549/"
+    },
+    {
+      "title": "GitHub - teknologi-umum/gitgram: Github notifications for Telegram \u00b7 GitHub",
+      "url": "https://github.com/teknologi-umum/gitgram"
+    }
+  ]
+}
