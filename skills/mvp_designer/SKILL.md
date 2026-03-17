@@ -21,4 +21,4 @@ Purpose: Turn an approved opportunity into a concrete MVP plan.
 2) Define the core user journey and constrain scope to demo essentials.
 3) Map datasets/APIs and note stubs/mocks where needed.
 4) Produce acceptance criteria and a day‑by‑day build plan.
-5) Flag Legistar API uncertainty and include a fallback if API is unavailable.
+

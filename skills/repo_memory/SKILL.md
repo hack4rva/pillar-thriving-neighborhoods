@@ -22,3 +22,4 @@ Purpose: Reconstruct repository state and current stage.
 2) Infer stage based on artifacts present and completeness.
 3) Summarize current state and enumerate unknowns that block progress.
 4) Recommend the next suitable skill (do not execute without confirmation).
+

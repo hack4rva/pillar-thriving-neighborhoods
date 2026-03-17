@@ -20,4 +20,4 @@ Purpose: Translate research into concrete, buildable solution opportunities.
 2) Outline user outcomes and workflows per pattern.
 3) Identify dependencies, partners, and dataset needs.
 4) Compare tradeoffs and recommend a primary direction.
-5) Reference `03_artifacts/prototype_recommendations.md` for established concepts before generating new ones.
+

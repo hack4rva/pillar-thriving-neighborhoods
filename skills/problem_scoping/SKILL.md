@@ -20,6 +20,6 @@ Purpose: Help the team choose a strong, weekend-feasible problem direction.
 1) Read pillar context and problem statements; extract evaluation criteria from rubric.
 2) Score candidates on impact, feasibility, data availability, clarity, and demo credibility.
 3) Highlight Richmond-specific alignment and any policy/eligibility red flags.
-4) Note that Housing Compliance has a data-not-ready flag; weight accordingly.
-5) Present a ranked short list with concrete MVP angles and tradeoffs.
-6) Ask for selection/confirmation before proceeding.
+4) Present a ranked short list with concrete MVP angles and tradeoffs.
+5) Ask for selection/confirmation before proceeding.
+

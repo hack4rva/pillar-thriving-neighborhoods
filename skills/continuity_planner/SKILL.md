@@ -17,5 +17,4 @@ Purpose: Identify post-hackathon continuation opportunities and next steps.
 1) Identify credible use cases and decision‑makers to engage.
 2) Map needed artifacts and technical hardening tasks.
 3) Propose a lightweight roadmap with risks and dependencies.
-4) Reference `03_artifacts/continuation_plan.md` for established contacts and pathways.
-5) Flag that both targeted statements currently lack named departmental champions; continuation requires City partner engagement.
+

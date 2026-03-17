@@ -1,7 +1,8 @@
 ## Working Direction
-- Pillar: Thriving Neighborhoods
+- Pillar: Thriving Economy
 - Candidate problem:
 - Likely user:
 - Why it matters:
 - Why it seems weekend-buildable:
 - Biggest uncertainty:
+

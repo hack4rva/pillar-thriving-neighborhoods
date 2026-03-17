@@ -22,4 +22,4 @@ Purpose: Identify usable datasets, schemas, access paths, and gaps.
 2) Describe acquisition method (API, CSV, portal) and schema highlights.
 3) Call out quality and compliance risks; suggest quick validation steps.
 4) Produce a prioritized list and recommend next actions.
-5) Flag that Legistar API access must be confirmed before building; see `03_artifacts/housing_data_feasibility.md`.
+

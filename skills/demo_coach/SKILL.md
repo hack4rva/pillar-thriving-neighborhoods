@@ -21,5 +21,4 @@ Purpose: Help teams present effectively and score against the rubric.
 2) Script a realistic flow with hardcoded data/mocks as needed.
 3) Align talking points to rubric; pre‑answer likely judge questions.
 4) Produce a checklist and timing plan.
-5) Anchor demo in a specific Richmond neighborhood and a specific resident story.
-6) Ensure every data element on screen has a source label and official link.
+

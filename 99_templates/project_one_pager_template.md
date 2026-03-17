@@ -5,10 +5,10 @@
 ## Team name
 
 ## Pillar
-Thriving Neighborhoods
+Thriving Economy
 
 ## User
-Who is the primary user (resident, housing staff, planning staff, nonprofit)?
+Who is the primary user (contractor, entrepreneur, jobseeker, staff)?
 
 ## Problem
 What exact problem are you solving?
@@ -17,7 +17,7 @@ What exact problem are you solving?
 Why does this matter in Richmond?
 
 ## Alignment
-Which Thriving Neighborhoods theme does this align to (neighborhood development transparency, housing compliance monitoring, plain-language planning tools, etc.)?
+Which Thriving Economy theme does this align to (contracting access, small business navigation, workforce pathways, etc.)?
 
 ## Proposed solution
 What are you building?
@@ -36,17 +36,18 @@ What are you building?
 What will actually work by demo day?
 
 ## What this project does not do
--
--
--
+- 
+- 
+- 
 
 ## Risks and limitations
--
--
--
+- 
+- 
+- 
 
 ## Demo plan
 What will you show in the live demo?
 
 ## Longer-term potential
 What could this become after the hackathon?
+
