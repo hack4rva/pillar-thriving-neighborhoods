@@ -1,0 +1,16 @@
+Services Landscape C1 — How Legistar Works, What's in It, and How to Access It
+
+Investigate how Richmond uses Legistar for development-related legislative records. Produce a practical guide for hackathon teams on what Legistar contains, how to access it, and what its limitations are.
+
+Cover:
+- What record types are in Richmond's Legistar relevant to neighborhood development: rezonings, special use permits, variances, new construction approvals, housing funding ordinances, annexations
+- How records are structured: matter types, bodies (Planning Commission, City Council), meeting dates, attachments (staff reports, site plans)
+- How to find Richmond's Legistar: URL, search interface, and any public API documentation
+- The Granicus Web API: what endpoints are available, how to authenticate (or confirm if public read access exists), what data fields are returned
+- Known limitations: address field consistency, attachment content accessibility, update latency
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns that must be confirmed before building
+- Step-by-step guide for a developer to test Legistar access in the first 2 hours of the hackathon

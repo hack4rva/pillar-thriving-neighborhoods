@@ -1,0 +1,17 @@
+Risks G4 — Risk of Data Gaps Misleading Users
+
+Analyze the risks of data incompleteness and gaps in Legistar, Richmond GeoHub, and HUD data misleading residents or staff.
+
+Cover:
+- What happens if a resident uses the development notifier but misses a proposal because it was not in Legistar at the time of query (e.g., very new filings, projects processed outside normal workflow)
+- How stale GIS data could show an incorrect project status (e.g., an approved project still shown as pending)
+- How HUD data gaps could cause a housing investment dashboard to appear to show all City investments when it only shows a subset
+- The risk of a user trusting the tool as complete and authoritative when it is neither
+- How to design for data gap transparency: required fields, last-updated labels, explicit coverage statements, links to authoritative sources
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Data gap risk matrix: source, gap type, severity, mitigation
+- Required UI elements for any data-dependent tool (freshness labels, coverage disclaimers, source links)

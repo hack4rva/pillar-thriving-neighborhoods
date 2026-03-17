@@ -1,0 +1,18 @@
+MVP Feasibility H3 — Affordable Housing Compliance Dashboard Build Feasibility
+
+Assess the build feasibility of the affordable housing compliance monitoring tool, given its data-readiness flag.
+
+Cover:
+- What the minimum viable version of this tool looks like given that internal compliance data is not publicly available
+- How to build a credible staff-support tool using only public data: Legistar ordinances, HUD FMR tables, HUD preservation database
+- How to handle the synthetic/seeded data problem: how to clearly label demo data vs. real data
+- Technical architecture: data model for a housing portfolio, UI components (table, map, detail view, HUD FMR comparison)
+- Estimated build hours for each component
+- How to frame this as a workflow prototype rather than a compliance system
+- Whether this should be attempted in a weekend or whether teams should focus on the development notifier instead
+
+Output
+- Build feasibility assessment (High / Medium / Low with rationale)
+- Recommended scope: what to include and explicitly exclude
+- How to handle synthetic data responsibly in the demo
+- Recommendation on whether to pursue this vs. the development notifier

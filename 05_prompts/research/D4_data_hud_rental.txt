@@ -1,0 +1,18 @@
+Data Inventory D4 — HUD Fair Market Rent, CHAS, and Housing Affordability Datasets
+
+Provide a detailed inventory of HUD's publicly available housing affordability datasets and how they apply to Richmond.
+
+Cover:
+- Fair Market Rents: what FMRs measure, how they are calculated, where to download Richmond/MSA data, API access, how frequently updated
+- CHAS (Comprehensive Housing Affordability Strategy) data: what it measures, geographic granularity (city, county, census tract), how to access, data lag
+- HUD Income Limits: what AMI limits apply to Richmond, where to find them, how they relate to affordable housing program eligibility
+- HUD Housing Choice Voucher program data: what is publicly available for Richmond
+- How to join HUD datasets to Richmond parcel or neighborhood geography
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Developer quick-start: how to get Richmond FMR data in 30 minutes
+- How to use FMR data in a compliance comparison tool: example calculation showing whether a committed rent level is within FMR bounds
+- Limitations: what HUD data cannot tell you that a compliance tool would need

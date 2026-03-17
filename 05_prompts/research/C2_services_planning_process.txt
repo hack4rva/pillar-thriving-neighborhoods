@@ -1,0 +1,18 @@
+Services Landscape C2 — Richmond Planning Commission Process, Timelines, and Notification Requirements
+
+Describe the Richmond development review process in detail, focusing on the steps between when a development application is filed and when a decision is made — and specifically when and how residents are legally required to be notified.
+
+Cover:
+- What types of applications require Planning Commission review vs. administrative approval
+- The typical timeline from application submission to Planning Commission hearing to City Council action
+- Legal notification requirements: what triggers a mailed notice, what the mailing radius is, what must be posted on-site
+- How and where agenda items are posted publicly: City website, Legistar, physical posting
+- What "public comment period" means and when it opens and closes for typical development cases
+- Whether Richmond sends digital notifications to residents or neighborhood associations
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Key deadlines in the process where a notification tool would be most valuable
+- Gap analysis: where the legal notification process falls short of practical discoverability

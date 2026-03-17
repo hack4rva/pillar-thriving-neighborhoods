@@ -1,0 +1,17 @@
+MVP Feasibility H4 — Working with Legistar and GeoHub Data Limitations
+
+Produce a practical guide for working with the data limitations of Legistar and Richmond GeoHub in a 48-hour hackathon build.
+
+Cover:
+- If the Legistar API is not available: fallback strategies (manual data collection, scraping, pre-seeded static JSON)
+- If GeoHub REST API is not accessible: fallback strategies (manual GeoJSON download, static layer, Nominatim geocoding)
+- If address data in Legistar is inconsistent or unparseable: how to handle free-text addresses, what geocoding services to use
+- If PDF staff reports cannot be parsed: how to manually summarize 5–10 reports for a demo
+- Data freshness problem: how to build a tool that honestly represents data currency without a real-time pipeline
+- Testing data access before the hackathon: what to check in the first hour
+
+Output
+- Decision tree for each data dependency: if X is not available, do Y
+- List of fallback data sources for each dependency
+- Pre-hackathon checklist: what to test and confirm before starting to build
+- What to prepare in advance to reduce dependency on live data during the build

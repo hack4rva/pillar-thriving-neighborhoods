@@ -1,0 +1,21 @@
+Problem Landscape A3 — Comparing the Two Targeted Statements for Hackathon Suitability
+
+Compare the two Pillar 2 targeted problem statements — Neighborhood Development Discovery (26/32) and Housing Compliance Monitoring (22/32) — on dimensions that matter for a 48-hour hackathon prototype.
+
+Evaluate each on:
+- Clarity of the user and their pain point
+- Availability and accessibility of the required data
+- Buildability of a credible demo in 48 hours
+- Risk of misleading users or overclaiming impact
+- Continuation pathway after the hackathon
+- Rubric score and quick-kill flag status
+
+Produce a structured comparison table and a recommendation for which statement to pursue.
+
+Note: Housing Compliance has a data-not-ready flag. Neighborhood Development Discovery has a clearer public data path via Legistar and GeoHub.
+
+Output
+- Comparison table
+- Recommendation with rationale
+- Key risks for the recommended statement
+- Advice on how to scope the recommended statement for a weekend build

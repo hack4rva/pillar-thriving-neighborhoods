@@ -1,0 +1,23 @@
+Demo Strategy I2 — Development Tracker Demo and Pitch Script
+
+Write a 3–5 minute demo script and pitch narrative for the neighborhood development notifier concept.
+
+The script should:
+- Open with a specific Richmond resident story: a real scenario where a resident did not know about a proposal until it was too late
+- Transition to showing the tool: enter a Richmond address, see nearby development proposals, click into a plain-language summary
+- Demonstrate the data source transparency: show the "from Legistar" badge and "view official record" link
+- Show the map view: development proposals plotted near the user's address
+- Address a common judge question: "how do you know this data is current?"
+- State what the tool does not do: it does not predict outcomes, create official records, or replace public comment
+- Close with a continuation ask: what the team needs to take this further (City partnership, Legistar API confirmation, Planning Department support)
+
+Include:
+- Exact opening sentence
+- Screen state at each narrative beat
+- Key phrases to use and avoid
+- Timing guide (what to cover in each 60-second block)
+
+Output
+- Full demo script
+- Timing breakdown
+- Fallback narrative if the demo breaks

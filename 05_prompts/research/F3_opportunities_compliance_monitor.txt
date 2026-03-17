@@ -1,0 +1,19 @@
+Opportunities F3 — Affordable Housing Compliance Monitor Deep Dive
+
+Develop a detailed opportunity analysis for the affordable housing compliance monitoring concept, given its data-readiness flag and staff-tool framing.
+
+Cover:
+- What version of this tool is actually buildable in a weekend given the data constraints
+- What public data can anchor the tool (Legistar ordinances, HUD databases, FMR tables)
+- How to scope the tool to be staff-facing without requiring confidential City data
+- What the minimum useful demo looks like: a portfolio view of seeded developments with expiration dates and a HUD FMR comparison
+- What risks must be mitigated: implying compliance determinations, using synthetic data without labeling it, overstating the tool's authority
+- How to present this to judges as a staff workflow prototype, not an automated compliance system
+- What the continuation pathway looks like: City housing department adoption, data hardening
+
+Output
+- Opportunity brief (500–700 words)
+- What the tool can and cannot do clearly stated
+- Key data decisions: which sources, how to handle the synthetic demo data
+- Risks and mitigations
+- Advice on whether to pursue this or stick to the development notifier

@@ -1,0 +1,19 @@
+Opportunities F2 — Neighborhood Development Notifier Deep Dive
+
+Develop a detailed opportunity analysis for the neighborhood development notifier concept.
+
+Cover:
+- The exact user problem it solves: a Richmond resident who wants to know about development near their home before comment periods close
+- The minimum viable version: what data is needed, what the interface looks like, what constitutes a successful demo
+- Data pipeline: Legistar API → address geocoding → GeoHub parcel lookup → display
+- What makes this tool credible: linking back to official Legistar records, showing data freshness, including disclaimers
+- What risks must be mitigated: incomplete data, stale records, overpromising notification functionality
+- How this compares to Councilmatic, Lookout SF, and other comparable tools
+- What would make judges rate this highly on the rubric (clarity, scope, impact, accessibility)
+
+Output
+- Opportunity brief (500–700 words)
+- Core user flow (step-by-step)
+- Key technical decision: API vs. scraped vs. pre-seeded data
+- Risks and mitigations
+- What a demo-ready version looks like

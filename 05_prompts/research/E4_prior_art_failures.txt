@@ -1,0 +1,23 @@
+Prior Art E4 — Civic Tech Failures and Abandoned Projects in Housing and Planning
+
+Catalog civic tech projects related to housing transparency, development tracking, and neighborhood change that were built but failed, were abandoned, or caused unintended harm.
+
+Focus on:
+- Tools that were built but never adopted by residents or City staff — and why
+- Projects that went stale because no one maintained the data pipeline
+- Tools that gave residents incorrect information about development proposals
+- Platforms that promised notifications but could not sustain the infrastructure
+- Housing affordability calculators that gave misleading eligibility guidance
+- Tools that were perceived as threatening by City staff or developers and were shut down
+
+Also consider:
+- What patterns of civic tech failure are most common in housing and planning contexts
+- What governance and maintenance models have kept similar tools alive
+- What makes Richmond's context similar to or different from cities where these failures occurred
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Top 5 failure patterns most likely to affect a Thriving Neighborhoods prototype
+- Mitigations for each failure pattern

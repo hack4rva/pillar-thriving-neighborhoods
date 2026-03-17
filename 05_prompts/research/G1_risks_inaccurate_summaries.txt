@@ -1,0 +1,17 @@
+Risks G1 — Risk of Wrong Plain-Language Summaries of Planning Proposals
+
+Analyze the risks of using AI-generated plain-language summaries of planning documents in a public-facing tool.
+
+Cover:
+- What types of errors AI-generated planning summaries can contain: wrong project description, incorrect address, wrong proposal type, missed conditions or restrictions
+- The consequences of a resident acting on a wrong summary: missing a comment period, arriving at the wrong meeting, opposing a different project
+- How to design the tool to minimize harm from errors: prominent disclaimer language, source linking, explicit labeling as interpretation not official translation
+- What level of AI accuracy is sufficient for this use case vs. what level of error is unacceptable
+- Whether human review of summaries is necessary before publishing, and how to scope that in a 48-hour build
+- How comparable tools handle this risk (Councilmatic, other legislative translators)
+
+Output
+- Risk assessment with severity and likelihood
+- Mitigations ranked by effectiveness
+- Required disclaimer language for any AI-generated planning summary
+- Decision framework: when is it safe to auto-publish vs. require human review

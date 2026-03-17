@@ -1,0 +1,18 @@
+Services Landscape C5 — Digital Planning Tools in Richmond
+
+Inventory the digital tools Richmond currently provides for residents and developers related to land use, development, and planning.
+
+Cover:
+- The Online Permit Portal (OPP): what it contains, who uses it, what development information is available
+- The Richmond GeoHub: specific planning-related layers, how the public accesses them, known limitations
+- The City Planning Department website: what development-related information is posted, how it is organized
+- Any existing digital tools for searching zoning, permits, or development activity
+- Whether Richmond has a development notification subscription system
+- Gap between what digital tools exist and what residents actually need
+
+Output
+- Facts (with URLs to each tool)
+- Inferences (clearly labeled)
+- Unknowns
+- Assessment of which existing tools could be extended or complemented by a hackathon prototype
+- Recommendations for which tools a team should build on vs. build alongside

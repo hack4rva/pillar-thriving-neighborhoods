@@ -1,0 +1,18 @@
+Data Inventory D1 — Legistar Data Structure, API Access, and Meeting Records
+
+Produce a practical data inventory of Richmond's Legistar system for hackathon developers.
+
+Cover:
+- Richmond's Legistar URL and whether it is the standard Granicus/Legistar platform
+- The Granicus Web API: base URL pattern, available endpoints (Matters, MeetingItems, Meetings, Bodies, Attachments), authentication requirements
+- Key data fields for development-related records: matter ID, matter type, title, body name, meeting date, address or location, status, linked documents
+- Sample API response structures (if available from documentation)
+- How to filter for development-related matter types: rezonings, special use permits, variances, housing funding, zoning ordinances
+- Known data quality issues: inconsistent address fields, attachment accessibility, matter type taxonomy
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns that require testing
+- Developer quick-start: how to test Legistar API access in the first 2 hours of the hackathon
+- Sample API call patterns

@@ -1,0 +1,16 @@
+Problem Landscape A2 — How Residents Miss Development Proposals in Richmond
+
+Investigate the real-world shape of Richmond's development transparency problem. Using only verifiable public information and clearly labeled inferences, explain where and why Richmond residents fail to discover development proposals that affect their neighborhoods — and what it would take to change that.
+
+Focus on:
+- The current public notification process for development proposals in Richmond: legal requirements, mailing radius, Legistar posting, Planning Commission website
+- Where residents encounter Legistar today: what they find, what is confusing, what is missing
+- The gap between "technically public" and "actually discoverable" for residents without planning expertise
+- Documented instances or patterns of residents arriving at meetings after decisions were made
+- What other cities have done to make development proposals more discoverable for residents
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns (what cannot be verified publicly)
+- Assessment of primary friction points and which are most software-addressable

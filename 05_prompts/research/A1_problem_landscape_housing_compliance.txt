@@ -1,0 +1,15 @@
+Problem Landscape A1 — How the City Monitors Affordable Housing Commitments in Richmond
+
+Investigate the real-world shape of Richmond's affordable housing compliance monitoring problem. Using only verifiable public information and clearly labeled inferences, explain how the City currently tracks whether developments that received public investment are honoring their affordability commitments — and where the difficulty occurs.
+
+Focus on:
+- What types of affordable housing investments Richmond makes (grants, loans, Section 108, incentive programs) and what compliance terms they typically carry
+- How compliance monitoring is structured today: what staff do, what systems they use, what data they have access to
+- Where the monitoring process breaks down: data fragmentation, staff capacity limits, lack of automated alerts, difficulty verifying self-reported rent levels
+- What public data exists that could support compliance monitoring without requiring access to confidential contract data
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns (what cannot be verified publicly)
+- Assessment of which parts of this problem are software-addressable in a weekend vs. which require internal City data or policy change

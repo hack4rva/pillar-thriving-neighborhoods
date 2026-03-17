@@ -1,0 +1,18 @@
+Prior Art E3 — Housing Compliance Monitoring Tools
+
+Catalog tools used by cities, housing agencies, or nonprofit organizations to monitor affordable housing compliance. Focus on tools that track whether funded developments are honoring their affordability commitments.
+
+Include:
+- HUD's own compliance monitoring tools and HEMS (HUD's monitoring system): what they cover, how cities access them
+- State housing finance agency monitoring systems (VHDA in Virginia)
+- Municipal housing department tools: examples of cities that have built or deployed compliance tracking software
+- The NLIHC National Housing Preservation Database: how it is used for monitoring and advocacy
+- Academic or nonprofit tools for tracking affordable housing at risk
+- What makes housing compliance monitoring technically hard vs. organizationally hard
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Patterns that Richmond's housing staff could realistically use in a staff-support tool
+- What cannot be replicated without internal City data

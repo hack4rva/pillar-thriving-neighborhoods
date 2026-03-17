@@ -1,0 +1,19 @@
+Risks G3 — Risk of Exclusion: Who Gets Left Out of Neighborhood Development Tools
+
+Analyze the inclusion and equity risks of neighborhood development transparency tools in Richmond.
+
+Cover:
+- Who is most affected by development activity in Richmond (lower-income residents, renters, communities of color) and whether they are most or least likely to be reached by a web-based tool
+- Digital access barriers in affected neighborhoods: smartphone access, broadband access, digital literacy
+- Language access barriers: what languages are spoken in affected Richmond neighborhoods
+- Whether a tool that primarily serves digitally-connected, English-speaking homeowners could reinforce existing civic engagement inequities
+- How to design for inclusion: SMS-based access, multi-language content, community organization partnerships
+- What offline or low-tech alternatives should be mentioned in the tool or prototype
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Ranked list of inclusion risks
+- Mitigations and design recommendations
+- What a hackathon team should say in their demo about inclusion limitations

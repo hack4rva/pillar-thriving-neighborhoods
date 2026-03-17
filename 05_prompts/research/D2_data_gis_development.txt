@@ -1,0 +1,19 @@
+Data Inventory D2 — Richmond GeoHub Layers: Land Use, Development, and Zoning
+
+Produce a practical data inventory of Richmond GeoHub GIS layers relevant to neighborhood development and planning.
+
+Cover:
+- The Richmond GeoHub / ArcGIS Online: base URL, how to find available layers
+- Land Use Project Mapper: what it contains, update frequency, access method (REST API, web viewer, download)
+- Development Activity Mapper: what it contains, how current it is, field structure
+- Zoning Parcel Mapper: current vs. base zoning, how zoning classifications are structured
+- Parcel boundaries: geometry format, address fields, how to query by location
+- How to geocode an address against Richmond parcel data to find nearby development activity
+- ArcGIS REST API basics: how to query features by bounding box or attribute
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns that require testing
+- Developer quick-start: how to access and query Richmond GeoHub in the first 2 hours of the hackathon
+- Which layers are most useful for a neighborhood development notifier vs. a development proposal map

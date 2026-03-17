@@ -1,0 +1,17 @@
+Problem Landscape A4 — Root Causes of Housing Opacity and Compliance Gaps in Richmond
+
+Investigate the systemic causes behind Richmond's two Thriving Neighborhoods problems. Why are residents unable to easily discover development proposals? Why is affordable housing compliance hard to monitor? Look for root causes that are structural, institutional, or technical — not just surface symptoms.
+
+Consider:
+- Why government transparency systems like Legistar were designed for insiders, not general residents
+- Why affordable housing compliance monitoring relies on manual processes and self-reporting
+- How housing investments and development decisions become fragmented across multiple systems (Legistar, internal City databases, external rental platforms)
+- Whether similar cities face the same problems, and what they have done about root causes vs. symptoms
+- Which root causes are addressable by software tools and which require organizational change or policy reform
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Root causes ranked by software-addressability
+- Patterns that repeat across cities (systemic) vs. Richmond-specific issues

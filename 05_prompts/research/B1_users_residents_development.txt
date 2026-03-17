@@ -1,0 +1,20 @@
+User & Stakeholder B1 — Resident Persona: Discovering a Development Proposal
+
+Identify and describe the primary resident persona for the neighborhood development discovery problem in Richmond. Focus on residents who have been or could be affected by development proposals in their neighborhoods but struggle to find and understand this information.
+
+Include:
+- 2–3 distinct resident personas with different levels of digital access, planning literacy, and neighborhood context
+- For each persona: what they are trying to do, what they know, what they do not know, what systems they currently use, and where they get stuck
+- First-step questions each persona would ask when trying to find out about a development proposal
+- Barriers that make Legistar and official planning documents inaccessible for each persona
+- Device and connectivity context (smartphone vs. desktop, broadband access)
+
+Example scenarios:
+- A long-term homeowner in Church Hill who hears from a neighbor that a new development is proposed two blocks away
+- A renter in Jackson Ward who is worried about a rezoning that might affect their building
+- A neighborhood association leader in Carytown who monitors Planning Commission cases
+
+Output
+- 2–3 personas with goals, knowledge, gaps, and first-step questions
+- Common friction points across all personas
+- Accessibility considerations

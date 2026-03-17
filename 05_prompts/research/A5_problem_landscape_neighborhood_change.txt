@@ -1,0 +1,17 @@
+Problem Landscape A5 — Rate and Nature of Neighborhood Change in Richmond
+
+Investigate the scale and character of neighborhood change in Richmond, Virginia, as context for the Thriving Neighborhoods pillar. What is actually changing in Richmond's neighborhoods — new construction, rezoning, investment patterns — and in which neighborhoods is change most significant?
+
+Focus on:
+- Recent development activity in Richmond: new construction, major rezonings, significant Planning Commission cases
+- Neighborhoods where development pressure is highest (Church Hill, Scott's Addition, Manchester, Jackson Ward, etc.)
+- Housing affordability trends: rising rents, displacement pressure, homeownership barriers for workforce households
+- Role of City-funded affordable housing investments in these neighborhoods
+- What public data captures neighborhood change: permit data, parcel data, Legistar records, HUD CHAS
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- 3–5 specific Richmond neighborhoods most relevant to this pillar with brief context
+- Data sources that capture neighborhood change at the local level

@@ -1,0 +1,23 @@
+Opportunities F5 — What Teams Should NOT Build for Thriving Neighborhoods
+
+Identify the project concepts that sound appealing for this pillar but are not appropriate for a hackathon, likely to cause harm, or impossible without resources that teams do not have.
+
+Do-not-build list with reasoning:
+1) Tools that predict whether a development proposal will be approved or denied
+2) Tools that tell residents whether they qualify for affordable housing programs
+3) Real-time displacement risk scores for neighborhoods
+4) Automated compliance determination tools that generate official City findings
+5) Tools that require access to confidential housing contract data or tenant-level rent rolls
+6) Comprehensive citywide development platforms claiming to be official City systems
+7) Tools that require real-time data pipelines, push notifications, and user accounts without a clear maintenance plan
+8) Affordability calculators that claim to determine whether someone can afford a home or qualifies for workforce housing
+
+For each, explain:
+- Why teams might be tempted to build it
+- What would go wrong
+- What safer alternative achieves similar value
+
+Output
+- Ranked do-not-build list
+- Safe alternatives for each rejected concept
+- Common warning signs that a project is drifting toward do-not-build territory

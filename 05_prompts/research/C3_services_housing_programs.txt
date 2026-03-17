@@ -1,0 +1,17 @@
+Services Landscape C3 — City Affordable Housing Programs, Funding Sources, and Compliance Requirements
+
+Describe the affordable housing programs administered by the City of Richmond that involve compliance monitoring. Focus on programs where the City has ongoing obligations to verify affordability.
+
+Cover:
+- Types of programs: performance grants, low-interest loans, Section 108 loans, HOME funds, Community Development Block Grants, tax increment financing with affordability commitments
+- What affordability conditions are typically attached: rent limits, income targeting, unit set-asides, affordability period lengths
+- How compliance is structured: what developers must report, how often, to whom
+- What publicly available records document these investments: Legistar ordinances, federal CAPER reports, HUD program data
+- What federal data sources (HUD CHAS, National Housing Preservation Database, NLIHC) capture Richmond's affordable housing inventory
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Inventory of publicly accessible data sources that document Richmond's affordable housing investments
+- What a compliance monitoring tool could realistically use from public sources alone

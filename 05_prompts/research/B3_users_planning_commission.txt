@@ -1,0 +1,21 @@
+User & Stakeholder B3 — Planning Staff and Commissioners
+
+Describe the Planning Commission staff and commissioner perspective on development transparency in Richmond.
+
+Include:
+- The role of Planning Commission staff in managing the development review process: scheduling, staff reports, public notification
+- What planning staff currently do to inform the public about pending cases
+- Where the current process succeeds and where it falls short from the staff perspective
+- Whether planners are aware of residents who arrive at meetings uninformed
+- What tools or data planners would find useful vs. what would create more work
+
+Also consider:
+- How Planning Commission commissioners understand the public engagement gap
+- What a neighborhood development notifier would need to do to be useful without creating additional staff burden
+- How Legistar is used internally by Planning vs. how it is designed for public use
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Key constraints for any tool targeting planning staff or leveraging Planning workflows

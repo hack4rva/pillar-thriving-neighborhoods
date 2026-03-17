@@ -1,0 +1,22 @@
+User & Stakeholder B2 — City Housing Staff Persona
+
+Describe the likely persona for City housing staff responsible for monitoring compliance with affordable housing agreements in Richmond.
+
+Include:
+- Role description: what this person is responsible for, what their workload looks like, what their technical capabilities are
+- Current workflow: what systems they use, what manual processes they do, where data is scattered
+- Pain points: what takes the most time, what is hardest to verify, what they wish they had
+- Constraints: what they cannot do (make compliance determinations unilaterally, share confidential data externally)
+- What a helpful tool would look like from their perspective
+- What would make a tool unhelpful or risky from their perspective
+
+Consider that housing compliance staff typically:
+- Work across a portfolio of 10–25+ funded developments
+- Must verify rent levels, income restrictions, and reporting requirements
+- Rely on developer self-reports supplemented by spot checks
+- Have limited staff capacity and budget
+
+Output
+- 1–2 staff personas with goals, workflow, pain points, and tool requirements
+- What success looks like from a staff perspective
+- What the minimum viable version of a helpful tool would be
