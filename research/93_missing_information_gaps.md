@@ -12,8 +12,8 @@ To enable rapid decision-making, the eight identified information gaps have been
 
 | Rank | Information Gap | Impact on Team Decision-Making | Dependent Tools | Status | Fast Mitigation Strategy |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | **Legistar Web API availability** | Determines the feasibility of automated data ingestion for notifications and translations. | Notifier, Translator | **Blocker** | Test `/v1/{client}` endpoints; contact City IT/Planning; build temporary HTML/RSS scraper. |
-| **2** | **Structured addresses in Legistar** | Dictates geocoding accuracy and the ability to target neighborhood-specific alerts. | Notifier | **Blocker** | Sample 20 items manually; plan for PDF parsing; crosswalk to parcels via ArcGIS. |
+| **1** | **Legistar Web API availability** | Determines the feasibility of automated data ingestion for notifications and translations. | Notifier, Translator | **Resolved** — API confirmed live at https://webapi.legistar.com/v1/richmondva/Matters; client name is `richmondva` (corrected 2026-03-18) | No action required; teams can proceed directly to building against the confirmed endpoint. |
+| **2** | **Structured addresses in Legistar** | Dictates geocoding accuracy and the ability to target neighborhood-specific alerts. | Notifier | **Confirmed — no structured field**: street addresses for SUP and planning cases appear in MatterTitle free text; geocoding requires string parsing (corrected 2026-03-18) | Build a rules-based parser (street number + name + suffix patterns); crosswalk to parcels via ArcGIS. |
 | **3** | **GeoHub layer freshness & REST access** | Determines if GIS layers can be used as primary real-time triggers or just historical enrichment. | Notifier | Workaround | Check REST metadata for last-updated dates; use as enrichment if >90 days stale. |
 | **4** | **Affordable housing portfolio list** | Provides the necessary seed data for compliance monitoring prototypes. | Compliance Tool | Workaround | Compile starter list from 2024–2025 AHTF reports and matching ordinances; request full export. |
 | **5** | **Compliance monitoring workflow** | Ensures MVP features match actual staff pain points rather than assumed processes. | Compliance Tool | Workaround | Conduct 45–60 minute discovery interviews with HCD staff to map systems and bottlenecks. |
@@ -26,17 +26,17 @@ To enable rapid decision-making, the eight identified information gaps have been
 Confirming machine access to Richmond's legislative and spatial data is the most urgent technical priority. 
 
 ### Legistar Access: Endpoint, Client Name, and Fallbacks
-Richmond's public Legistar portal is currently live at `richmondva.legistar.com` [1]. However, the Granicus Web API requires a specific `{Client}` name to function [2]. Historical evidence from the Open Civic Data community shows that querying an API without the correct client name or for a city where the API is disabled returns a strict XML error: `LegistarConnectionString setting is not set up in InSite for client...` [3]. 
-* **Action**: Within 48 hours, developers must test common client slugs (e.g., `richmondva`, `richmond`, `cityofrichmond`) against the `webapi.legistar.com/v1/` endpoint. If connection errors persist, teams must immediately email City IT/Planning to request API enablement. 
-* **Fallback**: If the API is disabled, teams must stand up scrapers for the Calendar/ICS feeds and `ViewReport.ashx?Extra=WithText` endpoints to extract structured text [1].
+Richmond's public Legistar portal is currently live at `richmondva.legistar.com` [1]. The Granicus Web API is confirmed live for Richmond (corrected 2026-03-18). Client name is `richmondva`; confirmed endpoint: `https://webapi.legistar.com/v1/richmondva/Matters`.
+* **No further action required on API access** — teams can build directly against the confirmed endpoint (corrected 2026-03-18).
+* **Fallback still useful as resilience**: cache a snapshot of API responses before the hackathon demo in case of rate limits or transient outages.
 
-### Address Fields: Verify Parseability Now
-We currently lack confirmation that Richmond's Legistar includes structured address fields for land-use items (e.g., rezonings, Special Use Permits). If addresses are buried in free-text descriptions, geocoding will be highly brittle.
-* **Action**: Manually audit 20 recent Planning Commission/SUP items. If addresses are free-text, teams must define a rules-based parser (e.g., street number + name + suffix patterns) and supplement with parcel IDs cross-referenced against ArcGIS layers.
+### Address Fields: Confirmed — Parsing Required
+Confirmed: Richmond's Legistar does NOT include a structured address field for land-use items (SUP and planning cases). Street addresses appear in the MatterTitle text field and require string parsing for geocoding (corrected 2026-03-18).
+* **Action**: Teams must implement a rules-based parser (e.g., street number + name + suffix patterns) and supplement with parcel IDs cross-referenced against ArcGIS layers. Do not assume a clean address field exists.
 
 ### ArcGIS/GeoHub Layers: REST and Freshness
-Richmond provides spatial data via its Interactive Mapping Tools, noting that the "Development Mapper" is "updated periodically" and the "Land Use Project Mapper is being updated" [4]. Furthermore, a "Plans of Development" dataset exists on the Richmond GeoHub [5]. 
-* **Action**: Teams must hit the ArcGIS REST service metadata for these layers to check the `lastEditDate`. If the layers are updated frequently (≤30 days), they can serve as primary triggers for the notifier. If they are stale (>90 days), they should be deprioritized and used only for historical enrichment.
+Richmond provides spatial data via its Interactive Mapping Tools. The GeoHub Development Tracker (ArcGIS web map ID `777f2b6383fe42da9c6aaeac8df77c8c`) was last updated January 8 2026 and tracks projects >$1.5M since 2016 (corrected 2026-03-18). The Land Use Project Mapper is "being updated" with no stable REST endpoint available (corrected 2026-03-18). A "Plans of Development" dataset also exists on the Richmond GeoHub [5].
+* **Action**: Use the GeoHub Development Tracker (web map ID `777f2b6383fe42da9c6aaeac8df77c8c`) as the primary development activity layer. Do not depend on the Land Use Project Mapper — it has no stable REST endpoint. Verify the `lastEditDate` on the Development Tracker before the hackathon to confirm it remains current enough for demo use (corrected 2026-03-18).
 
 ## Seed the Compliance Portfolio: What We Can Assemble Today
 

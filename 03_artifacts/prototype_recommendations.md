@@ -8,7 +8,7 @@
 - 48-hour feasibility: Fetch Legistar records via API or web; geocode case addresses using GeoHub; display on a map with plain-language summaries. Build a simple search interface.
 - Data/content: Legistar (cases, meeting dates, staff report PDFs); Richmond GeoHub (parcel/address geocoding); static glossary of planning terms.
 - Team roles: Data/API wrangler, frontend developer, UX writer for plain-language summaries, product lead.
-- Key risk/limitation: Legistar API availability for Richmond must be confirmed. Plain-language summaries require either manual curation or AI summarization with careful disclaimers. Do not claim the list is exhaustive.
+- Key risk/limitation: Legistar API is confirmed live at https://webapi.legistar.com/v1/richmondva/Matters (corrected 2026-03-18). Street addresses for SUP and planning cases appear in MatterTitle free text — no structured address field; geocoding requires string parsing (corrected 2026-03-18). Plain-language summaries require either manual curation or AI summarization with careful disclaimers. Do not claim the list is exhaustive.
 - Compelling demo: Enter a Richmond address → see 3 nearby development proposals with plain-language descriptions, meeting dates, and a "comment by" deadline. Show a map view. Link out to official Legistar records.
 
 ---
@@ -40,8 +40,8 @@
 ### Concept D: Development Proposal Map / Explorer
 - What it is: An interactive map of Richmond showing active and recent development proposals, color-coded by type (rezoning, special use permit, variance, new construction), with filtering by neighborhood and proposal status.
 - User served: Residents, neighborhood associations, and local journalists who want a geographic overview of development activity.
-- 48-hour feasibility: Use Richmond GeoHub layers and Legistar data; plot cases on a Leaflet or Mapbox map; add simple filters. Seed with 20–50 real cases for the demo.
-- Data/content: Richmond GeoHub (parcel geometry, zoning); Legistar (case data, addresses, hearing dates).
+- 48-hour feasibility: Use the GeoHub Development Tracker (ArcGIS web map ID 777f2b6383fe42da9c6aaeac8df77c8c, last updated January 8 2026, tracks projects >$1.5M since 2016) and Legistar API data; plot cases on a Leaflet or Mapbox map; add simple filters. Seed with 20–50 real cases for the demo. Note: the Land Use Project Mapper has no stable REST endpoint and should not be used (corrected 2026-03-18).
+- Data/content: Richmond GeoHub Development Tracker (ArcGIS web map ID 777f2b6383fe42da9c6aaeac8df77c8c, corrected 2026-03-18); parcel geometry; Legistar API at webapi.legistar.com/v1/richmondva (case data; addresses in MatterTitle free text requiring string parsing, corrected 2026-03-18).
 - Team roles: Frontend/maps developer, data wrangler, UX designer.
 - Key risk/limitation: Data freshness is critical — stale maps mislead users. Label data with the last-updated date prominently. Do not claim completeness. Link to official Legistar for current status.
 - Compelling demo: Show a map of a Richmond neighborhood with 5–8 development proposal pins. Click on one pin to see the project address, proposal type, hearing date, comment deadline, and link to Legistar.
@@ -52,7 +52,7 @@
 - What it is: A public-facing dashboard showing where the City has invested in affordable housing (grants, loans, incentives) and the status of affordability commitments over time.
 - User served: Residents, advocates, and journalists who want to understand how public housing investment is distributed across the city.
 - 48-hour feasibility: Build from publicly available Legistar funding ordinances and HUD property data. Map investments by address. Show affordability period length and expiration year.
-- Data/content: Legistar housing funding ordinances; HUD Affordable Housing Preservation database; NLIHC National Housing Preservation Database.
+- Data/content: Legistar housing funding ordinances; HUD Affordable Housing Preservation database; NLIHC National Housing Preservation Database (covers ~80,000 properties nationally; Richmond inclusion is expected but not confirmed from public-facing pages — verify before relying on it, corrected 2026-03-18).
 - Team roles: Data researcher, mapping/frontend developer, content designer.
 - Key risk/limitation: Full dataset requires manual extraction from Legistar PDF attachments; scope to a curated sample. Do not imply the data is exhaustive. Include explicit data source labels and last-updated dates.
 - Compelling demo: Show a map of Richmond with housing investment pins for 10–15 funded developments. Click a pin to see the development name, investment amount, affordability requirement, and expiration year.
@@ -62,8 +62,8 @@
 ### Concept F: Neighborhood Change Visualizer
 - What it is: A before/after or time-series tool showing how a Richmond neighborhood has changed over time — permit activity, new development, property value changes — using public GIS and parcel data.
 - User served: Residents, community organizations, and journalists tracking neighborhood change or displacement pressure.
-- 48-hour feasibility: Use Richmond GeoHub parcel data, permit data from the Open Data Portal, and assessed value data. Build a simple timeline or before/after slider for one test neighborhood.
-- Data/content: Richmond GeoHub; Richmond Open Data Portal (permits, assessments); HUD CHAS (cost burden trends).
+- 48-hour feasibility: Use Richmond GeoHub parcel data, permit data from the EnerGov Online Permit Portal (energov.richmondgov.com), and assessed value data. Build a simple timeline or before/after slider for one test neighborhood. Note: building permits are NOT on the Socrata open data portal — they are in EnerGov (corrected 2026-03-18).
+- Data/content: Richmond GeoHub; EnerGov Online Permit Portal (permits — not Socrata, corrected 2026-03-18); assessments from GeoHub or open data; HUD CHAS (cost burden trends).
 - Team roles: Data wrangler, frontend/maps developer, content designer.
 - Key risk/limitation: Data availability and freshness need verification before building. Avoid implying causal claims (e.g., "this development caused displacement") without rigorous analysis. Frame as an information tool, not an analysis tool.
 - Compelling demo: Show Church Hill or Jackson Ward with a slider showing permit activity and development proposals over 5 years. Annotate 2–3 key events with plain-language context.

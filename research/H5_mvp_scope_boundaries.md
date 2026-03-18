@@ -9,7 +9,7 @@ This report defines the scope boundaries for two "Thriving Neighborhoods" Minimu
 Key strategic decisions for this weekend include:
 * **Cut push and email notifications entirely:** Web push via Firebase requires HTTPS, service workers, and VAPID keys [5], while email triggers CAN-SPAM compliance obligations [6]. Both are high-risk time sinks.
 * **Avoid claims of "exhaustive coverage" or "official" status:** City open data portals explicitly disclaim data completeness and accuracy [7] [8] [9]. Furthermore, civic volunteer projects must not misrepresent themselves as official government services [10].
-* **Leverage official APIs for credibility:** Use the Socrata Open Data API (SODA) for building permits [11] and the official HUD API for Fair Market Rents (FMR) [12] [13] to provide immediate, verifiable value without complex backend data engineering.
+* **Leverage official APIs for credibility:** Use the official HUD API for Fair Market Rents (FMR) [12] [13] to provide immediate, verifiable value without complex backend data engineering. Note: for Richmond, VA specifically, building permits are NOT on the Socrata open data portal — they are in the EnerGov Online Permit Portal at energov.richmondgov.com. The SODA API guidance below applies to other cities (e.g., San Francisco, NYC) used as reference implementations (corrected 2026-03-18).
 * **Enforce the 90-minute rule:** Using the MoSCoW prioritization method [14], only add features that a developer can build, test, and demo in 90 minutes.
 
 ## Purpose and Constraints — Two MVPs that ship honest value in 54 hours
@@ -28,9 +28,13 @@ To prevent feature creep, teams should rely on four established software develop
 
 ## MVP Shape A: Neighborhood Development Notifier — Thin slice on one permit feed
 
-### Viable data sources — Socrata/SODA permits for a fast start
+### Viable data sources — Legistar API or EnerGov for Richmond; Socrata as a reference
 
-Public permit datasets are highly queryable and demo-friendly. Many municipalities use the Socrata Open Data API (SODA) to expose their data [11]. For example, San Francisco provides a comprehensive Building Permits dataset [18] [19], and NYC Open Data offers similar permit feeds [20]. By targeting a single, stable SODA endpoint, the team can bypass complex data scraping and focus entirely on the user experience.
+For Richmond specifically: building permit data is in the EnerGov Online Permit Portal (energov.richmondgov.com), not the Socrata open data portal. The Legistar API is confirmed live at `https://webapi.legistar.com/v1/richmondva/Matters` and is the primary data source for development proposals (corrected 2026-03-18).
+
+The Socrata/SODA approach described below is valid for other cities (San Francisco, NYC) and useful as a reference implementation pattern. If the hackathon team chooses a non-Richmond city dataset for prototyping purposes, SODA remains a fast start. For Richmond-specific builds, use Legistar API for planning/zoning cases and EnerGov for permit lookups.
+
+Public permit datasets are highly queryable and demo-friendly. Many municipalities use the Socrata Open Data API (SODA) to expose their data [11]. For example, San Francisco provides a comprehensive Building Permits dataset [18] [19], and NYC Open Data offers similar permit feeds [20]. By targeting a single, stable SODA endpoint (for non-Richmond cities), the team can bypass complex data scraping and focus entirely on the user experience.
 
 ### In-scope features (Required vs. Optional)
 
@@ -38,7 +42,7 @@ The goal is to deliver a browsable, filterable, and truthful view of neighborhoo
 
 | Feature | Priority | Rationale |
 | :--- | :--- | :--- |
-| Single-city permit dataset (e.g., SF i98e-djp9) | Must | Stable open data via SODA [18] [11]; fast to query and filter. |
+| Single-city dataset: for Richmond use Legistar API (`webapi.legistar.com/v1/richmondva/Matters`); for other cities use SODA permit feeds (e.g., SF i98e-djp9) | Must | Richmond building permits are in EnerGov, not Socrata — use Legistar for planning proposals; SODA approach valid for non-Richmond reference implementations (corrected 2026-03-18). |
 | Past-30-day filter & basic search | Must | Keeps the dataset small and improves the signal-to-noise ratio for the demo. |
 | Neighborhood/ZIP filter + map/list toggle | Must | Core user need; trivial to implement with client-side filtering and Leaflet. |
 | Record detail drawer | Must | Provides transparency by deep-linking to the authoritative city source page. |

@@ -30,7 +30,7 @@ Projects that prefetch data, snapshot their databases, and scope to a single, hi
 Built by Open City in Chicago, 2nd City Zoning is an interactive map that allows users to find out how their building is zoned and explore zoning patterns [1] [2]. The project is entirely open source and built with open data, utilizing Jekyll, Bootstrap, and MapLibre-GL JS [2]. To make the zoning code digestible, the team utilized a color scheme inspired by the game SimCity 2000 [2]. Crucially, the team pulls data directly from the City of Chicago's ArcGIS REST Services Directory, converts it to GeoJSON using `pyesridump`, simplifies the geometries, and gzips the files into a static `/data` folder [1] [2]. 
 
 ### Councilmatic: Legistar-First Trackers Prototype Fast and Endure
-Councilmatic was conceptualized by Mjumbe Poe and initially developed at a hackathon in March 2011 [3]. It functions as a subscription service for city council legislative information [4]. The project was later chosen by Code for America for its "Great American Civic Hack" in 2013, leading to national replication [5]. Today, it survives through a maintained `django-councilmatic` core and a starter template provided by DataMade, powering instances in Chicago, Los Angeles, and beyond [6] [7].
+Councilmatic was conceptualized by Mjumbe Poe and initially developed at a hackathon in March 2011 [3]. It functions as a subscription service for city council legislative information [4]. The project was later chosen by Code for America for its "Great American Civic Hack" in 2013, leading to national replication [5]. Today, it survives through the `django-councilmatic` core and a starter template provided by DataMade, powering instances in Chicago, Los Angeles, and beyond [6] [7]. Note: `django-councilmatic` last release was v3.1.0 in February 2023; not actively maintained but usable for a hackathon build (corrected 2026-03-18).
 
 ### Citygram: "Subscribe to Your City" Secures Funding
 Citygram, developed by Code for Charlotte, was designed to make it easier for local governments to connect with citizens by creating a notification system based on geographic areas and specific categories [8]. The project grew out of hackathon ideation and "subscribing to your city" brainstorms in 2014 [9]. It successfully secured a $35,000 Knight Prototype Fund grant [8].
@@ -75,7 +75,7 @@ The AEMP's experience with NYC eviction data—requiring months of volunteer lab
 
 Before scoping the Richmond build, several local variables must be confirmed.
 
-* **Unknowns**: Does Richmond use Legistar, Granicus, or a similar platform for City Council and Planning Commission agendas? Are the city's zoning shapefiles or ArcGIS services openly accessible for download? Are there rate limits on these services? What are the constraints for free email delivery services (e.g., SendGrid, Mailgun) for the digest feature?
+* **Resolved**: Richmond uses Legistar; API is confirmed live at `https://webapi.legistar.com/v1/richmondva/Matters` (corrected 2026-03-18). **Remaining unknowns**: Are there rate limits on the Legistar API? Are the city's zoning shapefiles or ArcGIS services openly accessible for bulk download? What are the constraints for free email delivery services (e.g., SendGrid, Mailgun) for the digest feature?
 * **Validation Plan**: Conduct a 30-minute data discovery session prior to the hackathon to test sample API calls and perform one successful parcel data export.
 
 ## Top 3 Weekend-Viable Patterns for Richmond Thriving Neighborhoods
@@ -118,7 +118,7 @@ These three patterns perfectly align with Richmond's needs and the constraints o
 
 ## Inferences
 
-* **Inference**: Richmond likely uses Legistar, Granicus, or a similar standardized agenda platform. If true, a Councilmatic-Lite scraper is immediately viable.
+* **Confirmed**: Richmond uses Legistar (Granicus platform). The API is live at `https://webapi.legistar.com/v1/richmondva/Matters` (client name: `richmondva`). A Councilmatic-Lite approach using the API is immediately viable — no scraper required (corrected 2026-03-18).
 * **Inference**: A single, public ArcGIS zoning layer exists for Richmond and can be exported to GeoJSON prior to the hackathon.
 * **Inference**: A digest-only notification model (batch emails sent nightly) will satisfy initial user needs and drastically minimize infrastructure risk compared to real-time alerts.
 

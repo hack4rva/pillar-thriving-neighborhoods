@@ -11,18 +11,18 @@ Legistar is the City of Richmond's legislative management system. It stores City
 
 ### Access path
 - **Web browser**: Richmond's Legistar instance is publicly accessible. Users can browse meeting agendas, search for matters, and download PDFs.
-- **Granicus Web API**: Legistar is built on Granicus software, which provides a documented REST API (webapi.legistar.com). However, API access depends on whether Richmond has it enabled. **This must be confirmed before building.**
-- **Typical API endpoints**: `/api/v1/{client}/Matters` (list cases), `/api/v1/{client}/MeetingItems` (items on specific agendas), `/api/v1/{client}/Bodies` (list of councils/commissions).
+- **Granicus Web API**: Legistar is built on Granicus software, which provides a documented REST API (webapi.legistar.com). The API is confirmed live for Richmond (corrected 2026-03-18). Client name is `richmondva`.
+- **Confirmed API endpoint**: `https://webapi.legistar.com/v1/richmondva/Matters` (corrected 2026-03-18). Additional endpoints: `/v1/richmondva/MeetingItems`, `/v1/richmondva/Bodies`.
 
 ### Data quality
 - Records go back many years; completeness and consistency vary.
 - Staff report PDFs are attachments; the text within them is not indexed.
-- Addresses for development cases may be in free text rather than structured fields.
+- Addresses for development cases (SUP and planning cases) appear in the MatterTitle text field — no structured address field exists; geocoding requires string parsing (corrected 2026-03-18).
 - Meeting dates and hearing schedules are generally reliable.
 
 ### Feasibility for weekend
-- **High** if the API is enabled: a team can pull matters, filter by type, and display them in 1–2 hours.
-- **Moderate** if scraping: web scraping is feasible but brittle. Structure varies by page type.
+- **High**: the API is confirmed live; a team can pull matters, filter by type, and display them in 1–2 hours (corrected 2026-03-18).
+- **Moderate** for address geocoding: addresses are in MatterTitle free text for SUP/planning cases; a rules-based string parser is required before geocoding (corrected 2026-03-18).
 - **Low** for PDF content: parsing staff report PDFs programmatically requires OCR and NLP and is unlikely to be reliable in 48 hours.
 
 ---
@@ -38,14 +38,15 @@ Richmond's GeoHub hosts GIS layers including the Land Use Project Mapper, Develo
 - **GeoJSON download**: Some layers allow bulk GeoJSON or CSV export.
 
 ### Data quality
-- Development activity layers may not be updated in real-time; check last-modified metadata.
+- GeoHub Development Tracker: ArcGIS web map ID `777f2b6383fe42da9c6aaeac8df77c8c`, last updated January 8 2026, tracks projects >$1.5M since 2016 (corrected 2026-03-18).
+- The Land Use Project Mapper is "being updated" with no stable REST endpoint currently available (corrected 2026-03-18).
 - Parcel boundaries are generally reliable.
 - Zoning data is authoritative for the City's official zoning classification.
 
 ### Feasibility for weekend
 - **High** for parcel/address geocoding: straightforward to query by address or bounding box.
 - **High** for zoning context: stable data, REST API accessible.
-- **Moderate** for development activity: depends on layer freshness and how it's structured.
+- **Moderate** for development activity: the GeoHub Development Tracker (web map ID `777f2b6383fe42da9c6aaeac8df77c8c`) is the usable layer; the Land Use Project Mapper has no stable REST endpoint and should be avoided (corrected 2026-03-18).
 
 ---
 
@@ -101,7 +102,7 @@ Richmond's open data portal. Hosts various datasets including business licenses,
 
 ### Data quality
 - Dataset catalog should be reviewed carefully; not all datasets are current or complete.
-- Building permit data (if available) would be useful for neighborhood change analysis.
+- Building permit data is NOT on this portal. Building permits are handled by the EnerGov Online Permit Portal at energov.richmondgov.com, not the Socrata open data portal (corrected 2026-03-18).
 
 ### Feasibility for weekend
 - **Moderate to High** depending on which datasets are current and accessible.
@@ -125,9 +126,9 @@ Richmond's open data portal. Hosts various datasets including business licenses,
 
 | Project | Data readiness | Blocking dependency |
 |---|---|---|
-| Neighborhood development notifier | Medium-High | Legistar API access confirmation |
-| Legistar plain-language translator | Medium-High | Legistar API + sample PDFs |
+| Neighborhood development notifier | High | Legistar API confirmed live; blocking dependency resolved (corrected 2026-03-18). Geocoding requires MatterTitle string parsing. |
+| Legistar plain-language translator | High | Legistar API confirmed live at webapi.legistar.com/v1/richmondva (corrected 2026-03-18) |
 | Affordable housing compliance tracker (staff tool) | Low-Medium | No public compliance data; must scope to Legistar records only |
-| Development proposal map | Medium-High | GeoHub layer access + Legistar geocoding |
-| Housing investment dashboard | Medium | Manual Legistar extraction + HUD data |
-| Neighborhood change visualizer | Medium | Open Data Portal permit data freshness |
+| Development proposal map | Medium-High | Use GeoHub Development Tracker (web map ID 777f2b6383fe42da9c6aaeac8df77c8c) + Legistar MatterTitle address parsing (corrected 2026-03-18) |
+| Housing investment dashboard | Medium | Manual Legistar extraction + HUD data. NLIHC database covers ~80,000 properties nationally; Richmond inclusion is expected but not confirmed from public-facing pages (corrected 2026-03-18). |
+| Neighborhood change visualizer | Medium | Building permit data is in EnerGov (energov.richmondgov.com), not the Socrata Open Data Portal — verify EnerGov scraping feasibility before committing to this approach (corrected 2026-03-18) |
