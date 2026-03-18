@@ -1,3 +1,24 @@
+---
+title: "Richmond 'Pillar 2' Playbook: Fast-Track Civic Tech for Development Transparency & Housing Accountability"
+pillar: thriving-neighborhoods
+section: context
+problem_statement: general
+tags:
+  - overview
+  - Legistar
+  - GeoHub
+  - affordable housing
+  - development transparency
+  - hackathon MVP
+summary: "Executive overview of the Thriving Neighborhoods pillar covering key data sources (Legistar, GeoHub, HUD), build risks, and proven 48-hour MVP patterns for development transparency and housing compliance tools."
+geography: Richmond, VA
+source: parallel-ai
+status: raw
+related_reports:
+  - A1_problem_landscape_housing_compliance
+  - A2_problem_landscape_development_transparency
+---
+
 # Richmond "Pillar 2" Playbook: Fast-Track Civic Tech for Development Transparency & Housing Accountability
 
 ## Executive Summary

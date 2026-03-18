@@ -1,3 +1,25 @@
+---
+title: "Hackathon-Ready Civic Tools: Ranking Neighborhood Development Opportunities by Buildability and Credibility"
+pillar: thriving-neighborhoods
+section: F
+problem_statement: general
+tags:
+  - ranked opportunities
+  - buildability
+  - credibility
+  - development map
+  - tool ranking
+  - decision
+summary: "Ranks solution opportunities for the Thriving Neighborhoods pillar by buildability, data availability, and credibility risk, identifying the Development Proposal Map as the strongest hackathon candidate."
+geography: Richmond, VA
+source: parallel-ai
+status: raw
+related_reports:
+  - F2_opportunities_development_notify
+  - F3_opportunities_compliance_monitor
+  - H1_mvp_48hr_framework
+---
+
 # Hackathon-Ready Civic Tools: Ranking LA Neighborhood Development Opportunities by Buildability and Credibility
 
 ## Executive Summary

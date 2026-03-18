@@ -52,6 +52,7 @@ Do these first 15–30 minutes to get moving:
 
 ## Repo Map
 
+- Research corpus: `research/` (51 deep research reports — see `research/INDEX.md`)
 - Research hub: `research_notes.md`
 - Evidence tracker: `evidence_log.md`
 - Data index: `02_data/00_index.md`
@@ -65,6 +66,16 @@ Do these first 15–30 minutes to get moving:
 - Build guides: `04_build_guides/`
 - Prompts + runners: `05_prompts/`
 - Templates: `99_templates/`
+
+### Navigation files
+
+| File | Purpose |
+|------|---------|
+| `CORPUS_GUIDE.md` | Canonical guide for navigating the research corpus (humans and AI agents) |
+| `manifest.json` | Machine-readable index of all significant files with summaries and tags |
+| `research/index.json` | Machine-readable index of all 51 research reports |
+| `research/INDEX.md` | Human-readable table of contents for the research corpus |
+| `MAINTENANCE.md` | How to add, update, and sync reports and metadata |
 
 ---
 
@@ -257,8 +268,21 @@ Demo:
 You can use Hackbot to reconstruct context, run research, and shape an MVP.
 
 - Boot prompt: `HACKBOT_BOOT_PROMPT.md`
-- Skills: `skills/**/SKILL.md` (repo_memory, problem_scoping, research_runner, dataset_mapper, opportunity_mapper, mvp_designer, risk_review, demo_coach, repo_librarian, continuity_planner)
 - Team profile (recommended): `99_templates/team_profile_template.md`
+
+**Team skills:** `repo_memory`, `problem_scoping`, `research_runner`, `dataset_mapper`, `opportunity_mapper`, `mvp_designer`, `risk_review`, `demo_coach`, `repo_librarian`, `continuity_planner`, `research_search`
+
+**Research corpus skills:** `research_corpus_navigation`, `cross_report_synthesis`, `evidence_grounded_answering`, `report_update_protocol`
+
+**Hackbot resources:**
+
+| Resource | File |
+|----------|------|
+| Boot prompt | `HACKBOT_BOOT_PROMPT.md` |
+| Agent specification | `AGENTS.md` |
+| Corpus guide | `CORPUS_GUIDE.md` |
+| Full file manifest | `manifest.json` |
+| Research corpus index | `research/index.json` |
 
 Notes:
 - Hackbot never invents government programs or legal eligibility. It cites official sources and encourages verification.

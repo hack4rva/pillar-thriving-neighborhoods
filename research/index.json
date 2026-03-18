@@ -1,0 +1,359 @@
+[
+  {
+    "id": "00_pillar_summary_context",
+    "section": "context",
+    "title": "Richmond 'Pillar 2' Playbook: Fast-Track Civic Tech for Development Transparency & Housing Accountability",
+    "summary": "Executive overview of the Thriving Neighborhoods pillar covering key data sources (Legistar, GeoHub, HUD), build risks, and proven 48-hour MVP patterns for development transparency and housing compliance tools. Serves as the primary orientation document for new teams.",
+    "key_terms": ["Legistar", "GeoHub", "affordable housing", "development transparency", "Richmond VA", "hackathon MVP"]
+  },
+  {
+    "id": "01_master_research_prompt",
+    "section": "master",
+    "title": "Richmond Land-Use Visibility and Affordability Compliance: 48-Hour Build Paths",
+    "summary": "Comprehensive research framework covering land-use visibility and affordability compliance as candidate problem spaces for weekend civic tech builds. Establishes scope boundaries and data access strategies.",
+    "key_terms": ["land use", "affordability compliance", "Legistar API", "GeoHub", "build path", "data access"]
+  },
+  {
+    "id": "90_top_10_research_questions",
+    "section": "cross-cutting",
+    "title": "Richmond development clarity in 48 hours — a resident-first, data-backed path",
+    "summary": "Synthesizes the top 10 research questions teams must answer before committing to a build direction, grounded in Richmond's actual data landscape and resident information needs.",
+    "key_terms": ["research questions", "resident-first", "development clarity", "data-backed", "synthesis", "priority"]
+  },
+  {
+    "id": "91_top_10_hypotheses_to_test",
+    "section": "cross-cutting",
+    "title": "Unlocking Richmond Development Data for Faster, Fairer Engagement",
+    "summary": "Presents the top 10 testable hypotheses for unlocking Richmond's development data to improve resident engagement and equitable access to planning information.",
+    "key_terms": ["hypotheses", "development data", "resident engagement", "equity", "fairness", "testing"]
+  },
+  {
+    "id": "92_red_flags",
+    "section": "cross-cutting",
+    "title": "De-risking Thriving Neighborhoods Hacks: Top Red Flags and Fixes",
+    "summary": "Identifies the top warning signs and failure modes for Thriving Neighborhoods hackathon projects, with concrete mitigations for each red flag.",
+    "key_terms": ["red flags", "risk mitigation", "failure modes", "de-risking", "guardrails", "warning signs"]
+  },
+  {
+    "id": "93_missing_information_gaps",
+    "section": "cross-cutting",
+    "title": "Thriving Neighborhoods: De-risking Data Gaps for Build-Ready Hackathon Teams",
+    "summary": "Catalogs the critical information gaps and unknown data dependencies that teams must resolve before building, with recommended workarounds for each gap.",
+    "key_terms": ["data gaps", "information gaps", "unknowns", "build-ready", "workarounds", "dependencies"]
+  },
+  {
+    "id": "A1_problem_landscape_housing_compliance",
+    "section": "A",
+    "title": "Richmond, VA's Affordable Housing Compliance: Where Tracking Works — and Fails",
+    "summary": "Analyzes Richmond's fragmented affordable housing compliance infrastructure across AHTF, AHTEP, and EAHP programs, identifying systemic monitoring gaps revealed by a 2026 City audit and opportunities for lightweight tracking tools using public data.",
+    "key_terms": ["affordable housing", "AHTF", "AHTEP", "EAHP", "compliance monitoring", "deed-restricted units"]
+  },
+  {
+    "id": "A2_problem_landscape_development_transparency",
+    "section": "A",
+    "title": "From 'Technically Public' to 'Truly Findable': Fixing How Richmond Residents Discover Development Proposals",
+    "summary": "Examines the gap between nominal public availability of Richmond development records and the practical barriers residents face in finding and understanding planning proposals.",
+    "key_terms": ["development transparency", "Legistar", "resident access", "planning proposals", "discoverability", "public records"]
+  },
+  {
+    "id": "A3_problem_landscape_compare_statements",
+    "section": "A",
+    "title": "48-hour win: Neighborhood Development Discovery beats Housing Compliance on data readiness and low-risk impact",
+    "summary": "Compares the two main Thriving Neighborhoods problem statements on rubric dimensions including data readiness, user clarity, and weekend buildability, recommending Development Discovery as the stronger hackathon target.",
+    "key_terms": ["problem comparison", "data readiness", "rubric scoring", "development discovery", "housing compliance", "decision"]
+  },
+  {
+    "id": "A4_problem_landscape_root_causes",
+    "section": "A",
+    "title": "From Hidden to Heard: Unmasking the Systems Hiding Richmond's Housing Decisions",
+    "summary": "Traces the root causes of resident exclusion from housing and development decision-making in Richmond, including fragmented notice systems, jargon-heavy documents, and structural barriers to participation.",
+    "key_terms": ["root causes", "resident exclusion", "housing decisions", "notice systems", "participation barriers", "fragmentation"]
+  },
+  {
+    "id": "A5_problem_landscape_neighborhood_change",
+    "section": "A",
+    "title": "Richmond's Neighborhoods Now: Where Growth Meets Displacement Risk",
+    "summary": "Maps the current state of Richmond's neighborhoods, identifying areas of active development activity and displacement risk where transparency tools would have the most impact.",
+    "key_terms": ["neighborhood change", "displacement risk", "growth", "Richmond neighborhoods", "geographic targeting", "impact"]
+  },
+  {
+    "id": "B1_users_residents_development",
+    "section": "B",
+    "title": "Closing Richmond's Information Gap: Resident Personas for Finding Neighborhood Development Proposals",
+    "summary": "Develops detailed resident user personas for tools that help people discover and understand neighborhood development proposals, including digital access levels and specific information needs.",
+    "key_terms": ["resident personas", "user research", "information gap", "development proposals", "digital access", "user needs"]
+  },
+  {
+    "id": "B2_users_housing_staff",
+    "section": "B",
+    "title": "Richmond Compliance Gatekeepers — How Small Teams Police Affordable Units on Shoestring Systems",
+    "summary": "Profiles Richmond's housing compliance staff as users, documenting their manual, email-driven workflows across EnerGov, OneDrive, and City Assessor systems and the automation opportunities this creates.",
+    "key_terms": ["housing staff", "compliance gatekeepers", "EnerGov", "manual workflow", "staff capacity", "automation"]
+  },
+  {
+    "id": "B3_users_planning_commission",
+    "section": "B",
+    "title": "Closing Richmond's Development Transparency Gap — Staff and Commissioner Realities to Design Around",
+    "summary": "Documents the workflow constraints and information needs of Richmond Planning Commission staff and commissioners as users of and contributors to transparency tools.",
+    "key_terms": ["planning commission", "staff workflow", "commissioner needs", "design constraints", "transparency", "civic staff"]
+  },
+  {
+    "id": "B4_users_stakeholders_map",
+    "section": "B",
+    "title": "Richmond housing-development stakeholders: who matters, why, and how to build with them",
+    "summary": "Maps the full stakeholder ecosystem for Richmond housing and development tools, identifying whose cooperation or partnership could strengthen a hackathon prototype's credibility and longevity.",
+    "key_terms": ["stakeholders", "ecosystem", "partnership", "credibility", "developers", "community organizations"]
+  },
+  {
+    "id": "B5_users_digital_equity",
+    "section": "B",
+    "title": "Closing the Digital Gap in Richmond's Redeveloping Neighborhoods — What to Build, Who's Left Out, and How to Fix It",
+    "summary": "Examines digital equity barriers in Richmond's most actively redeveloping neighborhoods and provides design guidance to avoid building tools that exclude lower-income or less connected residents.",
+    "key_terms": ["digital equity", "inclusion", "access barriers", "low-income", "design guidance", "underserved"]
+  },
+  {
+    "id": "C1_services_legistar_landscape",
+    "section": "C",
+    "title": "Richmond Legistar, Unlocked: Fast-Track Access for Development Data",
+    "summary": "Surveys the current state of Richmond's Legistar deployment, including what is published, how it is organized, and where the current user experience falls short for non-expert residents.",
+    "key_terms": ["Legistar", "service landscape", "public access", "user experience", "development records", "Granicus"]
+  },
+  {
+    "id": "C2_services_planning_process",
+    "section": "C",
+    "title": "Richmond, CA Development Hearings: What Triggers Notices, When They Happen, and Where They're Missed",
+    "summary": "Documents the triggers, timelines, and notification channels for Richmond development hearings, identifying the structural gaps where residents routinely miss comment windows.",
+    "key_terms": ["planning process", "public hearings", "notice requirements", "comment windows", "notification gaps", "timelines"]
+  },
+  {
+    "id": "C3_services_housing_programs",
+    "section": "C",
+    "title": "Richmond's Affordable Housing Compliance: Programs, Proof, and Practical Monitoring",
+    "summary": "Inventories the affordable housing programs administered in Richmond, their compliance requirements, and the practical monitoring mechanisms currently in use.",
+    "key_terms": ["housing programs", "compliance requirements", "program inventory", "monitoring", "affordability", "City programs"]
+  },
+  {
+    "id": "C4_services_gaps",
+    "section": "C",
+    "title": "From Compliance to Connection: Fixing Richmond's Development Review Awareness",
+    "summary": "Identifies the service gaps between Richmond's official development review process and the channels residents actually use, mapping where software could bridge awareness and participation deficits.",
+    "key_terms": ["service gaps", "development review", "resident awareness", "participation", "software opportunities", "fragmentation"]
+  },
+  {
+    "id": "C5_services_digital",
+    "section": "C",
+    "title": "From Fragments to Flow: Unifying Richmond's Digital Planning Tools",
+    "summary": "Reviews Richmond's current digital planning tools—including GeoHub, Legistar, and permit portals—and identifies opportunities to create a more unified resident-facing experience.",
+    "key_terms": ["digital tools", "GeoHub", "permit portals", "unified experience", "planning tools", "integration"]
+  },
+  {
+    "id": "D1_data_legistar",
+    "section": "D",
+    "title": "Richmond Legistar Data — Fast, Reliable Access for Dev-focused Hackathon Apps",
+    "summary": "Provides a technical inventory of the Legistar Web API as deployed by Richmond, including endpoint patterns, OData filtering, pagination constraints, and known data quality issues with addresses and attachments.",
+    "key_terms": ["Legistar API", "Granicus", "OData", "REST endpoints", "data quality", "pagination"]
+  },
+  {
+    "id": "D2_data_gis_development",
+    "section": "D",
+    "title": "Richmond GeoHub to Action — Building Neighborhood Development Apps Fast",
+    "summary": "Documents Richmond's GeoHub ArcGIS REST endpoints for parcel, zoning, and Special-Use-Permit layers, with quick-start code patterns for geocoding and map overlay use cases.",
+    "key_terms": ["GeoHub", "ArcGIS", "zoning layers", "parcel data", "REST API", "geocoding"]
+  },
+  {
+    "id": "D3_data_housing_programs",
+    "section": "D",
+    "title": "Richmond Affordable Housing Data Playbook — Where to Find, Trust, and Apply Investment Data",
+    "summary": "Identifies and evaluates the public datasets available for tracking Richmond's affordable housing investments, including the City's 2020 Affordable Housing Matrix and HUD LIHTC CSV.",
+    "key_terms": ["affordable housing data", "LIHTC", "Housing Matrix", "HUD", "investment data", "data trust"]
+  },
+  {
+    "id": "D4_data_hud_rental",
+    "section": "D",
+    "title": "Richmond HUD Data Playbook: FMR, CHAS, and Voucher Insights You Can Use",
+    "summary": "Details how to access and use HUD's Fair Market Rent, CHAS, and Housing Choice Voucher datasets for Richmond, including geographic levels, update cadences, and practical use cases.",
+    "key_terms": ["HUD data", "Fair Market Rent", "CHAS", "Housing Choice Voucher", "census tract", "rental data"]
+  },
+  {
+    "id": "D5_data_quality",
+    "section": "D",
+    "title": "De-risking Thriving Neighborhoods: Data Quality Pitfalls and Fast Fixes",
+    "summary": "Catalogs the known data quality issues across Richmond's planning and housing datasets—including inconsistent address formats, stale records, and coverage gaps—with rapid mitigation strategies for each.",
+    "key_terms": ["data quality", "address parsing", "stale data", "coverage gaps", "mitigation", "data risks"]
+  },
+  {
+    "id": "E1_prior_art_dev_trackers",
+    "section": "E",
+    "title": "Building Resident-Centered Development Trackers: What Works Nationally, What Richmond Should Reuse",
+    "summary": "Surveys national examples of resident-centered development tracker tools, identifying design patterns, data strategies, and lessons learned that Richmond teams can reuse.",
+    "key_terms": ["development trackers", "national examples", "prior art", "design patterns", "resident-centered", "reuse"]
+  },
+  {
+    "id": "E2_prior_art_legistar_tools",
+    "section": "E",
+    "title": "Legistar-Powered Civic Tools: What to Reuse, What to Build Now",
+    "summary": "Inventories civic tools built on Legistar data in other cities, identifying which patterns are directly reusable for Richmond and which require local adaptation.",
+    "key_terms": ["Legistar tools", "civic tech", "reusable patterns", "prior art", "other cities", "adaptation"]
+  },
+  {
+    "id": "E3_prior_art_housing_compliance",
+    "section": "E",
+    "title": "Building a Citywide Compliance Engine: Proven Tools to Monitor Affordable Housing Commitments",
+    "summary": "Reviews proven national tools for monitoring affordable housing compliance commitments, identifying architectures and data strategies applicable to Richmond's context.",
+    "key_terms": ["compliance monitoring", "housing compliance tools", "national tools", "proven patterns", "monitoring architecture", "citywide"]
+  },
+  {
+    "id": "E4_prior_art_failures",
+    "section": "E",
+    "title": "Why Civic Tech Stalls in Housing: Lessons from Notification and Data Tools",
+    "summary": "Analyzes why civic tech housing notification and data tools stall or fail after launch, extracting actionable lessons to avoid repeating common mistakes.",
+    "key_terms": ["civic tech failures", "stalled tools", "notification tools", "lessons learned", "sustainability", "post-launch"]
+  },
+  {
+    "id": "E5_prior_art_weekend_viable",
+    "section": "E",
+    "title": "Weekend-Capable Civic Tech in Housing: What Lasts, What to Build Next",
+    "summary": "Identifies housing civic tech patterns that have proven viable to build in a weekend and sustain beyond the hackathon, with a focus on data-light architectures.",
+    "key_terms": ["weekend viable", "housing civic tech", "lasting tools", "data-light", "sustainability", "hackathon"]
+  },
+  {
+    "id": "F1_opportunities_ranked",
+    "section": "F",
+    "title": "Hackathon-Ready Civic Tools: Ranking Neighborhood Development Opportunities by Buildability and Credibility",
+    "summary": "Ranks solution opportunities for the Thriving Neighborhoods pillar by buildability, data availability, and credibility risk, identifying the Development Proposal Map as the strongest hackathon candidate.",
+    "key_terms": ["ranked opportunities", "buildability", "credibility", "development map", "tool ranking", "decision guide"]
+  },
+  {
+    "id": "F2_opportunities_development_notify",
+    "section": "F",
+    "title": "Neighborhood Development Notifier for Richmond — Catch comment windows before they close",
+    "summary": "Designs a neighborhood development notification tool for Richmond that alerts residents to upcoming comment windows using Legistar agenda data and GeoHub geocoding.",
+    "key_terms": ["notification tool", "comment windows", "Legistar", "GeoHub", "alert system", "resident engagement"]
+  },
+  {
+    "id": "F3_opportunities_compliance_monitor",
+    "section": "F",
+    "title": "Weekend-Build Staff Tool: HUD-anchored Affordable Housing Compliance Monitor",
+    "summary": "Defines an affordable housing compliance monitoring tool for City staff, anchored to HUD public data and Richmond's 2020 Housing Matrix, scoped for weekend build.",
+    "key_terms": ["compliance monitor", "HUD-anchored", "staff tool", "Housing Matrix", "weekend build", "affordability tracking"]
+  },
+  {
+    "id": "F4_opportunities_where_software",
+    "section": "F",
+    "title": "Software That Actually Moves the Needle in Neighborhood Development: Where Code, Data, and Design Beat Policy Gridlock",
+    "summary": "Identifies the specific points in Richmond's neighborhood development and housing ecosystem where software interventions can create measurable improvement versus where policy change is required.",
+    "key_terms": ["software impact", "policy vs software", "leverage points", "design opportunities", "data", "neighborhood development"]
+  },
+  {
+    "id": "F5_opportunities_do_not_build",
+    "section": "F",
+    "title": "Hackathon Red Lines for Thriving Neighborhoods: 8 Do-Not-Builds and Safer Paths",
+    "summary": "Lists eight categories of tools teams should not build for the Thriving Neighborhoods pillar, with explanations of the specific risks and recommended safer alternatives for each.",
+    "key_terms": ["do not build", "red lines", "prohibited patterns", "safer alternatives", "risk avoidance", "guardrails"]
+  },
+  {
+    "id": "G1_risks_inaccurate_summaries",
+    "section": "G",
+    "title": "Designing Safe AI Planning Summaries: Risks, Thresholds, and Controls",
+    "summary": "Analyzes the specific risks of AI-generated summaries of planning documents, establishing risk thresholds and required controls for safe deployment in civic contexts.",
+    "key_terms": ["AI summaries", "planning documents", "hallucination risk", "risk thresholds", "controls", "safe AI"]
+  },
+  {
+    "id": "G2_risks_compliance_overreach",
+    "section": "G",
+    "title": "Designing Housing Monitoring Tools That Inform—Not Decide",
+    "summary": "Establishes design principles for housing monitoring tools that provide information without making or implying compliance determinations, with specific UI patterns and disclaimer requirements.",
+    "key_terms": ["compliance overreach", "monitoring tools", "inform not decide", "UI patterns", "disclaimers", "design principles"]
+  },
+  {
+    "id": "G3_risks_inclusion",
+    "section": "G",
+    "title": "Making Development Transparency Equitable in Richmond: Designing Beyond the Digital Divide",
+    "summary": "Examines inclusion and equity risks in development transparency tools for Richmond, providing design guidance to serve residents across digital access and literacy levels.",
+    "key_terms": ["inclusion", "equity", "digital divide", "accessibility", "equitable design", "underserved residents"]
+  },
+  {
+    "id": "G4_risks_data_gaps",
+    "section": "G",
+    "title": "Don't Let Data Gaps Lie: Designing Richmond's Tools to Be Honest, Fresh, and Verifiable",
+    "summary": "Addresses the risk of data gaps creating misleading civic tools, with specific design patterns to make data staleness, coverage gaps, and missing records visible to users.",
+    "key_terms": ["data gaps", "data staleness", "honest design", "coverage", "verifiability", "transparency"]
+  },
+  {
+    "id": "G5_risks_guardrails",
+    "section": "G",
+    "title": "Demo-Safe by Design: Non-Negotiable Guardrails for Thriving Neighborhoods Prototypes",
+    "summary": "Provides seven non-negotiable guardrails for Thriving Neighborhoods hackathon prototypes—including source transparency, AI labeling, and official deference—with copy-paste disclaimer templates and a pre-demo checklist.",
+    "key_terms": ["guardrails", "demo safety", "disclaimers", "source transparency", "AI labeling", "pre-demo checklist"]
+  },
+  {
+    "id": "H1_mvp_48hr_framework",
+    "section": "H",
+    "title": "48-Hour Civic MVPs That Don't Break: A Reliable, Demo-Ready Neighborhood Insights Playbook",
+    "summary": "Provides a complete framework for building a Thriving Neighborhoods MVP in 48 hours, including data pantry recommendations, hour-by-hour milestones, and a defensive data strategy emphasizing pre-seeded national indices.",
+    "key_terms": ["48-hour MVP", "playbook", "data pantry", "milestones", "demo-ready", "defensive strategy"]
+  },
+  {
+    "id": "H2_mvp_development_tracker",
+    "section": "H",
+    "title": "48-Hour MVP Feasibility: Richmond Neighborhood Development Tracker, End-to-End Plan",
+    "summary": "End-to-end feasibility plan for building a Richmond neighborhood development tracker in 48 hours, covering data sources, architecture, scope limits, and demo path.",
+    "key_terms": ["development tracker", "feasibility", "end-to-end plan", "scope limits", "demo path", "Richmond"]
+  },
+  {
+    "id": "H3_mvp_compliance_dashboard",
+    "section": "H",
+    "title": "Build-Ready, Not Audit-Ready: A Weekend-Scale Affordable Housing Compliance Prototype",
+    "summary": "Scopes a weekend-buildable affordable housing compliance prototype that informs staff without making audit determinations, using only public HUD and City data.",
+    "key_terms": ["compliance dashboard", "weekend-scale", "HUD data", "staff prototype", "scope boundaries", "affordability"]
+  },
+  {
+    "id": "H4_mvp_data_constraints",
+    "section": "H",
+    "title": "48-Hour Resilience Playbook — Shipping a Richmond civic data MVP despite Legistar and GeoHub gaps",
+    "summary": "Contingency strategies for building a Richmond civic data MVP when Legistar API or GeoHub data access fails, including fallback data sources and offline-capable architectures.",
+    "key_terms": ["data constraints", "resilience", "fallback strategies", "Legistar gaps", "GeoHub gaps", "offline MVP"]
+  },
+  {
+    "id": "H5_mvp_scope_boundaries",
+    "section": "H",
+    "title": "Ship Honest Value in 54 Hours: Scope Boundaries for Two Civic MVPs",
+    "summary": "Defines explicit scope boundaries for both the development tracker and compliance dashboard MVPs, specifying what must be cut, what can be mocked, and what constitutes a credible demo.",
+    "key_terms": ["scope boundaries", "scope lock", "what to cut", "mockable", "honest value", "demo criteria"]
+  },
+  {
+    "id": "I1_demo_archetypes",
+    "section": "I",
+    "title": "Winning Civic Demos: Richmond-anchored archetypes that signal real impact, trusted data, and post-hackathon viability",
+    "summary": "Defines winning demo archetypes for the Thriving Neighborhoods pillar, with judge-facing narratives, trust signals, and viability evidence for each archetype.",
+    "key_terms": ["demo archetypes", "judge-facing", "trust signals", "viability", "Richmond-anchored", "winning demos"]
+  },
+  {
+    "id": "I2_demo_development_tracker_pitch",
+    "section": "I",
+    "title": "Richmond Development Notifier — A credible, judge-proof demo plan that centers residents, proves data freshness, and de-risks city partnerships",
+    "summary": "Complete demo plan and pitch script for the Richmond Development Notifier, including data freshness evidence, resident impact framing, and a strategy for de-risking potential City partnership concerns.",
+    "key_terms": ["demo plan", "pitch script", "development notifier", "data freshness", "resident impact", "judge-proof"]
+  },
+  {
+    "id": "I3_demo_compliance_dashboard_pitch",
+    "section": "I",
+    "title": "Turning Legistar Records into Actionable Compliance Alerts",
+    "summary": "Demo script and pitch strategy for a Legistar-based compliance alert tool, showing judges how public records can surface actionable affordability monitoring information for staff.",
+    "key_terms": ["compliance alerts", "Legistar records", "pitch strategy", "demo script", "actionable", "staff tool"]
+  },
+  {
+    "id": "I4_demo_credibility",
+    "section": "I",
+    "title": "Make It Real: Richmond-Grounded Credibility for Thriving Neighborhoods",
+    "summary": "Provides specific techniques for grounding Thriving Neighborhoods demos in Richmond-specific evidence, avoiding generic civic tech claims that reduce credibility with judges.",
+    "key_terms": ["credibility", "Richmond-grounded", "demo evidence", "judge trust", "specificity", "local data"]
+  },
+  {
+    "id": "I5_demo_framing",
+    "section": "I",
+    "title": "No-Hype Demo Playbook for Thriving Neighborhoods",
+    "summary": "A complete low-hype demo framing playbook for Thriving Neighborhoods projects, with language templates that convey honest impact without overclaiming or underselling.",
+    "key_terms": ["demo framing", "no-hype", "honest impact", "language templates", "credibility", "presentation"]
+  }
+]

@@ -1,3 +1,28 @@
+---
+title: "48-Hour Civic MVPs That Don't Break: A Reliable, Demo-Ready Neighborhood Insights Playbook"
+pillar: thriving-neighborhoods
+section: H
+problem_statement: general
+tags:
+  - 48-hour MVP
+  - playbook
+  - data pantry
+  - milestones
+  - demo-ready
+  - defensive strategy
+summary: "Provides a complete framework for building a Thriving Neighborhoods MVP in 48 hours, including data pantry recommendations, hour-by-hour milestones, and a defensive data strategy emphasizing pre-seeded national indices."
+datasets:
+  - EPA National Walkability Index
+  - CDC Social Vulnerability Index
+geography: Richmond, VA
+source: parallel-ai
+status: raw
+related_reports:
+  - H2_mvp_development_tracker
+  - H3_mvp_compliance_dashboard
+  - H4_mvp_data_constraints
+---
+
 # 48-Hour Civic MVPs That Don't Break: A Reliable, Demo-Ready Neighborhood Insights Playbook
 
 ## Executive Summary

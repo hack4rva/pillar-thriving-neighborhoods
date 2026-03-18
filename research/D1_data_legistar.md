@@ -1,3 +1,33 @@
+---
+title: "Richmond Legistar Data — Fast, Reliable Access for Dev-focused Hackathon Apps"
+pillar: thriving-neighborhoods
+section: D
+problem_statement: development-discovery
+tags:
+  - Legistar
+  - Granicus
+  - API
+  - OData
+  - planning data
+  - data access
+summary: "Provides a technical inventory of the Legistar Web API as deployed by Richmond, including endpoint patterns, OData filtering, pagination constraints, and known data quality issues with addresses and attachments."
+key_entities:
+  - Legistar
+  - Granicus
+  - Planning Commission
+  - Board of Zoning Appeals
+datasets:
+  - Legistar Web API
+  - Richmond Legistar InSite portal
+geography: Richmond, VA
+source: parallel-ai
+status: raw
+related_reports:
+  - D2_data_gis_development
+  - D5_data_quality
+  - F2_opportunities_development_notify
+---
+
 # Richmond Legistar Data — Fast, Reliable Access for Dev-focused Hackathon Apps
 
 ## Executive Summary

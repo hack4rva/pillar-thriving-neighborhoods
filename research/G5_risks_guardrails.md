@@ -1,3 +1,25 @@
+---
+title: "Demo-Safe by Design: Non-Negotiable Guardrails for Thriving Neighborhoods Prototypes"
+pillar: thriving-neighborhoods
+section: G
+problem_statement: general
+tags:
+  - guardrails
+  - demo safety
+  - disclaimers
+  - source transparency
+  - AI labeling
+  - civic tech
+summary: "Provides seven non-negotiable guardrails for Thriving Neighborhoods hackathon prototypes—including source transparency, AI labeling, and official deference—with copy-paste disclaimer templates and a pre-demo checklist."
+geography: Richmond, VA
+source: parallel-ai
+status: raw
+related_reports:
+  - G1_risks_inaccurate_summaries
+  - G2_risks_compliance_overreach
+  - F5_opportunities_do_not_build
+---
+
 # Demo-Safe by Design: Non-Negotiable Guardrails for Thriving Neighborhoods Prototypes
 
 ## Executive Summary

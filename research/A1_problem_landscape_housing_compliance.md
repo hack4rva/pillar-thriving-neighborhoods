@@ -1,3 +1,33 @@
+---
+title: "Richmond, VA's Affordable Housing Compliance: Where Tracking Works — and Fails"
+pillar: thriving-neighborhoods
+section: A
+problem_statement: housing-compliance
+tags:
+  - affordable housing
+  - compliance monitoring
+  - AHTF
+  - AHTEP
+  - EAHP
+  - deed-restricted units
+summary: "Analyzes Richmond's fragmented affordable housing compliance infrastructure across AHTF, AHTEP, and EAHP programs, identifying systemic monitoring gaps revealed by a 2026 City audit and opportunities for lightweight tracking tools using public data."
+key_entities:
+  - Affordable Housing Trust Fund (AHTF)
+  - Affordable Housing Partial Tax Exemption Program (AHTEP)
+  - Equitable Affordable Housing Program (EAHP)
+  - Housing and Community Development (HCD)
+datasets:
+  - Richmond 2020 Affordable Housing Matrix
+  - HUD LIHTC CSV
+geography: Richmond, VA
+source: parallel-ai
+status: raw
+related_reports:
+  - A3_problem_landscape_compare_statements
+  - D3_data_housing_programs
+  - F3_opportunities_compliance_monitor
+---
+
 # Richmond, VA's Affordable Housing Compliance: Where Tracking Works — and Fails
 
 ## Executive Summary

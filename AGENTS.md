@@ -175,6 +175,7 @@ Example:
 
 Skills available right now:
 
+Team skills:
 • repo_memory
 • problem_scoping
 • research_runner
@@ -185,6 +186,13 @@ Skills available right now:
 • demo_coach
 • repo_librarian
 • continuity_planner
+• research_search
+
+Research corpus skills:
+• research_corpus_navigation
+• cross_report_synthesis
+• evidence_grounded_answering
+• report_update_protocol
 
 ```
 
@@ -456,6 +464,109 @@ I can run the skill: problem_scoping
 Would you like me to analyze the Thriving Neighborhoods problem statements and suggest 3 buildable project directions?
 
 ```
+
+---
+
+# Research Corpus Navigation
+
+## What the Research Corpus Contains
+
+The `research/` directory contains 51 deep research reports organized into labeled sections (A through I, plus cross-cutting files 90–93 and context files 00–01). These reports cover:
+
+- Problem landscape (development transparency and housing compliance)
+- User personas and stakeholders
+- Existing services and programs in Richmond
+- Public data sources (Legistar, GeoHub, HUD)
+- Prior art and comparable tools nationally
+- Ranked solution opportunities
+- Risks and guardrails
+- MVP feasibility and scope
+- Demo strategy and pitch guidance
+
+## Files to Read First
+
+Before answering any substantive research question, read these navigation files:
+
+1. `research/index.json` — machine-readable index of all 51 reports (id, section, title, summary, key_terms)
+2. `CORPUS_GUIDE.md` — canonical orientation document with decision tree and source-of-truth hierarchy
+3. `manifest.json` — machine-readable index of all significant files in the repo
+
+Do NOT dive into individual research files without first consulting the navigation artifacts.
+
+## Question-to-Section Mapping
+
+| User Question Type | Start Here |
+|-------------------|-----------|
+| What problems exist? | `A` section (A1–A5) |
+| Who are the users? | `B` section (B1–B5) |
+| What services exist already? | `C` section (C1–C5) |
+| What data is available? | `D` section (D1–D5), `02_data/` |
+| What has been built elsewhere? | `E` section (E1–E5) |
+| What should we build? | `F` section (F1–F5) |
+| What could go wrong? | `G` section (G1–G5) |
+| Is this feasible in a weekend? | `H` section (H1–H5) |
+| How do we demo this? | `I` section (I1–I5) |
+| Which problem should we choose? | A3, F1, H1 |
+| Development discovery path | A2, B1, D1, D2, F2, H2 |
+| Housing compliance path | A1, B2, D3, D4, F3, H3 |
+| What are the top risks? | `92_red_flags.md`, G section |
+| Overall picture | `00_pillar_summary_context.md` |
+
+## How to Use Index and Manifest Files
+
+### `research/index.json`
+Scan `key_terms` and `summary` for each entry to identify relevant files before reading them. Each entry maps to a specific `.md` file. Do not answer questions from summaries — they are navigation aids only. Read the source `.md` file for authoritative content.
+
+### `manifest.json`
+Use the `recommended_audience`, `tags`, and `read_after` fields to understand which files to read in sequence. Use `source_of_truth: true` entries as authoritative sources; `source_of_truth: false` entries are navigation aids.
+
+## How to Avoid Partial Context
+
+- Read the full `.md` file before citing it — do not rely on frontmatter or summaries alone
+- If a report appears relevant but has not been read, say so explicitly rather than guessing
+- Limit initial reading lists to 5 files; request permission to expand if needed
+- Prerequisites: always read context files (`00_pillar_summary_context.md`) before section-specific files
+
+## Citation Format
+
+When presenting findings, cite the source file:
+
+- `(per research/A1_problem_landscape_housing_compliance.md)`
+- `(per evidence_log.md, E-001)`
+- `[Unverified: not found in files read]`
+- `[Requires reading: research/D5_data_quality.md]`
+
+## Cross-Report Synthesis Instructions
+
+When a question spans multiple reports:
+1. Use `research_corpus_navigation` skill to identify all relevant files
+2. Read each file fully before synthesizing
+3. Build a claim map — per claim, note source and confidence level
+4. Identify and note tensions between reports
+5. State which files were read and which were not
+6. Use `cross_report_synthesis` skill for structured output
+
+## Source of Truth vs. Convenience File
+
+| File Type | Use For | Authoritative? |
+|-----------|---------|----------------|
+| `research/*.md` | Factual claims | Yes |
+| `evidence_log.md` | Verified claims with official URLs | Yes |
+| `03_artifacts/*.md` | Synthesized findings | Secondary |
+| `02_data/source_inventory.csv` | Data source inventory | Yes |
+| `research/index.json` | Finding which files to read | No |
+| `manifest.json` | Finding which files to read | No |
+| `CORPUS_GUIDE.md` | Navigation and agent behavior | No |
+| `research/INDEX.md` | Human-readable table of contents | No |
+
+## Missing Information Handling
+
+If a question cannot be answered from the files read:
+- State: "This repository does not contain that information."
+- State: "I cannot verify that from the files I have read in this session."
+- State: "That would require reading [specific file]."
+
+Do NOT invent programs, datasets, URLs, or government positions that are not present in the corpus.
 
 ---
 
