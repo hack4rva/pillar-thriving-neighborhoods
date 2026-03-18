@@ -9,6 +9,7 @@ These are the highest-priority claims to verify before or at the start of the ha
 **Why it matters:** The neighborhood development notifier and Legistar translator both depend on API access. If unavailable, teams must fall back to web scraping or pre-seeded data.
 **How to verify:** Visit https://webapi.legistar.com/help, identify the Richmond client name, and test an API call (e.g., `GET /api/v1/{client}/Matters`).
 **Evidence log ID:** E-011
+**Verified 2026-03-18:** CONFIRMED. Public API at https://webapi.legistar.com/v1/richmondva/Matters — no API key or auth required. Returns valid JSON. Supports OData-style params ($filter, $orderby, $top, $skip). Common endpoints: /Matters, /Events, /EventItems, /Files, /MatterTypes. No published rate limits; use polite throttling (<5 req/sec).
 
 ---
 
@@ -16,6 +17,7 @@ These are the highest-priority claims to verify before or at the start of the ha
 **Claim:** The Richmond GeoHub Land Use Project Mapper and Development Activity Mapper layers contain current data accessible via ArcGIS REST API.
 **How to verify:** Navigate to Richmond's ArcGIS hub, find the service URL, check the last-updated metadata, and test a REST query.
 **Evidence log ID:** E-012
+**Verified 2026-03-18:** LIKELY (Development Mapper confirmed; Land Use Mapper unavailable). ArcGIS Development Tracker REST endpoint: https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/Development_Tracker/FeatureServer — public, no auth required, maxRecordCount 2000, supports JSON/GeoJSON/CSV/shapefile/SQLite. Key fields: Project_Name, Status, Date_Updated, Dwelling_Units, Address. Uses State Plane EPSG:2284. Land Use Project Mapper is listed on rva.gov as "being updated" — no stable REST endpoint available.
 
 ---
 
@@ -31,6 +33,7 @@ These are the highest-priority claims to verify before or at the start of the ha
 **Claim:** HUD CHAS data can be accessed at census tract level for Richmond, not just city or county level.
 **How to verify:** Download the CHAS data files and verify that Richmond census tracts are included.
 **Evidence log ID:** E-014
+**Verified 2026-03-18:** CONFIRMED. Available at Census Summary Level 080 (Tract part) and some tables at 091 (Block Group part). Download formats: SAS, SPSS, DBF. Rounding rules: 0 remains 0; 1-7 rounds to 4; ≥8 rounds to nearest multiple of 5. Join key: FIPS-based identifier (sum080). URL: https://www.huduser.gov/portal/datasets/cp.html
 
 ---
 
@@ -38,6 +41,7 @@ These are the highest-priority claims to verify before or at the start of the ha
 **Claim:** Sharon Ebert (DCAO) is the appropriate City contact for continuation pathway conversations.
 **How to verify:** Confirm with hackathon organizers (Christian Markow, Michael Kolbe) that Sharon Ebert is still the relevant DCAO contact.
 **Evidence log ID:** E-013
+**Verified 2026-03-18:** LIKELY. Sharon Ebert is DCAO for Economic & Community Development per official rva.gov announcement (https://www.rva.gov/mayors-office/news/mayor-appoints-dcao-economic-and-community-development-director-housing-and). Also designated Acting CAO by Mayor Avula in May 2025. Given dual roles, bandwidth may be highly constrained — confirm availability and preferred engagement pathway through hackathon organizers (Christian Markow, Michael Kolbe).
 
 ---
 
@@ -53,6 +57,7 @@ These are the highest-priority claims to verify before or at the start of the ha
 **Claim:** The NLIHC National Housing Preservation Database contains meaningful Richmond property coverage, not just federal public housing.
 **How to verify:** Search the NLIHC database for Richmond properties and assess coverage.
 **Evidence log ID:** E-002
+**Verified 2026-03-18:** CANNOT VERIFY. Database is publicly accessible at https://preservationdatabase.org and covers ~80,000 federally assisted properties nationally. Richmond inclusion is expected but city-specific property count cannot be obtained without registering for an account and downloading the data export. Deprioritize for MVP if account access is delayed. See also E-022-cv.
 
 ---
 
