@@ -9,7 +9,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import json
 import os
 import sys
 from pathlib import Path
@@ -48,9 +47,8 @@ def main() -> int:
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     md_path = out_dir / f"{prompt_path.stem}.md"
-    json_path = out_dir / f"{prompt_path.stem}.json"
 
-    if not args.overwrite and (md_path.exists() or json_path.exists()):
+    if not args.overwrite and md_path.exists():
         print(f"Output already exists (use --overwrite to replace): {md_path}")
         return 0
 
@@ -61,10 +59,7 @@ def main() -> int:
     result = client.create_response(input_text=content)
 
     md_path.write_text(result["output_text"], encoding="utf-8")
-    json_path.write_text(json.dumps(result["meta"], indent=2), encoding="utf-8")
-
-    citations = result.get("search_results", [])
-    print(f"Done → {md_path}  ({len(citations)} citations)")
+    print(f"Done → {md_path}")
     return 0
 
 

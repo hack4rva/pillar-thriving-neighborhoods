@@ -13,7 +13,7 @@ from __future__ import annotations
 import json
 import os
 import time
-from typing import Any, Dict, List
+from typing import Any, Dict
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -71,10 +71,8 @@ class ParallelClient:
         """Submit a task, block until complete, return normalized response dict.
 
         Returns:
-          output_text    – markdown research report
-          search_results – list of {title, url} citations
-          model          – processor used
-          meta           – run_id, status
+          output_text – markdown research report with inline citations
+          model       – processor used
         """
         eff_processor = processor or self.processor
         run_id = self.submit(input_text, eff_processor)
@@ -97,19 +95,7 @@ class ParallelClient:
         content = output.get("content", "")
         output_text = content if isinstance(content, str) else json.dumps(content, indent=2)
 
-        # Citations from basis
-        citations: List[Dict[str, Any]] = []
-        for b in output.get("basis", []):
-            for c in b.get("citations", []):
-                citations.append({"title": c.get("title"), "url": c.get("url")})
-
         return {
             "output_text": output_text,
-            "search_results": citations,
             "model": eff_processor,
-            "meta": {
-                "run_id": run_id,
-                "processor": eff_processor,
-                "status": "completed",
-            },
         }

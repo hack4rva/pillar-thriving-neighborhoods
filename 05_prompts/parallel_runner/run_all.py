@@ -6,14 +6,13 @@ Usage:
     python 05_prompts/parallel_runner/run_all.py --processor ultra --overwrite
     python 05_prompts/parallel_runner/run_all.py --limit 5 --delay 2
 
-Outputs land in research/<prompt_basename>.md and research/<prompt_basename>.json.
+Outputs land in research/<prompt_basename>.md.
 Skips prompts that already have outputs unless --overwrite is set.
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import os
 import sys
 from pathlib import Path
@@ -60,7 +59,7 @@ def main() -> int:
     all_prompts = sorted(p for p in prompts_path.iterdir() if p.suffix == ".txt")
 
     def has_output(p: Path) -> bool:
-        return (out_dir / f"{p.stem}.md").exists() or (out_dir / f"{p.stem}.json").exists()
+        return (out_dir / f"{p.stem}.md").exists()
 
     if args.limit > 0:
         pending = [p for p in all_prompts if not has_output(p)]
@@ -82,7 +81,6 @@ def main() -> int:
     ok = skipped = errors = 0
     for i, p in enumerate(to_run, 1):
         md_path = out_dir / f"{p.stem}.md"
-        json_path = out_dir / f"{p.stem}.json"
 
         if not args.overwrite and has_output(p):
             print(f"[{i}/{len(to_run)}] {p.name}: skipped (exists)")
@@ -94,9 +92,7 @@ def main() -> int:
         try:
             result = client.create_response(input_text=content)
             md_path.write_text(result["output_text"], encoding="utf-8")
-            json_path.write_text(json.dumps(result["meta"], indent=2), encoding="utf-8")
-            citations = len(result.get("search_results", []))
-            print(f"ok ({citations} citations)")
+            print(f"ok")
             ok += 1
         except Exception as e:
             print(f"ERROR: {e}")

@@ -69,9 +69,8 @@ def run_batch(
 
     for p in prompts:
         md_path = out_dir / f"{p.stem}.md"
-        json_path = out_dir / f"{p.stem}.json"
 
-        if not overwrite and (md_path.exists() or json_path.exists()):
+        if not overwrite and md_path.exists():
             results.append((p, "skipped (exists)"))
             continue
 
@@ -85,7 +84,6 @@ def run_batch(
             run_result = client.task_run.result(task_run.run_id, api_timeout=3600)
             output = run_result.output
 
-            # Extract markdown text
             output_text = ""
             if hasattr(output, "content"):
                 output_text = (
@@ -97,13 +95,6 @@ def run_batch(
                 output_text = str(output or "")
 
             md_path.write_text(output_text, encoding="utf-8")
-
-            meta = {
-                "run_id": task_run.run_id,
-                "processor": processor,
-                "status": getattr(output, "status", "completed"),
-            }
-            json_path.write_text(json.dumps(meta, indent=2), encoding="utf-8")
             results.append((p, "ok"))
 
         except Exception as e:
