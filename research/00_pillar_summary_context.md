@@ -1,3 +1,4 @@
+
 # Pillar Summary Context
 
 *Prepared 2026-03-24* 
@@ -14,10 +15,10 @@ This document outlines the quantitative and qualitative data driving our afforda
 
 | Source | Description | Coverage | Last Updated |
 |--------|-------------|----------|--------------|
-| **HUD Low-Income Housing Tax Credit (LIHTC) Database** | Property-level data on every LIHTC-financed project, including unit counts, credit allocation year, and geographic coordinates. | Nationwide; 54,102 projects & 3.7M units placed in service (1987-2023) [1] | 2025-05-08 |
-| **Los Angeles GeoHub – "Affordable Housing Development" dataset** | GIS-ready inventory of all LA-city affordable-housing projects (new construction, rehabilitation, and preservation). | Los Angeles city; ~9,300 units [2] | 2023-12-01 |
-| **District of Columbia Open Data – Affordable Housing** | Dataset of production & preservation projects subsidized by DMPED, DHCD, DCHFA, or DCHA, plus inclusion-zoning outcomes. | Washington DC; 4,215 units [3] | 2024-04-15 |
-| **Seattle City Council Ordinance CB 120581** | Ordinance that temporarily exempts design-review for projects meeting Mandatory Housing Affordability requirements via on-site performance units. | Seattle city; enacted 2023-07-05 [4] | 2023-07-05 |
+| **HUD Low-Income Housing Tax Credit (LIHTC) Database** | Property-level data on every LIHTC-financed project, including unit counts, credit allocation year, and geographic coordinates. | Nationwide; 54,102 projects & 3.7M units placed in service (1987 to 2023) [1] | 2025-04 |
+| **Los Angeles GeoHub – "Affordable Housing Development" dataset** | GIS-ready inventory of all LA-city affordable-housing projects (new construction, rehabilitation, and preservation). | Los Angeles city; 2,381 projects [2] | 2020-08-11 |
+| **District of Columbia Open Data – Affordable Housing** | Dataset of production & preservation projects subsidized by DMPED, DHCD, DCHFA, or DCHA, plus inclusion-zoning outcomes. | Washington DC; 922 projects [3] | 2026-03-23 |
+| **Seattle City Council Ordinance CB 120581** | Ordinance that temporarily exempts design-review for projects meeting Mandatory Housing Affordability requirements via on-site performance units. | Seattle city; enacted 2023-07-14 [4] | 2023-07-14 |
 
 *Takeaway:* Our strategy relies on a blend of federal financing data, local geospatial tracking, and proven legislative frameworks to ensure comprehensive policy design.
 
@@ -31,19 +32,19 @@ The HUD LIHTC database contains information on 54,102 projects and 3.7 million h
 
 ### 3.2 Los Angeles City Inventory
 
-The Los Angeles GeoHub tracks affordable housing developments across the city, providing critical location data for ongoing projects [2]. Approximately 9,300 units are documented as affordable, with a significant portion located within transit-oriented development overlays.
+The Los Angeles GeoHub tracks affordable housing developments across the city, providing critical location data for 2,381 projects [2]. Approximately 9,300 units are documented as affordable, with a significant portion located within transit-oriented development overlays.
 
 **Implication:** LA's zoning and transit-oriented policies are already yielding a modest clustering of affordable units near transit, suggesting that expanding TOD incentives could accelerate production. 
 
 ### 3.3 Washington DC Production
 
-The District of Columbia's affordable housing dataset includes projects (production and preservation, rental and for-sale) subsidized by DMPED, DHCD, DCHFA, or DCHA, and those produced as a result of Planned Unit Development (PUD) proffers or Inclusionary Zoning (IZ) requirements [3]. Furthermore, municipal measures such as offering city-owned sites for affordable housing lease to non-profits have proven effective in other jurisdictions like Metro Vancouver [5].
+The District of Columbia's affordable housing dataset includes 922 projects (production and preservation, rental and for-sale) subsidized by DMPED, DHCD, DCHFA, or DCHA, and those produced as a result of Planned Unit Development (PUD) proffers or Inclusionary Zoning (IZ) requirements [3]. Furthermore, municipal measures such as offering city-owned sites for affordable housing lease to non-profits have proven effective in other jurisdictions like Metro Vancouver [5].
 
 **Implication:** Direct city-land leverage is a proven tool; replicating a city-owned-site lease program could be a high-impact lever for our jurisdiction. 
 
 ### 3.4 Seattle Design-Review Streamlining
 
-Seattle's Ordinance CB 120581 relates to Design Review for affordable housing, adopting temporary regulations to exempt housing projects that meet Mandatory Housing Affordability requirements using on-site performance units from Design Review [4]. This ordinance was passed on July 5, 2023 [4].
+Seattle's Ordinance 126854 (CB 120581) relates to Design Review for affordable housing, adopting temporary regulations to exempt housing projects that meet Mandatory Housing Affordability requirements using on-site performance units from Design Review [4]. This ordinance was passed on July 5, 2023, and signed by the Mayor on July 14, 2023 [4].
 
 **Implication:** Reducing review time can lower soft-costs and increase developer appetite for affordable-unit delivery. 
 
@@ -71,7 +72,5 @@ Seattle's Ordinance CB 120581 relates to Design Review for affordable housing, a
 1. *Low-Income Housing Tax Credit (LIHTC): Property Level Data*. https://www.huduser.gov/portal/datasets/lihtc/property.html
 2. *Affordable Housing Development | City of Los Angeles Geohub*. https://geohub.lacity.org/maps/affordable-housing-development
 3. *Affordable Housing - Open Data DC*. https://opendata.dc.gov/datasets/DCGIS::affordable-housing/about
-4. *
-	SEATTLE CITY COUNCIL - Record No: CB 120581
-*. https://seattle.legistar.com/LegislationDetail.aspx?ID=6214971&GUID=FCBF9E94-50CB-4497-906C-A5AD3CBC90D5
+4. *Seattle City Clerk. Ordinance 126854 (Council Bill 120581)*. https://clerk.seattle.gov/search/ordinances/126854
 5. *[PDF] Municipal Measures for Affordable Housing Matrix - Metro Vancouver*. https://metrovancouver.org/services/regional-planning/Documents/municipal-housing-measures-matrix-2018.pdf

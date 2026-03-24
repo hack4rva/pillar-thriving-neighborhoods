@@ -17,8 +17,8 @@ The Online Permit Portal (OPP) serves as the city's primary system of record for
 ### GeoHub mapping: "Plans of Development" dataset and spatial layers
 Richmond's GeoHub (ArcGIS Hub) provides public access to spatial data. It hosts planning-relevant datasets, including a specific "Plans of Development" layer [2]. While the GeoHub provides the necessary spatial infrastructure for mapping development activity, the metadata regarding update frequencies and data limitations is not consistently surfaced to the end user, making it difficult to determine how closely the map aligns with real-time OPP filings.
 
-### Planning website organization: ORD. 2024-314 Site Plan transition and PDF forms
-The Department of Planning and Development Review (PDR) website acts as a central directory, routing users to various external portals. It organizes information by boards and commissions, zoning, GIS mapping, and applications [3]. A critical recent update is the implementation of a new Site Plan ordinance (ORD. 2024-314), which officially replaces the legacy Plan of Development (POD) process to reduce bureaucratic inefficiencies [4]. Despite the push toward the OPP, several key processes still rely on static documents; for example, the site links to 2025 PDF application forms for Special Use Permits (SUP) and Rezonings [4]. 
+### Planning website organization: Ordinance 2024–314 Site Plan transition and PDF forms
+The Department of Planning and Development Review (PDR) website acts as a central directory, routing users to various external portals. It organizes information by boards and commissions, zoning, GIS mapping, and applications [3]. A critical recent update is the implementation of a new Site Plan ordinance (Ordinance 2024–314, adopted 2024-12-09 and effective 2025-07-01), which officially replaces the legacy Plan of Development (POD) process to reduce bureaucratic inefficiencies [4]. Despite the push toward the OPP, several key processes still rely on static documents; for example, the site links to 2025 PDF application forms for Special Use Permits (SUP) and Rezonings [4]. 
 
 ### Legistar calendar: Agendas and minutes lack geo-subscription capabilities
 Case narratives, public hearings, and Planning Commission activities live in the Legistar system [5]. Users are directed to Legistar to view agendas, minutes, and meeting details [5]. While the system supports iCalendar exports and RSS feeds (via a "Mode=Next Month" parameter) [6] [7], it lacks any native capability for users to subscribe to updates based on geography, neighborhood, or specific project addresses.
@@ -42,7 +42,7 @@ A hackathon team should build *alongside* (not inside) city systems, utilizing o
 
 | Tool | Public Endpoints? | Integration Risk | Recommended Approach |
 | :--- | :--- | :--- | :--- |
-| **OPP (EnerGov)** | Public search available; API status undocumented | High (Backend modifications risky) | **Build alongside**: Proxy searches to OPP; build address normalizer to bypass search bugs. |
+| **OPP (EnerGov)** | Public search available; no public API documented | High (Backend modifications risky) | **Build alongside**: Proxy searches to OPP; build address normalizer to bypass search bugs. |
 | **GeoHub** | Yes (ArcGIS REST) | Low | **Build on**: Ingest spatial layers (zoning, parcels) as basemaps. |
 | **Legistar** | Yes (RSS, iCal) | Low | **Build on**: Parse RSS/HTML feeds to extract agenda items and map them to addresses. |
 | **PDR Website** | No (Static HTML/PDFs) | Low | **Build alongside**: Link out to canonical PDFs; do not duplicate static content. |
@@ -63,9 +63,9 @@ Build a tool that translates complex planning jargon (e.g., bridging the POD to 
 To ensure the prototype is viable, the team must de-risk data access and governance early in the development cycle.
 
 ### Details to confirm
-* **OPP API Access**: It is undocumented if the EnerGov OPP offers a public API or if data must be scraped via HTML automation. Rate limits are also unverified.
-* **GeoHub Cadence**: The exact update frequency for planning layers (like Plans of Development) is not clearly documented.
-* **State vs. Local**: It is unclear how comprehensively the "Virginia Permit Transparency" portal [9] covers Richmond's local permits compared to the OPP.
+* **OPP API Access**: The EnerGov OPP lacks a documented public API, meaning data must be scraped via HTML automation. Rate limits for this approach are unverified.
+* **GeoHub Cadence**: The "Plans of Development" layer was last updated on 2022-06-29, indicating it does not provide a real-time feed of daily planning activities.
+* **State vs. Local**: The "Virginia Permit Transparency" portal [9] updates daily but currently tracks state-level agencies (e.g., DEQ, VMRC), meaning local Richmond OPP permits are not natively included.
 
 ### Validation steps and contacts
 The team should execute a technical discovery sprint to sample ArcGIS REST endpoints, parse Legistar RSS feeds, and test OPP search automation. Outreach should be conducted to `CSSHelp@richmondgov.com` (for OPP technical queries) and `PDRLandUseAdmin@rva.gov` (for planning process clarifications) [1] [5].
@@ -93,7 +93,7 @@ Start with a lightweight aggregator using GeoHub and Legistar feeds, then layer 
 | :--- | :--- |
 | OPP accepts 7 plan types (Building, Electrical, Mechanical, Gas Piping, Plumbing, Cert of Zoning, Site Plan). | `https://www.rva.gov/planning-development-review/online-permit-portal` |
 | OPP public search fails on single-digit addresses (e.g., "1 W Broad"). | `https://www.rva.gov/planning-development-review/online-permit-portal` |
-| Site Plan ordinance (ORD. 2024-314) replaced the Plan of Development (POD) process. | `https://www.rva.gov/planning-development-review/site-plan` |
+| Site Plan ordinance (Ordinance 2024–314) replaced the Plan of Development (POD) process; adopted 2024-12-09, effective 2025-07-01. | `https://www.rva.gov/planning-development-review/site-plan` |
 | GeoHub hosts a "Plans of Development" dataset. | `https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3` |
 | Richmond Ready Alerts (Everbridge) is for emergencies, not development. | `https://rva.gov/richmondreadyalerts` |
 | Legistar hosts Planning Commission agendas and offers RSS/iCal exports. | `https://richmondva.legistar.com/` |
