@@ -1,0 +1,10 @@
+{
+  "_comment": "Copy to validation_rules.json and adjust regexes for conflict checks. The script extracts 'val' group values and flags conflicts across files.",
+  "fact_patterns": [
+    {
+      "key": "dataset_last_updated",
+      "regex": "(?i)last[- ]updated[:\- ]+(?P<val>\d{4}(-\d{2}(-\d{2})?)?)"
+    }
+  ]
+}
+

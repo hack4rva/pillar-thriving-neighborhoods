@@ -2,18 +2,22 @@
 
 Runs the prompts in `05_prompts/research/` through the [Parallel.ai Task API](https://docs.parallel.ai) and saves results to `research/`.
 
-## Setup
+## Beginner Quickstart
 
-1. Install the SDK:
-   ```bash
-   pip install parallel-ai
-   ```
+No extra installs required. Just set your API key and run.
 
-2. Copy `.env.example` to `.env` and add your key:
-   ```bash
-   cp 05_prompts/parallel_runner/.env.example 05_prompts/parallel_runner/.env
-   # edit .env and set PARALLEL_API_KEY=your_key_here
-   ```
+```bash
+cp 05_prompts/parallel_runner/.env.example 05_prompts/parallel_runner/.env
+$EDITOR 05_prompts/parallel_runner/.env   # set PARALLEL_API_KEY=your_key_here
+
+# Run all pending prompts (skips ones with existing output)
+python 05_prompts/parallel_runner/run_all.py --processor pro-fast
+
+# Or run one prompt explicitly
+python 05_prompts/parallel_runner/run_one.py 05_prompts/research/A1_problem_landscape_resident_service.txt --processor pro-fast
+```
+
+Optional: If you prefer the SDK for other workflows, install it with `pip install parallel-ai`.
 
 ## Usage
 

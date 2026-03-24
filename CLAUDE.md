@@ -131,3 +131,16 @@ If information is missing, say:
 - "This repository does not contain that information."
 - "I cannot verify that from the materials in this repository."
 - "That would require additional City or partner guidance."
+
+## Parallel Agent Skills
+
+The [Parallel](https://parallel.ai) plugin is installed, providing web search, content extraction, deep research, and data enrichment for AI coding agents.
+
+**Budget:** Each team member has **$20 in free tier credits**.
+If you need a budget increase, please visit the **Help Desk**.
+
+### Available Skills
+- `/parallel:web-search` — search the web for research queries
+- `/parallel:web-extract` — extract content from URLs, articles, and PDFs
+- `/parallel:deep-research` — comprehensive multi-step research and analysis
+- `/parallel:data-enrichment` — enrich lists of companies, people, or products
