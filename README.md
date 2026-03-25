@@ -18,8 +18,56 @@ Three questions to answer fast: 1) What problem are we actually solving? 2) Can 
 
 ---
 
+## The Challenge
+
+**→ Full detail in [`CHALLENGE.md`](CHALLENGE.md).** Read it before anything else — it defines the two problems, the top blue sky vision, data constraints, and exactly how judges will score your solution.
+
+### Problem 1: Help Residents Discover and Understand Neighborhood Development — 26/32 — Strong ★ Recommended starting point
+
+> How might we make it easier for residents to discover and understand development proposals in their neighborhoods so they can engage earlier and more meaningfully in the planning process?
+
+Build toward: Neighborhood development tracker using Legistar data · Development proposal map with plain-language summaries · Public comment notifier · Legistar plain-language translator
+
+⚠ Legistar API access for Richmond's instance must be confirmed before building a live integration. Do not imply a proposal is approved or rejected without official verification.
+
+---
+
+### Problem 2: Ensuring Affordable Housing Investments Stay Affordable — 22/32 — Needs work
+
+> How might we improve how the City tracks and verifies compliance with affordable housing agreements so that publicly funded units remain affordable as promised?
+
+Build toward: Staff-facing compliance tracker using Legistar funding records and public rental listings · Affordable housing investment explorer · Rent vs. commitment monitor · Early warning tool for units approaching affordability period expiration
+
+⚠ **Data not ready flag.** List of publicly funded developments is not accessible in this repository. Some contract details are non-public. Teams must scope to publicly available data only and clearly not make compliance determinations.
+
+---
+
+### Top Blue Sky: Making Neighborhood Change Easier to Understand — 22/27 — Strong ★ Recommended
+
+> How might we help Richmond residents understand how their neighborhoods are changing so that they can engage more meaningfully in planning and development decisions?
+
+Scope to one neighborhood or one data layer — not a citywide dashboard. Problem 1 is the practical floor; this vision is the ceiling. A team that adds historical context and change-over-time to Problem 1 will have a compelling pitch for both the Pillar Award and the Moonshot Award.
+
+---
+
+### Pillar Award Rubric
+
+| Category | Weight | Dominant question |
+|----------|--------|-------------------|
+| **Impact** | **5** | Does this directly address one of the two problems above? |
+| User Value | 4 | Does the prototype improve a resident's ability to understand or engage with development? |
+| Feasibility | 3 | Could this be piloted by a City planning department or housing team within a year? |
+| Innovation | 3 | Fresh thinking on development transparency or housing compliance? |
+| Execution | 3 | Does a working demo exist? Is the flow coherent? |
+| Equity | 3 | Does it reach residents without planning expertise, particularly in rapidly changing neighborhoods? |
+
+Full rubric with scoring anchors and judge instructions: [`../RUBRIC.md`](../RUBRIC.md)
+
+---
+
 ## Table of Contents
 
+0. [The Challenge](#the-challenge)
 1. Quick Start
 2. Repo Map
 3. Guardrails
@@ -41,7 +89,8 @@ Three questions to answer fast: 1) What problem are we actually solving? 2) Can 
 
 Do these first 15–30 minutes to get moving:
 
-1) Read: `QUICKSTART.md`
+1) Read: `CHALLENGE.md` — the two problems, top blue sky, and rubric (start here, not QUICKSTART.md)
+2) Read: `QUICKSTART.md`
 2) Skim: `00_core/00_pillar_overview.md` and `01_problem_space/02_targeted_problem_statements.md`
 3) Capture a 5‑bullet "Working Direction" using `99_templates/working_direction_note.md`
 4) Decide your path:
