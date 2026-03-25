@@ -4,7 +4,7 @@
 ## Executive Summary
 Civic engagement in Richmond's development process often suffers from a critical timing gap: residents discover major neighborhood changes only after the window for meaningful input has closed. Recent developments along the Forest Hill–Semmes corridor highlight this friction. As one resident noted regarding a recent project, "The community is unaware of the rezone... NTMP study is useless if residents are unaware of its existence" [1]. 
 
-This demo script and pitch narrative present a solution: a neighborhood development notifier that bridges the gap between the City's official Legistar system and the residents it impacts. By translating complex zoning ordinances—like the 266-unit Semmes/McDonough Special Use Permit (ORD. 2024-180) [2] —into plain-language, address-based alerts, the tool empowers proactive engagement. Crucially, the platform maintains absolute transparency by pulling directly from the City's Legistar API, displaying exact `MatterLastModifiedUtc` timestamps [3], and routing users directly to official City Council and Planning Commission channels [4]. This approach de-risks the tool for city partnerships by explicitly avoiding outcome prediction and reinforcing the official public record.
+This demo script and pitch narrative present a solution: a neighborhood development notifier that bridges the gap between the City's official Legistar system and the residents it impacts. By translating complex zoning ordinances—like the 266-unit Semmes/McDonough Special Use Permit (Ordinance 2024-180) [2] —into plain-language, address-based alerts, the tool empowers proactive engagement. Crucially, the platform maintains absolute transparency by pulling directly from the City's Legistar API, displaying exact `MatterLastModifiedUtc` timestamps [3], and routing users directly to official City Council and Planning Commission channels [4]. This approach de-risks the tool for city partnerships by explicitly avoiding outcome prediction and reinforcing the official public record.
 
 ## Demo Narrative Architecture
 
@@ -22,7 +22,7 @@ To keep the 3–5 minute pitch tight and impactful, the narrative is structured 
 ### Key Phrases to Use and Avoid
 Language matters significantly when presenting civic tech to judges and city officials. The framing must build trust and respect official processes.
 
-* **Use:** "From Legistar (official record)", "View official record", "Last updated in Legistar at 2026-03-24T14:00Z", "We don't predict outcomes", "Here's how to submit public comment."
+* **Use:** "From Legistar (official record)", "View official record", "Last updated in Legistar at [time]", "We don't predict outcomes", "Here's how to submit public comment."
 * **Avoid:** "Approval odds/probability", "Guaranteed alerts for every change" (instead say "We sync hourly from Legistar"), "Override city process."
 * **Core Framing:** "We make it easy to see, in time to act—then we route you to the City's process."
 
@@ -59,8 +59,8 @@ If the live demo breaks due to network issues or Legistar API downtime, the pitc
 
 ### The Fallback Plan
 * **Pre-loaded Assets:** Have static screenshots of the address search result, the plain-language proposal card (complete with timestamps), and map tiles showing the parcel clusters ready in the presentation deck.
-* **Physical Artifacts:** Bring a printed copy of the official Legistar file for ORD. 2024-180, showing the File #, Status, and History [2].
-* **Script Adjustment:** "As with any live civic system, portals occasionally go down for maintenance. Right now, we are displaying our cached data from our last hourly sync. If you look at the screen, you'll see our 'Using cached data from 2026-03-24T14:00Z' banner. This is exactly why we built the system to store the last known `MatterLastModifiedUtc` timestamp [3]. Even if the city's API is temporarily unreachable, residents still have access to the most recent plain-language summary and know exactly when it was last verified against this official printed record I have right here."
+* **Physical Artifacts:** Bring a printed copy of the official Legistar file for Ordinance 2024-180, showing the File #, Status, and History [2].
+* **Script Adjustment:** "As with any live civic system, portals occasionally go down for maintenance. Right now, we are displaying our cached data from our last hourly sync. If you look at the screen, you'll see our 'Using cached data from [Time]' banner. This is exactly why we built the system to store the last known `MatterLastModifiedUtc` timestamp [3]. Even if the city's API is temporarily unreachable, residents still have access to the most recent plain-language summary and know exactly when it was last verified against this official printed record I have right here."
 
 ### Freshness Evidence Fields
 To further prove technical competence during Q&A, refer to this exact mapping of API fields used in the tool:
@@ -77,9 +77,9 @@ By relying on these specific endpoints, the tool guarantees that it is a faithfu
 
 1. *I am extremely concerned about the rezoning as proposed...*. https://rva.gov/sites/default/files/2025-11/Module1_AllEmails_2025.pdf
 2. *City of Richmond - File #: ORD. 2024-180*. https://richmondva.legistar.com/LegislationDetail.aspx?ID=6736374&GUID=53E8BB0E-55A6-42D3-B94D-F51C8D159940&Options=&Search&FullText=1
-3. *GET v1/{Client}/Matters/{MatterId}*. https://webapi.legistar.com/Help/Api/GET-v1-Client-Matters-MatterId
+3. *PUT v1/{Client}/Matters/{MatterId}*. https://webapi.legistar.com/Help/Api/PUT-v1-Client-Matters-MatterId
 4. *Planning Commission | Richmond*. https://www.rva.gov/planning-development-review/planning-commission
-5. *Informational Meeting Guide | Richmond*. https://www.rva.gov/office-city-clerk/informational-meeting-guide
-6. *GET v1/{Client}/Events/{EventId}/EventItems*. https://webapi.legistar.com/Help/Api/GET-v1-Client-Events-EventId-EventItems
+5. *Legistar Tutorial for Council Meetings on Computers - YouTube*. https://www.youtube.com/watch?v=yDljr0RQNQk
+6. *POST v1/{Client}/Events/{EventId}/EventItems*. https://webapi.legistar.com/Help/Api/POST-v1-Client-Events-EventId-EventItems
 7. *Land Use Administration | Richmond*. https://www.rva.gov/planning-development-review/land-use-administration
-8. *GET v1/{Client}/Matters/{MatterId}/Attachments*. https://webapi.legistar.com/Help/Api/GET-v1-Client-Matters-MatterId-Attachments
+8. *POST v1/{Client}/Matters/{MatterId}/Attachments*. https://webapi.legistar.com/Help/Api/POST-v1-Client-Matters-MatterId-Attachments

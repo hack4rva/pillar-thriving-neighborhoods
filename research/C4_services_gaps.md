@@ -1,4 +1,3 @@
-
 # C4 Services Gaps – 2026 Assessment
 
 *Prepared 2026-03-24* 
@@ -19,9 +18,9 @@ These gaps collectively erode command-and-control tempo, increase cyber-risk exp
 - **Sources:** GAO reports, DoD Zero-Trust Strategy, DoD EMS Superiority Strategy, NATO FMN spiral documents, DISA/JWCC briefs, Project Overmatch press releases, and peer-reviewed analyses (CSIS, HCSS). 
 - **Analytical framework:** Gap analysis matrix (Capability × Maturity × Investment), cross-referencing interoperability, security, and spectrum constraints. 
 
-## Current C4 Service Landscape (2024 to 2025)
+## Current C4 Service Landscape (2024-2025)
 
-| Domain | Primary Initiatives (2024 to 2025) | Status (Maturity 1-5) | Notable Metrics |
+| Domain | Primary Initiatives (2024-25) | Status (Maturity 1-5) | Notable Metrics |
 |--------|------------------------------|-----------------------|-----------------|
 | **CJADC2** | Cross-functional team, data-centric security plan | 3 (Partial) | Lacks framework to evaluate military organization investments [1] |
 | **FMN** | NATO FMN Spirals, MSS-NATO AI-fusion platform (2025) | 2 (Early) | 25% delay in data exchanges due to interoperability gaps [2] |
@@ -74,7 +73,7 @@ Overall, the C4 ecosystem sits at an average maturity of 2.7/5, indicating early
 | **Cloud-Service Fragmentation** | AI-driven analytics unavailable; cost overruns | 3 | Medium (JWCC KPI dashboard) |
 | **Carrier-Level Network Gaps** | Reduced carrier strike group lethality; training shortfalls | 3 | Medium (Overmatch funding) |
 
-## Prioritized Recommendations (2026 to 2028)
+## Prioritized Recommendations (2026-2028)
 
 | # | Recommendation | Owner(s) | Target Date | Success Metric |
 |---|----------------|----------|-------------|----------------|
@@ -100,11 +99,11 @@ Overall, the C4 ecosystem sits at an average maturity of 2.7/5, indicating early
 
 ## References
 
-1. *[PDF] DEFENSE COMMAND AND CONTROL Further Progress... - GAO*. https://www.gao.gov/assets/gao-25-106454.pdf
-2. *[PDF] Appraising the State of Play of C4ISR Infrastructure within NATO...*. https://hcss.nl/wp-content/uploads/2025/05/Appraising-the-State-of-Play-of-C4ISR-Infrastructure-within-NATO-HCSS-2025-1.pdf
+1. *[PDF] DEFENSE COMMAND AND CONTROL Further Progress ... - GAO*. https://www.gao.gov/assets/gao-25-106454.pdf
+2. *[PDF] Appraising the State of Play of C4ISR Infrastructure within NATO ...*. https://hcss.nl/wp-content/uploads/2025/05/Appraising-the-State-of-Play-of-C4ISR-Infrastructure-within-NATO-HCSS-2025-1.pdf
 3. *[PDF] DoD Zero Trust Strategy*. https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf
 4. *[PDF] DoD Electromagnetic Spectrum Superiority Strategy 2020 - War.gov*. https://media.defense.gov/2020/Oct/29/2002525927/-1/-1/0/electromagnetic_spectrum_superiority_strategy.pdf
-5. *Pentagon officials gearing up for JWCC Next enterprise cloud...*. https://defensescoop.com/2025/08/07/jwcc-next-enterprise-cloud-program-dod-solicitation-plans/
+5. *Pentagon officials gearing up for JWCC Next enterprise cloud ...*. https://defensescoop.com/2025/08/07/jwcc-next-enterprise-cloud-program-dod-solicitation-plans/
 6. *Overmatch networking now installed on 3 carrier strike groups*. https://www.c4isrnet.com/battlefield-tech/c2-comms/2024/03/06/overmatch-networking-installed-on-3-carrier-strike-groups-says-boyle/
 7. *[PDF] Zero Trust Architecture - NIST Technical Series Publications*. https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-207.pdf
-8. *As DISA preps JWCC-Next, Olympus, JOE initiatives take...*. https://federalnewsnetwork.com/defense-news/2025/08/as-disa-preps-jwcc-next-olympus-joe-initiatives-take-hold/
+8. *As DISA preps JWCC-Next, Olympus, JOE initiatives take ...*. https://federalnewsnetwork.com/defense-news/2025/08/as-disa-preps-jwcc-next-olympus-joe-initiatives-take-hold/

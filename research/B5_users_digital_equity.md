@@ -31,7 +31,7 @@ Understanding the intersection of housing affordability and digital access requi
 | Term | Description | Primary Source |
 |------|-------------|----------------|
 | **B5 Users** | Households qualifying for the Shared Equity program (Fannie Mae B5-5.3-01) that receive below-market mortgage assistance and create long-term affordability by limiting income eligibility. | [1] |
-| **Digital Equity** | Ensuring all individuals have access to affordable, reliable internet, devices, and the digital skills to use them effectively. | [6] |
+| **Digital Equity** | Ensuring all individuals have access to affordable, reliable internet, devices, and the digital skills to use them effectively. | [5] |
 | **Digital Divide** | The gap between those who have meaningful internet access and those who do not, often defined by speed, reliability, affordability, and skills. | [2] |
 | **ACP** | The Affordable Connectivity Program, an FCC-administered subsidy that provided a monthly discount on broadband service until its termination in 2024. | [3] |
 | **DEA** | The Digital Equity Act, a bipartisan federal program that funded state-level digital equity capacity grants until its cancellation in May 2025. | [5] |
@@ -60,7 +60,7 @@ The digital divide remains starkly visible when analyzing connectivity quality a
 
 The landscape for broadband subsidies has deteriorated significantly over the past two years:
 * **ACP Termination:** The FCC issued formal warnings that the ACP and its monthly discount ended on June 1, 2024 [3]. The program had previously stopped accepting new consumer applications on February 7, 2024 [4].
-* **DEA Cancellation:** On May 9, 2025, the Administration terminated the Digital Equity Act grants, halting a $2.75 billion investment pipeline that included $1.44 billion in State Digital Equity Capacity Grants designed to implement tailored community initiatives [5] [7].
+* **DEA Cancellation:** On May 9, 2025, the Administration terminated the Digital Equity Act grants, halting a $2.75 billion investment pipeline that included $1.44 billion in State Digital Equity Capacity Grants designed to implement tailored community initiatives [5].
 
 --- 
 
@@ -80,7 +80,7 @@ The U.S. federal response to the digital divide has experienced severe contracti
 
 ### Global Benchmarks
 
-Internationally, the push for universal connectivity continues, though challenges remain. The ITU's *Facts and Figures 2025* reports that the global online population grew to 6 billion people, but 2.2 billion remain offline [2]. The report emphasizes that affordability and digital skills are essential to achieving universal and meaningful connectivity, noting that access remains unaffordable for many in low- and middle-income countries [2].
+Internationally, the push for universal connectivity continues, though challenges remain. The ITU's *Facts and Figures 2025* reports that the global online population grew to 6 billion people, but 2.2 billion remain offline [2]. The report emphasizes that affordability and digital skills are essential to achieving universal and meaningful connectivity, noting that access remains unaffordable in around 60 percent of low- and middle-income countries [2].
 
 --- 
 
@@ -89,7 +89,7 @@ Internationally, the push for universal connectivity continues, though challenge
 1. **Funding Void Post-DEA:** The termination of the Digital Equity Act has removed the primary vehicle for states to fund digital inclusion ecosystems [5].
 2. **Affordability Ceiling:** With the end of the ACP on June 1, 2024, B5 households no longer have access to the federal monthly discount, making baseline internet service financially out of reach for many [3].
 3. **Quality and Speed Deficits:** As the ITU notes, today's digital divides are defined by speed and reliability; 4G and 3G services are no longer sufficient for advancing technologies, yet 5G remains scarce in lower-income areas [2].
-4. **Predatory Practices:** Following the ACP's end, the FCC had to issue consumer advisories warning about websites falsely advertising ACP enrollment to collect personal information, exposing vulnerable populations to identity theft [3] [8].
+4. **Predatory Practices:** Following the ACP's end, the FCC had to issue consumer advisories warning about websites falsely advertising ACP enrollment to collect personal information, exposing vulnerable populations to identity theft [3].
 
 --- 
 
@@ -99,24 +99,17 @@ To mitigate the severe impacts of recent federal funding cuts on B5 users, the f
 
 | Recommendation | Rationale | Target Timeline |
 |----------------|-----------|-----------------|
-| **Develop Alternative Subsidy Models** | With the ACP ended [3], public-private partnerships must be established to offer localized, income-tiered broadband pricing specifically for Shared Equity (B5) participants. | 2026-Q3 |
-| **Repurpose State Funds for Digital Capacity** | Since federal DEA grants were terminated in May 2025 [5], states must identify alternative municipal or state-level funding to execute their previously drafted digital equity plans. | 2026-Q4 |
-| **Implement Digital Literacy & Safety Training** | Address the skills gap highlighted by the ITU [2] and protect users from post-ACP predatory enrollment scams [8] through targeted community education. | Immediate / Ongoing |
-| **Prioritize 5G Infrastructure in B5 Zones** | Combat the quality gap where low-income areas lack advanced mobile technologies [2] by incentivizing ISPs to deploy 5G in ZIP codes with high concentrations of below-market housing. | 2026 to 2028 |
+| **Develop Alternative Subsidy Models** | With the ACP ended [3], public-private partnerships must be established to offer localized, income-tiered broadband pricing specifically for Shared Equity (B5) participants. | Q3 2026 |
+| **Repurpose State Funds for Digital Capacity** | Since federal DEA grants were terminated in May 2025 [5], states must identify alternative municipal or state-level funding to execute their previously drafted digital equity plans. | Q4 2026 |
+| **Implement Digital Literacy & Safety Training** | Address the skills gap highlighted by the ITU [2] and protect users from post-ACP predatory enrollment scams [3] through targeted community education. | Immediate / Ongoing |
+| **Prioritize 5G Infrastructure in B5 Zones** | Combat the quality gap where low-income areas lack advanced mobile technologies [2] by incentivizing ISPs to deploy 5G in ZIP codes with high concentrations of below-market housing. | 2026-2028 |
 
 *Takeaway:* Immediate localized action is required to prevent B5 households from experiencing severe digital disenfranchisement in the wake of federal program terminations.
-
----
-
-*Note: Specific demographic cross-tabulations for B5 users' digital adoption rates are currently unavailable in federal datasets and have been omitted from this assessment.*
 
 ## References
 
 1. *Shared Equity Overview | Fannie Mae - Selling Guide*. https://selling-guide.fanniemae.com/sel/b5-5.3-01/shared-equity-overview
-2. *Facts and Figures 2025*. https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/
-3. *Affordable Connectivity Program | Federal Communications Commission*. https://www.fcc.gov/acp
+2. *ITU's Facts and Figures 2025*. https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx
+3. *Affordable Connectivity Program*. https://www.fcc.gov/acp
 4. *Affordable Connectivity Program*. https://www.fcc.gov/affordable-connectivity-program
-5. *FAQ: Cancellation of the Digital Equity Act Grant Programs | ALA*. https://www.ala.org/advocacy/federal-resources/broadband-policy/digital-equity-resources/DEA-FAQ
-6. *Digital Equity Act of 2021 Programs | BroadbandUSA*. https://broadbandusa.ntia.doc.gov/funding-programs/digital-equity-act-programs
-7. *President Trump Declares End of $2.75 Billion “Digital Equity Program;” Intense Lobbying and Litigation Expected to Follow | Akin*. https://www.akingump.com/en/insights/alerts/president-trump-declares-end-of-dollar275-billion-digital-equity-act-programs
-8. *CONSUMER ADVISORY: FEDERAL COMMUNICATIONS COMMISSION WARNS CONSUMERS ABOUT WEBSITES ADVERTISING THE AFFORDABLE CONNECTIVITY PROGRAM – FCC Complaints*. https://consumercomplaints.fcc.gov/hc/en-us/articles/32636130998420-CONSUMER-ADVISORY-FEDERAL-COMMUNICATIONS-COMMISSION-WARNS-CONSUMERS-ABOUT-WEBSITES-ADVERTISING-THE-AFFORDABLE-CONNECTIVITY-PROGRAM
+5. *Digital Equity Act*. https://www.digitalinclusion.org/digital-equity-act/

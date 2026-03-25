@@ -143,9 +143,4 @@ Each file is a markdown report with inline citations. Read this index first to i
 
 ### References
 
-[^1]: Parallel Web Systems Inc., "Parallel AI Research Repository." GitHub. Last updated 2026-03. (https://github.com/parallel-web)
-Description: The open-source repository under the Parallel Web Systems GitHub organization hosts sample tasks, SDKs, and reference implementations that underpin the research methods cited throughout this index, providing reproducible code and data for verification.
-
-Information of interest:
-Item: output
-Description: This curated directory lets teams jump directly to the most relevant Richmond datasets, personas, risks, and MVP blueprints, accelerating discovery-to-prototype cycles from weeks to hours.
+[^1]: Parallel.ai research repository, 2025-2026. (https://github.com/parallelai/research)

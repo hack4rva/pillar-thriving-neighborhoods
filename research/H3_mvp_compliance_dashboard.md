@@ -43,7 +43,7 @@ To create a unified portfolio view, the system must join these disparate feeds. 
 Because the MVP will use mock portfolio data to simulate internal compliance records, it must follow established frameworks for synthetic data governance to prevent confusion.
 
 ### Labeling patterns and safeguards
-NIST AI 100-4 emphasizes that no single technique for labeling synthetic content is comprehensive [7] [8]. Therefore, a layered approach is required. NIST Special Publication 1800–39 demonstrates best practices by explicitly discovering, identifying, and labeling synthetic datasets [9]. 
+NIST AI 100-4 emphasizes that no single technique for labeling synthetic content is comprehensive [7] [8]. Therefore, a layered approach is required. NIST Special Publication 1800-39 demonstrates best practices by explicitly discovering, identifying, and labeling synthetic datasets [9]. 
 * **Metadata**: Implement a `dataset_provenance` field in the database (values: "real", "synthetic", "blended").
 * **UI Watermarks**: Apply a persistent "Demo Data" ribbon on all property cards, a top-banner disclaimer on the dashboard, and explicit footers on any exports.
 * **Audit Trail**: Include `seeded_at`, `seeded_by`, and `source_urls` in the data model.
@@ -145,13 +145,13 @@ To prove the MVP's value, track specific success metrics during user testing. Fo
 ## References
 
 1. *National-Housing-Preservation-Database-User-Guide.pdf*. https://preservationdatabase.org/wp-content/uploads/2025/09/National-Housing-Preservation-Database-User-Guide.pdf
-2. *National Housing Preservation Database Updated to Include National Housing Trust Fund*. https://nlihc.org/resource/national-housing-preservation-database-updated-include-national-housing-trust-fund
+2. *National Housing Preservation Database Updated to...*. https://nlihc.org/resource/national-housing-preservation-database-updated-include-national-housing-trust-fund
 3. *Terms of Use - National Housing Preservation Database (NHPD)*. https://preservationdatabase.org/terms-and-conditions/
 4. *Register as a new user - National Housing Preservation Database (NHPD)*. https://preservationdatabase.org/register-as-a-new-user/
 5. *Building Permits | City of Chicago | Data Portal*. https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu
 6. *API Endpoints - Socrata*. https://dev.socrata.com/docs/endpoints.html
-7. *Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency*. https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content
-8. *NIST AI 100-4, Reducing Risks Posed by Synthetic Content*. https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf
-9. *NIST Special Publication 1800–39, Data Classification Practices*. https://csrc.nist.gov/pubs/sp/1800/39/ipd
+7. *Reducing Risks Posed by Synthetic Content An Overview of Technical Approaches to Digital Content Transparency | NIST*. https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content
+8. *NIST Synthetic Content Labeling/Detection Report...*. https://downloads.regulations.gov/NIST-2024-0001-0029/attachment_1.pdf
+9. *SP 1800-39, Data Classification Practices - CSRC - NIST*. https://csrc.nist.gov/pubs/sp/1800/39/ipd
 10. *The WHERE Clause - Socrata - Data & Insights*. https://dev.socrata.com/docs/queries/where.html
-11. *The SELECT Clause | Socrata - Data & Insights*. https://dev.socrata.com/docs/queries/select.html
+11. *The SELECT Clause | Socrata - Data & Insights*. https://dev.socrata.com/docs/queries/select
