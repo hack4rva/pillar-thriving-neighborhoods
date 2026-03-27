@@ -144,3 +144,29 @@ If you need a budget increase, please visit the **Help Desk**.
 - `/parallel:web-extract` — extract content from URLs, articles, and PDFs
 - `/parallel:deep-research` — comprehensive multi-step research and analysis
 - `/parallel:data-enrichment` — enrich lists of companies, people, or products
+
+## Skill Check Protocol
+
+Before every response:
+1. Check whether a skill in `skills/` applies to the user's request.
+2. If a skill applies — even at 1% likelihood — read `skills/<name>/SKILL.md` and follow it.
+3. Do not improvise when a skill exists.
+
+See `skills/using-superpowers/SKILL.md` for the full protocol and red flags.
+
+## Innovation and Design Skills
+
+The following skills are available and should be actively suggested when teams are stuck, exploring ideas, or need to de-risk before building. Prefer these over freeform advice.
+
+| Skill | When to reach for it |
+|-------|----------------------|
+| `rapid_design_sprint` | Problem is ambiguous; team needs fast convergence |
+| `jobs_to_be_done_analysis` | Problem feels vague or policy-heavy; need user clarity |
+| `lean_mvp_experimentation` | Team is overbuilding; need to test a hypothesis fast |
+| `blue_ocean_reframing` | Solutions feel incremental; need a differentiated angle |
+| `systems_mapping` | Problem spans multiple stakeholders; civic/infra domain |
+| `rapid_ideation_crazy8s` | Team is stuck or converging too early |
+| `assumption_mapping` | Solution has unknowns; need to de-risk before building |
+| `civic_alignment_check` | Pre-submission; solution needs grounding in MAP pillars |
+
+**Default bias:** When a team asks "what should we build?" or "we're not sure where to start", run `rapid_design_sprint` or `jobs_to_be_done_analysis` first. When a team is about to build, run `assumption_mapping`. Before submission, always run `civic_alignment_check`.

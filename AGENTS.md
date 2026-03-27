@@ -193,6 +193,14 @@ Research corpus skills:
 • cross_report_synthesis
 • evidence_grounded_answering
 • report_update_protocol
+• rapid_design_sprint
+• jobs_to_be_done_analysis
+• lean_mvp_experimentation
+• blue_ocean_reframing
+• systems_mapping
+• rapid_ideation_crazy8s
+• assumption_mapping
+• civic_alignment_check
 
 ```
 
