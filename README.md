@@ -34,11 +34,11 @@ Build toward: Neighborhood development tracker using Legistar data · Developmen
 
 ### Problem 2: Ensuring Affordable Housing Investments Stay Affordable — 22/32 — Needs work
 
-> How might we improve how the City tracks and verifies compliance with affordable housing agreements so that publicly funded units remain affordable as promised?
+> How might we use technology to improve how the City tracks and verifies compliance with affordable housing performance grant agreements—so that units funded through public investment remain affordable as promised, without overwhelming limited staff capacity?
 
-Build toward: Staff-facing compliance tracker using Legistar funding records and public rental listings · Affordable housing investment explorer · Rent vs. commitment monitor · Early warning tool for units approaching affordability period expiration
+Build toward: Staff-facing compliance tracker using AHPG project data and rent/occupancy reports · Affordable housing investment explorer · Rent vs. commitment monitor · Early warning tool for units approaching affordability period expiration
 
-⚠ **Data not ready flag.** List of publicly funded developments is not accessible in this repository. Some contract details are non-public. Teams must scope to publicly available data only and clearly not make compliance determinations.
+**Data is now available.** The City's Department of Housing & Community Development provided a full data package for this problem (see [City-Provided Data Package](#city-provided-data-package) below). The AHPG program is the designated pilot for compliance tooling.
 
 ---
 
@@ -101,6 +101,7 @@ Do these first 15–30 minutes to get moving:
 
 ## Repo Map
 
+- **City-provided data package (March 25, 2026): see [City-Provided Data Package](#city-provided-data-package) below — use this for Problem 2**
 - Research corpus: `research/` (51 deep research reports — see `research/INDEX.md`)
 - Research hub: `research_notes.md`
 - Evidence tracker: `evidence_log.md`
@@ -125,6 +126,29 @@ Do these first 15–30 minutes to get moving:
 | `research/index.json` | Machine-readable index of all 51 research reports |
 | `research/INDEX.md` | Human-readable table of contents for the research corpus |
 | `MAINTENANCE.md` | How to add, update, and sync reports and metadata |
+
+---
+
+## City-Provided Data Package
+
+Provided by Rachel Hightman (Policy & Special Projects Manager, Richmond Department of Housing & Community Development) on March 25, 2026. These five files are the official dataset for **Problem 2**. The Affordable Housing Performance Grant (AHPG) program is designated as the pilot for any compliance tooling built at this hackathon.
+
+The AHPG program provides a rebate of the incremental real estate tax increase — in the form of an annual grant from the City's Economic Development Authority — for up to 30 years. Projects must hit three milestones (Plan of Development, Commencement of Construction, Certificate of Occupancy) and submit annual rent/occupancy reports to receive grant payments. Compliance review is currently manual and entirely staff-driven.
+
+| File | What it is | Use it for |
+|------|-----------|------------|
+| [`2026.03.24 - HCD Projects - Hackathon.xlsx`](2026.03.24%20-%20HCD%20Projects%20-%20Hackathon.xlsx) | Master HCD housing project dataset for the hackathon. Two sheets: all affordable housing projects by award year, funding source, developer, address, and council district; plus a reference sheet of funding types, construction statuses, and program codes. | Starting point for the full portfolio — understand scale and funding mix before narrowing to AHPG |
+| [`AHPG Information.docx`](AHPG%20Information.docx) | Program overview and key questions for participants. Describes how the grant works, the three compliance milestones, the annual reporting cycle, and the three core questions Rachel's team wants answered: (1) best process for milestone tracking; (2) best process for affordability compliance; (3) best practices for maintaining project data over a 30-year lifespan. | **Read this first** — it defines the problem space and the questions judges expect your tool to address |
+| [`Affordable Housing Performance Grant Projects.xlsx`](Affordable%20Housing%20Performance%20Grant%20Projects.xlsx) | Roster of all active AHPG projects. Fields include: Award Year, Developer, Project Name, City Council District, Parcel PIN, and Project Description (e.g. "Multifamily New Construction (Rental)"). Projects span FY2023–FY2026. | Core dataset for any compliance tracker — parcel PINs enable GIS integration |
+| [`Affordable Housing Performance Grant Rent and Occupancy Report (2024 Limits) - FINAL.xlsx`](Affordable%20Housing%20Performance%20Grant%20Rent%20and%20Occupancy%20Report%20%282024%20Limits%29%20-%20FINAL.xlsx) | The annual compliance form grantees complete and submit with their grant payment request. Tracks units by bedroom count and AMI tier; flags whether each unit is in compliance. Virginia Housing income/rent limits for the Richmond MSA (2024 median income: $110,300) are embedded as a reference sheet. | Understanding the compliance data structure — what staff review manually today is what your tool should help organize or automate |
+| [`Template - AHPG Agreement.docx`](Template%20-%20AHPG%20Agreement.docx) | Standard grant agreement between the City of Richmond, the grantee entity, and the Economic Development Authority. Defines affordability obligations, AMI thresholds, milestone requirements, and the 30-year compliance period. Each project has a customized version. | Understanding what compliance actually means legally — what commitments are made and what the City can verify |
+
+**Key questions from HCD (Rachel Hightman) — your tool should address at least one:**
+1. What is the best process for notifying, receiving, and ensuring compliance with Plan of Development, Commencement of Construction, and Certificate of Occupancy milestones?
+2. What is the best process for notifying, receiving, and ensuring affordability compliance (currently: grantees submit the Rent and Occupancy Report annually alongside their grant payment request; staff review manually)?
+3. What are best practices for maintaining and updating key project data in a database over a 30-year project lifespan with annual compliance requirements?
+
+**Also available (Problem 1 — Neighborhood Development):** Brian Mercer (PDR) published an interactive development mapper web app at [https://cor.maps.arcgis.com/apps/instant/basic/index.html?appid=dfc426012992439b9f25d0f1e7397697](https://cor.maps.arcgis.com/apps/instant/basic/index.html?appid=dfc426012992439b9f25d0f1e7397697) and accompanying page at [https://www.rva.gov/planning-development-review/interactive-mapping-tools](https://www.rva.gov/planning-development-review/interactive-mapping-tools). An Excel export of that mapper data may also be available — ask your pillar lead.
 
 ---
 
@@ -207,7 +231,7 @@ Decision rule — choose only if the problem has:
 | Statement | Score | Band | Quick-kill flags |
 |---|---|---|---|
 | Neighborhood Development Discovery | 26/32 | Strong | Lacks named continuation champion |
-| Housing Compliance Monitoring | 22/32 | Needs work | Lacks champion + data not ready for teams |
+| Housing Compliance Monitoring | 22/32 | Needs work | Lacks continuation champion; AHPG data package now available |
 
 Output: Decision Memo (`99_templates/decision_memo.md`)
 
@@ -356,7 +380,7 @@ Rubric Score Summary
 
 Dimension key: D1 Clarity | D2 Scope | D3 Data readiness | D4 Champion | D5 Population & impact | D6 Operating environment | D7 Success criteria | D8 Accessibility
 
-Quick‑kill flags: Both targeted statements lack a continuation pathway. Housing Compliance also has a "data not ready for teams" flag.
+Quick‑kill flags: Both targeted statements lack a continuation pathway. Housing Compliance data gap is resolved — AHPG data package provided by HCD (March 25, 2026).
 
 **Targeted Statement 1: Ensuring Affordable Housing Investments Stay Affordable (Score 22/32 — Needs work)**
 - Full detail: `01_problem_space/02_targeted_problem_statements.md`

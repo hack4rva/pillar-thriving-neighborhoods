@@ -43,10 +43,10 @@ An address or neighborhood search interface that surfaces active and recent deve
 ### Problem 2: Ensuring Affordable Housing Investments Stay Affordable
 
 **Score: 22/32 — Needs work**
-**⚠ Data not ready flag: The compliance monitoring workflow and list of funded developments are not publicly documented in accessible form. Teams choosing this problem must spend significant time scoping to what is actually available.**
+**✅ Data now available: The City's Department of Housing & Community Development provided a full AHPG data package on March 25, 2026. The Affordable Housing Performance Grant program is the designated pilot. See the [City-Provided Data Package](README.md#city-provided-data-package) section in README.md.**
 
-**Statement:**
-How might we use technology to improve how the City tracks and verifies compliance with affordable housing agreements — so that units funded through public investment remain affordable as promised, without overwhelming limited staff capacity?
+**Statement (revised March 25, 2026 per Rachel Hightman, HCD):**
+How might we use technology to improve how the City tracks and verifies compliance with affordable housing performance grant agreements—so that units funded through public investment remain affordable as promised, without overwhelming limited staff capacity?
 
 **Why this problem matters:**
 Richmond invests in affordable housing through performance grants, low-interest loans, Section 108 loans, and other programs. As the portfolio of funded developments grows, staff must verify that developers comply with affordability requirements, rent limits, and repayment terms. Monitoring is largely manual. Data is spread across internal trackers, public records, and external housing listings. Compliance gaps can go undetected.
@@ -64,15 +64,19 @@ Richmond invests in affordable housing through performance grants, low-interest 
 - Do not claim a development is out of compliance without verified data
 - Must operate within limited staff capacity
 
-**Data gaps (blocking — must be resolved before building):**
-- List of publicly funded affordable housing developments is not available in this repository
-- Legistar records for housing funding actions have not been linked
-- Public rental listing data for rent-vs-commitment comparison has not been identified
-- Manual monitoring workflow has not been described
-- A departmental champion has not been named
+**Available data (provided by HCD, March 25, 2026):**
+- `2026.03.24 - HCD Projects - Hackathon.xlsx` — master HCD project dataset (all programs, all years)
+- `AHPG Information.docx` — program overview and the three key questions your tool should address
+- `Affordable Housing Performance Grant Projects.xlsx` — full AHPG project roster with parcel PINs, council districts, and project types
+- `Affordable Housing Performance Grant Rent and Occupancy Report (2024 Limits) - FINAL.xlsx` — the annual compliance form staff review manually today
+- `Template - AHPG Agreement.docx` — standard grant agreement defining affordability obligations and the 30-year compliance window
+
+**Remaining gaps:**
+- A long-term departmental champion for continued maintenance has not been named
+- Internal City data (individual unit-level compliance records) remains non-public — scope to the provided datasets only
 
 **Recommended scope if pursuing this:**
-A staff-facing tool that uses Legistar funding records and public rental listings to organize affordability commitments in one place. Treat internal City data as explicitly out of scope. No compliance determinations — only information organization and surfacing.
+A staff-facing tool that uses the AHPG project roster and rent/occupancy report structure to organize and track affordability commitments. The three questions from HCD (milestone tracking, compliance verification, long-term database maintenance) are your design brief. No compliance determinations — only information organization and surfacing for staff review.
 
 ---
 
