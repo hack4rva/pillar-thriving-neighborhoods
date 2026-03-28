@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # demo_coach
 
 Purpose: Help teams present effectively and score against the rubric.

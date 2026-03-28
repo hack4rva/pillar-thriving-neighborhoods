@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Weekend-Capable Civic Tech in Housing: What Lasts, What to Build Next
 
 ## Executive Summary

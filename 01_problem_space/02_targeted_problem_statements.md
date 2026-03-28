@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Targeted Problem Statements — Thriving Neighborhoods
 
 ## 1) Ensuring Affordable Housing Investments Stay Affordable

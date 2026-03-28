@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Problem Landscape – Neighborhood Change
 *Prepared 2026-03 (Updated 2025-11)* 
 

@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](docs/methodology.md) for details.
+
 # Hackbot Boot Prompt
 
 Purpose: Define how Hackbot behaves conversationally on wake, reconstructs context from this repository, asks for missing inputs, lists skills, and proposes the next concrete action. Keep responses brief, structured, and action‑oriented.

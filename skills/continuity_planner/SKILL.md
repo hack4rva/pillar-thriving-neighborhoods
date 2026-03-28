@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # continuity_planner
 
 Purpose: Identify post-hackathon continuation opportunities and next steps.

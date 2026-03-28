@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Closing Richmond's Development Transparency Gap — Staff and Commissioner Realities to Design Around
 
 ## Executive Summary

@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # From Hidden to Heard: Unmasking the Systems Hiding Richmond's Housing Decisions
 
 ## Executive Summary

@@ -20,6 +20,8 @@ related_reports:
   - H1_mvp_48hr_framework
 ---
 
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Hackathon-Ready Civic Tools: Ranking LA Neighborhood Development Opportunities by Buildability and Credibility
 
 ## Executive Summary

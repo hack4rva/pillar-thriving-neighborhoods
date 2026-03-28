@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Richmond Compliance Gatekeepers — How Small Teams Police Affordable Units on Shoestring Systems
 
 ## Executive Summary

@@ -28,6 +28,8 @@ related_reports:
   - F2_opportunities_development_notify
 ---
 
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Richmond Legistar Data — Fast, Reliable Access for Dev-focused Hackathon Apps
 
 ## Executive Summary

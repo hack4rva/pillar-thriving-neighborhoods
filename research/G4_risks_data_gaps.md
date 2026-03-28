@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Don't Let Data Gaps Lie: Designing Richmond's Tools to Be Honest, Fresh, and Verifiable
 
 ## Executive Summary

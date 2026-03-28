@@ -3,6 +3,8 @@ name: research_search
 description: Use when answering questions that require facts, evidence, personas, data sources, risks, or prior art from the Thriving Economy pillar research corpus. Use when a team asks about Richmond MBE contracting, small business formation, services, data availability, MVP feasibility, demo strategy, or risks — before answering from memory.
 ---
 
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # research_search
 
 ## Overview

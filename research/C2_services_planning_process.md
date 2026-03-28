@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # C2 Services Planning Process
 
 *(Revised 2026-03-24 – placeholders removed, dates validated, sources added)* 

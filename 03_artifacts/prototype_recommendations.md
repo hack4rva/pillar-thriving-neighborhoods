@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Prototype Recommendations — Thriving Neighborhoods
 
 ## Problem 1 — Residents discovering neighborhood development

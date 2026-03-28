@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # risk_review
 
 Purpose: Prevent common civic-tech mistakes and enforce guardrails.

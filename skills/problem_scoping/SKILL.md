@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # problem_scoping
 
 Purpose: Help the team choose a strong, weekend-feasible problem direction.

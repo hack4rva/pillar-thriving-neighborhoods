@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # report_update_protocol
 
 Purpose: Safely add or update research reports and keep all metadata, indexes, and navigation files synchronized.

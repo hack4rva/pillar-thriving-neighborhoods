@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 
 # Richmond Development Notifier — A credible, judge-proof demo plan that centers residents, proves data freshness, and de-risks city partnerships
 

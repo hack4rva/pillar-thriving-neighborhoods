@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Housing Data Feasibility — Thriving Neighborhoods
 
 Analysis of what housing and development data is actually accessible for hackathon teams.

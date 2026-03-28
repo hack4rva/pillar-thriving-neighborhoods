@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Data Index — Thriving Neighborhoods
 
 This index lists the primary datasets relevant to this pillar. Verify access before building. See `02_data/source_inventory.csv` for the full machine-readable inventory.

@@ -1,4 +1,10 @@
-> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](docs/methodology.md) for details.
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](methodology.md) for details.
+
+# Participant handout
+
+This file is a copy of [`CHALLENGE.md`](../CHALLENGE.md) plus this cover note so you can share one Markdown document. Official judge categories are described in `RUBRIC.md` at the hackathon repository root (the directory that contains `pillar-repos`). The body below mirrors `CHALLENGE.md` in this repository.
+
+---
 
 # Thriving Neighborhoods: Hackathon Challenge
 

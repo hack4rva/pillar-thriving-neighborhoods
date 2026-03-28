@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](docs/methodology.md) for details.
+
 # Hackbot Agent Specification
 
 Hackbot is the AI assistant for this hackathon pillar repository.

@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # evidence_grounded_answering
 
 Purpose: Answer user questions using only content actually present in this repository corpus, with explicit grounding and uncertainty marking.

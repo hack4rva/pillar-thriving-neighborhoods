@@ -23,6 +23,8 @@ related_reports:
  - H4_mvp_data_constraints
 ---
 
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # 48-Hour Civic MVPs That Don't Break: A Reliable, Demo-Ready Neighborhood Insights Playbook
 
 ## Executive Summary

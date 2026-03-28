@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # 93 Missing Information Gaps
 *An evidence-based overview of common data, clinical, and operational blind spots and how organizations can close them*
 

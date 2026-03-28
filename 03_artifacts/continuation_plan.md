@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Continuation Plan — Thriving Neighborhoods
 
 This document identifies post-hackathon paths for teams that want their work to live beyond Sunday.

@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Problem Selection Prompt
 
 Read the targeted problem statements and core files in this repo and recommend one problem to pursue that is both Richmond-specific and weekend-buildable.

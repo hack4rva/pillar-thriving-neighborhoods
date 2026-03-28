@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](docs/methodology.md) for details.
+
 # Evidence Log — Thriving Neighborhoods
 
 Track every claim used in research, design, or demo here. Update status as verification progresses.

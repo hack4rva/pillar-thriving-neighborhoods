@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Team Profile Template
 
 You can write this as YAML or Markdown. Keep it in the repo root as `team_profile.yaml` (preferred) or `team_profile.md`.

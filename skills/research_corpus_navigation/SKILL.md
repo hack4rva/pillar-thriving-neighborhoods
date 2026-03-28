@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # research_corpus_navigation
 
 Purpose: Map a user question to the correct section and specific research reports in the Thriving Neighborhoods corpus before attempting to answer.

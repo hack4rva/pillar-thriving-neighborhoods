@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # jobs_to_be_done_analysis
 
 Purpose: Identify the real user need behind a problem using JTBD framing.

@@ -7,6 +7,8 @@ metadata:
   author: parallel
 ---
 
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../../docs/methodology.md) for details.
+
 # Parallel Plugin Setup
 
 ## Install CLI

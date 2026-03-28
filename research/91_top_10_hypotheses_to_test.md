@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Unlocking Richmond Development Data for Faster, Fairer Engagement
 
 ## Executive Summary

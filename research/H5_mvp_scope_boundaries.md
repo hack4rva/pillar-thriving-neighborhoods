@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Ship Honest Value in 54 Hours: Scope Boundaries for Two Civic MVPs
 
 ## Executive Summary

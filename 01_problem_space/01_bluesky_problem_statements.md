@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # BlueSky Problem Statements — Thriving Neighborhoods
 
 These broader framings are useful for inspiration. Teams should narrow them before building.

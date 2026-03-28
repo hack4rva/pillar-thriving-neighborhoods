@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # User Journey Maps — Thriving Neighborhoods
 
 Note: Journeys include observations from the working session and likely scenarios. Each friction point should reference an `evidence_log.md` entry when verified.

@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Neighborhood Development Notifier for Richmond, CA — Catch comment windows before they close
 
 ## Executive Summary

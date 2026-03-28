@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Winning Civic Demos: Richmond-anchored archetypes that signal real impact, trusted data, and post-hackathon viability
 
 ## Executive Summary

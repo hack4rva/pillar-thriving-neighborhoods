@@ -1,3 +1,5 @@
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Richmond Affordable Housing Data Playbook — Where to Find, Trust, and Apply Investment Data
 
 ## Executive Summary

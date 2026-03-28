@@ -28,6 +28,8 @@ related_reports:
   - F3_opportunities_compliance_monitor
 ---
 
+> **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](../docs/methodology.md) for details.
+
 # Richmond, VA's Affordable Housing Compliance: Where Tracking Works — and Fails
 
 ## Executive Summary
