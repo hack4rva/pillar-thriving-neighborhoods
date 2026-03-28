@@ -38,6 +38,23 @@ Development proposals in Richmond are publicly available through City Council ag
 **Recommended weekend scope:**
 An address or neighborhood search interface that surfaces active and recent development proposals from Legistar, displays them on a map, and provides a plain-language summary of what each proposal involves and when public comment is open. Disclaimer: "Information sourced from Legistar. May not be exhaustive. Check official City sources for authoritative status."
 
+#### Participant guide: connecting to the rubric (if you chose this problem)
+
+Optional prompts — judges use [`RUBRIC.md`](../../RUBRIC.md).
+
+- **Impact:** Earlier, clearer understanding of **development proposals** near residents — without claiming approval status you didn’t verify.
+- **User Value:** Resident or civic participant who can find proposals, comment windows, or plain-language summaries.
+- **Feasibility:** Public sources (Legistar, GeoHub, etc.) with honest limits on API/live coverage.
+- **Innovation:** Map + summary + timing beats a raw agenda dump.
+- **Execution:** Search or map flow works on real or sampled Legistar-derived data.
+- **Equity and inclusion:** Reach people without planning jargon; focus on neighborhoods feeling rapid change.
+
+**What often works well:** Development tracker, map layer, comment notifier, plain-language agenda helper — all sourced and disclaimed.
+
+**What to avoid:** Implying approved/rejected without official verification, or exhaustive claims without “may be incomplete.”
+
+*Try asking yourself:* Could my neighbor learn what’s proposed **before** the vote without a planning degree?
+
 ---
 
 ### Problem 2: Ensuring Affordable Housing Investments Stay Affordable
@@ -78,6 +95,23 @@ Richmond invests in affordable housing through performance grants, low-interest 
 **Recommended scope if pursuing this:**
 A staff-facing tool that uses the AHPG project roster and rent/occupancy report structure to organize and track affordability commitments. The three questions from HCD (milestone tracking, compliance verification, long-term database maintenance) are your design brief. No compliance determinations — only information organization and surfacing for staff review.
 
+#### Participant guide: connecting to the rubric (if you chose this problem)
+
+Optional prompts — [`RUBRIC.md`](../../RUBRIC.md) is authoritative for judges.
+
+- **Impact:** Help HCD staff **organize and review** public/grant-related affordability information — not automated compliance verdicts.
+- **User Value:** Staff persona with a clearer view of milestones, roster fields, or rent/occupancy structure from provided datasets.
+- **Feasibility:** Stay within **provided** HCD package and public data; no internal-only unit records.
+- **Innovation:** Dashboards, diff views, or “three questions” UX that reduce spreadsheet thrash.
+- **Execution:** Works on real XLSX columns or a faithful subset with stated limits.
+- **Equity and inclusion:** Frame outcomes around residents who depend on sustained affordability.
+
+**What often works well:** Compliance **support** tracker, investment explorer, or early-warning surfacing — always “for staff review.”
+
+**What to avoid:** “Out of compliance” claims without verified data, or legal determinations.
+
+*Try asking yourself:* Could staff use this to **prepare** for review faster, without the tool playing lawyer?
+
 ---
 
 ## The Blue Sky Vision
@@ -98,25 +132,29 @@ Scope tightly to one neighborhood or one data layer rather than attempting a cit
 
 The blue sky is the ceiling. Problem 1 (Neighborhood Development Discovery) is the practical floor. A team that builds Problem 1 with this blue sky framing — historical context, change over time, resident voice — will have a compelling pitch for both the Pillar Award and the Moonshot Award.
 
+**Rubric connection (blue sky):** Primarily **Problem 1** (understanding neighborhood change). Use the Problem 1 participant guide; add housing angles only in line with Problem 2 constraints if you touch compliance.
+
 ---
 
-## How Your Solution Will Be Judged (Pillar Award)
+## Pillar Award: official scoring mechanics
 
-The Pillar Award uses the following weights. For full category definitions and scoring anchors, see [`/RUBRIC.md`](../../RUBRIC.md) at the hackathon root.
+**Authoritative rubric:** [`RUBRIC.md`](../../RUBRIC.md) at the hackathon root.
 
-| Category | Weight | What judges are asking |
-|----------|--------|------------------------|
-| **Impact** | **5** | Does this directly address one of the two problem statements above? |
-| **User Value** | 4 | Is there a specific, real user? Does the prototype improve their ability to understand or engage with neighborhood development? |
-| **Feasibility** | 3 | Could this be piloted by a City planning department or housing team within a year? |
-| **Innovation** | 3 | Does the team bring fresh thinking to development transparency or housing compliance? |
-| **Execution** | 3 | Does a working demo exist? Is the flow coherent? |
-| **Equity** | 3 | Does the solution reach residents without planning expertise, particularly in rapidly changing neighborhoods? |
+**Participant guides** under each problem are optional — **not** binding on judges.
+
+| Category | Weight |
+|----------|--------|
+| **Impact** (targeted civic problem) | **5** |
+| **User Value** | 4 |
+| **Feasibility** / implementability | 3 |
+| **Innovation** / originality | 3 |
+| **Execution** / prototype quality | 3 |
+| **Equity and inclusion** | 3 |
+
+Read **`RUBRIC.md`** for full definitions and anchors.
 
 **Score formula:** Sum of (category score 1–5 × weight). Maximum 105.
 
 **Tiebreaker:** User Value score.
 
-**What wins here:** A prototype that makes neighborhood development proposals discoverable and legible to residents, or that makes affordable housing compliance monitoring tractable for City staff, using real public data.
-
-**What loses here:** Tools implying developments are approved or rejected without official verification, solutions making legal or compliance determinations, or projects requiring internal City housing system integration.
+**General tips** (full detail in `RUBRIC.md`): Civic usefulness over complexity; flag fragile assumptions; slides-only → low Execution.

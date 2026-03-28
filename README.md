@@ -20,7 +20,7 @@ Three questions to answer fast: 1) What problem are we actually solving? 2) Can 
 
 ## The Challenge
 
-**→ Full detail in [`CHALLENGE.md`](CHALLENGE.md).** Read it before anything else — it defines the two problems, the top blue sky vision, data constraints, and exactly how judges will score your solution.
+**→ Full detail in [`CHALLENGE.md`](CHALLENGE.md).** Read it before anything else — it defines the two problems, the top blue sky vision, data constraints, how Pillar Award weights use the shared rubric, and optional per-problem prompts to help your team think about the categories (not a second judge rubric).
 
 ### Problem 1: Help Residents Discover and Understand Neighborhood Development — 26/32 — Strong ★ Recommended starting point
 
@@ -61,7 +61,7 @@ Scope to one neighborhood or one data layer — not a citywide dashboard. Proble
 | Execution | 3 | Does a working demo exist? Is the flow coherent? |
 | Equity | 3 | Does it reach residents without planning expertise, particularly in rapidly changing neighborhoods? |
 
-Full rubric with scoring anchors and judge instructions: [`../RUBRIC.md`](../RUBRIC.md)
+Official rubric — category definitions, scoring anchors, and judge-facing guidance: [`../RUBRIC.md`](../RUBRIC.md)
 
 ---
 
@@ -89,7 +89,7 @@ Full rubric with scoring anchors and judge instructions: [`../RUBRIC.md`](../RUB
 
 Do these first 15–30 minutes to get moving:
 
-1) Read: `CHALLENGE.md` — the two problems, top blue sky, and rubric (start here, not QUICKSTART.md)
+1) Read: `CHALLENGE.md` — the two problems, top blue sky, Pillar Award weights, and optional per-problem rubric prompts (start here, not QUICKSTART.md)
 2) Read: `QUICKSTART.md`
 2) Skim: `00_core/00_pillar_overview.md` and `01_problem_space/02_targeted_problem_statements.md`
 3) Capture a 5‑bullet "Working Direction" using `99_templates/working_direction_note.md`
