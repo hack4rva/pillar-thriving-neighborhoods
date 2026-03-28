@@ -21,7 +21,7 @@ This repository's research content was generated using a multi-stage process com
 ## Transparency Note
 
 LLMs were involved at multiple stages of this research pipeline:
-- Claude Opus 4 for gap question generation
+- [Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6) for gap question generation
 - Parallel.ai (which uses LLMs internally) for deep research synthesis
 
 The human-in-the-loop review by City experts provides ground-truth validation, though the depth of that review may vary by section.
