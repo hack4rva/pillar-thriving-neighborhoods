@@ -1,0 +1,33 @@
+---
+description: When creating new markdown files, add AI methodology disclosure.
+globs:
+  - "**/*.md"
+alwaysApply: false
+---
+
+# AI-generated markdown disclosure
+
+When you **create a new markdown file** in this repository:
+
+1. **Prepend the methodology note** as the first content (after any YAML frontmatter):
+
+   ```markdown
+   > **Note:** This research was generated using AI assistance (Claude + Parallel.ai) with human expert review. See [methodology](RELATIVE_PATH_TO_docs/methodology.md) for details.
+   ```
+
+2. **Calculate the correct relative path** from the new file's location to `docs/methodology.md`:
+   - Root level: `docs/methodology.md`
+   - One level deep (e.g., `research/`): `../docs/methodology.md`
+   - Two levels deep (e.g., `skills/foo/`): `../../docs/methodology.md`
+
+3. **Exceptions** — do NOT add the blurb to:
+   - `docs/methodology.md` itself
+   - Files in `.cursor/` or other tooling directories
+   - `package.json`, `tsconfig.json`, or other config files (obviously not .md)
+   - Template files in `99_templates/` that are meant to be copied (use judgment)
+
+4. **If editing an existing file** that lacks the blurb, you may add it — but this is optional for minor edits.
+
+## Rationale
+
+This repository's research was generated using a defined AI pipeline (committee SMEs → Claude gap questions → Parallel.ai deep research → human review). Transparency about AI involvement is required for all generated content.
