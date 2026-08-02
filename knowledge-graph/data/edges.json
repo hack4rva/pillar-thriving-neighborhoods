@@ -15,7 +15,7 @@
     "excerpt": "I see new construction happening around me without any prior knowledge,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:01175e86bb8a",
@@ -33,7 +33,7 @@
     "excerpt": "What Richmond-specific fields are needed (Council District, Pulse BRT/TIF zones, preservation risk flags from the Plan’s LIHTC monitoring database concept)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:015fb04c75d1",
@@ -51,7 +51,7 @@
     "excerpt": "What do affordable housing owners/managers need from the City view (e.g., checklists, calendars, status of document reviews) to reduce duplicate effort with Virginia Housing?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:01db18d33d8d",
@@ -69,7 +69,7 @@
     "excerpt": "What is the most efficient way to automate the process of checking for new development proposals, identifying nearby multifamily buildings, and generating the door-hanger PDFs?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0213984fc438",
@@ -87,7 +87,7 @@
     "excerpt": "How will the tool account for anti-displacement priorities and equitable enforcement (e.g., grace periods, technical assistance) consistent with the Mayor’s plan and One Richmond guiding principles?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:02928faa01e8",
@@ -105,7 +105,7 @@
     "excerpt": "Managing ongoing documentation for long-term affordability commitments."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:05bb6a9f2b37",
@@ -123,7 +123,7 @@
     "excerpt": "Lessons from other cities’ AMI/rent validators or inclusionary monitoring portals to inform UX, auditability, and public transparency?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0653c8f1ca89",
@@ -141,7 +141,7 @@
     "excerpt": "Complex rule harmonization required at the project and unit level for stacked funding (e.g., HOME + LIHTC)."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0753a042476f",
@@ -159,7 +159,7 @@
     "excerpt": "What technical pathways are acceptable to the City for data ingestion: public Legistar endpoints, web-scraping with rate limits, Calendars/ICS, or staff-provided data feeds?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0882e1d62eac",
@@ -177,7 +177,7 @@
     "excerpt": "Fragmented tools and maps"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:08caab5d899d",
@@ -195,7 +195,7 @@
     "excerpt": "When development activity ramps up around my block,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:08ef2f4b9857",
@@ -213,7 +213,7 @@
     "excerpt": "Translating technical materials into plain language summaries tied to engagement steps."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0a2ab6449c47",
@@ -231,7 +231,7 @@
     "excerpt": "Duplicate reporting into Virginia Housing’s Procorem Tenant Portal plus separate City reporting and requests."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0a3107c03640",
@@ -249,7 +249,7 @@
     "excerpt": "Process opacity and disjointed milestones across multiple city systems."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0cfd7c39621b",
@@ -267,7 +267,7 @@
     "excerpt": "What default “near me” radius makes sense in Richmond’s context (parcel adjacency vs 250–1000 ft buffers) for surfacing proposals?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0d1e4fac8057",
@@ -285,7 +285,7 @@
     "excerpt": "Can the dashboard ingest Virginia Housing Procorem exports (tenant events, certifications, AIT status) at the property level for Richmond-located projects, and what legal/data-sharing constraints apply?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0d3cea46614a",
@@ -303,7 +303,7 @@
     "excerpt": "How have other cities linked permitting systems, GIS layers, and legislative calendars to provide end-to-end project timelines, and what pitfalls should Richmond avoid?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0dcb2d0763fc",
@@ -321,7 +321,7 @@
     "excerpt": "Technical and inaccessible source documents reduce trust and comprehension."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0eec577483a2",
@@ -339,7 +339,7 @@
     "excerpt": "How will artifacts from CPC/BZA/CAR/UDC (agendas, action summaries) link to proposals to show where/when engagement occurred?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:0ff7da1eef35",
@@ -357,7 +357,7 @@
     "excerpt": "Inability to Systematically Identify and Contact Renters"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:103796251453",
@@ -375,7 +375,7 @@
     "excerpt": "Onerous and Inequitable Information Discovery Process"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:109e4b1c363d",
@@ -393,7 +393,7 @@
     "excerpt": "National (LIHTC Context)"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1356c65dd8c4",
@@ -411,7 +411,7 @@
     "excerpt": "Anxiety and Powerlessness Over Housing Security"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:137fbf92bbe5",
@@ -429,7 +429,7 @@
     "excerpt": "The current system for tracking development in Richmond creates significant equity barriers, disproportionately excluding specific segments of the population. These barriers are not uniform and impact residents based on language, digital access, and available time and resources.\n\n*   **Language Access Barriers**: The city's planning artifacts, Legistar agendas, and technical portals like EnerGov are predominantly English-first. This effectively excludes Limited English Proficient (LEP) residents from participating, forcing them to rely on intermediaries. While the city has a Language Access Plan and the Office of Immigrant and Refugee Engagement (OIRE) provides some services, these are not integrated into the core digital infrastructure, placing the burden of access on the user.\n\n*   **Digital Navigation Burden**: The requirement to navigate multiple complex systems with non-intuitive interfaces creates a digital divide. The Online Permit Portal (OPP) has specific search rules that can frustrate even tech-savvy users, and the need to cross-reference information across GIS maps, Legistar, and the OPP disadvantages residents with limited digital literacy, older devices, or unreliable internet access. This digital friction means that access to crucial civic information is not equitable.\n\n*   **Time and Capacity Constraints**: The fragmented nature of information and short notification windows for meetings place a heavy time tax on participation. This disproportionately affects renters, shift workers, caregivers, and others who cannot dedicate significant time to manually polling calendars and deciphering agendas. It also creates inequity between neighborhoods; those with well-resourced neighborhood associations and experienced leaders are better able to navigate the system, while others are left behind, leading to volunteer fatigue and unequal advocacy outcomes.\n\nTo address these inequities, the analysis suggests several cross-cutting interventions: providing multilingual summaries and meeting guides, offering SMS/email alerts to reduce the calendar-checking burden, creating printable one-pagers for offline sharing, ensuring a mobile-first and low-data UI, and standardizing plain-language templates for case summaries to reduce the reliance on volunteer translation labor."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:13e8665cd92b",
@@ -447,7 +447,7 @@
     "excerpt": "Complex rule harmonization required at the project and unit level for stacked funding (e.g., HOME + LIHTC)."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:15614fd1868f",
@@ -465,7 +465,7 @@
     "excerpt": "The failures and fragmentation of the current affordable housing compliance system have significant and inequitable impacts on the most vulnerable stakeholders. The administrative complexity, characterized by multiple reporting portals, differing regulatory standards, and long-term documentation requirements, imposes high fixed costs. These costs disproportionately burden smaller and BIPOC-led property owners and managers who often have fewer back-office resources and less capacity to absorb the staff time and financial risk associated with navigating this system. The process for local funding like EAHP, which involves technical submission formats and rapid 7-day response windows for information requests, may further tilt access toward larger, more established developers, potentially excluding smaller, community-rooted organizations.\n\nThis systemic friction ultimately harms tenants and the city's most vulnerable populations. The fragmented data landscape obscures where noncompliance is clustering, delaying mitigation efforts in neighborhoods with higher vulnerability. Limited city staff capacity, when combined with irregular inspection cycles, can mean that issues in lower-resourced properties are not identified or remediated promptly. This not only affects tenant quality of life but also impedes the city's ability to proactively identify and address noncompliance, which can threaten the long-term affordability of housing units that are most at risk. In essence, the system's inefficiencies are not neutral; they create higher barriers for those with fewer resources and make it harder for the city to protect affordable housing where it is needed most."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:167fc4f66987",
@@ -483,7 +483,7 @@
     "excerpt": "The Granicus Web API is publicly accessible for Richmond at client name \"richmondva\""
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:169c83a24498",
@@ -501,7 +501,7 @@
     "excerpt": "Anxiety over differing rules and audits between HOME and LIHTC programs."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:18ce7f7a487b",
@@ -519,7 +519,7 @@
     "excerpt": "Inability to Systematically Identify and Contact Renters"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:19f3e16edb95",
@@ -537,7 +537,7 @@
     "excerpt": "Status/timeliness uncertainty"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1a03a8fef185",
@@ -555,7 +555,7 @@
     "excerpt": "No consolidated view across different funding layers."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1a26aaaafaa5",
@@ -573,7 +573,7 @@
     "excerpt": "Data Access and Integration"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1a819e13d499",
@@ -591,7 +591,7 @@
     "excerpt": "What lessons can be learned from projects that used physical mailers, like postcards for rental assistance, regarding the logistics and impact of outreach?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1ab810e1cebe",
@@ -609,7 +609,7 @@
     "excerpt": "Coordinating across multiple concurrent projects with clear timelines, bodies, and actions."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1c3fd177e2b5",
@@ -627,7 +627,7 @@
     "excerpt": "When multiple agencies touch a proposal (PDR Land Use, BZA, CAR, City Council)"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:1f9664d5f78c",
@@ -645,7 +645,7 @@
     "excerpt": "HUD CHAS data is available at census tract level for Richmond"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:22e0a0e58f5f",
@@ -663,7 +663,7 @@
     "excerpt": "Have other cities with a high percentage of renters developed similar tools or processes to notify them of development proposals, and what can be learned from their successes and failures?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:23ad514fd99c",
@@ -681,7 +681,7 @@
     "excerpt": "Can we link directly to eComment and meeting agendas in Legistar and surface the correct “next step” body (Planning Commission vs CAR vs UDC vs City Council)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2409bf95307a",
@@ -699,7 +699,7 @@
     "excerpt": "Sharon Ebert holds the DCAO role for Economic and Community Development at City of Richmond"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2505dffc1630",
@@ -717,7 +717,7 @@
     "excerpt": "Lack of Granular Data for Strategic Outreach"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2632a8488b84",
@@ -735,7 +735,7 @@
     "excerpt": "Language Access"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:271a9f669a23",
@@ -753,7 +753,7 @@
     "excerpt": "Multiple agencies, commissions, and datasets are all related to a single development proposal."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:27e39d3d3036",
@@ -771,7 +771,7 @@
     "excerpt": "Split workflows across systems"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:28501d0cef6f",
@@ -789,7 +789,7 @@
     "excerpt": "What are RRHA’s monitoring touchpoints for City-funded non-public-housing projects, if any, and do their staff require read-only or contributor access?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:290d9e64c2c8",
@@ -807,7 +807,7 @@
     "excerpt": "Which priority personas in Richmond (association leaders, renters, homeowners, small developers, advocacy orgs) need different narrative “translations” and alert thresholds?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2bbfd358c3f5",
@@ -825,7 +825,7 @@
     "excerpt": "How do we provide multi-channel access (SMS/email/print handouts for libraries/rec centers) for residents with limited internet access?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2cbb59551dd3",
@@ -843,7 +843,7 @@
     "excerpt": "Which design patterns from NYC Planning’s ZAP Search and Philadelphia’s Atlas are most transferable (map-first discovery, case timelines, document bundles, subscription alerts)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2d77477a39e2",
@@ -861,7 +861,7 @@
     "excerpt": "The local EAHP pipeline introduces another separate set of data streams and requirements."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2d813e0a90b2",
@@ -879,7 +879,7 @@
     "excerpt": "When multiple projects pop up across our neighborhood,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:2ddaf7f49f0d",
@@ -897,7 +897,7 @@
     "excerpt": "Process opacity and disjointed milestones across multiple city systems."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:31d400984588",
@@ -915,7 +915,7 @@
     "excerpt": "What is the expected refresh cadence for each source (Legistar agenda publication, EnerGov status changes, GIS layer updates) and how do we handle late-minute agenda amendments?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:33e58379da30",
@@ -933,7 +933,7 @@
     "excerpt": "When a new rezoning/SUP/BZA case is filed within a few blocks of my home"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:3593cd99972c",
@@ -951,7 +951,7 @@
     "excerpt": "django-councilmatic last had a release in February 2023 (v3.1.0) but has open issues and pull requests"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:363cbf46ff39",
@@ -969,7 +969,7 @@
     "excerpt": "Development-related information in Richmond is highly fragmented, with no single source of truth for residents. Decision-making bodies and their schedules are scattered, and records are stored in multiple, disconnected systems. To understand a single project, a user must piece together information from various city web pages and databases, each with its own interface and search quirks. This creates a significant barrier to understanding what is happening in their neighborhood, as there is no consolidated 'case hub' that links a project's location, details, hearing schedule, and public comment instructions."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:382d10959822",
@@ -987,7 +987,7 @@
     "excerpt": "Shifting year-end requirements and changes to compliance portals."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:395753b1e8cc",
@@ -1005,7 +1005,7 @@
     "excerpt": "How will we measure trust and usefulness (e.g., share rates, alert opt-ins, attendance at meetings, user surveys)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:3a21b403b479",
@@ -1023,7 +1023,7 @@
     "excerpt": "What is the authoritative registry of restricted units (addresses, unit mix, affordability tiers, term dates, regulatory layers)? Is there an existing HCD-maintained list or only program silos? Can we link to parcel/addresses from the Open Data Portal?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:407fd51ccbd7",
@@ -1041,7 +1041,7 @@
     "excerpt": "Are there authoritative geographies for neighborhoods/associations in Richmond to power proximity notifications and equity rollups?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:40a7770faa73",
@@ -1059,7 +1059,7 @@
     "excerpt": "Historic permitting delays and backlogs create significant schedule uncertainty."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:4191879610f5",
@@ -1077,7 +1077,7 @@
     "excerpt": "How will proximity alerts and summaries prioritize historically underinvested Priority Neighborhoods and renters who are often least informed yet most impacted?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:42509db3833d",
@@ -1095,7 +1095,7 @@
     "excerpt": "How can we measure the effectiveness of this project in increasing renter participation in the development process?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:43e2250512d6",
@@ -1113,7 +1113,7 @@
     "excerpt": "Can we adopt a consistent case taxonomy and status progression similar to ZAP (e.g., filed → in review → hearing scheduled → decided → appealed) adapted to Richmond bodies and terms (SUP, LC&E, CAR COA, UDC final)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:441138ee82e2",
@@ -1131,7 +1131,7 @@
     "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:451589c215b4",
@@ -1149,7 +1149,7 @@
     "excerpt": "Raleigh"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:455b7338ac04",
@@ -1167,7 +1167,7 @@
     "excerpt": "Inaccessible Public Hearings and Participation Opportunities"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:462579887a28",
@@ -1185,7 +1185,7 @@
     "excerpt": "Manual and fragmented intake channels for locally funded projects like the Equitable Affordable Housing Program (EAHP)."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:47e7e80fa462",
@@ -1203,7 +1203,7 @@
     "excerpt": "Can we embed or cache Richmond 300 interactive maps (Future Land Use, Priority Neighborhoods) and overlay proposed projects to visualize “fit”?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:48b6ae44388b",
@@ -1221,7 +1221,7 @@
     "excerpt": "Unclear and uneven data currency undermines confidence."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:4bf3a943c460",
@@ -1239,7 +1239,7 @@
     "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:50315e5d6503",
@@ -1257,7 +1257,7 @@
     "excerpt": "Can the tool embed or snapshot key PDFs (staff reports, site plans) for accessibility while respecting the City’s canonical sources and updates?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5066e9ff2a58",
@@ -1275,7 +1275,7 @@
     "excerpt": "N/A — No information available in the provided context."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5083e3ce5862",
@@ -1293,7 +1293,7 @@
     "excerpt": "Will the dashboard produce CAPER-ready monitoring narratives/metrics and attach inspection logs/photos for audit trails?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:52e80ca479fb",
@@ -1311,7 +1311,7 @@
     "excerpt": "When preparing annual certifications and tenant files for audits by Virginia Housing and the City,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:52fc1e42ca46",
@@ -1329,7 +1329,7 @@
     "excerpt": "No consolidated view across different funding layers."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:543eba935acb",
@@ -1347,7 +1347,7 @@
     "excerpt": "The burden on property managers and compliance officers is significantly amplified by the complex and sometimes conflicting regulatory requirements of the different funding sources used in affordable housing. A single property may be funded by a combination of the federal HOME program, the Low-Income Housing Tax Credit (LIHTC), and the local Equitable Affordable Housing Program (EAHP), each with its own set of rules. For instance, the Virginia DHCD's HOME compliance training highlights key differences between HOME and LIHTC. On-site inspection schedules differ: HOME requires inspections on a 1- to 3-year cycle depending on project size, while LIHTC requires them at least every 3 years. Income recertification rules also vary; HOME allows for tenant self-certification in certain years but mandates a review of source documents every sixth year, whereas LIHTC generally requires annual third-party documentation. Furthermore, the methodologies for calculating utility allowances can differ between the programs, forcing property managers to reconcile these figures to ensure they do not exceed the limits of either program. The local EAHP adds another layer of complexity, imposing a minimum 30-year affordability period which requires durable record-keeping over decades, and has its own unique application and underwriting process. This regulatory maze creates significant 'anxiety over surprise findings' for property managers, who must maintain parallel tracking systems to ensure they are compliant under each separate regime simultaneously. For city staff, it means compliance verification is not a single check, but a multi-layered analysis against different, non-harmonized standards."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:55965d6f3895",
@@ -1365,7 +1365,7 @@
     "excerpt": "Unclear and uneven data currency undermines confidence."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5899a45bd8a5",
@@ -1383,7 +1383,7 @@
     "excerpt": "How will tenant protections during decontrol/affordability transitions be monitored and flagged for intervention?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:589b8c77e07d",
@@ -1401,7 +1401,7 @@
     "excerpt": "How will participation be deduped across multiple touchpoints (online survey + meeting + eComment) within a single proposal?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:58ab269f7fc3",
@@ -1419,7 +1419,7 @@
     "excerpt": "Which PDR roles will own data entry/QA (case planner, engagement specialist, admin)? What workflows fit CPC agenda cycles?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:590fda0ef6a7",
@@ -1437,7 +1437,7 @@
     "excerpt": "Which Richmond teams already maintain LIHTC/HOME/AHTF trackers, and what schemas exist to avoid re-inventing? The Plan mentions creating a LIHTC monitoring database—what progress has been made?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5a55b5894caf",
@@ -1455,7 +1455,7 @@
     "excerpt": "Digital access barriers prevent participation."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5a82777388d5",
@@ -1473,7 +1473,7 @@
     "excerpt": "What are the known pitfalls from other cities (e.g., stale data, confusing status terms, reliance on staff uploads) and how can we mitigate them in RVA?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5baa1723d65c",
@@ -1491,7 +1491,7 @@
     "excerpt": "What is the most stable way to deep-link users from a narrative back to the authoritative record (EnerGov case page, Legistar agenda packet, specific ArcGIS feature)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5da9cb530794",
@@ -1509,7 +1509,7 @@
     "excerpt": "How will proximity and impact narratives incorporate Richmond 300 Future Land Use, overlays (historic districts, design overlays), and known displacement risks to avoid bias?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5dd512bc68c7",
@@ -1527,7 +1527,7 @@
     "excerpt": "Feeling Invisible and Unvalued by the City"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5fc616a32a82",
@@ -1545,7 +1545,7 @@
     "excerpt": "Shifting year-end requirements and changes to compliance portals."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:5fe609ac29a8",
@@ -1563,7 +1563,7 @@
     "excerpt": "Information about a single project is scattered across multiple, non-integrated city systems for records and submissions."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:66353bccdb28",
@@ -1581,7 +1581,7 @@
     "excerpt": "What fields can we pull from the Online Permit Portal/EnerGov to automatically list proposals, locations, and milestones?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:687a3b770d41",
@@ -1599,7 +1599,7 @@
     "excerpt": "Which notification and narrative patterns from prior civic tech (e.g., city open-data mappers and subscription alerts) best fit Richmond’s stack of EnerGov + ArcGIS + Legistar?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:6a779126e31a",
@@ -1617,7 +1617,7 @@
     "excerpt": "Translating technical materials into plain language summaries tied to engagement steps."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:6b99047f6b68",
@@ -1635,7 +1635,7 @@
     "excerpt": "How will we handle neighborhoods without active civic associations and overlapping boundaries to avoid skewing outreach metrics?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:6bb4c4cc0f2a",
@@ -1653,7 +1653,7 @@
     "excerpt": "What outputs are required: violation flags, cure letters, exportable audit packets, dashboards by program and pillar metrics? Any state-required templates (Virginia DHCD/VHDA/Virginia Housing)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:6d40ab42adb4",
@@ -1671,7 +1671,7 @@
     "excerpt": "Which existing municipal compliance dashboards or open-source civic tech components (e.g., inspection scheduling, affordability period calculators) are most adaptable to Richmond’s HOME/EAHP context, and what data models did they use?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:6f1d5cde9c9d",
@@ -1689,7 +1689,7 @@
     "excerpt": "How do we resolve addresses to parcels and overlay Future Land Use and design overlays to explain “consistency with Richmond 300” in plain language?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:70439dccbc15",
@@ -1707,7 +1707,7 @@
     "excerpt": "What engagement data does PDR reliably capture today per case (sign-ins with addresses, emails/ZIPs, meeting attendance, virtual participation logs, language interpretation requests)? At what granularity and format?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:7085e80abb00",
@@ -1725,7 +1725,7 @@
     "excerpt": "How to reliably link Legistar agenda items to EnerGov case numbers and to GIS features (parcel IDs/addresses)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:7274d1db11fc",
@@ -1743,7 +1743,7 @@
     "excerpt": "When multiple agencies and committees touch a project (PDR staff review, Planning Commission, BZA, City Council)"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:728ef98a7ed0",
@@ -1761,7 +1761,7 @@
     "excerpt": "What are the most common entry points today (yellow signs, social, word-of-mouth, Legistar calendar, EnerGov search, Zoning map), and where do users drop off?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:72a632c40ac5",
@@ -1779,7 +1779,7 @@
     "excerpt": "How might this tool complement the PlanRVA Development Map (regional context) rather than duplicate it; can we deep-link to regional items?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:72d3dc106e4c",
@@ -1797,7 +1797,7 @@
     "excerpt": "HUD CHAS data is available at census tract level for Richmond"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:748e6efb80a6",
@@ -1815,7 +1815,7 @@
     "excerpt": "Duplicate reporting into Virginia Housing’s Procorem Tenant Portal plus separate City reporting and requests."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:750eb6395838",
@@ -1833,7 +1833,7 @@
     "excerpt": "The public notification process for development projects in Richmond is a significant pain point, characterized by short notice windows and a lack of proactive communication. The current system places the burden on residents and neighborhood leaders to constantly monitor various city calendars for meeting announcements and agenda updates. This reactive process provides limited time for the public to become aware of, research, and organize around a specific project before a public hearing."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:757857eab06d",
@@ -1851,7 +1851,7 @@
     "excerpt": "The primary technical challenge in building the proposed `rva-development-tracker` is the need to integrate data from multiple, disparate, and likely non-API-driven city systems. The project's goal of deep-linking to official records faces hurdles, as systems like Legistar and EnerGov are designed for human navigation, not programmatic access. For instance, finding a specific agenda item or case attachment may require scraping web pages and simulating a user's journey of filtering calendars or clicking through record details, a process that is brittle and prone to breaking when the host sites are updated. The existence of stable URLs for meetings (e.g., `https://go.rva.gov/CPC2026`) is helpful, but linking to the specific document or case file within that meeting's context remains a challenge. Similarly, while the EnerGov portal integrates ESRI map functionality, embedding an official, interactive GIS map that combines layers from the city's various mappers (Parcel, Zoning, Neighborhood) into a single view would be difficult. It would likely require accessing and combining several underlying GIS data services or files, which may not be publicly exposed for this type of third-party use. The fundamental challenge is that the proposed tracker must create the data aggregation and correlation layer that the city has not yet built, effectively reverse-engineering connections between permits in EnerGov, hearings in Legistar, and spatial data in GIS systems."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:75c4c6dc50b7",
@@ -1869,7 +1869,7 @@
     "excerpt": "Louisville"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:7637d73e6fa8",
@@ -1887,7 +1887,7 @@
     "excerpt": "What safeguards ensure neighborhoods with less digital access still learn about proposals (SMS, printable summaries, multilingual content)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:7736fdc03108",
@@ -1905,7 +1905,7 @@
     "excerpt": "What is the retention and versioning policy for superseded staff reports and amended applications?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:795cf2eb4cd3",
@@ -1923,7 +1923,7 @@
     "excerpt": "The reliance on a suite of online-only tools for accessing development information systematically excludes residents who lack reliable, affordable, and high-speed internet. As of September 2024, Richmond's City Council was still actively pressing for a concrete plan to close the city's digital divide, a goal first established in a 2021 resolution. This ongoing gap means that residents without adequate digital access are unable to participate in the development process, track projects in their neighborhoods, or access vital documents, creating a significant equity risk where civic engagement is predicated on internet connectivity."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:79afc8731914",
@@ -1941,7 +1941,7 @@
     "excerpt": "Richmond has a Development Mapper and Land Use Project Mapper accessible via ArcGIS Online"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:7ad485aab2cd",
@@ -1959,7 +1959,7 @@
     "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:7f9583921bc6",
@@ -1977,7 +1977,7 @@
     "excerpt": "The digital divide significantly exacerbates the information gap for renters in Richmond, making the already flawed system of development notifications even more inequitable. The primary workaround for the lack of direct, mailed notice is to proactively monitor the City of Richmond's online Planning and Development Review (PDR) portal and its associated interactive maps. This reliance on digital tools inherently excludes residents who are on the wrong side of the digital divide. Many renters, particularly those with lower incomes, may lack reliable, high-speed internet access at home or the digital literacy required to navigate complex, time-consuming government websites. The research explicitly states that this system 'disadvantages individuals with limited internet access or digital literacy' and requires a 'level of digital literacy and consistent effort that many renters... may not possess.' The city's own Digital Equity Plan acknowledges these existing disparities. By making the only viable alternative to official notification a digital one, the current system compounds the exclusion of renters, ensuring that those who are already marginalized are the least likely to find out about development projects that could lead to their displacement."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:806047ac0d78",
@@ -1995,7 +1995,7 @@
     "excerpt": "What integrations are feasible in phase 1: HUD IDIS schedule references, Virginia Housing Tenant Portal data (via export), City document management (SharePoint/Laserfiche), and Assessor/GIS parcel services?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:819196a074d0",
@@ -2013,7 +2013,7 @@
     "excerpt": "What are the methods for identifying multifamily buildings and their unit counts from city GIS data?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:819f9a111994",
@@ -2031,7 +2031,7 @@
     "excerpt": "What reporting needs exist for the Richmond 300 annual report and for Council committees that this dashboard should automate (frequency, format, narrative vs. metrics)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8359a447e238",
@@ -2049,7 +2049,7 @@
     "excerpt": "a development proposal is submitted,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8418b1c3c9a4",
@@ -2067,7 +2067,7 @@
     "excerpt": "When I hear about a development rumour in my neighborhood Facebook group"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:84dd687a51b4",
@@ -2085,7 +2085,7 @@
     "excerpt": "What language access and accessibility needs exist for owner submissions and City communications about findings and corrective action plans?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:862c5e884468",
@@ -2103,7 +2103,7 @@
     "excerpt": "Are there specific neighborhoods or zoning districts with a high concentration of renters who have been historically excluded from the development process? How can we prioritize outreach in these areas?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:86c068316030",
@@ -2121,7 +2121,7 @@
     "excerpt": "Fragmented decision bodies and calendars with no single place to see what's happening, what's next, and how to act."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:874a035ebd3f",
@@ -2139,7 +2139,7 @@
     "excerpt": "How can we reliably identify multifamily buildings using the city's GIS data, specifically the 'Parcels' and 'Zoning Districts' datasets?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8783f80eb6ad",
@@ -2157,7 +2157,7 @@
     "excerpt": "What accessibility and language access requirements should we meet (screen reader support, Spanish and other languages aligned with City language access plan)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:87bfe9238c70",
@@ -2175,7 +2175,7 @@
     "excerpt": "Beyond English and Spanish, what other languages are commonly spoken by renters in Richmond, and should we consider additional translations?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:88c361035421",
@@ -2193,7 +2193,7 @@
     "excerpt": "Language access and other accessibility issues present significant barriers for renter participation in Richmond's development process. The 'renter-aware-notifications' project itself acknowledges this by providing materials in both English and Spanish, but the research indicates a need to look beyond this initial step. To be truly equitable, the project and the city must consider the other languages spoken in Richmond, and the text suggests leveraging resources like the City of Richmond's Language Access Plan and its Office of Immigrant and Refugee Engagement to gather data on the specific language needs of different communities. Beyond language, there is a critical physical and temporal accessibility barrier. Public hearings on development proposals at Planning Commission meetings are typically held on Mondays at 1:30 PM. This schedule is prohibitive for a large segment of the population, particularly working individuals who cannot afford to take time off from their jobs to attend and voice their opinions. This scheduling practice effectively disenfranchises many renters and low-wage workers from participating in crucial decisions about their neighborhoods."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:89958820f695",
@@ -2211,7 +2211,7 @@
     "excerpt": "When annual owner certifications and on-site inspection milestones come due for HOME- and locally funded projects,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8b0e2f82fb37",
@@ -2229,7 +2229,7 @@
     "excerpt": "The official documents and portals related to development in Richmond are filled with technical jargon, acronyms, and opaque process descriptions that create a significant barrier to public understanding. Residents are confronted with specialized language without clear, plain-language explanations, making it difficult to grasp the nature of a proposal, which governing body is responsible, and how to engage effectively. This issue is compounded by the complex relationship between the visionary Richmond 300 Future Land Use plan and the legal power of current zoning, which is a source of confusion for the public."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8b65bfe04bf5",
@@ -2247,7 +2247,7 @@
     "excerpt": "Reliability concerns and the need for proactive applicant monitoring."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8bbd977f1c28",
@@ -2265,7 +2265,7 @@
     "excerpt": "When I hear there might be a new development on my block or I see a public notice sign,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8c75b97b6e4a",
@@ -2283,7 +2283,7 @@
     "excerpt": "Does the city's GIS data include the number of units in each multifamily building, and if not, what is the best way to estimate this?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8d5898510161",
@@ -2301,7 +2301,7 @@
     "excerpt": "What languages, reading levels, and accessibility needs are most common for Planning Commission/BZA engagement in Richmond?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:8eee5f6d15d6",
@@ -2319,7 +2319,7 @@
     "excerpt": "Should the validator integrate with HUD User APIs for IL/HTF/HOME/MTSP, RRHA utility allowance sources, and the City’s Open Data Portal/parcel layers? Any existing case-management (e.g., grants management, contract management) to hook into?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:90ce5867f429",
@@ -2337,7 +2337,7 @@
     "excerpt": "A new rezoning, Special Use Permit (SUP), or major development is proposed near my address."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:92d8c3e61856",
@@ -2355,7 +2355,7 @@
     "excerpt": "How can we reference the EnerGov Online Permit Portal records for site plans without exposing PII while still clarifying status stages?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:9329b3e01407",
@@ -2373,7 +2373,7 @@
     "excerpt": "Can we ingest rent rolls securely from property managers (SFTP, portal upload) and return machine-readable results? Any need to integrate with RRHA HCV landlord portal for cross-checks?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:94be0a346034",
@@ -2391,7 +2391,7 @@
     "excerpt": "Differing and conflicting rules for rent, income, and utility calculations across programs."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:95139343202b",
@@ -2409,7 +2409,7 @@
     "excerpt": "Will resident-facing transparency be provided (e.g., public dashboard of preserved units/rent caps) without exposing PII, to build trust in affordability commitments?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:959a50498f3d",
@@ -2427,7 +2427,7 @@
     "excerpt": "Lack of an official, consolidated “case hub” linking location, details, hearing schedule, and how to comment."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:9605e06d4be7",
@@ -2445,7 +2445,7 @@
     "excerpt": "Are there any open-source tools or playbooks from Code for America or other civic tech organizations for renter outreach and engagement that could be adapted for this project?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:980a8982b901",
@@ -2463,7 +2463,7 @@
     "excerpt": "Historic permitting delays and backlogs create significant schedule uncertainty."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:989f9311f92d",
@@ -2481,7 +2481,7 @@
     "excerpt": "Richmond City Council and Planning Commission meetings are recorded in Legistar"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:98da925f3086",
@@ -2499,7 +2499,7 @@
     "excerpt": "Jargon-heavy, process-centric portals"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:9923c3bd8c51",
@@ -2517,7 +2517,7 @@
     "excerpt": "Anxiety over differing rules and audits between HOME and LIHTC programs."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:99596db03bbc",
@@ -2535,7 +2535,7 @@
     "excerpt": "Which external tools are in use (HUD User API for Income Limits/Home Rent Limits, any vendor solutions for compliance)? How do peers in Virginia (e.g., Henrico/Chesterfield, Virginia Housing) validate rent caps?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:9ac1510888ab",
@@ -2553,7 +2553,7 @@
     "excerpt": "Reliance on Labor-Intensive and Ineffective Outreach Methods"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:9d3518b209af",
@@ -2571,7 +2571,7 @@
     "excerpt": "What information is most critical to include on the door-hanger to be both informative and actionable?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:9ea41da7cbaf",
@@ -2589,7 +2589,7 @@
     "excerpt": "Irregular inspection schedules create a lumpy and unpredictable workload."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a1059ecbdad6",
@@ -2607,7 +2607,7 @@
     "excerpt": "Which HCD roles will use the dashboard (Compliance Officers, Program Managers, Data Analyst) and what tasks do they perform at month/quarter/year cycles?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a2107e470332",
@@ -2625,7 +2625,7 @@
     "excerpt": "How will the dashboard track and alert on ownership/management changes (from Virginia Housing notices and City contracting) and sync that to contact records and certification responsibilities?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a4823cad96cf",
@@ -2643,7 +2643,7 @@
     "excerpt": "When coordinating monitoring across City-funded projects that also have LIHTC or other layers,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a50b20537131",
@@ -2661,7 +2661,7 @@
     "excerpt": "Language access barriers exclude non-English speaking residents."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a59274528470",
@@ -2679,7 +2679,7 @@
     "excerpt": "Which ArcGIS layers will be primary sources (e.g., Plans of Development, Special Use Permits, BZA cases) and how frequently are they updated relative to EnerGov status changes?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a73e309cec82",
@@ -2697,7 +2697,7 @@
     "excerpt": "Inconsistent or short notification and meeting awareness."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a75473c2c427",
@@ -2715,7 +2715,7 @@
     "excerpt": "Asynchronous and differing monitoring schedules and standards between programs."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a8a0aca841f5",
@@ -2733,7 +2733,7 @@
     "excerpt": "What is the authoritative list of City-assisted affordable developments (HOME, CDBG, EAHP, local trust fund) with project IDs, parcel IDs, unit counts by AMI, affordability start/end dates, and required inspection cadence?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:a8e989177616",
@@ -2751,7 +2751,7 @@
     "excerpt": "Manual and fragmented intake channels for locally funded projects like the Equitable Affordable Housing Program (EAHP)."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:aa2899a083e8",
@@ -2769,7 +2769,7 @@
     "excerpt": "Managing ongoing documentation for long-term affordability commitments."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:aa7d784bf5af",
@@ -2787,7 +2787,7 @@
     "excerpt": "What views do planners, engagement staff, and managers each need (per-proposal, per-neighborhood, per-tract rollups, quarterly department view)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:aa95d390efe7",
@@ -2805,7 +2805,7 @@
     "excerpt": "HUD CHAS data is available at census tract level for Richmond"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:aad6b3f93d80",
@@ -2823,7 +2823,7 @@
     "excerpt": "I hear about a development project through word-of-mouth or see a public notice sign."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ab83d0c2c747",
@@ -2841,7 +2841,7 @@
     "excerpt": "A core systemic issue is the absence of a simple, official, map-based interface that allows residents to easily discover development projects. The research identifies a fundamental user need to see 'what’s near me, what’s next, and how to act,' which is currently unmet by the city's tools. While the city has some interactive mapping tools, they are not designed for simple, resident-friendly discovery, and the specific 'Land Use Project Mapper' is noted as being under updates. This gap is partially filled by a third-party media tracker, demonstrating the public appetite for such a tool, but this solution is not official, authoritative, or integrated with public comment processes. The lack of a unified, map-based discovery layer that ties a location to active cases, their status, and next steps is a major barrier to public awareness and participation."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:acefe014054d",
@@ -2859,7 +2859,7 @@
     "excerpt": "Irregular inspection schedules create a lumpy and unpredictable workload."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ae355c81bda7",
@@ -2877,7 +2877,7 @@
     "excerpt": "When a proposal advances through different review bodies,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b0064045c68f",
@@ -2895,7 +2895,7 @@
     "excerpt": "Primary users and permissions: HCD compliance analysts, program managers, RRHA liaisons, EDA staff, external owners/managers? Read vs write vs attest rights?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b0e39816ac35",
@@ -2913,7 +2913,7 @@
     "excerpt": "How can we use granular data on languages spoken at home to determine where to prioritize Spanish-language (ES) door-hangers?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b1187817b019",
@@ -2931,7 +2931,7 @@
     "excerpt": "How will affordability-end and decontrol-period flags be calculated and updated for resyndications, refinancings, or EAHP-specific terms?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b2419219c528",
@@ -2949,7 +2949,7 @@
     "excerpt": "Pittsburgh"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b25b1bd3109c",
@@ -2967,7 +2967,7 @@
     "excerpt": "What’s the acceptable accuracy/latency for batch uploads during audit season? How should the tool handle missing data, ambiguous bedroom counts, or AMI tie-breakers?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b29e22b6e369",
@@ -2985,7 +2985,7 @@
     "excerpt": "Splintered monitoring and reporting across different housing programs and systems."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b320d990106e",
@@ -3003,7 +3003,7 @@
     "excerpt": "What are the authoritative data sources we can reliably pull: Legistar items and metadata for Planning Commission, CAR, UDC, BZA; EnerGov permit/plan records; GIS layers (parcels, zoning, Historic Districts, Future Land Use, Priority Neighborhoods); PlanRVA Development Map? What fields/IDs link across them?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b43081439109",
@@ -3021,7 +3021,7 @@
     "excerpt": "Legistar Planning Commission matter titles include street addresses for SUP/rezoning cases"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b56f8842f3f4",
@@ -3039,7 +3039,7 @@
     "excerpt": "What is available via open GIS for SUPs/rezonings and how current is it? Are there APIs or regular exports for Special Use Permits and other case layers on the Richmond GeoHub? If items were moved/retired, what’s the current endpoint?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b57568235435",
@@ -3057,7 +3057,7 @@
     "excerpt": "When a case is scheduled (CAR/BZA/Planning Commission/City Council),"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b61d803cf34a",
@@ -3075,7 +3075,7 @@
     "excerpt": "What minimum dataset and document set (staff report, application, site plan, public notice) improves comprehension without heavy maintenance burden?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b65dc39e7c2e",
@@ -3093,7 +3093,7 @@
     "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b76044a04ce9",
@@ -3111,7 +3111,7 @@
     "excerpt": "Inconsistent or short notification and meeting awareness."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b7c4d5bc98db",
@@ -3129,7 +3129,7 @@
     "excerpt": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes 'success' before entitlement milestones?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b7fd31036e37",
@@ -3147,7 +3147,7 @@
     "excerpt": "Lack of an official, consolidated “case hub” linking location, details, hearing schedule, and how to comment."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:b92c0ca648c0",
@@ -3165,7 +3165,7 @@
     "excerpt": "How can we track changes or updates to development proposals and ensure that renters are notified of significant modifications or new hearing dates?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ba093c24c63e",
@@ -3183,7 +3183,7 @@
     "excerpt": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:bb2b56d09619",
@@ -3201,7 +3201,7 @@
     "excerpt": "The current system for collecting and analyzing public participation in Richmond's planning process has significant equity failings that disproportionately affect specific populations. Residents with limited digital access or English proficiency (LEP), renters, youth, and those in historically underrepresented neighborhoods are systematically excluded or undercounted. This occurs because the primary engagement methods rely heavily on online tools, such as interactive maps and surveys, and optional sign-ins at events. These methods create barriers for those without reliable internet, digital literacy, or the time and mobility to attend meetings. The structural gaps in the current process exacerbate these issues. There is a lack of standardized demographic data collection, no consistent identity or residency verification, and a failure to consistently geocode participant addresses. This makes it nearly impossible for city staff to accurately determine who is participating and, more importantly, who is not. The city's reliance on biennial, city-wide metrics, as mentioned in the Richmond 300 plan, is insufficient for surfacing engagement disparities at the individual project or neighborhood level in a timely manner. The implication of these failures is that planning decisions risk being skewed by the voices of more organized, digitally connected, and higher-resourced individuals and groups, while the needs and concerns of the most vulnerable residents are ignored. This not only leads to inequitable outcomes but also breeds deep community mistrust and fuels challenges to the legitimacy of the planning process during City Planning Commission and City Council hearings."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:bbb902397f23",
@@ -3219,7 +3219,7 @@
     "excerpt": "The owner-centric notification system in Richmond creates significant and intersecting equity issues that disproportionately harm marginalized communities. The core problem is that the system, by design, excludes the 59% of Richmond households who rent. This group is not a monolith; renters in Richmond are disproportionately people of color and individuals with lower incomes. Therefore, a system that excludes renters systematically disenfranchises these specific demographic groups from civic processes that directly affect their housing stability and community character. This perpetuates a power imbalance, prioritizing the interests of property owners and developers over a significant portion of the city's population. The consequences are severe, contributing to housing insecurity and displacement in a city that has one of the highest eviction rates in the United States. By making it difficult for renters to participate, the system exacerbates existing racial and economic inequities and fosters an erosion of trust between residents and local government, leaving many to feel that their voices are deliberately unheard and do not matter in the development of their own neighborhoods."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:bd39a28c15a3",
@@ -3237,7 +3237,7 @@
     "excerpt": "Richmond uses the Granicus/Legistar platform with client name \"richmondva\""
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:bd8f2475b609",
@@ -3255,7 +3255,7 @@
     "excerpt": "Richmond notification requirements for planning hearings require mailed notice to adjacent property owners and at least 5 days advance notice per Virginia Code"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:bfc1770c4fab",
@@ -3273,7 +3273,7 @@
     "excerpt": "Which resident personas should we prioritize first: renters in Priority Neighborhoods, homeowners near active corridors, small business owners, or neighborhood association officers? What devices/languages do they use?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:bfd7fbba431e",
@@ -3291,7 +3291,7 @@
     "excerpt": "Residents with limited digital literacy, time, or financial resources; Limited English Proficiency (LEP) residents; renters (who may be excluded by notice rules centered on property owners); and neighborhoods with fewer volunteer-hours or technical capacity to navigate the complex systems."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:c06041a3a3e6",
@@ -3309,7 +3309,7 @@
     "excerpt": "Difficulty understanding technical jargon (e.g., SUP, rezonings, site plans) and the opaque processes for finding official details."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:c1157d2f66c4",
@@ -3327,7 +3327,7 @@
     "excerpt": "Reliance on Labor-Intensive and Ineffective Outreach Methods"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:c37f27369c76",
@@ -3345,7 +3345,7 @@
     "excerpt": "Status/timeliness uncertainty"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:c7037b1aa87e",
@@ -3363,7 +3363,7 @@
     "excerpt": "How will the system surface disparities (location of noncompliance, loss of affordability, rent-burden risk) across neighborhoods and protected classes to inform corrective actions and fair housing priorities?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:c75dee9ee1d2",
@@ -3381,7 +3381,7 @@
     "excerpt": "Can addresses from sign-ins be geocoded to Census tracts reliably, and how are PO Boxes or incomplete data handled?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:caf4536e46b1",
@@ -3399,7 +3399,7 @@
     "excerpt": "Reliability concerns and the need for proactive applicant monitoring."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:cb2b095dc498",
@@ -3417,7 +3417,7 @@
     "excerpt": "Inability to easily understand the relationship between a proposed development, the 'Richmond 300' Future Land Use (FLU) plan, and current zoning laws."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:cbe90a23dcff",
@@ -3435,7 +3435,7 @@
     "excerpt": "For HOME projects, what unit-level data are consistently available (income, rents, HQS/NSPIRE results) vs. only project-level?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:cd1f3bae8df0",
@@ -3453,7 +3453,7 @@
     "excerpt": "Who will be responsible for printing and distributing the door-hangers, and how can we coordinate with property managers to ensure access to buildings?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:cef26dd8bef0",
@@ -3471,7 +3471,7 @@
     "excerpt": "NLIHC National Housing Preservation Database is publicly accessible"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:cfbdf9323f59",
@@ -3489,7 +3489,7 @@
     "excerpt": "What is the update frequency of the 'Plans of Development' dataset, and is there a reliable way to track the status of proposals from initial submission to final approval?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d0fca673642c",
@@ -3507,7 +3507,7 @@
     "excerpt": "Which AMI/rent frameworks must the validator support first for Richmond: HUD HOME Rent Limits, MTSP/LIHTC rent limits, HCV Payment Standards, project-specific regulatory agreements, or AHTF contract terms? How are utility allowances standardized (RRHA vs project-specific)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d180d70936fa",
@@ -3525,7 +3525,7 @@
     "excerpt": "When a new rezoning, special use permit, or plan of development is filed near my block"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d2b333e6b2a0",
@@ -3543,7 +3543,7 @@
     "excerpt": "Should the tool push meeting reminders keyed to Legistar calendar updates for Planning Commission and BZA, and how to avoid stale or canceled meeting notices?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d43c8ad9bdbb",
@@ -3561,7 +3561,7 @@
     "excerpt": "What thresholds/alerts matter operationally (e.g., <50% of adjacent tracts represented; no attendance from Priority Neighborhoods; language access needs unmet)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d5384587176c",
@@ -3579,7 +3579,7 @@
     "excerpt": "Exclusion from Direct Notification System"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d5a4fb45540f",
@@ -3597,7 +3597,7 @@
     "excerpt": "Jargon-heavy, process-centric portals"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:d5e04e433ee7",
@@ -3615,7 +3615,7 @@
     "excerpt": "Legistar for Richmond contains housing grant ordinances (HOME, CDBG, HOPWA, ESG) searchable by matter title"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:daad25805d67",
@@ -3633,7 +3633,7 @@
     "excerpt": "When I notice a public meeting agenda item or a posted notice and worry it could accelerate displacement in my neighborhood"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:dc2edd624cdd",
@@ -3651,7 +3651,7 @@
     "excerpt": "HUD CHAS data is available at census tract level for Richmond"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:dcc25295882e",
@@ -3669,7 +3669,7 @@
     "excerpt": "What safeguards ensure plain-language explanations don’t oversimplify or bias interpretations of consistency with Richmond 300 goals?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:df062ec0d409",
@@ -3687,7 +3687,7 @@
     "excerpt": "NLIHC National Housing Preservation Database is publicly accessible"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e2a21273f420",
@@ -3705,7 +3705,7 @@
     "excerpt": "General (from equitable engagement playbooks)"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e377bc3fc6fe",
@@ -3723,7 +3723,7 @@
     "excerpt": "Lack of Granular Data for Strategic Outreach"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e407a8ebca0b",
@@ -3741,7 +3741,7 @@
     "excerpt": "A primary operational failure for Richmond's HCD compliance analysts is the absence of a centralized database for monitoring LIHTC and HOME-restricted housing units. This systemic issue is highlighted in the city's own 'One Richmond: An Equitable Affordable Housing Plan,' which explicitly calls for creating a database to track expiring affordability. In its place, analysts are forced to rely on a fragmented and unreliable system of scattered files, emails, and bespoke spreadsheets. This manual workaround involves downloading numerous PDFs for HUD, HOME, and LIHTC rent/income limits and then manually cross-checking them against rent rolls provided by property managers. This process is not only time-consuming and inefficient but also highly susceptible to errors from using outdated data or making calculation mistakes. The reliance on these outdated systems creates significant delays, especially during peak audit windows, and makes it difficult to track units consistently throughout their compliance periods, thereby increasing compliance risk and weakening the city's ability to provide conclusive documentation for audits."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e57ce284975a",
@@ -3759,7 +3759,7 @@
     "excerpt": "Fostering Disengagement and Civic Apathy"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e7f88b1f0bb6",
@@ -3777,7 +3777,7 @@
     "excerpt": "How frequently should limits refresh (annual HUD updates, mid-year corrections, local policy updates)? What versioning is required for audits (effective date, data source, parameters)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e85c88ba8fb0",
@@ -3795,7 +3795,7 @@
     "excerpt": "How will the system normalize addresses/parcel IDs (Assessor, GIS) to reliably join owner reports, CAPER projects, and LIHTC properties?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e88836fac87b",
@@ -3813,7 +3813,7 @@
     "excerpt": "Fragmented tools and maps"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e8d1cc6a20d8",
@@ -3831,7 +3831,7 @@
     "excerpt": "Can we programmatically classify Legistar “Types” (e.g., Special Use Permit, Rezoning, Location, Character and Extent, Conceptual Review, Staff Report) and extract addresses, GPINs/parcel IDs, meeting dates, staff reports, and actions?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e8ea3f76a433",
@@ -3849,7 +3849,7 @@
     "excerpt": "How to present uncertainty and tradeoffs (e.g., affordable units proposed vs conditions) to build trust without overstating impacts?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:e9b3055c59fa",
@@ -3867,7 +3867,7 @@
     "excerpt": "Richmond has 30 matter types in Legistar including \"Location Character and Extent Item\" and \"City Planning Commission Resolution\""
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ea575052553b",
@@ -3885,7 +3885,7 @@
     "excerpt": "The data landscape for affordable housing compliance in Richmond is highly fragmented, creating significant operational pain and systemic risk. This fragmentation manifests as distinct data silos between the City of Richmond's Department of Housing and Community Development (HCD), the statewide Virginia Housing authority, and the various property managers. The core of the issue lies in the different systems used for different funding sources. Virginia Housing mandates the use of its online Procorem portal for Low-Income Housing Tax Credit (LIHTC) compliance, where property managers must continuously update tenant information. However, for projects also funded by the federal HOME program (administered by the City) or local funds like the Equitable Affordable Housing Program (EAHP), compliance data does not flow from this system. Instead, property managers must repackage and separately submit similar information to the City HCD, often through manual channels like email, PDFs, and specific Excel templates uploaded to OneDrive. This creates a system of duplicate data entry and parallel reporting tracks. For City HCD staff, there is no single source of truth; they must manually collate and reconcile information from owner-submitted reports, spreadsheets, email threads, and paper files, and cross-check them with other systems like HUD IDIS. This splintered approach means that tracking unit-level compliance, inspection schedules, and affordability end-dates is a manual, labor-intensive process, leading to what the context describes as 'lumpy' workloads and a higher risk of missed deadlines or findings. The lack of a consolidated data layer prevents a holistic, portfolio-level view, hindering proactive risk management and strategic oversight."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:eb6dc79e2ad7",
@@ -3903,7 +3903,7 @@
     "excerpt": "Language access barriers exclude non-English speaking residents."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ecf670da4d4b",
@@ -3921,7 +3921,7 @@
     "excerpt": "What is the role of digital outreach in reaching renters who may prefer or have better access to online information?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ede799d85219",
@@ -3939,7 +3939,7 @@
     "excerpt": "Limited or non-functional map-based tools for discovering nearby development projects in a simple, user-friendly way."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:eedf786b796d",
@@ -3957,7 +3957,7 @@
     "excerpt": "Asynchronous and differing monitoring schedules and standards between programs."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ef03110ac4e5",
@@ -3975,7 +3975,7 @@
     "excerpt": "Digital access barriers prevent participation."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:ef5392d3e6ad",
@@ -3993,7 +3993,7 @@
     "excerpt": "What demographic baselines by tract will be the official comparators (ACS 5-year: race/ethnicity, age, income, tenure, language, disability)? What refresh cadence?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f04c0b736a6f",
@@ -4011,7 +4011,7 @@
     "excerpt": "Digital Navigation Burden"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f0806412b804",
@@ -4029,7 +4029,7 @@
     "excerpt": "Split workflows across systems"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f1c8857f882d",
@@ -4047,7 +4047,7 @@
     "excerpt": "Which comparable cities’ participation-equity dashboards or equity-mapping practices does Richmond want to emulate (metrics, visualization, governance)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f3a3d646a70c",
@@ -4065,7 +4065,7 @@
     "excerpt": "When a new rezoning, special use permit, or major building permit is filed near my home,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f48d23293190",
@@ -4083,7 +4083,7 @@
     "excerpt": "What are residents’ top “action” needs: learn basics, subscribe for proximity alerts, generate talking points tied to Richmond 300, or find how/where to submit eComment?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f52b454fb610",
@@ -4101,7 +4101,7 @@
     "excerpt": "The local EAHP pipeline introduces another separate set of data streams and requirements."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f6c39872a138",
@@ -4119,7 +4119,7 @@
     "excerpt": "a new development is proposed in my neighborhood,"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f8accc6ee3a6",
@@ -4137,7 +4137,7 @@
     "excerpt": "Coordinating across multiple concurrent projects with clear timelines, bodies, and actions."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f8c8540f44f6",
@@ -4155,7 +4155,7 @@
     "excerpt": "What level of detail is most helpful in summaries (e.g., unit counts, height/FAR, parking, use type) versus information overload?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:f95a9d453fe5",
@@ -4173,7 +4173,7 @@
     "excerpt": "How will we track equitable reach and participation (e.g., sign-ups and meeting attendance by neighborhood/ward, language preference)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fa6e79593601",
@@ -4191,7 +4191,7 @@
     "excerpt": "How can American Community Survey data on languages spoken at home be used at a granular level (e.g., census tract) to determine where to prioritize Spanish-language (ES) door-hangers?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fc34ac40fb3b",
@@ -4209,7 +4209,7 @@
     "excerpt": "How to handle edge cases (SROs, group homes, supportive housing) and avoid unintended enforcement burdens on mission-driven nonprofits?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fcca31a325a4",
@@ -4227,7 +4227,7 @@
     "excerpt": "Differing and conflicting rules for rent, income, and utility calculations across programs."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fe24b32fedcc",
@@ -4245,7 +4245,7 @@
     "excerpt": "Splintered monitoring and reporting across different housing programs and systems."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fe3ae1f5668d",
@@ -4263,7 +4263,7 @@
     "excerpt": "Can the dashboard read/write to existing ArcGIS layers (e.g., Civic Associations, tracts, Priority Neighborhoods) and publish public-facing maps when appropriate?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fe8746ee73b5",
@@ -4281,7 +4281,7 @@
     "excerpt": "Can rva-plotlines consume the public search endpoints or exports from the Online Permit Portal for cases/inspections without logins, and what fields are available (case ID, status, milestones, applicant, location)?"
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "e:fe9a4c95ce52",
@@ -4299,6 +4299,6 @@
     "excerpt": "Technical and inaccessible source documents reduce trust and comprehension."
    }
   ],
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  }
 ]

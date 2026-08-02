@@ -23,7 +23,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:hud-chas-data-comprehensive-housing-affordability-strategy",
@@ -49,7 +49,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:hud-fair-market-rents",
@@ -75,7 +75,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:nlihc-national-housing-preservation-database",
@@ -101,7 +101,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-city-assessor-parcel-data",
@@ -127,7 +127,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-geohub-development-activity-mapper",
@@ -153,7 +153,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-geohub-land-use-project-mapper",
@@ -179,7 +179,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-geohub-zoning-parcel-mapper",
@@ -205,7 +205,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-legistar-city-council-records",
@@ -231,7 +231,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-open-data-portal-socrata",
@@ -257,7 +257,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:richmond-planning-commission-staff-reports",
@@ -283,7 +283,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:dataset:virginia-housing-vhda-housing-data-reports",
@@ -309,7 +309,7 @@
    "keyFields": "",
    "available": true
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-001",
@@ -331,7 +331,7 @@
    "url": "https://www.huduser.gov/portal/datasets/fmr.html",
    "source": "HUD"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-002",
@@ -353,7 +353,7 @@
    "url": "https://preservationdatabase.org",
    "source": "NLIHC"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-003",
@@ -375,7 +375,7 @@
    "url": "https://richmondva.legistar.com",
    "source": "City of Richmond"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-010",
@@ -397,7 +397,7 @@
    "url": "https://webapi.legistar.com/v1/richmondva/Matters?$top=1",
    "source": "Legistar Web API"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-011",
@@ -419,7 +419,7 @@
    "url": "https://webapi.legistar.com/v1/richmondva/Matters",
    "source": "Legistar Web API"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-012",
@@ -441,7 +441,7 @@
    "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
    "source": "City of Richmond PDR"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-013",
@@ -463,7 +463,7 @@
    "url": "https://www.rva.gov/mayors-office/news/mayor-appoints-dcao-economic-and-community-development-director-housing-and",
    "source": "rva.gov official announcement"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-014",
@@ -485,7 +485,7 @@
    "url": "https://www.huduser.gov/portal/datasets/cp.html",
    "source": "HUD CHAS download page"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-015",
@@ -507,7 +507,7 @@
    "url": "https://richmondva.legistar.com/MeetingDetail.aspx?ID=1252850",
    "source": "richmondva.legistar.com"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-016",
@@ -529,7 +529,7 @@
    "url": "https://webapi.legistar.com/v1/richmondva/MatterTypes",
    "source": "Legistar Web API"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-017",
@@ -551,7 +551,7 @@
    "url": "https://webapi.legistar.com/v1/richmondva/Matters",
    "source": "Legistar Web API"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-018",
@@ -573,7 +573,7 @@
    "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2204/",
    "source": "Virginia Code § 15.2-2204"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:e-019",
@@ -595,7 +595,7 @@
    "url": "https://github.com/datamade/django-councilmatic",
    "source": "GitHub — datamade/django-councilmatic"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:general-from-equitable-engagement-playbooks",
@@ -633,7 +633,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:louisville",
@@ -671,7 +671,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:n-a-no-information-available-in-the-provided-context",
@@ -709,7 +709,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:national-lihtc-context",
@@ -747,7 +747,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:pittsburgh",
@@ -785,7 +785,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:evidence:raleigh",
@@ -823,7 +823,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:analyst",
@@ -839,7 +839,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:community-organizer",
@@ -855,7 +855,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:hcd-officer",
@@ -871,7 +871,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:interagency-manager",
@@ -887,7 +887,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:key-findings-and-prioritized",
@@ -903,7 +903,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:long-time-renter",
@@ -919,7 +919,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:neighborhood-leader",
@@ -935,7 +935,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:property-manager",
@@ -951,7 +951,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:group:small-developer",
@@ -967,7 +967,7 @@
    }
   ],
   "description": "Population scoped by the post-event research when documenting pain points.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:a-development-proposal-is-submitted",
@@ -1005,7 +1005,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:a-new-development-is-proposed-in-my-neighborhood",
@@ -1043,7 +1043,7 @@
    "confidence": "medium",
    "citationCount": 10
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:a-new-rezoning-special-use-permit-sup-or-major-development-is-proposed-near-my-a",
@@ -1081,7 +1081,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:anxiety-and-powerlessness-over-housing-security",
@@ -1119,7 +1119,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:anxiety-over-differing-rules-and-audits-between-home-and-lihtc-programs",
@@ -1157,7 +1157,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:asynchronous-and-differing-monitoring-schedules-and-standards-between-programs",
@@ -1195,7 +1195,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:complex-rule-harmonization-required-at-the-project-and-unit-level-for-stacked-fu",
@@ -1233,7 +1233,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:coordinating-across-multiple-concurrent-projects-with-clear-timelines-bodies-and",
@@ -1271,7 +1271,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:differing-and-conflicting-rules-for-rent-income-and-utility-calculations-across-",
@@ -1309,7 +1309,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:difficulty-understanding-technical-jargon-e-g-sup-rezonings-site-plans-and-the-o",
@@ -1347,7 +1347,7 @@
    "confidence": "high",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:digital-access-barriers-prevent-participation",
@@ -1375,7 +1375,7 @@
    "confidence": "high",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:duplicate-reporting-into-virginia-housing-s-procorem-tenant-portal-plus-separate",
@@ -1413,7 +1413,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:exclusion-from-direct-notification-system",
@@ -1451,7 +1451,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:feeling-invisible-and-unvalued-by-the-city",
@@ -1489,7 +1489,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:fostering-disengagement-and-civic-apathy",
@@ -1527,7 +1527,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:fragmented-decision-bodies-and-calendars-with-no-single-place-to-see-what-s-happ",
@@ -1565,7 +1565,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:fragmented-tools-and-maps",
@@ -1598,7 +1598,7 @@
    "confidence": "high",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:historic-permitting-delays-and-backlogs-create-significant-schedule-uncertainty",
@@ -1636,7 +1636,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:i-hear-about-a-development-project-through-word-of-mouth-or-see-a-public-notice-",
@@ -1674,7 +1674,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:i-see-new-construction-happening-around-me-without-any-prior-knowledge",
@@ -1712,7 +1712,7 @@
    "confidence": "medium",
    "citationCount": 11
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:inability-to-easily-understand-the-relationship-between-a-proposed-development-t",
@@ -1750,7 +1750,7 @@
    "confidence": "high",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:inability-to-systematically-identify-and-contact-renters",
@@ -1788,7 +1788,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:inaccessible-public-hearings-and-participation-opportunities",
@@ -1826,7 +1826,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:inconsistent-or-short-notification-and-meeting-awareness",
@@ -1864,7 +1864,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:information-about-a-single-project-is-scattered-across-multiple-non-integrated-c",
@@ -1902,7 +1902,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:irregular-inspection-schedules-create-a-lumpy-and-unpredictable-workload",
@@ -1935,7 +1935,7 @@
    "confidence": "high",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:jargon-heavy-process-centric-portals",
@@ -1973,7 +1973,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:lack-of-an-official-consolidated-case-hub-linking-location-details-hearing-sched",
@@ -2011,7 +2011,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:lack-of-granular-data-for-strategic-outreach",
@@ -2049,7 +2049,7 @@
    "confidence": "medium",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:language-access-barriers-exclude-non-english-speaking-residents",
@@ -2077,7 +2077,7 @@
    "confidence": "high",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:limited-or-non-functional-map-based-tools-for-discovering-nearby-development-pro",
@@ -2115,7 +2115,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:managing-ongoing-documentation-for-long-term-affordability-commitments",
@@ -2153,7 +2153,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:manual-and-fragmented-intake-channels-for-locally-funded-projects-like-the-equit",
@@ -2181,7 +2181,7 @@
    "confidence": "high",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:multiple-agencies-commissions-and-datasets-are-all-related-to-a-single-developme",
@@ -2219,7 +2219,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:no-consolidated-view-across-different-funding-layers",
@@ -2252,7 +2252,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:onerous-and-inequitable-information-discovery-process",
@@ -2290,7 +2290,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:process-opacity-and-disjointed-milestones-across-multiple-city-systems",
@@ -2328,7 +2328,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:reliability-concerns-and-the-need-for-proactive-applicant-monitoring",
@@ -2366,7 +2366,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:reliance-on-labor-intensive-and-ineffective-outreach-methods",
@@ -2404,7 +2404,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:shifting-year-end-requirements-and-changes-to-compliance-portals",
@@ -2432,7 +2432,7 @@
    "confidence": "high",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:splintered-monitoring-and-reporting-across-different-housing-programs-and-system",
@@ -2470,7 +2470,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:split-workflows-across-systems",
@@ -2498,7 +2498,7 @@
    "confidence": "high",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:status-timeliness-uncertainty",
@@ -2531,7 +2531,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:technical-and-inaccessible-source-documents-reduce-trust-and-comprehension",
@@ -2569,7 +2569,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:the-local-eahp-pipeline-introduces-another-separate-set-of-data-streams-and-requ",
@@ -2597,7 +2597,7 @@
    "confidence": "high",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:translating-technical-materials-into-plain-language-summaries-tied-to-engagement",
@@ -2635,7 +2635,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:unclear-and-uneven-data-currency-undermines-confidence",
@@ -2673,7 +2673,7 @@
    "confidence": "low",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-a-case-is-scheduled-car-bza-planning-commission-city-council",
@@ -2711,7 +2711,7 @@
    "confidence": "medium",
    "citationCount": 9
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-a-new-rezoning-special-use-permit-or-major-building-permit-is-filed-near-my",
@@ -2749,7 +2749,7 @@
    "confidence": "medium",
    "citationCount": 13
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-a-new-rezoning-special-use-permit-or-plan-of-development-is-filed-near-my-b",
@@ -2787,7 +2787,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-a-new-rezoning-sup-bza-case-is-filed-within-a-few-blocks-of-my-home",
@@ -2825,7 +2825,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-a-proposal-advances-through-different-review-bodies",
@@ -2863,7 +2863,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-annual-owner-certifications-and-on-site-inspection-milestones-come-due-for-",
@@ -2901,7 +2901,7 @@
    "confidence": "high",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-coordinating-monitoring-across-city-funded-projects-that-also-have-lihtc-or",
@@ -2939,7 +2939,7 @@
    "confidence": "medium",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-development-activity-ramps-up-around-my-block",
@@ -2977,7 +2977,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-i-hear-about-a-development-rumour-in-my-neighborhood-facebook-group",
@@ -3015,7 +3015,7 @@
    "confidence": "medium",
    "citationCount": 11
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-i-hear-there-might-be-a-new-development-on-my-block-or-i-see-a-public-notic",
@@ -3053,7 +3053,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-i-notice-a-public-meeting-agenda-item-or-a-posted-notice-and-worry-it-could",
@@ -3091,7 +3091,7 @@
    "confidence": "medium",
    "citationCount": 11
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-multiple-agencies-and-committees-touch-a-project-pdr-staff-review-planning-",
@@ -3124,7 +3124,7 @@
    "confidence": "high",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-multiple-agencies-touch-a-proposal-pdr-land-use-bza-car-city-council",
@@ -3162,7 +3162,7 @@
    "confidence": "medium",
    "citationCount": 9
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-multiple-projects-pop-up-across-our-neighborhood",
@@ -3200,7 +3200,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:need:when-preparing-annual-certifications-and-tenant-files-for-audits-by-virginia-hou",
@@ -3233,7 +3233,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:city-of-richmond",
@@ -3249,7 +3249,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:city-of-richmond-pdr",
@@ -3265,7 +3265,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:github-datamade-django-councilmatic",
@@ -3281,7 +3281,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:hud",
@@ -3297,7 +3297,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:hud-chas-download-page",
@@ -3313,7 +3313,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:legistar-web-api",
@@ -3329,7 +3329,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:nlihc",
@@ -3345,7 +3345,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:richmondva-legistar-com",
@@ -3361,7 +3361,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:rva-gov-official-announcement",
@@ -3377,7 +3377,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:org:virginia-code-15-2-2204",
@@ -3393,7 +3393,7 @@
    }
   ],
   "description": "Named in the evidence log as the source of one or more claims.",
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:a-core-systemic-issue-is-the-absence-of-a-simple-official-map-based-interface-th",
@@ -3431,7 +3431,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:a-primary-operational-failure-for-richmond-s-hcd-compliance-analysts-is-the-abse",
@@ -3464,7 +3464,7 @@
    "confidence": "high",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:data-access-and-integration",
@@ -3502,7 +3502,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:development-related-information-in-richmond-is-highly-fragmented-with-no-single-",
@@ -3540,7 +3540,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:digital-navigation-burden",
@@ -3578,7 +3578,7 @@
    "confidence": "high",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:language-access",
@@ -3616,7 +3616,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:language-access-and-other-accessibility-issues-present-significant-barriers-for-",
@@ -3654,7 +3654,7 @@
    "confidence": "medium",
    "citationCount": 11
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:residents-with-limited-digital-literacy-time-or-financial-resources-limited-engl",
@@ -3692,7 +3692,7 @@
    "confidence": "high",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-burden-on-property-managers-and-compliance-officers-is-significantly-amplifi",
@@ -3730,7 +3730,7 @@
    "confidence": "high",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-current-system-for-collecting-and-analyzing-public-participation-in-richmond",
@@ -3768,7 +3768,7 @@
    "confidence": "high",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-current-system-for-tracking-development-in-richmond-creates-significant-equi",
@@ -3806,7 +3806,7 @@
    "confidence": "high",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-data-landscape-for-affordable-housing-compliance-in-richmond-is-highly-fragm",
@@ -3844,7 +3844,7 @@
    "confidence": "high",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-digital-divide-significantly-exacerbates-the-information-gap-for-renters-in-",
@@ -3882,7 +3882,7 @@
    "confidence": "high",
    "citationCount": 9
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-failures-and-fragmentation-of-the-current-affordable-housing-compliance-syst",
@@ -3920,7 +3920,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-official-documents-and-portals-related-to-development-in-richmond-are-filled",
@@ -3958,7 +3958,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-owner-centric-notification-system-in-richmond-creates-significant-and-inters",
@@ -3996,7 +3996,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-primary-technical-challenge-in-building-the-proposed-rva-development-tracker",
@@ -4034,7 +4034,7 @@
    "confidence": "high",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-public-notification-process-for-development-projects-in-richmond-is-a-signif",
@@ -4072,7 +4072,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:problem:the-reliance-on-a-suite-of-online-only-tools-for-accessing-development-informati",
@@ -4110,7 +4110,7 @@
    "confidence": "high",
    "citationCount": 11
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:affordable-housing-dashboard",
@@ -4130,7 +4130,7 @@
    "origin": "post-event research",
    "project": "affordable-housing-dashboard"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:hud-rent-cap-validator",
@@ -4149,7 +4149,7 @@
    "origin": "post-event research",
    "project": "hud-rent-cap-validator"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:participation-analytics-dashboard",
@@ -4169,7 +4169,7 @@
    "origin": "post-event research",
    "project": "participation-analytics-dashboard"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:renter-aware-notifications",
@@ -4189,7 +4189,7 @@
    "origin": "post-event research",
    "project": "renter-aware-notifications"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:rva-development-tracker",
@@ -4209,7 +4209,7 @@
    "origin": "post-event research",
    "project": "rva-development-tracker"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:rva-neighborhood-watch",
@@ -4229,7 +4229,7 @@
    "origin": "post-event research",
    "project": "rva-neighborhood-watch"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:rva-plotlines",
@@ -4249,7 +4249,7 @@
    "origin": "post-event research",
    "project": "rva-plotlines"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:rva-transformers",
@@ -4269,7 +4269,7 @@
    "origin": "post-event research",
    "project": "rva-transformers"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:proposal:simby",
@@ -4289,7 +4289,7 @@
    "origin": "post-event research",
    "project": "simby"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:are-there-any-open-source-tools-or-playbooks-from-code-for-america-or-other-civi",
@@ -4327,7 +4327,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:are-there-authoritative-geographies-for-neighborhoods-associations-in-richmond-t",
@@ -4365,7 +4365,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:are-there-specific-neighborhoods-or-zoning-districts-with-a-high-concentration-o",
@@ -4403,7 +4403,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:beyond-english-and-spanish-what-other-languages-are-commonly-spoken-by-renters-i",
@@ -4441,7 +4441,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-addresses-from-sign-ins-be-geocoded-to-census-tracts-reliably-and-how-are-po",
@@ -4479,7 +4479,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-rva-plotlines-consume-the-public-search-endpoints-or-exports-from-the-online",
@@ -4512,7 +4512,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-the-dashboard-ingest-virginia-housing-procorem-exports-tenant-events-certifi",
@@ -4550,7 +4550,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-the-dashboard-read-write-to-existing-arcgis-layers-e-g-civic-associations-tr",
@@ -4588,7 +4588,7 @@
    "confidence": "medium",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-the-tool-embed-or-snapshot-key-pdfs-staff-reports-site-plans-for-accessibili",
@@ -4626,7 +4626,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-we-adopt-a-consistent-case-taxonomy-and-status-progression-similar-to-zap-e-",
@@ -4664,7 +4664,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-we-embed-or-cache-richmond-300-interactive-maps-future-land-use-priority-nei",
@@ -4692,7 +4692,7 @@
    "confidence": "medium",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-we-ingest-rent-rolls-securely-from-property-managers-sftp-portal-upload-and-",
@@ -4730,7 +4730,7 @@
    "confidence": "low",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-we-link-directly-to-ecomment-and-meeting-agendas-in-legistar-and-surface-the",
@@ -4768,7 +4768,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:can-we-programmatically-classify-legistar-types-e-g-special-use-permit-rezoning-",
@@ -4806,7 +4806,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:does-the-city-s-gis-data-include-the-number-of-units-in-each-multifamily-buildin",
@@ -4844,7 +4844,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:e-023",
@@ -4865,7 +4865,7 @@
    "impact": "Required for post-hackathon pathway confirmation",
    "howToGet": ""
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:e-024",
@@ -4886,7 +4886,7 @@
    "impact": "Would strengthen the user case",
    "howToGet": ""
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:e-025",
@@ -4907,7 +4907,7 @@
    "impact": "Determines whether notification gap is 150 ft or street-adjacent only",
    "howToGet": ""
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:e-026",
@@ -4928,7 +4928,7 @@
    "impact": "API returned empty results for that filter; need to confirm whether those items exist in API or only in web UI",
    "howToGet": ""
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:for-home-projects-what-unit-level-data-are-consistently-available-income-rents-h",
@@ -4966,7 +4966,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:have-other-cities-with-a-high-percentage-of-renters-developed-similar-tools-or-p",
@@ -5004,7 +5004,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-can-american-community-survey-data-on-languages-spoken-at-home-be-used-at-a-",
@@ -5042,7 +5042,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-can-we-measure-the-effectiveness-of-this-project-in-increasing-renter-partic",
@@ -5080,7 +5080,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-can-we-reference-the-energov-online-permit-portal-records-for-site-plans-wit",
@@ -5118,7 +5118,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-can-we-reliably-identify-multifamily-buildings-using-the-city-s-gis-data-spe",
@@ -5156,7 +5156,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-can-we-track-changes-or-updates-to-development-proposals-and-ensure-that-ren",
@@ -5194,7 +5194,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-can-we-use-granular-data-on-languages-spoken-at-home-to-determine-where-to-p",
@@ -5232,7 +5232,7 @@
    "confidence": "high",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-do-we-provide-multi-channel-access-sms-email-print-handouts-for-libraries-re",
@@ -5265,7 +5265,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-do-we-resolve-addresses-to-parcels-and-overlay-future-land-use-and-design-ov",
@@ -5303,7 +5303,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-frequently-should-limits-refresh-annual-hud-updates-mid-year-corrections-loc",
@@ -5341,7 +5341,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-have-other-cities-linked-permitting-systems-gis-layers-and-legislative-calen",
@@ -5379,7 +5379,7 @@
    "confidence": "high",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-might-this-tool-complement-the-planrva-development-map-regional-context-rath",
@@ -5412,7 +5412,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-to-handle-edge-cases-sros-group-homes-supportive-housing-and-avoid-unintende",
@@ -5450,7 +5450,7 @@
    "confidence": "low",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-to-present-uncertainty-and-tradeoffs-e-g-affordable-units-proposed-vs-condit",
@@ -5473,7 +5473,7 @@
    "confidence": null,
    "citationCount": 0
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-to-reliably-link-legistar-agenda-items-to-energov-case-numbers-and-to-gis-fe",
@@ -5511,7 +5511,7 @@
    "confidence": "low",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-affordability-end-and-decontrol-period-flags-be-calculated-and-updated-",
@@ -5549,7 +5549,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-artifacts-from-cpc-bza-car-udc-agendas-action-summaries-link-to-proposa",
@@ -5587,7 +5587,7 @@
    "confidence": "high",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-participation-be-deduped-across-multiple-touchpoints-online-survey-meet",
@@ -5625,7 +5625,7 @@
    "confidence": "low",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-proximity-alerts-and-summaries-prioritize-historically-underinvested-pr",
@@ -5658,7 +5658,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-proximity-and-impact-narratives-incorporate-richmond-300-future-land-us",
@@ -5681,7 +5681,7 @@
    "confidence": null,
    "citationCount": 0
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-tenant-protections-during-decontrol-affordability-transitions-be-monito",
@@ -5719,7 +5719,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-the-dashboard-track-and-alert-on-ownership-management-changes-from-virg",
@@ -5757,7 +5757,7 @@
    "confidence": "low",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-the-system-normalize-addresses-parcel-ids-assessor-gis-to-reliably-join",
@@ -5795,7 +5795,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-the-system-surface-disparities-location-of-noncompliance-loss-of-afford",
@@ -5828,7 +5828,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-the-tool-account-for-anti-displacement-priorities-and-equitable-enforce",
@@ -5866,7 +5866,7 @@
    "confidence": "high",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-we-handle-neighborhoods-without-active-civic-associations-and-overlappi",
@@ -5904,7 +5904,7 @@
    "confidence": "high",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-we-measure-trust-and-usefulness-e-g-share-rates-alert-opt-ins-attendanc",
@@ -5942,7 +5942,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:how-will-we-track-equitable-reach-and-participation-e-g-sign-ups-and-meeting-att",
@@ -5975,7 +5975,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:lessons-from-other-cities-ami-rent-validators-or-inclusionary-monitoring-portals",
@@ -6013,7 +6013,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:primary-users-and-permissions-hcd-compliance-analysts-program-managers-rrha-liai",
@@ -6051,7 +6051,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:should-the-tool-push-meeting-reminders-keyed-to-legistar-calendar-updates-for-pl",
@@ -6084,7 +6084,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:should-the-validator-integrate-with-hud-user-apis-for-il-htf-home-mtsp-rrha-util",
@@ -6122,7 +6122,7 @@
    "confidence": "high",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-accessibility-and-language-access-requirements-should-we-meet-screen-reader",
@@ -6160,7 +6160,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-are-residents-top-action-needs-learn-basics-subscribe-for-proximity-alerts-",
@@ -6198,7 +6198,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-are-rrha-s-monitoring-touchpoints-for-city-funded-non-public-housing-projec",
@@ -6236,7 +6236,7 @@
    "confidence": "high",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-are-the-authoritative-data-sources-we-can-reliably-pull-legistar-items-and-",
@@ -6274,7 +6274,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-are-the-known-pitfalls-from-other-cities-e-g-stale-data-confusing-status-te",
@@ -6312,7 +6312,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-are-the-methods-for-identifying-multifamily-buildings-and-their-unit-counts",
@@ -6350,7 +6350,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-are-the-most-common-entry-points-today-yellow-signs-social-word-of-mouth-le",
@@ -6388,7 +6388,7 @@
    "confidence": "high",
    "citationCount": 11
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-default-near-me-radius-makes-sense-in-richmond-s-context-parcel-adjacency-v",
@@ -6426,7 +6426,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-demographic-baselines-by-tract-will-be-the-official-comparators-acs-5-year-",
@@ -6464,7 +6464,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-do-affordable-housing-owners-managers-need-from-the-city-view-e-g-checklist",
@@ -6502,7 +6502,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-engagement-data-does-pdr-reliably-capture-today-per-case-sign-ins-with-addr",
@@ -6540,7 +6540,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-fields-can-we-pull-from-the-online-permit-portal-energov-to-automatically-l",
@@ -6578,7 +6578,7 @@
    "confidence": "high",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-information-is-most-critical-to-include-on-the-door-hanger-to-be-both-infor",
@@ -6611,7 +6611,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-integrations-are-feasible-in-phase-1-hud-idis-schedule-references-virginia-",
@@ -6649,7 +6649,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-available-via-open-gis-for-sups-rezonings-and-how-current-is-it-are-ther",
@@ -6687,7 +6687,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-authoritative-list-of-city-assisted-affordable-developments-home-cdb",
@@ -6725,7 +6725,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-authoritative-registry-of-restricted-units-addresses-unit-mix-afford",
@@ -6763,7 +6763,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-expected-refresh-cadence-for-each-source-legistar-agenda-publication",
@@ -6801,7 +6801,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-most-efficient-way-to-automate-the-process-of-checking-for-new-devel",
@@ -6839,7 +6839,7 @@
    "confidence": "high",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-most-stable-way-to-deep-link-users-from-a-narrative-back-to-the-auth",
@@ -6877,7 +6877,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-retention-and-versioning-policy-for-superseded-staff-reports-and-ame",
@@ -6915,7 +6915,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-role-of-digital-outreach-in-reaching-renters-who-may-prefer-or-have-",
@@ -6953,7 +6953,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-is-the-update-frequency-of-the-plans-of-development-dataset-and-is-there-a-",
@@ -6991,7 +6991,7 @@
    "confidence": "medium",
    "citationCount": 9
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-language-access-and-accessibility-needs-exist-for-owner-submissions-and-cit",
@@ -7019,7 +7019,7 @@
    "confidence": "low",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-languages-reading-levels-and-accessibility-needs-are-most-common-for-planni",
@@ -7052,7 +7052,7 @@
    "confidence": "low",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-lessons-can-be-learned-from-projects-that-used-physical-mailers-like-postca",
@@ -7090,7 +7090,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-level-of-detail-is-most-helpful-in-summaries-e-g-unit-counts-height-far-par",
@@ -7128,7 +7128,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-minimum-dataset-and-document-set-staff-report-application-site-plan-public-",
@@ -7166,7 +7166,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-outputs-are-required-violation-flags-cure-letters-exportable-audit-packets-",
@@ -7204,7 +7204,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-protections-are-required-to-avoid-exposing-personally-identifiable-informat",
@@ -7242,7 +7242,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-reporting-needs-exist-for-the-richmond-300-annual-report-and-for-council-co",
@@ -7280,7 +7280,7 @@
    "confidence": "low",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-richmond-specific-fields-are-needed-council-district-pulse-brt-tif-zones-pr",
@@ -7318,7 +7318,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-s-the-acceptable-accuracy-latency-for-batch-uploads-during-audit-season-how",
@@ -7356,7 +7356,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-safeguards-ensure-neighborhoods-with-less-digital-access-still-learn-about-",
@@ -7379,7 +7379,7 @@
    "confidence": null,
    "citationCount": 0
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-safeguards-ensure-plain-language-explanations-don-t-oversimplify-or-bias-in",
@@ -7412,7 +7412,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-technical-pathways-are-acceptable-to-the-city-for-data-ingestion-public-leg",
@@ -7440,7 +7440,7 @@
    "confidence": "low",
    "citationCount": 1
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-thresholds-alerts-matter-operationally-e-g-50-of-adjacent-tracts-represente",
@@ -7478,7 +7478,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:what-views-do-planners-engagement-staff-and-managers-each-need-per-proposal-per-",
@@ -7516,7 +7516,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-ami-rent-frameworks-must-the-validator-support-first-for-richmond-hud-home",
@@ -7554,7 +7554,7 @@
    "confidence": "medium",
    "citationCount": 6
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-arcgis-layers-will-be-primary-sources-e-g-plans-of-development-special-use",
@@ -7592,7 +7592,7 @@
    "confidence": "medium",
    "citationCount": 7
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-comparable-cities-participation-equity-dashboards-or-equity-mapping-practi",
@@ -7630,7 +7630,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-design-patterns-from-nyc-planning-s-zap-search-and-philadelphia-s-atlas-ar",
@@ -7668,7 +7668,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-existing-municipal-compliance-dashboards-or-open-source-civic-tech-compone",
@@ -7706,7 +7706,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-external-tools-are-in-use-hud-user-api-for-income-limits-home-rent-limits-",
@@ -7744,7 +7744,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-hcd-roles-will-use-the-dashboard-compliance-officers-program-managers-data",
@@ -7782,7 +7782,7 @@
    "confidence": "medium",
    "citationCount": 4
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-notification-and-narrative-patterns-from-prior-civic-tech-e-g-city-open-da",
@@ -7820,7 +7820,7 @@
    "confidence": "medium",
    "citationCount": 8
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-pdr-roles-will-own-data-entry-qa-case-planner-engagement-specialist-admin-",
@@ -7858,7 +7858,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-priority-personas-in-richmond-association-leaders-renters-homeowners-small",
@@ -7896,7 +7896,7 @@
    "confidence": "medium",
    "citationCount": 15
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-resident-personas-should-we-prioritize-first-renters-in-priority-neighborh",
@@ -7934,7 +7934,7 @@
    "confidence": "medium",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-richmond-300-priority-neighborhoods-and-big-moves-should-have-elevated-eng",
@@ -7972,7 +7972,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:which-richmond-teams-already-maintain-lihtc-home-ahtf-trackers-and-what-schemas-",
@@ -8010,7 +8010,7 @@
    "confidence": "medium",
    "citationCount": 5
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:who-will-be-responsible-for-printing-and-distributing-the-door-hangers-and-how-c",
@@ -8043,7 +8043,7 @@
    "confidence": "medium",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:will-resident-facing-transparency-be-provided-e-g-public-dashboard-of-preserved-",
@@ -8076,7 +8076,7 @@
    "confidence": "high",
    "citationCount": 2
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:question:will-the-dashboard-produce-caper-ready-monitoring-narratives-metrics-and-attach-",
@@ -8114,7 +8114,7 @@
    "confidence": "high",
    "citationCount": 3
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:risk:r-001",
@@ -8135,7 +8135,7 @@
    "severity": "Medium",
    "mitigation": "Parse addresses from MatterTitle using regex or NLP; fall back to manual annotation"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:risk:r-002",
@@ -8156,7 +8156,7 @@
    "severity": "Medium",
    "mitigation": "Use Development Mapper (web map ID 777f2b6383fe42da9c6aaeac8df77c8c) instead, or fetch data from ArcGIS REST services directly"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:risk:r-003",
@@ -8177,7 +8177,7 @@
    "severity": "High",
    "mitigation": "Label as interpretation; link to official source"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:risk:r-004",
@@ -8198,7 +8198,7 @@
    "severity": "High",
    "mitigation": "Frame as staff-support only; add disclaimers"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  },
  {
   "id": "n:risk:r-005",
@@ -8219,6 +8219,6 @@
    "severity": "Medium",
    "mitigation": "Use Legistar ordinances or ArcGIS Development Mapper as proxy for development activity"
   },
-  "extractedAt": "2026-08-02T10:52:55.039Z"
+  "extractedAt": "2026-08-02T14:50:49.400Z"
  }
 ]

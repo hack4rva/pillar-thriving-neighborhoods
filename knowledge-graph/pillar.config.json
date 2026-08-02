@@ -2,7 +2,7 @@
   "repoId": "pillar-thriving-neighborhoods",
   "pillarName": "Thriving Neighborhoods",
   "shortName": "Thriving Neighborhoods",
-  "description": "Evidence and source graph for the Thriving Neighborhoods pillar, built from the repository's evidence log and source inventory. This corpus contains no financial dataset, so there is no funding layer.",
+  "description": "Evidence and source graph for the Thriving Neighborhoods pillar, built from the repository's evidence log, source inventory, and post-event research — the pain points, populations, jobs to be done, prior art, and open questions behind each proposed project, with their cited sources. This corpus contains no financial dataset, so there is no funding layer.",
   "sources": {
     "evidenceLog": "admin/evidence_log.md",
     "sourceInventory": "data/source_inventory.csv",

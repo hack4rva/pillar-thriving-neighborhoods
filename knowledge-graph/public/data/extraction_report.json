@@ -1,9 +1,26 @@
 {
- "generatedAt": "2026-08-02T10:52:55.039Z",
+ "generatedAt": "2026-08-02T14:50:49.400Z",
  "repo": "pillar-thriving-neighborhoods",
  "filesExamined": [
   "admin/evidence_log.md",
-  "data/source_inventory.csv"
+  "data/source_inventory.csv",
+  "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+  "post-event-research/affordable-housing-dashboard/pain_points.md",
+  "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+  "post-event-research/hud-rent-cap-validator/pain_points.md",
+  "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+  "post-event-research/participation-analytics-dashboard/pain_points.md",
+  "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+  "post-event-research/renter-aware-notifications/pain_points.md",
+  "post-event-research/rva-development-tracker/jtbd_analysis.md",
+  "post-event-research/rva-development-tracker/pain_points.md",
+  "post-event-research/rva-neighborhood-watch/jtbd_analysis.md",
+  "post-event-research/rva-plotlines/jtbd_analysis.md",
+  "post-event-research/rva-plotlines/pain_points.md",
+  "post-event-research/rva-transformers/jtbd_analysis.md",
+  "post-event-research/rva-transformers/pain_points.md",
+  "post-event-research/simby/jtbd_analysis.md",
+  "post-event-research/simby/pain_points.md"
  ],
  "provenanceVerification": {
   "exact": 0,

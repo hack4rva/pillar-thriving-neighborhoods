@@ -374,7 +374,7 @@ function main() {
   write('extraction_report.json', {
     generatedAt: RUN_TS,
     repo: REPO_ID,
-    filesExamined: collectFilesExamined(cip, ev, inv, entityRecords, relationshipRecords, curatedFlows, curatedQuestions),
+    filesExamined: collectFilesExamined(cip, ev, inv, per.nodes, entityRecords, relationshipRecords, curatedFlows, curatedQuestions),
     provenanceVerification: verification,
     warnings,
     metrics,

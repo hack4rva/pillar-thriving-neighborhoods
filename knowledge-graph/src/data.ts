@@ -3,6 +3,19 @@ import type {
   UnansweredQuestion, ReviewItem, ExtractionReport,
 } from './types';
 
+/**
+ * Where to fetch the extracted JSON from.
+ *
+ * In a pillar repo the app serves its own `data/`. One deployment can instead
+ * host several pillars side by side under `data/<slug>/` and pick between them
+ * with `?pillar=<slug>`, which avoids shipping a copy of the whole bundle per
+ * pillar. The slug is restricted to a flat name so it cannot escape `data/`.
+ */
+function dataDir(): string {
+  const pillar = new URLSearchParams(location.search).get('pillar');
+  return pillar && /^[a-z0-9-]+$/.test(pillar) ? `data/${pillar}/` : 'data/';
+}
+
 /** Loaded dataset plus indexes and graph algorithms shared by all views. */
 export class Dataset {
   graph!: GraphData;
@@ -37,7 +50,7 @@ export class Dataset {
 
   async load(): Promise<void> {
     const fetchJson = async (name: string) => {
-      const res = await fetch(`${import.meta.env.BASE_URL}data/${name}`);
+      const res = await fetch(`${import.meta.env.BASE_URL}${dataDir()}${name}`);
       if (!res.ok) throw new Error(`failed to load ${name}: ${res.status}`);
       return res.json();
     };
