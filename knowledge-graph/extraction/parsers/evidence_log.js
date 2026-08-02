@@ -1,6 +1,7 @@
 import { readRepoFile, makeNode, makeEdge, nodeId, REPO_ID } from '../lib.js';
 import { config } from '../config.js';
 import { parseTables, pick, headerKey, COLUMNS } from './tables.js';
+import { readOrganizations } from './organizations.js';
 
 const STATUS_TO_EVIDENCE = {
   confirmed: 'externally_verified',
@@ -55,30 +56,37 @@ export function parseEvidenceLog() {
   const questions = [];
   const derivedOrgs = new Set();
 
-  /** Attribute a claim to the organization the corpus names as its source. */
+  /**
+   * Attribute a claim to the organizations the corpus names as its source.
+   * The source cell frequently holds a method or a document title instead of a
+   * name, and sometimes several names at once, so it is read rather than taken
+   * verbatim. A cell that names nobody produces no node and no edge.
+   */
   const attribute = (evidenceNodeId, sourceName, prov) => {
     if (!config.derive || !sourceName) return;
-    const orgId = nodeId('org', sourceName);
-    if (!derivedOrgs.has(orgId)) {
-      derivedOrgs.add(orgId);
-      nodes.push(makeNode({
-        id: orgId,
-        type: 'Organization',
-        label: sourceName,
-        description: 'Named in the evidence log as the source of one or more claims.',
+    for (const orgName of readOrganizations(sourceName)) {
+      const orgId = nodeId('org', orgName);
+      if (!derivedOrgs.has(orgId)) {
+        derivedOrgs.add(orgId);
+        nodes.push(makeNode({
+          id: orgId,
+          type: 'Organization',
+          label: orgName,
+          description: 'Named in the evidence log as the source of one or more claims.',
+          evidenceStatus: 'documented',
+          provenance: prov,
+        }));
+      }
+      edges.push(makeEdge({
+        source: evidenceNodeId,
+        target: orgId,
+        type: 'ASSOCIATED_WITH',
+        description: `Evidence log names ${orgName} as the source of this claim`,
         evidenceStatus: 'documented',
+        confidence: 'high',
         provenance: prov,
       }));
     }
-    edges.push(makeEdge({
-      source: evidenceNodeId,
-      target: orgId,
-      type: 'ASSOCIATED_WITH',
-      description: `Evidence log names ${sourceName} as the source of this claim`,
-      evidenceStatus: 'documented',
-      confidence: 'high',
-      provenance: prov,
-    }));
   };
 
   for (const table of parseTables(readRepoFile(LOG_PATH))) {

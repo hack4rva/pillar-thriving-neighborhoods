@@ -238,20 +238,6 @@
   "decisionRequested": "Decide whether these are the same entity."
  },
  {
-  "id": "r:dup-legistar-web-api",
-  "itemType": "node",
-  "proposed": "n:org:legistar-web-api vs n:dataset:legistar-web-api",
-  "sourceExcerpt": "Legistar Web API",
-  "sourceLocation": "label comparison across extraction sources",
-  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
-  "confidence": "medium",
-  "alternatives": [
-   "Merge via extraction/aliases.json",
-   "Keep separate"
-  ],
-  "decisionRequested": "Decide whether these are the same entity."
- },
- {
   "id": "r:dup-richmond-geohub",
   "itemType": "node",
   "proposed": "n:source:richmond-geo-hub-cor-hub-arcgis-com-9886ad7f vs n:dataset:richmond-geohub",
@@ -326,20 +312,6 @@
   "itemType": "node",
   "proposed": "n:source:richmond-geo-hub-cor-hub-arcgis-com-c8095760 vs n:dataset:richmond-zoning-map",
   "sourceExcerpt": "Richmond Zoning Map",
-  "sourceLocation": "label comparison across extraction sources",
-  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
-  "confidence": "medium",
-  "alternatives": [
-   "Merge via extraction/aliases.json",
-   "Keep separate"
-  ],
-  "decisionRequested": "Decide whether these are the same entity."
- },
- {
-  "id": "r:dup-richmondva-legistar-com",
-  "itemType": "node",
-  "proposed": "n:org:richmondva-legistar-com vs n:dataset:richmondva-legistar-com",
-  "sourceExcerpt": "richmondva.legistar.com",
   "sourceLocation": "label comparison across extraction sources",
   "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
   "confidence": "medium",

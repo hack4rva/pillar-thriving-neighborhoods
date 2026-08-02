@@ -2,6 +2,7 @@ import { readdirSync, statSync, existsSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { readRepoFile, makeNode, makeEdge, nodeId, slug, REPO_ID, REPO_ROOT } from '../lib.js';
 import { config } from '../config.js';
+import { readOrganizations } from './organizations.js';
 
 /**
  * Parse `post-event-research/` into graph structure.
@@ -263,8 +264,9 @@ export function parsePostEventResearch() {
               label: item.values.tool_name, item,
               notes: ['effectiveness', 'limitations'],
             });
-            const org = item.values.managing_organization;
-            if (svc && org) {
+            // The cell can name a partnership ("GRCoC / Homeward"), so it is
+            // read into names rather than used whole.
+            for (const org of svc ? readOrganizations(item.values.managing_organization) : []) {
               const orgId = nodeId('org', org);
               addNode(makeNode({
                 id: orgId, type: 'Organization', label: org,

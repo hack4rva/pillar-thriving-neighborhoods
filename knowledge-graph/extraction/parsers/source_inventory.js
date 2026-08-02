@@ -1,6 +1,7 @@
 import { parse } from 'csv-parse/sync';
 import { readRepoFile, makeNode, makeEdge, nodeId, slug } from '../lib.js';
 import { config } from '../config.js';
+import { readOrganizations } from './organizations.js';
 import { headerKey } from './tables.js';
 
 /**
@@ -88,29 +89,34 @@ export function parseSourceInventory() {
     }));
 
     // Publishers named in the inventory become nodes when the pillar has no
-    // curated organization set. The string is in the corpus, so the node is
-    // documented; provenance points at the row it came from.
-    let ownerNode = ownerNodes[owner];
-    if (!ownerNode && owner && config.derive) {
-      ownerNode = nodeId('org', owner);
-      if (!derivedOrgs.has(ownerNode)) {
-        derivedOrgs.add(ownerNode);
-        nodes.push(makeNode({
-          id: ownerNode,
-          type: 'Organization',
-          label: owner,
-          description: `Publisher or owner of inventoried data sources for this pillar.`,
-          evidenceStatus: 'documented',
-          provenance: prov,
-        }));
-      }
-    }
-    if (ownerNode) {
+    // curated organization set. The owner cell is read rather than taken
+    // verbatim: it can name several publishers, or describe how the source was
+    // found instead of naming anyone, in which case no publisher is asserted.
+    const curated = ownerNodes[owner];
+    const publishers = curated
+      ? [{ id: curated, label: owner }]
+      : (config.derive ? readOrganizations(owner) : []).map((orgName) => {
+        const orgId = nodeId('org', orgName);
+        if (!derivedOrgs.has(orgId)) {
+          derivedOrgs.add(orgId);
+          nodes.push(makeNode({
+            id: orgId,
+            type: 'Organization',
+            label: orgName,
+            description: `Publisher or owner of inventoried data sources for this pillar.`,
+            evidenceStatus: 'documented',
+            provenance: prov,
+          }));
+        }
+        return { id: orgId, label: orgName };
+      });
+
+    for (const publisher of publishers) {
       edges.push(makeEdge({
-        source: ownerNode,
+        source: publisher.id,
         target: id,
         type: 'PUBLISHES',
-        description: `${owner} owns/publishes "${name}" (${access})`,
+        description: `${publisher.label} owns/publishes "${name}" (${access})`,
         evidenceStatus: statusToEvidence(status),
         confidence: /^verified/i.test(status) ? 'high' : 'medium',
         provenance: prov,

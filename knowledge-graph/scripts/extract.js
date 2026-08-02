@@ -14,6 +14,7 @@ import { parseEvidenceLog } from '../extraction/parsers/evidence_log.js';
 import { parseSourceInventory } from '../extraction/parsers/source_inventory.js';
 import { parsePostEventResearch } from '../extraction/parsers/post_event_research.js';
 import { parseResearchCorpus } from '../extraction/parsers/research_corpus.js';
+import { readOrganizations } from '../extraction/parsers/organizations.js';
 import { makeNode, makeEdge, verifyProvenance, REPO_ID, slug } from '../extraction/lib.js';
 import { config } from '../extraction/config.js';
 import { computeMetrics } from '../extraction/metrics.js';
@@ -139,11 +140,15 @@ function linkSourcesToInventory(rc, inv) {
  * instead of being given provenance that does not resolve. That keeps this
  * script's output a pure function of the repository, model output included.
  */
+/** Entity types whose names have to read like the name of a body. */
+const ORG_TYPES = new Set(['Organization', 'GovernmentAgency', 'Nonprofit', 'Foundation',
+  'University', 'Employer', 'Vendor', 'TrainingProvider', 'LegislativeBody']);
+
 function buildCorpusGraph(record, rc, warnings) {
   const claimById = new Map(rc.claims.map((c) => [c.id, c]));
   const nodes = [];
   const edges = [];
-  const dropped = { staleClaim: 0, unknownEndpoint: 0 };
+  const dropped = { staleClaim: 0, unknownEndpoint: 0, notAnOrg: 0 };
 
   // Provenance for anything derived from claims: the report line that said it,
   // plus the primary source that line cites. Two hops, both checkable.
@@ -174,9 +179,18 @@ function buildCorpusGraph(record, rc, warnings) {
   const idFor = (name, type) => `n:${type.toLowerCase()}:${slug(canonical(name))}`;
   const byNorm = new Map(); // normalized name -> node id
 
+  const skipped = new Set();
   for (const e of record.entities) {
     const live = e.claimIds.filter((id) => claimById.has(id));
     if (!live.length) { dropped.staleClaim++; continue; }
+    // The model occasionally lifts a contact address or a URL out of a claim
+    // and types it as an organization. An inbox is a way to reach a body, not
+    // the body itself, so it does not get to be a node.
+    if (ORG_TYPES.has(e.type) && !readOrganizations(e.name).length) {
+      skipped.add(e.name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim());
+      dropped.notAnOrg++;
+      continue;
+    }
     const id = idFor(e.name, e.type);
     byNorm.set(e.name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(), id);
     // Status follows the strongest source behind its claims, never the model.
@@ -215,6 +229,7 @@ function buildCorpusGraph(record, rc, warnings) {
   const sourceNodeByUrl = new Map(rc.nodes.map((n) => [n.attrs.url, n]));
   const seen = new Set();
   for (const e of record.entities) {
+    if (skipped.has(e.name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim())) continue;
     const entityId = idFor(e.name, e.type);
     for (const cid of e.claimIds) {
       const claim = claimById.get(cid);
@@ -238,8 +253,10 @@ function buildCorpusGraph(record, rc, warnings) {
     }
   }
 
-  if (dropped.staleClaim || dropped.unknownEndpoint) {
-    warnings.push(`[corpus] dropped ${dropped.staleClaim} stale-anchor and ${dropped.unknownEndpoint} unresolved-endpoint records`);
+  if (dropped.staleClaim || dropped.unknownEndpoint || dropped.notAnOrg) {
+    warnings.push(`[corpus] dropped ${dropped.staleClaim} stale-anchor, `
+      + `${dropped.unknownEndpoint} unresolved-endpoint and `
+      + `${dropped.notAnOrg} not-an-organization records`);
   }
   return { nodes, edges };
 }
