@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { slug, nodeId, edgeId, parseMoney, parseLooseDate, verifyProvenance } from '../extraction/lib.js';
+import { realProvenance } from './pillar.js';
 
 describe('slug / ids', () => {
   it('slugifies names deterministically', () => {
@@ -52,29 +53,31 @@ describe('parseLooseDate', () => {
 });
 
 describe('verifyProvenance', () => {
+  // Drawn from whichever pillar this copy of the explorer is running in, so
+  // the three outcomes are exercised against a real corpus everywhere rather
+  // than against one pillar's problem statements.
+  const sample = realProvenance();
+
   it('verifies an excerpt at the stated line range', () => {
-    const result = verifyProvenance({
-      sourceDoc: 'docs/problem_space/targeted_problem_statements.md',
-      sourceLocation: 'lines 12-13',
-      excerpt: 'How might we use technology to improve how Richmond residents find and understand',
-    });
+    const result = verifyProvenance(sample);
     expect(result.ok).toBe(true);
     expect(result.level).toBe('exact');
   });
   it('flags excerpts that do not exist in the source', () => {
     const result = verifyProvenance({
-      sourceDoc: 'docs/problem_space/targeted_problem_statements.md',
-      sourceLocation: 'lines 12-13',
+      ...sample,
       excerpt: 'this text was never written in the corpus at all',
     });
     expect(result.ok).toBe(false);
     expect(result.level).toBe('missing');
   });
   it('reports moved excerpts that exist elsewhere in the file', () => {
+    // Same text, wrong line: the excerpt is real but the location has drifted.
+    const [, start] = sample.sourceLocation.match(/lines (\d+)/);
+    const elsewhere = Number(start) === 1 ? 999 : 1;
     const result = verifyProvenance({
-      sourceDoc: 'docs/problem_space/targeted_problem_statements.md',
-      sourceLocation: 'lines 1-1',
-      excerpt: 'Street Cleaning Zone Lookup using the public schedule page',
+      ...sample,
+      sourceLocation: `lines ${elsewhere}-${elsewhere}`,
     });
     expect(result.ok).toBe(true);
     expect(result.level).toBe('moved');

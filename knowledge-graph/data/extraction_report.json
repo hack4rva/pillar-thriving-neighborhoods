@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-02T19:59:53.975Z",
+ "generatedAt": "2026-08-02T21:03:47.883Z",
  "repo": "pillar-thriving-neighborhoods",
  "filesExamined": [
   "admin/evidence_log.md",
@@ -31,12 +31,12 @@
  },
  "warnings": [
   "[demote] 52 sentence-shaped Problem/Need nodes moved to the evidence layer",
-  "[corpus] dropped 0 stale-anchor, 6 unresolved-endpoint and 4 not-an-organization records",
+  "[corpus] dropped 0 stale-anchor, 5 unresolved-endpoint and 3 not-an-organization records",
   "[merge] duplicate node id n:geographicregion:richmond: provenance merged"
  ],
  "metrics": {
   "totalNodes": 1004,
-  "totalEdges": 2135,
+  "totalEdges": 2137,
   "financialFlows": 0,
   "financialEdges": 0,
   "totalDocumentedFundingUSD": 0,

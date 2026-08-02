@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { computeMetrics } from '../extraction/metrics.js';
+import { hasProjectsCsv, hasFinancialFlows } from './pillar.js';
 
 const read = (p) => JSON.parse(readFileSync(resolve(import.meta.dirname, '..', p), 'utf8'));
 const schema = read('data/schema/graph.schema.json');
@@ -57,7 +58,7 @@ describe('generated graph', () => {
     }
   });
 
-  it('models known ground truths from the corpus', () => {
+  it.skipIf(!hasProjectsCsv)('models known ground truths from the corpus', () => {
     const byId = new Map(graph.nodes.map((n) => [n.id, n]));
     // 125 CIP projects at ~$982M documented.
     const projects = graph.nodes.filter((n) => n.type === 'Project');
@@ -76,7 +77,7 @@ describe('generated graph', () => {
     expect(gpsEvidence).toBeDefined();
   });
 
-  it('proposed money never counts as documented in metrics', () => {
+  it.skipIf(!hasFinancialFlows)('proposed money never counts as documented in metrics', () => {
     const metrics = computeMetrics(graph.nodes, graph.edges, graph.financialFlows, [], [], [], {});
     expect(metrics.totalDocumentedFundingUSD).toBeGreaterThan(900_000_000);
     expect(metrics.totalProposedFundingUSD).toBe(0);

@@ -161,7 +161,8 @@ function buildCorpusGraph(record, rc, warnings) {
       out.push({
         sourceDoc: c._report,
         sourceLocation: `lines ${c._line}-${c._line}`,
-        excerpt: c.claim.slice(0, 400),
+        // Verbatim, so the excerpt can be found at the line it names.
+        excerpt: (c._raw ?? c.claim).slice(0, 400),
         claimId: c.id,
         ...(primary?.url ? { url: primary.url } : {}),
         ...(primary?.title ? { sourceTitle: primary.title } : {}),
@@ -409,7 +410,11 @@ function main() {
   // existing records, and answers to open questions.
   // Claims carry scratch fields (prefixed _) used to wire them to source nodes
   // and to the entity pass; they are not part of the evidenceRecord schema.
-  const claimRecords = rc.claims.map(({ _evidenceStatus, _sources, _report, _line, ...rec }) => rec);
+  // Dropped by prefix rather than by name so adding one cannot break the
+  // schema — which is exactly what happened when _raw was introduced.
+  const claimRecords = rc.claims.map((c) => Object.fromEntries(
+    Object.entries(c).filter(([k]) => !k.startsWith('_')),
+  ));
   const evidenceRecords = [...ev.evidenceRecords, ...claimRecords, ...demoted.claims];
   for (const rec of external.evidence) {
     evidenceRecords.push({ ...rec, repo: REPO_ID });

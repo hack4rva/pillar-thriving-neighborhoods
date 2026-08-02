@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { hasExternalResearch } from './pillar.js';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const read = (p) => JSON.parse(readFileSync(resolve(ROOT, p), 'utf8'));
@@ -14,7 +15,7 @@ const external = read('extraction/records/external.json');
 const nodeById = new Map(graph.nodes.map((n) => [n.id, n]));
 const flowById = new Map(graph.financialFlows.map((f) => [f.id, f]));
 
-describe('external research integration', () => {
+describe.skipIf(!hasExternalResearch)('external research integration', () => {
   it('every external evidence record carries a URL and an access-date note', () => {
     const external_ev = evidence.filter((e) => e.id.startsWith('ev:W-'));
     expect(external_ev.length).toBe(external.evidence.length);

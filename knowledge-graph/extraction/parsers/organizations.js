@@ -23,7 +23,9 @@ const METHOD = [
   /\bverification\b[^.]*\bciting\b/i,
   /\bstandard behaviou?r\b/i,
   /\bissue #\d+/i,
-  /^(per|via|from|see)\s/i,
+  // "per the user guide", "via web search". A capitalised word after the
+  // preposition means it is part of a name (Per Scholas, Via Health).
+  /^(per|via|from|see)\s+(?![A-Z])/,
   /\b(inferred|inference|assumption|estimated|extrapolated)\b/i,
   /\bnot (publicly )?available\b/i,
   /^(unknown|n\/a|tbd|none)$/i,
@@ -37,7 +39,7 @@ const METHOD = [
  */
 const ARTIFACT = 'guidelines?|reference|announcements?|articles?|changelogs?|documentation'
   + '|docs?|search results?|results?|reports?|pages?|snippets?|posts?|threads?'
-  + '|listings?|faq|help|blog|newsletter|press release';
+  + '|listings?|faq|help|blog|newsletter|press release|downloads?|websites?|feeds?';
 
 /** Qualifiers that only ever modify an artifact noun, never a name. */
 const QUALIFIER = 'official|developer|public|online|web|internal|draft|final';
@@ -75,7 +77,7 @@ const NOT_AN_ORG = [
   /https?:\/\//i,            // a link
   /\.[a-z]{2,}\/\S/i,        // a domain with a path
   /\bAPI\b/,                 // an interface
-  /^\d/,                     // a date or figure
+  /^[\d\s.,\/–—-]+$/,        // a date or a figure, with nothing named
 ];
 
 /** Sources joined into one cell. "&" is left alone — plenty of names contain it. */

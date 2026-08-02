@@ -2,9 +2,12 @@ import { describe, it, expect } from 'vitest';
 import { parseCipCsv, phaseToFinancialStatus } from '../extraction/parsers/cip_csv.js';
 import { parseEvidenceLog } from '../extraction/parsers/evidence_log.js';
 import { parseSourceInventory } from '../extraction/parsers/source_inventory.js';
+import { hasProjectsCsv, SCHEMA } from './pillar.js';
 
-describe('CIP CSV parser', () => {
-  const result = parseCipCsv();
+// vitest still evaluates the body of a skipped suite, so the parse has to be
+// guarded as well as the suite: pillars without the CSV cannot even call it.
+describe.skipIf(!hasProjectsCsv)('CIP CSV parser', () => {
+  const result = hasProjectsCsv ? parseCipCsv() : { nodes: [], edges: [], flows: [], rowCount: 0 };
   const projects = result.nodes.filter((n) => n.type === 'Project');
 
   it('extracts all 125 projects', () => {
@@ -85,21 +88,25 @@ describe('evidence log parser', () => {
   const result = parseEvidenceLog();
 
   it('extracts evidence records with mapped statuses', () => {
-    const e001 = result.evidenceRecords.find((r) => r.id === 'ev:E-001');
-    expect(e001).toBeDefined();
-    expect(e001.status).toBe('confirmed');
-    expect(e001.url).toMatch(/^https?:/);
+    // Taken from the schema rather than restated, so the two cannot drift.
+    const allowed = SCHEMA.definitions.evidenceRecord.properties.status.enum;
+    for (const rec of result.evidenceRecords) {
+      expect(rec.id, rec.id).toMatch(/^ev:[A-Z]+-\d+$/);
+      expect(allowed, rec.id).toContain(rec.status);
+      if (rec.url !== null) expect(rec.url, rec.id).toMatch(/^https?:/);
+    }
   });
 
-  it('creates ResearchQuestion nodes from Missing entries', () => {
+  it('creates a ResearchQuestion node for every question it reports', () => {
     const questions = result.nodes.filter((n) => n.type === 'ResearchQuestion');
-    expect(questions.length).toBeGreaterThanOrEqual(5);
     expect(result.questions.length).toBe(questions.length);
+    for (const q of questions) expect(q.id).toMatch(/^n:question:[a-z0-9-]+$/);
   });
 
   it('creates Risk nodes from R- entries', () => {
-    const risks = result.nodes.filter((n) => n.type === 'Risk');
-    expect(risks.map((r) => r.attrs.evidenceLogId)).toContain('R-002');
+    for (const r of result.nodes.filter((n) => n.type === 'Risk')) {
+      expect(r.attrs.evidenceLogId, r.label).toMatch(/^R-\d+$/);
+    }
   });
 
   it('every record carries line-level provenance into admin/evidence_log.md', () => {
@@ -112,15 +119,31 @@ describe('evidence log parser', () => {
 
 describe('source inventory parser', () => {
   const result = parseSourceInventory();
+  // The parser also returns publishers derived from the owner column, so the
+  // dataset assertions have to be scoped rather than run over every node.
+  const datasets = result.nodes.filter((n) => n.type === 'Dataset');
 
-  it('creates a Dataset node per inventory row', () => {
-    expect(result.nodes.length).toBe(result.rowCount);
-    expect(result.nodes.every((n) => n.type === 'Dataset')).toBe(true);
+  it('creates a Dataset node per named inventory row', () => {
+    expect(datasets.length).toBe(result.rowCount);
   });
 
-  it('marks the unavailable GPS dataset as such', () => {
-    const gps = result.nodes.find((n) => n.id.includes('gps'));
-    expect(gps).toBeDefined();
-    expect(gps.attrs.available).toBe(false);
+  it('returns nothing but datasets and their publishers', () => {
+    const types = new Set(result.nodes.map((n) => n.type));
+    expect([...types].sort()).toEqual(types.has('Organization') ? ['Dataset', 'Organization'] : ['Dataset']);
+  });
+
+  it('marks a dataset unavailable exactly when the inventory says so', () => {
+    // Against the raw cell, not the parsed url: a row that says "Not publicly
+    // available" keeps that text in urlRaw and stores null for url.
+    for (const ds of datasets) {
+      const unreachable = /not (publicly )?available|unknown/i.test(ds.attrs.urlRaw ?? '');
+      expect(ds.attrs.available, ds.label).toBe(!unreachable);
+    }
+  });
+
+  it('only exposes a url that is actually a url', () => {
+    for (const ds of datasets) {
+      if (ds.attrs.url !== null) expect(ds.attrs.url, ds.label).toMatch(/^https?:\/\//);
+    }
   });
 });

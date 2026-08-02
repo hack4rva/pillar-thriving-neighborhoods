@@ -180,18 +180,23 @@ export function parseResearchCorpus() {
         : withUrl.length ? STATUS_BY_TIER[tiers[0]] ?? 'reported_but_unverified'
           : 'reported_but_unverified';
 
-      const primary = withUrl[0] ?? null;
-      pending.push({
+                      const primary = withUrl[0] ?? null;
+                      // The claim text has citation markers stripped so it reads
+                      // as a sentence, which means it no longer appears in the
+                      // file. Provenance excerpts have to be verbatim or they
+                      // cannot be checked against the line they cite.
+                      const raw = line.trim();
+                      pending.push({
         id: null, // assigned once the report clears the relevance check
         claim: clean(line).slice(0, 900),
         status: status === 'externally_verified' ? 'confirmed' : 'likely',
         source: primary?.title ?? null,
         url: primary?.url ?? null,
         repo: REPO_ID,
-        provenance: [{
-          sourceDoc: rel,
-          sourceLocation: `lines ${i + 1}-${i + 1}`,
-          excerpt: clean(line).slice(0, 400),
+                        provenance: [{
+                          sourceDoc: rel,
+                          sourceLocation: `lines ${i + 1}-${i + 1}`,
+                          excerpt: raw.slice(0, 400),
           ...(primary?.url ? { url: primary.url } : {}),
           ...(primary?.title ? { sourceTitle: primary.title } : {}),
         }],
@@ -201,9 +206,10 @@ export function parseResearchCorpus() {
         // Not part of the evidenceRecord schema; stripped before writing and
         // used to wire claims to their source nodes and to the LLM pass.
         _evidenceStatus: status,
-        _sources: withUrl,
-        _report: rel,
-        _line: i + 1,
+                        _sources: withUrl,
+                        _report: rel,
+                        _line: i + 1,
+                        _raw: raw,
       });
     }
 
@@ -248,10 +254,12 @@ export function parseResearchCorpus() {
         citedByReports: [...s.citedBy].sort(),
         claimCount: s.claimIds.length,
       },
-      provenance: [...s.citedBy].slice(0, 5).map((doc) => ({
-        sourceDoc: doc,
-        sourceLocation: 'References',
-        excerpt: s.title ?? s.url,
+                      provenance: [...s.citedBy].slice(0, 5).map((doc) => ({
+                        sourceDoc: doc,
+                        sourceLocation: 'References',
+                        // The URL, not the title: reference lines wrap titles in
+                        // markdown emphasis, so only the URL is verbatim.
+                        excerpt: s.url,
         url: s.url,
         ...(s.title ? { sourceTitle: s.title } : {}),
       })),

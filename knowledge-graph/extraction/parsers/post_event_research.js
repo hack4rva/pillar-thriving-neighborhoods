@@ -119,7 +119,11 @@ export function parsePostEventResearch() {
   // included; `_research-answers` is a different question/answer shape.
   const projects = readdirSync(root)
     .filter((d) => !d.startsWith('.') && d !== '_research-answers')
-    .filter((d) => statSync(join(root, d)).isDirectory());
+    .filter((d) => statSync(join(root, d)).isDirectory())
+    // A directory named for a failed run ("unknown-corrupted") has no project
+    // behind it. Skipping it here rather than just its node keeps its findings
+    // from being emitted as edges to a proposal that was never created.
+    .filter((d) => !isPlaceholder(d));
 
   for (const project of projects) {
     const projectId = `n:proposal:${slug(project)}`;
@@ -349,6 +353,16 @@ function audienceNode(audience, mdRel, lineNo, addNode) {
 }
 
 /**
+ * Text standing in for an answer the research did not have. Recorded as a node
+ * it becomes an entity called "N/A — No information available", which is worse
+ * than the absence it was standing in for.
+ */
+export function isPlaceholder(text) {
+  return /^(n\/a|none|unknown|not (specified|available|provided|applicable)|no (information|data)|tbd|todo|pending|corrupted?)\b/i
+    .test(String(text).trim());
+}
+
+/**
  * Create one finding node and link it to its project. Returns the node id, or
  * null when the source text was empty.
  */
@@ -357,7 +371,7 @@ function emitFinding({
   section, mdRel, basis, projectId, addNode, edges,
 }) {
   const text = (label ?? '').trim();
-  if (!text) return null;
+  if (!text || isPlaceholder(text)) return null;
 
   const prefix = { Need: 'need', Problem: 'problem', Evidence: 'evidence', Service: 'service', Proposal: 'proposal', ResearchQuestion: 'question' }[type] ?? 'node';
   const id = `n:${prefix}:${slug(text)}`;
