@@ -1,0 +1,341 @@
+[
+ {
+  "id": "ev:E-001",
+  "claim": "HUD Fair Market Rents are publicly available for Richmond MSA",
+  "status": "confirmed",
+  "source": "HUD",
+  "url": "https://www.huduser.gov/portal/datasets/fmr.html",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 15-15",
+    "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-002",
+  "claim": "NLIHC National Housing Preservation Database is publicly accessible",
+  "status": "confirmed",
+  "source": "NLIHC",
+  "url": "https://preservationdatabase.org",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 16-16",
+    "excerpt": "NLIHC National Housing Preservation Database is publicly accessible"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-003",
+  "claim": "Richmond City Council and Planning Commission meetings are recorded in Legistar",
+  "status": "confirmed",
+  "source": "City of Richmond",
+  "url": "https://richmondva.legistar.com",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 17-17",
+    "excerpt": "Richmond City Council and Planning Commission meetings are recorded in Legistar"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-010",
+  "claim": "Richmond uses the Granicus/Legistar platform with client name \"richmondva\"",
+  "status": "confirmed",
+  "source": "Legistar Web API",
+  "url": "https://webapi.legistar.com/v1/richmondva/Matters?$top=1",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 18-18",
+    "excerpt": "Richmond uses the Granicus/Legistar platform with client name \"richmondva\""
+   }
+  ]
+ },
+ {
+  "id": "ev:E-011",
+  "claim": "The Granicus Web API is publicly accessible for Richmond at client name \"richmondva\"",
+  "status": "confirmed",
+  "source": "Legistar Web API",
+  "url": "https://webapi.legistar.com/v1/richmondva/Matters",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 19-19",
+    "excerpt": "The Granicus Web API is publicly accessible for Richmond at client name \"richmondva\""
+   }
+  ]
+ },
+ {
+  "id": "ev:E-012",
+  "claim": "Richmond has a Development Mapper and Land Use Project Mapper accessible via ArcGIS Online",
+  "status": "confirmed",
+  "source": "City of Richmond PDR",
+  "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 20-20",
+    "excerpt": "Richmond has a Development Mapper and Land Use Project Mapper accessible via ArcGIS Online"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-013",
+  "claim": "Sharon Ebert holds the DCAO role for Economic and Community Development at City of Richmond",
+  "status": "confirmed",
+  "source": "rva.gov official announcement",
+  "url": "https://www.rva.gov/mayors-office/news/mayor-appoints-dcao-economic-and-community-development-director-housing-and",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 21-21",
+    "excerpt": "Sharon Ebert holds the DCAO role for Economic and Community Development at City of Richmond"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-014",
+  "claim": "HUD CHAS data is available at census tract level for Richmond",
+  "status": "confirmed",
+  "source": "HUD CHAS download page",
+  "url": "https://www.huduser.gov/portal/datasets/cp.html",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 22-22",
+    "excerpt": "HUD CHAS data is available at census tract level for Richmond"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-015",
+  "claim": "Legistar Planning Commission matter titles include street addresses for SUP/rezoning cases",
+  "status": "confirmed",
+  "source": "richmondva.legistar.com",
+  "url": "https://richmondva.legistar.com/MeetingDetail.aspx?ID=1252850",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 30-30",
+    "excerpt": "Legistar Planning Commission matter titles include street addresses for SUP/rezoning cases"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-016",
+  "claim": "Richmond has 30 matter types in Legistar including \"Location Character and Extent Item\" and \"City Planning Commission Resolution\"",
+  "status": "confirmed",
+  "source": "Legistar Web API",
+  "url": "https://webapi.legistar.com/v1/richmondva/MatterTypes",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 31-31",
+    "excerpt": "Richmond has 30 matter types in Legistar including \"Location Character and Extent Item\" and \"City Planning Commission Resolution\""
+   }
+  ]
+ },
+ {
+  "id": "ev:E-017",
+  "claim": "Legistar for Richmond contains housing grant ordinances (HOME, CDBG, HOPWA, ESG) searchable by matter title",
+  "status": "confirmed",
+  "source": "Legistar Web API",
+  "url": "https://webapi.legistar.com/v1/richmondva/Matters",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 32-32",
+    "excerpt": "Legistar for Richmond contains housing grant ordinances (HOME, CDBG, HOPWA, ESG) searchable by matter title"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-018",
+  "claim": "Richmond notification requirements for planning hearings require mailed notice to adjacent property owners and at least 5 days advance notice per Virginia Code",
+  "status": "confirmed",
+  "source": "Virginia Code § 15.2-2204",
+  "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2204/",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 33-33",
+    "excerpt": "Richmond notification requirements for planning hearings require mailed notice to adjacent property owners and at least 5 days advance notice per Virginia Code"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-019",
+  "claim": "django-councilmatic last had a release in February 2023 (v3.1.0) but has open issues and pull requests",
+  "status": "likely",
+  "source": "GitHub — datamade/django-councilmatic",
+  "url": "https://github.com/datamade/django-councilmatic",
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 34-34",
+    "excerpt": "django-councilmatic last had a release in February 2023 (v3.1.0) but has open issues and pull requests"
+   }
+  ]
+ },
+ {
+  "id": "ev:E-023",
+  "claim": "MISSING: Named departmental champion for continuation pathway beyond Sharon Ebert",
+  "status": "missing",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 52-52",
+    "excerpt": "Named departmental champion for continuation pathway beyond Sharon Ebert"
+   }
+  ],
+  "notes": "Impact: Required for post-hackathon pathway confirmation. How to get it: "
+ },
+ {
+  "id": "ev:E-024",
+  "claim": "MISSING: Resident survey data on development discovery pain points",
+  "status": "missing",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 53-53",
+    "excerpt": "Resident survey data on development discovery pain points"
+   }
+  ],
+  "notes": "Impact: Would strengthen the user case. How to get it: "
+ },
+ {
+  "id": "ev:E-025",
+  "claim": "MISSING: Confirmed 150-foot mailing radius in Richmond City zoning ordinance (vs. state minimum of abutting only)",
+  "status": "missing",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 54-54",
+    "excerpt": "Confirmed 150-foot mailing radius in Richmond City zoning ordinance (vs. state minimum of abutting only)"
+   }
+  ],
+  "notes": "Impact: Determines whether notification gap is 150 ft or street-adjacent only. How to get it: "
+ },
+ {
+  "id": "ev:E-026",
+  "claim": "MISSING: Specific Legistar address field structure for \"Location Character and Extent Item\" type matters",
+  "status": "missing",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 55-55",
+    "excerpt": "Specific Legistar address field structure for \"Location Character and Extent Item\" type matters"
+   }
+  ],
+  "notes": "Impact: API returned empty results for that filter; need to confirm whether those items exist in API or only in web UI. How to get it: "
+ },
+ {
+  "id": "ev:R-001",
+  "claim": "RISK: Legistar API does not expose structured address fields — addresses are embedded in MatterTitle text",
+  "status": "risk",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 85-85",
+    "excerpt": "Legistar API does not expose structured address fields — addresses are embedded in MatterTitle text"
+   }
+  ],
+  "notes": "Severity: Medium. Mitigation: Parse addresses from MatterTitle using regex or NLP; fall back to manual annotation"
+ },
+ {
+  "id": "ev:R-002",
+  "claim": "RISK: Land Use Project Mapper REST endpoint unavailable (marked \"being updated\")",
+  "status": "risk",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 86-86",
+    "excerpt": "Land Use Project Mapper REST endpoint unavailable (marked \"being updated\")"
+   }
+  ],
+  "notes": "Severity: Medium. Mitigation: Use Development Mapper (web map ID 777f2b6383fe42da9c6aaeac8df77c8c) instead, or fetch data from ArcGIS REST services directly"
+ },
+ {
+  "id": "ev:R-003",
+  "claim": "RISK: AI summaries contain planning errors",
+  "status": "risk",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 87-87",
+    "excerpt": "AI summaries contain planning errors"
+   }
+  ],
+  "notes": "Severity: High. Mitigation: Label as interpretation; link to official source"
+ },
+ {
+  "id": "ev:R-004",
+  "claim": "RISK: Compliance tool implies official findings",
+  "status": "risk",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 88-88",
+    "excerpt": "Compliance tool implies official findings"
+   }
+  ],
+  "notes": "Severity: High. Mitigation: Frame as staff-support only; add disclaimers"
+ },
+ {
+  "id": "ev:R-005",
+  "claim": "RISK: Building permits dataset not on open data portal",
+  "status": "risk",
+  "source": null,
+  "url": null,
+  "repo": "pillar-thriving-neighborhoods",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 89-89",
+    "excerpt": "Building permits dataset not on open data portal"
+   }
+  ],
+  "notes": "Severity: Medium. Mitigation: Use Legistar ordinances or ArcGIS Development Mapper as proxy for development activity"
+ }
+]

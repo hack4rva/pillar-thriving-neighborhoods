@@ -1,0 +1,66 @@
+[
+ {
+  "id": "q:e-023",
+  "question": "Named departmental champion for continuation pathway beyond Sharon Ebert",
+  "category": "missing-data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:e-023"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 52-52",
+    "excerpt": "Named departmental champion for continuation pathway beyond Sharon Ebert"
+   }
+  ]
+ },
+ {
+  "id": "q:e-024",
+  "question": "Resident survey data on development discovery pain points",
+  "category": "missing-data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:e-024"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 53-53",
+    "excerpt": "Resident survey data on development discovery pain points"
+   }
+  ]
+ },
+ {
+  "id": "q:e-025",
+  "question": "Confirmed 150-foot mailing radius in Richmond City zoning ordinance (vs. state minimum of abutting only)",
+  "category": "missing-data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:e-025"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 54-54",
+    "excerpt": "Confirmed 150-foot mailing radius in Richmond City zoning ordinance (vs. state minimum of abutting only)"
+   }
+  ]
+ },
+ {
+  "id": "q:e-026",
+  "question": "Specific Legistar address field structure for \"Location Character and Extent Item\" type matters",
+  "category": "missing-data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:e-026"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 55-55",
+    "excerpt": "Specific Legistar address field structure for \"Location Character and Extent Item\" type matters"
+   }
+  ]
+ }
+]

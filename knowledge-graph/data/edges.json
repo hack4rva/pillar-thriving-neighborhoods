@@ -1,0 +1,362 @@
+[
+ {
+  "id": "e:167fc4f66987",
+  "source": "n:evidence:e-011",
+  "target": "n:org:legistar-web-api",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names Legistar Web API as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 19-19",
+    "excerpt": "The Granicus Web API is publicly accessible for Richmond at client name \"richmondva\""
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:1f9664d5f78c",
+  "source": "n:evidence:e-014",
+  "target": "n:dataset:hud-chas-data-comprehensive-housing-affordability-strategy",
+  "type": "SUPPORTED_BY",
+  "description": "Claim and inventoried source share the URL https://www.huduser.gov/portal/datasets/cp.html",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 22-22",
+    "excerpt": "HUD CHAS data is available at census tract level for Richmond"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:2409bf95307a",
+  "source": "n:evidence:e-013",
+  "target": "n:org:rva-gov-official-announcement",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names rva.gov official announcement as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 21-21",
+    "excerpt": "Sharon Ebert holds the DCAO role for Economic and Community Development at City of Richmond"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:3593cd99972c",
+  "source": "n:evidence:e-019",
+  "target": "n:org:github-datamade-django-councilmatic",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names GitHub — datamade/django-councilmatic as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 34-34",
+    "excerpt": "django-councilmatic last had a release in February 2023 (v3.1.0) but has open issues and pull requests"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:441138ee82e2",
+  "source": "n:evidence:e-001",
+  "target": "n:org:hud",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names HUD as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 15-15",
+    "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:4bf3a943c460",
+  "source": "n:evidence:e-001",
+  "target": "n:dataset:hud-fair-market-rents",
+  "type": "SUPPORTED_BY",
+  "description": "Claim and inventoried source share the URL https://www.huduser.gov/portal/datasets/fmr.html",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 15-15",
+    "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:72d3dc106e4c",
+  "source": "n:evidence:e-014",
+  "target": "n:org:hud-chas-download-page",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names HUD CHAS download page as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 22-22",
+    "excerpt": "HUD CHAS data is available at census tract level for Richmond"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:79afc8731914",
+  "source": "n:evidence:e-012",
+  "target": "n:org:city-of-richmond-pdr",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names City of Richmond PDR as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 20-20",
+    "excerpt": "Richmond has a Development Mapper and Land Use Project Mapper accessible via ArcGIS Online"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:7ad485aab2cd",
+  "source": "n:evidence:e-001",
+  "target": "n:dataset:hud-chas-data-comprehensive-housing-affordability-strategy",
+  "type": "ASSOCIATED_WITH",
+  "description": "Claim cites huduser.gov, the same publisher domain as this inventoried source",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "low",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 15-15",
+    "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:989f9311f92d",
+  "source": "n:evidence:e-003",
+  "target": "n:org:city-of-richmond",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names City of Richmond as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 17-17",
+    "excerpt": "Richmond City Council and Planning Commission meetings are recorded in Legistar"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:aa95d390efe7",
+  "source": "n:evidence:e-014",
+  "target": "n:dataset:hud-fair-market-rents",
+  "type": "ASSOCIATED_WITH",
+  "description": "Claim cites huduser.gov, the same publisher domain as this inventoried source",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "low",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 22-22",
+    "excerpt": "HUD CHAS data is available at census tract level for Richmond"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:b43081439109",
+  "source": "n:evidence:e-015",
+  "target": "n:org:richmondva-legistar-com",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names richmondva.legistar.com as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 30-30",
+    "excerpt": "Legistar Planning Commission matter titles include street addresses for SUP/rezoning cases"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:b65dc39e7c2e",
+  "source": "n:evidence:e-001",
+  "target": "n:dataset:hud-affordable-housing-preservation-catalog",
+  "type": "ASSOCIATED_WITH",
+  "description": "Claim cites huduser.gov, the same publisher domain as this inventoried source",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "low",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 15-15",
+    "excerpt": "HUD Fair Market Rents are publicly available for Richmond MSA"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:bd39a28c15a3",
+  "source": "n:evidence:e-010",
+  "target": "n:org:legistar-web-api",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names Legistar Web API as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 18-18",
+    "excerpt": "Richmond uses the Granicus/Legistar platform with client name \"richmondva\""
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:bd8f2475b609",
+  "source": "n:evidence:e-018",
+  "target": "n:org:virginia-code-15-2-2204",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names Virginia Code § 15.2-2204 as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 33-33",
+    "excerpt": "Richmond notification requirements for planning hearings require mailed notice to adjacent property owners and at least 5 days advance notice per Virginia Code"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:cef26dd8bef0",
+  "source": "n:evidence:e-002",
+  "target": "n:org:nlihc",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names NLIHC as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 16-16",
+    "excerpt": "NLIHC National Housing Preservation Database is publicly accessible"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:d5e04e433ee7",
+  "source": "n:evidence:e-017",
+  "target": "n:org:legistar-web-api",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names Legistar Web API as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 32-32",
+    "excerpt": "Legistar for Richmond contains housing grant ordinances (HOME, CDBG, HOPWA, ESG) searchable by matter title"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:dc2edd624cdd",
+  "source": "n:evidence:e-014",
+  "target": "n:dataset:hud-affordable-housing-preservation-catalog",
+  "type": "ASSOCIATED_WITH",
+  "description": "Claim cites huduser.gov, the same publisher domain as this inventoried source",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "low",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 22-22",
+    "excerpt": "HUD CHAS data is available at census tract level for Richmond"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:df062ec0d409",
+  "source": "n:evidence:e-002",
+  "target": "n:dataset:nlihc-national-housing-preservation-database",
+  "type": "SUPPORTED_BY",
+  "description": "Claim and inventoried source share the URL https://preservationdatabase.org",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 16-16",
+    "excerpt": "NLIHC National Housing Preservation Database is publicly accessible"
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ },
+ {
+  "id": "e:e9b3055c59fa",
+  "source": "n:evidence:e-016",
+  "target": "n:org:legistar-web-api",
+  "type": "ASSOCIATED_WITH",
+  "description": "Evidence log names Legistar Web API as the source of this claim",
+  "repo": "pillar-thriving-neighborhoods",
+  "evidenceStatus": "documented",
+  "confidence": "high",
+  "provenance": [
+   {
+    "sourceDoc": "admin/evidence_log.md",
+    "sourceLocation": "lines 31-31",
+    "excerpt": "Richmond has 30 matter types in Legistar including \"Location Character and Extent Item\" and \"City Planning Commission Resolution\""
+   }
+  ],
+  "extractedAt": "2026-08-02T10:11:14.513Z"
+ }
+]
