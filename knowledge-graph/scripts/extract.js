@@ -12,6 +12,7 @@ import { resolve } from 'node:path';
 import { parseCipCsv } from '../extraction/parsers/cip_csv.js';
 import { parseEvidenceLog } from '../extraction/parsers/evidence_log.js';
 import { parseSourceInventory } from '../extraction/parsers/source_inventory.js';
+import { parsePostEventResearch } from '../extraction/parsers/post_event_research.js';
 import { makeNode, makeEdge, verifyProvenance, REPO_ID, slug } from '../extraction/lib.js';
 import { config } from '../extraction/config.js';
 import { computeMetrics } from '../extraction/metrics.js';
@@ -101,6 +102,7 @@ function main() {
     : { nodes: [], edges: [], flows: [], filesExamined: [] };
   const ev = parseEvidenceLog();
   const inv = parseSourceInventory();
+  const per = parsePostEventResearch();
 
   // 2. Curated records ------------------------------------------------------
   const entityRecords = readRecords('extraction/records/entities.json', []);
@@ -156,7 +158,7 @@ function main() {
   }
 
   // Research questions -> nodes (+ optional links to related nodes).
-  const questions = [...ev.questions];
+  const questions = [...ev.questions, ...per.questions];
   for (const q of curatedQuestions) {
     if (!verifyAll(q, 'node', q.id)) continue;
     const qNodeId = `n:question:${q.id.slice(2)}`;
@@ -214,8 +216,8 @@ function main() {
   }
 
   // 3. Merge ---------------------------------------------------------------
-  let nodes = [...cip.nodes, ...ev.nodes, ...inv.nodes, ...curatedNodes];
-  let edges = [...cip.edges, ...(ev.edges ?? []), ...inv.edges, ...curatedEdges,
+  let nodes = [...cip.nodes, ...ev.nodes, ...inv.nodes, ...per.nodes, ...curatedNodes];
+  let edges = [...cip.edges, ...(ev.edges ?? []), ...inv.edges, ...per.edges, ...curatedEdges,
     ...deriveCitations(ev, inv)];
   const flows = [...cip.flows, ...curatedFlows, ...external.flows];
 

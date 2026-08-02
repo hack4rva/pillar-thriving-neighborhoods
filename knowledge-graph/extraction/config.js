@@ -24,6 +24,9 @@ const DEFAULTS = {
     // Capital-projects export. Only the Built Environment pillar has one; it is
     // the sole origin of project costs, phases, and every financial flow.
     projectsCsv: null,
+    // Deep-research outputs per proposed project: pain points, jobs to be done,
+    // prior art, and open questions, each with cited sources.
+    postEventResearch: 'post-event-research',
   },
 };
 

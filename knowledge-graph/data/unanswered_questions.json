@@ -62,5 +62,1773 @@
     "excerpt": "Specific Legistar address field structure for \"Location Character and Extent Item\" type matters"
    }
   ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-data-questions-0",
+  "question": "What is the authoritative list of City-assisted affordable developments (HOME, CDBG, EAHP, local trust fund) with project IDs, parcel IDs, unit counts by AMI, affordability start/end dates, and required inspection cadence?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-authoritative-list-of-city-assisted-affordable-developments-home-cdb",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 86-86",
+    "excerpt": "What is the authoritative list of City-assisted affordable developments (HOME, CDBG, EAHP, local trust fund) with project IDs, parcel IDs, unit counts by AMI, affordability start/end dates, and required inspection cadence?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-data-questions-1",
+  "question": "Can the dashboard ingest Virginia Housing Procorem exports (tenant events, certifications, AIT status) at the property level for Richmond-located projects, and what legal/data-sharing constraints apply?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-the-dashboard-ingest-virginia-housing-procorem-exports-tenant-events-certifi",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 86-86",
+    "excerpt": "Can the dashboard ingest Virginia Housing Procorem exports (tenant events, certifications, AIT status) at the property level for Richmond-located projects, and what legal/data-sharing constraints apply?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-data-questions-2",
+  "question": "How will the system normalize addresses/parcel IDs (Assessor, GIS) to reliably join owner reports, CAPER projects, and LIHTC properties?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-the-system-normalize-addresses-parcel-ids-assessor-gis-to-reliably-join",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 86-86",
+    "excerpt": "How will the system normalize addresses/parcel IDs (Assessor, GIS) to reliably join owner reports, CAPER projects, and LIHTC properties?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-data-questions-3",
+  "question": "For HOME projects, what unit-level data are consistently available (income, rents, HQS/NSPIRE results) vs. only project-level?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:for-home-projects-what-unit-level-data-are-consistently-available-income-rents-h",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 86-86",
+    "excerpt": "For HOME projects, what unit-level data are consistently available (income, rents, HQS/NSPIRE results) vs. only project-level?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-data-questions-4",
+  "question": "How will affordability-end and decontrol-period flags be calculated and updated for resyndications, refinancings, or EAHP-specific terms?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-affordability-end-and-decontrol-period-flags-be-calculated-and-updated-",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 86-86",
+    "excerpt": "How will affordability-end and decontrol-period flags be calculated and updated for resyndications, refinancings, or EAHP-specific terms?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-user-questions-0",
+  "question": "Which HCD roles will use the dashboard (Compliance Officers, Program Managers, Data Analyst) and what tasks do they perform at month/quarter/year cycles?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-hcd-roles-will-use-the-dashboard-compliance-officers-program-managers-data",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 149-149",
+    "excerpt": "Which HCD roles will use the dashboard (Compliance Officers, Program Managers, Data Analyst) and what tasks do they perform at month/quarter/year cycles?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-user-questions-1",
+  "question": "What do affordable housing owners/managers need from the City view (e.g., checklists, calendars, status of document reviews) to reduce duplicate effort with Virginia Housing?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-do-affordable-housing-owners-managers-need-from-the-city-view-e-g-checklist",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 149-149",
+    "excerpt": "What do affordable housing owners/managers need from the City view (e.g., checklists, calendars, status of document reviews) to reduce duplicate effort with Virginia Housing?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-user-questions-2",
+  "question": "What are RRHA’s monitoring touchpoints for City-funded non-public-housing projects, if any, and do their staff require read-only or contributor access?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-are-rrha-s-monitoring-touchpoints-for-city-funded-non-public-housing-projec",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 149-149",
+    "excerpt": "What are RRHA’s monitoring touchpoints for City-funded non-public-housing projects, if any, and do their staff require read-only or contributor access?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-integration-questions-0",
+  "question": "What integrations are feasible in phase 1: HUD IDIS schedule references, Virginia Housing Tenant Portal data (via export), City document management (SharePoint/Laserfiche), and Assessor/GIS parcel services?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-integrations-are-feasible-in-phase-1-hud-idis-schedule-references-virginia-",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 188-188",
+    "excerpt": "What integrations are feasible in phase 1: HUD IDIS schedule references, Virginia Housing Tenant Portal data (via export), City document management (SharePoint/Laserfiche), and Assessor/GIS parcel services?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-integration-questions-1",
+  "question": "How will the dashboard track and alert on ownership/management changes (from Virginia Housing notices and City contracting) and sync that to contact records and certification responsibilities?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-the-dashboard-track-and-alert-on-ownership-management-changes-from-virg",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 188-188",
+    "excerpt": "How will the dashboard track and alert on ownership/management changes (from Virginia Housing notices and City contracting) and sync that to contact records and certification responsibilities?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-integration-questions-2",
+  "question": "Will the dashboard produce CAPER-ready monitoring narratives/metrics and attach inspection logs/photos for audit trails?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:will-the-dashboard-produce-caper-ready-monitoring-narratives-metrics-and-attach-",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 188-188",
+    "excerpt": "Will the dashboard produce CAPER-ready monitoring narratives/metrics and attach inspection logs/photos for audit trails?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-equity-questions-0",
+  "question": "How will the system surface disparities (location of noncompliance, loss of affordability, rent-burden risk) across neighborhoods and protected classes to inform corrective actions and fair housing priorities?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-the-system-surface-disparities-location-of-noncompliance-loss-of-afford",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 227-227",
+    "excerpt": "How will the system surface disparities (location of noncompliance, loss of affordability, rent-burden risk) across neighborhoods and protected classes to inform corrective actions and fair housing priorities?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-equity-questions-1",
+  "question": "What language access and accessibility needs exist for owner submissions and City communications about findings and corrective action plans?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-language-access-and-accessibility-needs-exist-for-owner-submissions-and-cit",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 227-227",
+    "excerpt": "What language access and accessibility needs exist for owner submissions and City communications about findings and corrective action plans?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-equity-questions-2",
+  "question": "How will tenant protections during decontrol/affordability transitions be monitored and flagged for intervention?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-tenant-protections-during-decontrol-affordability-transitions-be-monito",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 227-227",
+    "excerpt": "How will tenant protections during decontrol/affordability transitions be monitored and flagged for intervention?"
+   }
+  ]
+ },
+ {
+  "id": "q:affordable-housing-dashboard-prior-art-questions-0",
+  "question": "Which existing municipal compliance dashboards or open-source civic tech components (e.g., inspection scheduling, affordability period calculators) are most adaptable to Richmond’s HOME/EAHP context, and what data models did they use?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-existing-municipal-compliance-dashboards-or-open-source-civic-tech-compone",
+   "n:proposal:affordable-housing-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/affordable-housing-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 266-266",
+    "excerpt": "Which existing municipal compliance dashboards or open-source civic tech components (e.g., inspection scheduling, affordability period calculators) are most adaptable to Richmond’s HOME/EAHP context, and what data models did they use?"
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-data-questions-0",
+  "question": "Which AMI/rent frameworks must the validator support first for Richmond: HUD HOME Rent Limits, MTSP/LIHTC rent limits, HCV Payment Standards, project-specific regulatory agreements, or AHTF contract terms? How are utility allowances standardized (RRHA vs project-specific)?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-ami-rent-frameworks-must-the-validator-support-first-for-richmond-hud-home",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-data-questions-1",
+  "question": "What is the authoritative registry of restricted units (addresses, unit mix, affordability tiers, term dates, regulatory layers)? Is there an existing HCD-maintained list or only program silos? Can we link to parcel/addresses from the Open Data Portal?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-authoritative-registry-of-restricted-units-addresses-unit-mix-afford",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-data-questions-2",
+  "question": "How frequently should limits refresh (annual HUD updates, mid-year corrections, local policy updates)? What versioning is required for audits (effective date, data source, parameters)?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-frequently-should-limits-refresh-annual-hud-updates-mid-year-corrections-loc",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-data-questions-3",
+  "question": "What Richmond-specific fields are needed (Council District, Pulse BRT/TIF zones, preservation risk flags from the Plan’s LIHTC monitoring database concept)?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-richmond-specific-fields-are-needed-council-district-pulse-brt-tif-zones-pr",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-user-questions-0",
+  "question": "Primary users and permissions: HCD compliance analysts, program managers, RRHA liaisons, EDA staff, external owners/managers? Read vs write vs attest rights?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:primary-users-and-permissions-hcd-compliance-analysts-program-managers-rrha-liai",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 162-162",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-user-questions-1",
+  "question": "What outputs are required: violation flags, cure letters, exportable audit packets, dashboards by program and pillar metrics? Any state-required templates (Virginia DHCD/VHDA/Virginia Housing)?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-outputs-are-required-violation-flags-cure-letters-exportable-audit-packets-",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 162-162",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-user-questions-2",
+  "question": "What’s the acceptable accuracy/latency for batch uploads during audit season? How should the tool handle missing data, ambiguous bedroom counts, or AMI tie-breakers?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-s-the-acceptable-accuracy-latency-for-batch-uploads-during-audit-season-how",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 162-162",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-integration-questions-0",
+  "question": "Should the validator integrate with HUD User APIs for IL/HTF/HOME/MTSP, RRHA utility allowance sources, and the City’s Open Data Portal/parcel layers? Any existing case-management (e.g., grants management, contract management) to hook into?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:should-the-validator-integrate-with-hud-user-apis-for-il-htf-home-mtsp-rrha-util",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 201-201",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-integration-questions-1",
+  "question": "Can we ingest rent rolls securely from property managers (SFTP, portal upload) and return machine-readable results? Any need to integrate with RRHA HCV landlord portal for cross-checks?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-we-ingest-rent-rolls-securely-from-property-managers-sftp-portal-upload-and-",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 201-201",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-equity-questions-0",
+  "question": "How will the tool account for anti-displacement priorities and equitable enforcement (e.g., grace periods, technical assistance) consistent with the Mayor’s plan and One Richmond guiding principles?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-the-tool-account-for-anti-displacement-priorities-and-equitable-enforce",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 228-228",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-equity-questions-1",
+  "question": "Will resident-facing transparency be provided (e.g., public dashboard of preserved units/rent caps) without exposing PII, to build trust in affordability commitments?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:will-resident-facing-transparency-be-provided-e-g-public-dashboard-of-preserved-",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 228-228",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-equity-questions-2",
+  "question": "How to handle edge cases (SROs, group homes, supportive housing) and avoid unintended enforcement burdens on mission-driven nonprofits?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-to-handle-edge-cases-sros-group-homes-supportive-housing-and-avoid-unintende",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 228-228",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-prior-art-questions-0",
+  "question": "Which Richmond teams already maintain LIHTC/HOME/AHTF trackers, and what schemas exist to avoid re-inventing? The Plan mentions creating a LIHTC monitoring database—what progress has been made?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-richmond-teams-already-maintain-lihtc-home-ahtf-trackers-and-what-schemas-",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 267-267",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-prior-art-questions-1",
+  "question": "Which external tools are in use (HUD User API for Income Limits/Home Rent Limits, any vendor solutions for compliance)? How do peers in Virginia (e.g., Henrico/Chesterfield, Virginia Housing) validate rent caps?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-external-tools-are-in-use-hud-user-api-for-income-limits-home-rent-limits-",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 267-267",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:hud-rent-cap-validator-prior-art-questions-2",
+  "question": "Lessons from other cities’ AMI/rent validators or inclusionary monitoring portals to inform UX, auditability, and public transparency?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:lessons-from-other-cities-ami-rent-validators-or-inclusionary-monitoring-portals",
+   "n:proposal:hud-rent-cap-validator"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/hud-rent-cap-validator/jtbd_analysis.md",
+    "sourceLocation": "lines 267-267",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-data-questions-0",
+  "question": "What engagement data does PDR reliably capture today per case (sign-ins with addresses, emails/ZIPs, meeting attendance, virtual participation logs, language interpretation requests)? At what granularity and format?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-engagement-data-does-pdr-reliably-capture-today-per-case-sign-ins-with-addr",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": "What engagement data does PDR reliably capture today per case (sign-ins with addresses, emails/ZIPs, meeting attendance, virtual participation logs, language interpretation requests)? At what granularity and format?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-data-questions-1",
+  "question": "Can addresses from sign-ins be geocoded to Census tracts reliably, and how are PO Boxes or incomplete data handled?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-addresses-from-sign-ins-be-geocoded-to-census-tracts-reliably-and-how-are-po",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": "Can addresses from sign-ins be geocoded to Census tracts reliably, and how are PO Boxes or incomplete data handled?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-data-questions-2",
+  "question": "What demographic baselines by tract will be the official comparators (ACS 5-year: race/ethnicity, age, income, tenure, language, disability)? What refresh cadence?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-demographic-baselines-by-tract-will-be-the-official-comparators-acs-5-year-",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": "What demographic baselines by tract will be the official comparators (ACS 5-year: race/ethnicity, age, income, tenure, language, disability)? What refresh cadence?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-data-questions-3",
+  "question": "How will participation be deduped across multiple touchpoints (online survey + meeting + eComment) within a single proposal?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-participation-be-deduped-across-multiple-touchpoints-online-survey-meet",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": "How will participation be deduped across multiple touchpoints (online survey + meeting + eComment) within a single proposal?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-data-questions-4",
+  "question": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-protections-are-required-to-avoid-exposing-personally-identifiable-informat",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-data-questions-5",
+  "question": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes 'success' before entitlement milestones?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-richmond-300-priority-neighborhoods-and-big-moves-should-have-elevated-eng",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 111-111",
+    "excerpt": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes 'success' before entitlement milestones?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-user-questions-0",
+  "question": "Which PDR roles will own data entry/QA (case planner, engagement specialist, admin)? What workflows fit CPC agenda cycles?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-pdr-roles-will-own-data-entry-qa-case-planner-engagement-specialist-admin-",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 162-162",
+    "excerpt": "Which PDR roles will own data entry/QA (case planner, engagement specialist, admin)? What workflows fit CPC agenda cycles?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-user-questions-1",
+  "question": "What views do planners, engagement staff, and managers each need (per-proposal, per-neighborhood, per-tract rollups, quarterly department view)?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-views-do-planners-engagement-staff-and-managers-each-need-per-proposal-per-",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 162-162",
+    "excerpt": "What views do planners, engagement staff, and managers each need (per-proposal, per-neighborhood, per-tract rollups, quarterly department view)?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-user-questions-2",
+  "question": "What thresholds/alerts matter operationally (e.g., <50% of adjacent tracts represented; no attendance from Priority Neighborhoods; language access needs unmet)?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-thresholds-alerts-matter-operationally-e-g-50-of-adjacent-tracts-represente",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 162-162",
+    "excerpt": "What thresholds/alerts matter operationally (e.g., <50% of adjacent tracts represented; no attendance from Priority Neighborhoods; language access needs unmet)?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-integration-questions-0",
+  "question": "What fields can we pull from the Online Permit Portal/EnerGov to automatically list proposals, locations, and milestones?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-fields-can-we-pull-from-the-online-permit-portal-energov-to-automatically-l",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 189-189",
+    "excerpt": "What fields can we pull from the Online Permit Portal/EnerGov to automatically list proposals, locations, and milestones?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-integration-questions-1",
+  "question": "How will artifacts from CPC/BZA/CAR/UDC (agendas, action summaries) link to proposals to show where/when engagement occurred?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-artifacts-from-cpc-bza-car-udc-agendas-action-summaries-link-to-proposa",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 189-189",
+    "excerpt": "How will artifacts from CPC/BZA/CAR/UDC (agendas, action summaries) link to proposals to show where/when engagement occurred?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-integration-questions-2",
+  "question": "Can the dashboard read/write to existing ArcGIS layers (e.g., Civic Associations, tracts, Priority Neighborhoods) and publish public-facing maps when appropriate?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-the-dashboard-read-write-to-existing-arcgis-layers-e-g-civic-associations-tr",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 189-189",
+    "excerpt": "Can the dashboard read/write to existing ArcGIS layers (e.g., Civic Associations, tracts, Priority Neighborhoods) and publish public-facing maps when appropriate?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-equity-questions-0",
+  "question": "How will we handle neighborhoods without active civic associations and overlapping boundaries to avoid skewing outreach metrics?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-we-handle-neighborhoods-without-active-civic-associations-and-overlappi",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 216-216",
+    "excerpt": "How will we handle neighborhoods without active civic associations and overlapping boundaries to avoid skewing outreach metrics?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-equity-questions-1",
+  "question": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-protections-are-required-to-avoid-exposing-personally-identifiable-informat",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 216-216",
+    "excerpt": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-equity-questions-2",
+  "question": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes “success” before entitlement milestones?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-richmond-300-priority-neighborhoods-and-big-moves-should-have-elevated-eng",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 216-216",
+    "excerpt": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes “success” before entitlement milestones?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-prior-art-questions-0",
+  "question": "Which comparable cities’ participation-equity dashboards or equity-mapping practices does Richmond want to emulate (metrics, visualization, governance)?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-comparable-cities-participation-equity-dashboards-or-equity-mapping-practi",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 243-243",
+    "excerpt": "Which comparable cities’ participation-equity dashboards or equity-mapping practices does Richmond want to emulate (metrics, visualization, governance)?"
+   }
+  ]
+ },
+ {
+  "id": "q:participation-analytics-dashboard-prior-art-questions-1",
+  "question": "What reporting needs exist for the Richmond 300 annual report and for Council committees that this dashboard should automate (frequency, format, narrative vs. metrics)?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-reporting-needs-exist-for-the-richmond-300-annual-report-and-for-council-co",
+   "n:proposal:participation-analytics-dashboard"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
+    "sourceLocation": "lines 243-243",
+    "excerpt": "What reporting needs exist for the Richmond 300 annual report and for Council committees that this dashboard should automate (frequency, format, narrative vs. metrics)?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-data-questions-0",
+  "question": "What is the update frequency of the 'Plans of Development' dataset, and is there a reliable way to track the status of proposals from initial submission to final approval?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-update-frequency-of-the-plans-of-development-dataset-and-is-there-a-",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 105-105",
+    "excerpt": "What is the update frequency of the 'Plans of Development' dataset, and is there a reliable way to track the status of proposals from initial submission to final approval?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-data-questions-1",
+  "question": "How can we reliably identify multifamily buildings using the city's GIS data, specifically the 'Parcels' and 'Zoning Districts' datasets?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-can-we-reliably-identify-multifamily-buildings-using-the-city-s-gis-data-spe",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 105-105",
+    "excerpt": "How can we reliably identify multifamily buildings using the city's GIS data, specifically the 'Parcels' and 'Zoning Districts' datasets?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-data-questions-2",
+  "question": "Does the city's GIS data include the number of units in each multifamily building, and if not, what is the best way to estimate this?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:does-the-city-s-gis-data-include-the-number-of-units-in-each-multifamily-buildin",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 105-105",
+    "excerpt": "Does the city's GIS data include the number of units in each multifamily building, and if not, what is the best way to estimate this?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-data-questions-3",
+  "question": "How can American Community Survey data on languages spoken at home be used at a granular level (e.g., census tract) to determine where to prioritize Spanish-language (ES) door-hangers?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-can-american-community-survey-data-on-languages-spoken-at-home-be-used-at-a-",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 105-105",
+    "excerpt": "How can American Community Survey data on languages spoken at home be used at a granular level (e.g., census tract) to determine where to prioritize Spanish-language (ES) door-hangers?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-user-questions-0",
+  "question": "What information is most critical to include on the door-hanger to be both informative and actionable?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-information-is-most-critical-to-include-on-the-door-hanger-to-be-both-infor",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 156-156",
+    "excerpt": "What information is most critical to include on the door-hanger to be both informative and actionable?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-user-questions-1",
+  "question": "Who will be responsible for printing and distributing the door-hangers, and how can we coordinate with property managers to ensure access to buildings?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:who-will-be-responsible-for-printing-and-distributing-the-door-hangers-and-how-c",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 156-156",
+    "excerpt": "Who will be responsible for printing and distributing the door-hangers, and how can we coordinate with property managers to ensure access to buildings?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-integration-questions-0",
+  "question": "What is the most efficient way to automate the process of checking for new development proposals, identifying nearby multifamily buildings, and generating the door-hanger PDFs?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-most-efficient-way-to-automate-the-process-of-checking-for-new-devel",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 183-183",
+    "excerpt": "What is the most efficient way to automate the process of checking for new development proposals, identifying nearby multifamily buildings, and generating the door-hanger PDFs?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-integration-questions-1",
+  "question": "How can we track changes or updates to development proposals and ensure that renters are notified of significant modifications or new hearing dates?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-can-we-track-changes-or-updates-to-development-proposals-and-ensure-that-ren",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 183-183",
+    "excerpt": "How can we track changes or updates to development proposals and ensure that renters are notified of significant modifications or new hearing dates?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-equity-questions-0",
+  "question": "Beyond English and Spanish, what other languages are commonly spoken by renters in Richmond, and should we consider additional translations?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:beyond-english-and-spanish-what-other-languages-are-commonly-spoken-by-renters-i",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 210-210",
+    "excerpt": "Beyond English and Spanish, what other languages are commonly spoken by renters in Richmond, and should we consider additional translations?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-equity-questions-1",
+  "question": "How can we use granular data on languages spoken at home to determine where to prioritize Spanish-language (ES) door-hangers?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-can-we-use-granular-data-on-languages-spoken-at-home-to-determine-where-to-p",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 210-210",
+    "excerpt": "How can we use granular data on languages spoken at home to determine where to prioritize Spanish-language (ES) door-hangers?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-equity-questions-2",
+  "question": "What is the role of digital outreach in reaching renters who may prefer or have better access to online information?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-role-of-digital-outreach-in-reaching-renters-who-may-prefer-or-have-",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 210-210",
+    "excerpt": "What is the role of digital outreach in reaching renters who may prefer or have better access to online information?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-equity-questions-3",
+  "question": "Are there specific neighborhoods or zoning districts with a high concentration of renters who have been historically excluded from the development process? How can we prioritize outreach in these areas?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:are-there-specific-neighborhoods-or-zoning-districts-with-a-high-concentration-o",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 210-210",
+    "excerpt": "Are there specific neighborhoods or zoning districts with a high concentration of renters who have been historically excluded from the development process? How can we prioritize outreach in these areas?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-equity-questions-4",
+  "question": "How can we measure the effectiveness of this project in increasing renter participation in the development process?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-can-we-measure-the-effectiveness-of-this-project-in-increasing-renter-partic",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 210-210",
+    "excerpt": "How can we measure the effectiveness of this project in increasing renter participation in the development process?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-prior-art-questions-0",
+  "question": "What lessons can be learned from projects that used physical mailers, like postcards for rental assistance, regarding the logistics and impact of outreach?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-lessons-can-be-learned-from-projects-that-used-physical-mailers-like-postca",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 273-273",
+    "excerpt": "What lessons can be learned from projects that used physical mailers, like postcards for rental assistance, regarding the logistics and impact of outreach?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-prior-art-questions-1",
+  "question": "Have other cities with a high percentage of renters developed similar tools or processes to notify them of development proposals, and what can be learned from their successes and failures?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:have-other-cities-with-a-high-percentage-of-renters-developed-similar-tools-or-p",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 273-273",
+    "excerpt": "Have other cities with a high percentage of renters developed similar tools or processes to notify them of development proposals, and what can be learned from their successes and failures?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-prior-art-questions-2",
+  "question": "Are there any open-source tools or playbooks from Code for America or other civic tech organizations for renter outreach and engagement that could be adapted for this project?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:are-there-any-open-source-tools-or-playbooks-from-code-for-america-or-other-civi",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/jtbd_analysis.md",
+    "sourceLocation": "lines 273-273",
+    "excerpt": "Are there any open-source tools or playbooks from Code for America or other civic tech organizations for renter outreach and engagement that could be adapted for this project?"
+   }
+  ]
+ },
+ {
+  "id": "q:renter-aware-notifications-unresolved-project-questions-0",
+  "question": "What are the methods for identifying multifamily buildings and their unit counts from city GIS data?",
+  "category": "unresolved_project",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-are-the-methods-for-identifying-multifamily-buildings-and-their-unit-counts",
+   "n:proposal:renter-aware-notifications"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/renter-aware-notifications/pain_points.md",
+    "sourceLocation": "lines 279-279",
+    "excerpt": "What are the methods for identifying multifamily buildings and their unit counts from city GIS data?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-data-questions-0",
+  "question": "Which ArcGIS layers will be primary sources (e.g., Plans of Development, Special Use Permits, BZA cases) and how frequently are they updated relative to EnerGov status changes?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-arcgis-layers-will-be-primary-sources-e-g-plans-of-development-special-use",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 94-94",
+    "excerpt": "Which ArcGIS layers will be primary sources (e.g., Plans of Development, Special Use Permits, BZA cases) and how frequently are they updated relative to EnerGov status changes?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-data-questions-1",
+  "question": "Can rva-plotlines consume the public search endpoints or exports from the Online Permit Portal for cases/inspections without logins, and what fields are available (case ID, status, milestones, applicant, location)?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-rva-plotlines-consume-the-public-search-endpoints-or-exports-from-the-online",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 94-94",
+    "excerpt": "Can rva-plotlines consume the public search endpoints or exports from the Online Permit Portal for cases/inspections without logins, and what fields are available (case ID, status, milestones, applicant, location)?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-data-questions-2",
+  "question": "How to reliably link Legistar agenda items to EnerGov case numbers and to GIS features (parcel IDs/addresses)?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-to-reliably-link-legistar-agenda-items-to-energov-case-numbers-and-to-gis-fe",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 94-94",
+    "excerpt": "How to reliably link Legistar agenda items to EnerGov case numbers and to GIS features (parcel IDs/addresses)?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-data-questions-3",
+  "question": "Are there authoritative geographies for neighborhoods/associations in Richmond to power proximity notifications and equity rollups?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:are-there-authoritative-geographies-for-neighborhoods-associations-in-richmond-t",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 94-94",
+    "excerpt": "Are there authoritative geographies for neighborhoods/associations in Richmond to power proximity notifications and equity rollups?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-data-questions-4",
+  "question": "What is the retention and versioning policy for superseded staff reports and amended applications?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-retention-and-versioning-policy-for-superseded-staff-reports-and-ame",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 94-94",
+    "excerpt": "What is the retention and versioning policy for superseded staff reports and amended applications?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-user-questions-0",
+  "question": "Which priority personas in Richmond (association leaders, renters, homeowners, small developers, advocacy orgs) need different narrative “translations” and alert thresholds?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-priority-personas-in-richmond-association-leaders-renters-homeowners-small",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 137-137",
+    "excerpt": "Which priority personas in Richmond (association leaders, renters, homeowners, small developers, advocacy orgs) need different narrative “translations” and alert thresholds?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-user-questions-1",
+  "question": "What languages, reading levels, and accessibility needs are most common for Planning Commission/BZA engagement in Richmond?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-languages-reading-levels-and-accessibility-needs-are-most-common-for-planni",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 137-137",
+    "excerpt": "What languages, reading levels, and accessibility needs are most common for Planning Commission/BZA engagement in Richmond?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-user-questions-2",
+  "question": "What are the most common entry points today (yellow signs, social, word-of-mouth, Legistar calendar, EnerGov search, Zoning map), and where do users drop off?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-are-the-most-common-entry-points-today-yellow-signs-social-word-of-mouth-le",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 137-137",
+    "excerpt": "What are the most common entry points today (yellow signs, social, word-of-mouth, Legistar calendar, EnerGov search, Zoning map), and where do users drop off?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-user-questions-3",
+  "question": "What default “near me” radius makes sense in Richmond’s context (parcel adjacency vs 250–1000 ft buffers) for surfacing proposals?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-default-near-me-radius-makes-sense-in-richmond-s-context-parcel-adjacency-v",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 137-137",
+    "excerpt": "What default “near me” radius makes sense in Richmond’s context (parcel adjacency vs 250–1000 ft buffers) for surfacing proposals?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-integration-questions-0",
+  "question": "What is the most stable way to deep-link users from a narrative back to the authoritative record (EnerGov case page, Legistar agenda packet, specific ArcGIS feature)?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-most-stable-way-to-deep-link-users-from-a-narrative-back-to-the-auth",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 172-172",
+    "excerpt": "What is the most stable way to deep-link users from a narrative back to the authoritative record (EnerGov case page, Legistar agenda packet, specific ArcGIS feature)?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-integration-questions-1",
+  "question": "Can the tool embed or snapshot key PDFs (staff reports, site plans) for accessibility while respecting the City’s canonical sources and updates?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-the-tool-embed-or-snapshot-key-pdfs-staff-reports-site-plans-for-accessibili",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 172-172",
+    "excerpt": "Can the tool embed or snapshot key PDFs (staff reports, site plans) for accessibility while respecting the City’s canonical sources and updates?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-integration-questions-2",
+  "question": "Should the tool push meeting reminders keyed to Legistar calendar updates for Planning Commission and BZA, and how to avoid stale or canceled meeting notices?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:should-the-tool-push-meeting-reminders-keyed-to-legistar-calendar-updates-for-pl",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 172-172",
+    "excerpt": "Should the tool push meeting reminders keyed to Legistar calendar updates for Planning Commission and BZA, and how to avoid stale or canceled meeting notices?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-equity-questions-0",
+  "question": "How will proximity and impact narratives incorporate Richmond 300 Future Land Use, overlays (historic districts, design overlays), and known displacement risks to avoid bias?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-proximity-and-impact-narratives-incorporate-richmond-300-future-land-us",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 199-199",
+    "excerpt": "How will proximity and impact narratives incorporate Richmond 300 Future Land Use, overlays (historic districts, design overlays), and known displacement risks to avoid bias?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-equity-questions-1",
+  "question": "What safeguards ensure neighborhoods with less digital access still learn about proposals (SMS, printable summaries, multilingual content)?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-safeguards-ensure-neighborhoods-with-less-digital-access-still-learn-about-",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 199-199",
+    "excerpt": "What safeguards ensure neighborhoods with less digital access still learn about proposals (SMS, printable summaries, multilingual content)?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-equity-questions-2",
+  "question": "How to present uncertainty and tradeoffs (e.g., affordable units proposed vs conditions) to build trust without overstating impacts?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-to-present-uncertainty-and-tradeoffs-e-g-affordable-units-proposed-vs-condit",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 199-199",
+    "excerpt": "How to present uncertainty and tradeoffs (e.g., affordable units proposed vs conditions) to build trust without overstating impacts?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-prior-art-questions-0",
+  "question": "Which notification and narrative patterns from prior civic tech (e.g., city open-data mappers and subscription alerts) best fit Richmond’s stack of EnerGov + ArcGIS + Legistar?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-notification-and-narrative-patterns-from-prior-civic-tech-e-g-city-open-da",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 226-226",
+    "excerpt": "Which notification and narrative patterns from prior civic tech (e.g., city open-data mappers and subscription alerts) best fit Richmond’s stack of EnerGov + ArcGIS + Legistar?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-plotlines-prior-art-questions-1",
+  "question": "How have other cities linked permitting systems, GIS layers, and legislative calendars to provide end-to-end project timelines, and what pitfalls should Richmond avoid?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-have-other-cities-linked-permitting-systems-gis-layers-and-legislative-calen",
+   "n:proposal:rva-plotlines"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-plotlines/jtbd_analysis.md",
+    "sourceLocation": "lines 226-226",
+    "excerpt": "How have other cities linked permitting systems, GIS layers, and legislative calendars to provide end-to-end project timelines, and what pitfalls should Richmond avoid?"
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-data-questions-0",
+  "question": "What are the authoritative data sources we can reliably pull: Legistar items and metadata for Planning Commission, CAR, UDC, BZA; EnerGov permit/plan records; GIS layers (parcels, zoning, Historic Districts, Future Land Use, Priority Neighborhoods); PlanRVA Development Map? What fields/IDs link across them?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-are-the-authoritative-data-sources-we-can-reliably-pull-legistar-items-and-",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 195-195",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-data-questions-1",
+  "question": "Can we programmatically classify Legistar “Types” (e.g., Special Use Permit, Rezoning, Location, Character and Extent, Conceptual Review, Staff Report) and extract addresses, GPINs/parcel IDs, meeting dates, staff reports, and actions?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-we-programmatically-classify-legistar-types-e-g-special-use-permit-rezoning-",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 195-195",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-data-questions-2",
+  "question": "What is available via open GIS for SUPs/rezonings and how current is it? Are there APIs or regular exports for Special Use Permits and other case layers on the Richmond GeoHub? If items were moved/retired, what’s the current endpoint?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-available-via-open-gis-for-sups-rezonings-and-how-current-is-it-are-ther",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 195-195",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-data-questions-3",
+  "question": "How do we resolve addresses to parcels and overlay Future Land Use and design overlays to explain “consistency with Richmond 300” in plain language?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-do-we-resolve-addresses-to-parcels-and-overlay-future-land-use-and-design-ov",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 195-195",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-data-questions-4",
+  "question": "What is the expected refresh cadence for each source (Legistar agenda publication, EnerGov status changes, GIS layer updates) and how do we handle late-minute agenda amendments?",
+  "category": "data",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-is-the-expected-refresh-cadence-for-each-source-legistar-agenda-publication",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 195-195",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-user-questions-0",
+  "question": "Which resident personas should we prioritize first: renters in Priority Neighborhoods, homeowners near active corridors, small business owners, or neighborhood association officers? What devices/languages do they use?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-resident-personas-should-we-prioritize-first-renters-in-priority-neighborh",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 238-238",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-user-questions-1",
+  "question": "What are residents’ top “action” needs: learn basics, subscribe for proximity alerts, generate talking points tied to Richmond 300, or find how/where to submit eComment?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-are-residents-top-action-needs-learn-basics-subscribe-for-proximity-alerts-",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 238-238",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-user-questions-2",
+  "question": "What level of detail is most helpful in summaries (e.g., unit counts, height/FAR, parking, use type) versus information overload?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-level-of-detail-is-most-helpful-in-summaries-e-g-unit-counts-height-far-par",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 238-238",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-user-questions-3",
+  "question": "What accessibility and language access requirements should we meet (screen reader support, Spanish and other languages aligned with City language access plan)?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-accessibility-and-language-access-requirements-should-we-meet-screen-reader",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 238-238",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-user-questions-4",
+  "question": "How will we measure trust and usefulness (e.g., share rates, alert opt-ins, attendance at meetings, user surveys)?",
+  "category": "user",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-we-measure-trust-and-usefulness-e-g-share-rates-alert-opt-ins-attendanc",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 238-238",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-integration-questions-0",
+  "question": "What technical pathways are acceptable to the City for data ingestion: public Legistar endpoints, web-scraping with rate limits, Calendars/ICS, or staff-provided data feeds?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-technical-pathways-are-acceptable-to-the-city-for-data-ingestion-public-leg",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 281-281",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-integration-questions-1",
+  "question": "Can we link directly to eComment and meeting agendas in Legistar and surface the correct “next step” body (Planning Commission vs CAR vs UDC vs City Council)?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-we-link-directly-to-ecomment-and-meeting-agendas-in-legistar-and-surface-the",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 281-281",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-integration-questions-2",
+  "question": "How can we reference the EnerGov Online Permit Portal records for site plans without exposing PII while still clarifying status stages?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-can-we-reference-the-energov-online-permit-portal-records-for-site-plans-wit",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 281-281",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-integration-questions-3",
+  "question": "Can we embed or cache Richmond 300 interactive maps (Future Land Use, Priority Neighborhoods) and overlay proposed projects to visualize “fit”?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-we-embed-or-cache-richmond-300-interactive-maps-future-land-use-priority-nei",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 281-281",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-integration-questions-4",
+  "question": "How might this tool complement the PlanRVA Development Map (regional context) rather than duplicate it; can we deep-link to regional items?",
+  "category": "integration",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-might-this-tool-complement-the-planrva-development-map-regional-context-rath",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 281-281",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-equity-questions-0",
+  "question": "How will proximity alerts and summaries prioritize historically underinvested Priority Neighborhoods and renters who are often least informed yet most impacted?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-proximity-alerts-and-summaries-prioritize-historically-underinvested-pr",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 324-324",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-equity-questions-1",
+  "question": "What safeguards ensure plain-language explanations don’t oversimplify or bias interpretations of consistency with Richmond 300 goals?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-safeguards-ensure-plain-language-explanations-don-t-oversimplify-or-bias-in",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 324-324",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-equity-questions-2",
+  "question": "How do we provide multi-channel access (SMS/email/print handouts for libraries/rec centers) for residents with limited internet access?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-do-we-provide-multi-channel-access-sms-email-print-handouts-for-libraries-re",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 324-324",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-equity-questions-3",
+  "question": "How will we track equitable reach and participation (e.g., sign-ups and meeting attendance by neighborhood/ward, language preference)?",
+  "category": "equity",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:how-will-we-track-equitable-reach-and-participation-e-g-sign-ups-and-meeting-att",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 324-324",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-prior-art-questions-0",
+  "question": "Which design patterns from NYC Planning’s ZAP Search and Philadelphia’s Atlas are most transferable (map-first discovery, case timelines, document bundles, subscription alerts)?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:which-design-patterns-from-nyc-planning-s-zap-search-and-philadelphia-s-atlas-ar",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 359-359",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-prior-art-questions-1",
+  "question": "What are the known pitfalls from other cities (e.g., stale data, confusing status terms, reliance on staff uploads) and how can we mitigate them in RVA?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-are-the-known-pitfalls-from-other-cities-e-g-stale-data-confusing-status-te",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 359-359",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-prior-art-questions-2",
+  "question": "Can we adopt a consistent case taxonomy and status progression similar to ZAP (e.g., filed → in review → hearing scheduled → decided → appealed) adapted to Richmond bodies and terms (SUP, LC&E, CAR COA, UDC final)?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:can-we-adopt-a-consistent-case-taxonomy-and-status-progression-similar-to-zap-e-",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 359-359",
+    "excerpt": ""
+   }
+  ]
+ },
+ {
+  "id": "q:rva-transformers-prior-art-questions-3",
+  "question": "What minimum dataset and document set (staff report, application, site plan, public notice) improves comprehension without heavy maintenance burden?",
+  "category": "prior_art",
+  "repo": "pillar-thriving-neighborhoods",
+  "relatedNodeIds": [
+   "n:question:what-minimum-dataset-and-document-set-staff-report-application-site-plan-public-",
+   "n:proposal:rva-transformers"
+  ],
+  "provenance": [
+   {
+    "sourceDoc": "post-event-research/rva-transformers/jtbd_analysis.md",
+    "sourceLocation": "lines 359-359",
+    "excerpt": ""
+   }
+  ]
  }
 ]

@@ -64,8 +64,8 @@ export class Drawer {
       Disbursed is an estimate (completed-phase projects assumed fully spent; no expenditure ledger exists in the corpus).</p>
       <p class="small">Try: switch to <b>Money Flow</b> mode and click the <b>Richmond CIP capital budget</b> node,
       or open the <b>Funding Flows</b> tab and follow the ARPA flow to the Southside Community Center.</p>` : `
-      <p class="small muted">This pillar's corpus contains no financial dataset, so the graph has no funding layer and the
-      money-based views are hidden. Everything shown is drawn from the evidence log and source inventory.</p>`;
+      <p class="small muted">This pillar's corpus contains no financial dataset, so the graph has no funding layer
+      and the money-based views are hidden.</p>`;
 
     return `
       <h3 style="margin:2px 0 6px">Repository: ${esc(meta.repos[0] ?? '')}${
