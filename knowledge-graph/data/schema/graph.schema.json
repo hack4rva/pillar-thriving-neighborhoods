@@ -151,6 +151,18 @@
     "evidenceLogId": {
      "type": "string"
     },
+    "claimId": {
+     "description": "Evidence record this element was extracted from, when it came from a cited claim in the research corpus. Lets a node or edge be traced to the exact sentence that produced it.",
+     "type": "string"
+    },
+    "sourceTitle": {
+     "description": "Title of the primary source the claim cites.",
+     "type": "string"
+    },
+    "url": {
+     "description": "Primary source the claim cites. sourceDoc stays the in-repo file so provenance remains file-verifiable; this is the outbound link a reader follows to check the claim against the original.",
+     "type": "string"
+    },
     "note": {
      "type": "string"
     }

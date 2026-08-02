@@ -13,6 +13,7 @@ import { parseCipCsv } from '../extraction/parsers/cip_csv.js';
 import { parseEvidenceLog } from '../extraction/parsers/evidence_log.js';
 import { parseSourceInventory } from '../extraction/parsers/source_inventory.js';
 import { parsePostEventResearch } from '../extraction/parsers/post_event_research.js';
+import { parseResearchCorpus } from '../extraction/parsers/research_corpus.js';
 import { makeNode, makeEdge, verifyProvenance, REPO_ID, slug } from '../extraction/lib.js';
 import { config } from '../extraction/config.js';
 import { computeMetrics } from '../extraction/metrics.js';
@@ -90,6 +91,197 @@ function deriveCitations(ev, inv) {
   return edges;
 }
 
+/**
+ * Tie a cited source to an inventoried dataset when they are literally the same
+ * thing: identical URL, or the same host where that host backs only a handful of
+ * sources. A shared host like rva.gov says nothing, so it is not enough on its own.
+ */
+function linkSourcesToInventory(rc, inv) {
+  const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return null; } };
+  const datasets = inv.nodes.filter((n) => n.type === 'Dataset' && n.attrs?.url);
+
+  const perHost = new Map();
+  for (const ds of datasets) {
+    const h = host(ds.attrs.url);
+    if (h) perHost.set(h, (perHost.get(h) ?? 0) + 1);
+  }
+
+  const edges = [];
+  for (const src of rc.nodes) {
+    const url = src.attrs.url;
+    const h = src.attrs.host;
+    for (const ds of datasets) {
+      const sameUrl = ds.attrs.url === url;
+      const sameHost = !sameUrl && host(ds.attrs.url) === h && (perHost.get(h) ?? 0) <= 2;
+      if (!sameUrl && !sameHost) continue;
+      edges.push(makeEdge({
+        source: src.id,
+        target: ds.id,
+        type: sameUrl ? 'SUPPORTED_BY' : 'ASSOCIATED_WITH',
+        description: sameUrl
+          ? `Research cites this inventoried source directly (${url})`
+          : `Research cites ${h}, the publisher of this inventoried source`,
+        evidenceStatus: 'documented',
+        confidence: sameUrl ? 'high' : 'low',
+        provenance: src.provenance,
+      }));
+    }
+  }
+  return edges;
+}
+
+/**
+ * Turn the reviewed corpus-entity record into nodes and edges.
+ *
+ * The record is produced offline by extraction/enrich/extract_entities.mjs. Its
+ * anchors are re-checked here rather than trusted: a claim id that no longer
+ * exists means the corpus moved under the record, and the element is dropped
+ * instead of being given provenance that does not resolve. That keeps this
+ * script's output a pure function of the repository, model output included.
+ */
+function buildCorpusGraph(record, rc, warnings) {
+  const claimById = new Map(rc.claims.map((c) => [c.id, c]));
+  const nodes = [];
+  const edges = [];
+  const dropped = { staleClaim: 0, unknownEndpoint: 0 };
+
+  // Provenance for anything derived from claims: the report line that said it,
+  // plus the primary source that line cites. Two hops, both checkable.
+  const provFor = (claimIds) => {
+    const out = [];
+    for (const id of claimIds.slice(0, 4)) {
+      const c = claimById.get(id);
+      if (!c) continue;
+      const primary = c._sources[0];
+      out.push({
+        sourceDoc: c._report,
+        sourceLocation: `lines ${c._line}-${c._line}`,
+        excerpt: c.claim.slice(0, 400),
+        claimId: c.id,
+        ...(primary?.url ? { url: primary.url } : {}),
+        ...(primary?.title ? { sourceTitle: primary.title } : {}),
+      });
+    }
+    return out;
+  };
+
+  // The model names the same place several ways across batches. Only variants
+  // of one entity are folded here — "City of Richmond" stays a separate
+  // GovernmentAgency, because the municipal government and the place are not
+  // interchangeable in a graph about who does what.
+  const canonical = (name) => name.replace(/^Richmond,\s*(Virginia|VA)$/i, 'Richmond');
+
+  const idFor = (name, type) => `n:${type.toLowerCase()}:${slug(canonical(name))}`;
+  const byNorm = new Map(); // normalized name -> node id
+
+  for (const e of record.entities) {
+    const live = e.claimIds.filter((id) => claimById.has(id));
+    if (!live.length) { dropped.staleClaim++; continue; }
+    const id = idFor(e.name, e.type);
+    byNorm.set(e.name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(), id);
+    // Status follows the strongest source behind its claims, never the model.
+    const verified = live.some((cid) => claimById.get(cid)._evidenceStatus === 'externally_verified');
+    nodes.push(makeNode({
+      id,
+      type: e.type,
+      label: canonical(e.name).length > 90 ? `${canonical(e.name).slice(0, 87)}…` : canonical(e.name),
+      description: e.description || '',
+      evidenceStatus: verified ? 'externally_verified' : 'reported_but_unverified',
+      aliases: e.aliases,
+      attrs: { claimCount: live.length, origin: 'research corpus' },
+      provenance: provFor(live),
+    }));
+  }
+
+  for (const r of record.relations) {
+    const live = r.claimIds.filter((id) => claimById.has(id));
+    if (!live.length) { dropped.staleClaim++; continue; }
+    const source = byNorm.get(r.source);
+    const target = byNorm.get(r.target);
+    if (!source || !target || source === target) { dropped.unknownEndpoint++; continue; }
+    edges.push(makeEdge({
+      source,
+      target,
+      type: r.type,
+      description: r.description || `Stated in ${live.length} cited claim${live.length === 1 ? '' : 's'}`,
+      evidenceStatus: 'reported_but_unverified',
+      confidence: live.length >= 3 ? 'high' : live.length === 2 ? 'medium' : 'low',
+      provenance: provFor(live),
+    }));
+  }
+
+  // Attach each entity to the sources its claims cite. This is what stops the
+  // cited-source nodes being an unreachable bibliography off to one side.
+  const sourceNodeByUrl = new Map(rc.nodes.map((n) => [n.attrs.url, n]));
+  const seen = new Set();
+  for (const e of record.entities) {
+    const entityId = idFor(e.name, e.type);
+    for (const cid of e.claimIds) {
+      const claim = claimById.get(cid);
+      if (!claim) continue;
+      for (const s of claim._sources) {
+        const src = sourceNodeByUrl.get(s.url);
+        if (!src) continue;
+        const key = `${entityId}|${src.id}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        edges.push(makeEdge({
+          source: entityId,
+          target: src.id,
+          type: 'SUPPORTED_BY',
+          description: `A claim naming this entity cites ${s.title ?? s.url}`,
+          evidenceStatus: 'documented',
+          confidence: 'high',
+          provenance: provFor([cid]),
+        }));
+      }
+    }
+  }
+
+  if (dropped.staleClaim || dropped.unknownEndpoint) {
+    warnings.push(`[corpus] dropped ${dropped.staleClaim} stale-anchor and ${dropped.unknownEndpoint} unresolved-endpoint records`);
+  }
+  return { nodes, edges };
+}
+
+/**
+ * Move sentence-shaped Problem/Need nodes into the evidence layer.
+ *
+ * The post-event research parser names these nodes with the sentence it found
+ * them in, so each one is unique to a single document and connects to nothing
+ * else — they were the bulk of the graph's degree-1 tail. As claims they are
+ * still readable and still cited; they just stop pretending to be entities.
+ *
+ * Evidence and ResearchQuestion nodes are also sentence-shaped and are left
+ * alone: a claim and an open question are supposed to read as statements.
+ */
+function demoteSentenceNodes(per, warnings) {
+  const isSentence = (n) => n.label.split(/\s+/).length > 8 || n.label.endsWith('…');
+  const demotable = (n) => ['Problem', 'Need'].includes(n.type) && isSentence(n);
+
+  const demoted = per.nodes.filter(demotable);
+  const ids = new Set(demoted.map((n) => n.id));
+  if (!demoted.length) return { nodes: per.nodes, edges: per.edges, claims: [] };
+
+  const claims = demoted.map((n, i) => ({
+    id: `ev:P-${i + 1}`,
+    claim: (n.description || n.label).slice(0, 900),
+    status: 'unverified',
+    source: 'post-event research',
+    url: null,
+    repo: REPO_ID,
+    provenance: n.provenance,
+    notes: `Recorded as a ${n.type.toLowerCase()} statement in post-event research. Held as a claim rather than an entity because it is phrased as a finding.`,
+  }));
+
+  warnings.push(`[demote] ${demoted.length} sentence-shaped Problem/Need nodes moved to the evidence layer`);
+  return {
+    nodes: per.nodes.filter((n) => !ids.has(n.id)),
+    edges: per.edges.filter((e) => !ids.has(e.source) && !ids.has(e.target)),
+    claims,
+  };
+}
+
 function main() {
   const warnings = [];
   const reviewQueue = readRecords('extraction/records/review.json', []);
@@ -102,7 +294,13 @@ function main() {
     : { nodes: [], edges: [], flows: [], filesExamined: [] };
   const ev = parseEvidenceLog();
   const inv = parseSourceInventory();
-  const per = parsePostEventResearch();
+  const perRaw = parsePostEventResearch();
+  // The research corpus is prose, so only its citations are machine-readable.
+  // This yields the claim index and one node per cited primary source; the
+  // entities those claims are *about* are resolved separately.
+  const rc = parseResearchCorpus();
+  const demoted = demoteSentenceNodes(perRaw, warnings);
+  const per = { ...perRaw, nodes: demoted.nodes, edges: demoted.edges };
 
   // 2. Curated records ------------------------------------------------------
   const entityRecords = readRecords('extraction/records/entities.json', []);
@@ -192,7 +390,10 @@ function main() {
   // External research: evidence records + Evidence nodes (mirrors the
   // evidence-log parser), new entities/relationships/flows, updates to
   // existing records, and answers to open questions.
-  const evidenceRecords = [...ev.evidenceRecords];
+  // Claims carry scratch fields (prefixed _) used to wire them to source nodes
+  // and to the entity pass; they are not part of the evidenceRecord schema.
+  const claimRecords = rc.claims.map(({ _evidenceStatus, _sources, _report, _line, ...rec }) => rec);
+  const evidenceRecords = [...ev.evidenceRecords, ...claimRecords, ...demoted.claims];
   for (const rec of external.evidence) {
     evidenceRecords.push({ ...rec, repo: REPO_ID });
     const code = rec.id.slice(3); // "ev:W-1" -> "W-1"
@@ -216,9 +417,12 @@ function main() {
   }
 
   // 3. Merge ---------------------------------------------------------------
-  let nodes = [...cip.nodes, ...ev.nodes, ...inv.nodes, ...per.nodes, ...curatedNodes];
+  const corpusRecord = readRecords('extraction/records/corpus_entities.json', { entities: [], relations: [] });
+  const corpus = buildCorpusGraph(corpusRecord, rc, warnings);
+
+  let nodes = [...cip.nodes, ...ev.nodes, ...inv.nodes, ...per.nodes, ...rc.nodes, ...corpus.nodes, ...curatedNodes];
   let edges = [...cip.edges, ...(ev.edges ?? []), ...inv.edges, ...per.edges, ...curatedEdges,
-    ...deriveCitations(ev, inv)];
+    ...deriveCitations(ev, inv), ...linkSourcesToInventory(rc, inv), ...corpus.edges];
   const flows = [...cip.flows, ...curatedFlows, ...external.flows];
 
   // Duplicate node IDs: merge provenance, keep first definition.

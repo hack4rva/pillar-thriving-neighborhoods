@@ -371,6 +371,7 @@ async function boot() {
   (window as unknown as Record<string, unknown>).__kg = {
     selectNode: (id: string, shift = false) => handleNodeClick(id, shift),
     nodeCount: data.graph.nodes.length,
+    graph: data.graph,
   };
 }
 

@@ -12,6 +12,11 @@ export interface Provenance {
   excerpt?: string;
   note?: string;
   evidenceLogId?: string;
+  /** Evidence record this element was extracted from, for corpus-derived data. */
+  claimId?: string;
+  /** Primary source cited by the claim, and its title. */
+  url?: string;
+  sourceTitle?: string;
 }
 
 export interface GraphNode {

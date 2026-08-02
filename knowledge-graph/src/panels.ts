@@ -10,11 +10,36 @@ const esc = escapeHtml;
 const badge = (text: string, cls = '') => `<span class="badge ${cls}">${esc(text)}</span>`;
 const statusBadge = (s: string) => badge(s.replace(/_/g, ' '), `status-${s}`);
 
-function provHtml(provenance: Provenance[]): string {
+/**
+ * Where provenance file paths resolve to. Set once the graph loads, because a
+ * merged multi-pillar graph draws from several repositories and each node has
+ * to point at its own.
+ */
+let repoBlobBase = 'https://github.com/hack4rva';
+export const setRepoBase = (org = 'hack4rva') => { repoBlobBase = `https://github.com/${org}`; };
+const blobFor = (repo: string) => `${repoBlobBase}/${repo}/blob/main`;
+
+/**
+ * Provenance is the point of this graph, so it is rendered as two working
+ * links: the repository file the statement was read from, and the primary
+ * source that file cites. Without the second one a reader can only check that
+ * we copied our own notes correctly.
+ */
+function provHtml(provenance: Provenance[], repo: string): string {
+  const repoLink = (p: Provenance) => {
+    if (/^https?:/.test(p.sourceDoc)) return esc(p.sourceDoc);
+    const line = /lines?\s+(\d+)/i.exec(p.sourceLocation ?? '')?.[1];
+    const href = `${blobFor(repo)}/${p.sourceDoc}${line ? `#L${line}` : ''}`;
+    return `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(p.sourceDoc)}</a>`;
+  };
+
   return provenance.map((p) => `
     <div class="prov">
-      <span class="loc">${esc(p.sourceDoc)} · ${esc(p.sourceLocation)}</span>
+      <span class="loc">${repoLink(p)} · ${esc(p.sourceLocation)}${
+        p.claimId ? ` · <span class="claim-id">${esc(p.claimId)}</span>` : ''}</span>
       ${p.excerpt ? `<blockquote>“${esc(p.excerpt)}”</blockquote>` : ''}
+      ${p.url ? `<div class="prov-source">Cites <a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${
+        esc(p.sourceTitle || p.url)}</a></div>` : ''}
       ${p.note ? `<div>${esc(p.note)}</div>` : ''}
     </div>`).join('');
 }
@@ -115,7 +140,7 @@ export class DetailPanel {
       ${outEdges.length ? `<h3>Outgoing (${outEdges.length})</h3>${edgeList(outEdges, 'out')}` : ''}
       ${inEdges.length ? `<h3>Incoming (${inEdges.length})</h3>${edgeList(inEdges, 'in')}` : ''}
       ${questions ? `<h3>Open questions</h3><ul style="padding-left:16px;margin:4px 0">${questions}</ul>` : ''}
-      <h3>Provenance</h3>${provHtml(node.provenance)}
+      <h3>Provenance</h3>${provHtml(node.provenance, node.repo)}
     `;
   }
 
@@ -151,7 +176,7 @@ export class DetailPanel {
         </tbody></table>` : ''}
       ${edge.flowId ? `<p><button class="linkish" data-goto-flow="${edge.flowId}">Open full funding flow →</button></p>` : ''}
       ${edge.notes ? `<p class="small muted">${esc(edge.notes)}</p>` : ''}
-      <h3>Provenance</h3>${provHtml(edge.provenance)}
+      <h3>Provenance</h3>${provHtml(edge.provenance, edge.repo)}
     `;
   }
 
@@ -201,7 +226,7 @@ export class DetailPanel {
         ${r.methodology ? `<p class="small muted">${esc(r.methodology)}</p>` : ''}` : ''}
       ${flow.restrictions ? `<h3>Restrictions</h3><p class="small">${esc(flow.restrictions)}</p>` : ''}
       ${flow.unknowns?.length ? `<h3>Unanswered</h3><ul style="padding-left:16px;margin:4px 0">${flow.unknowns.map((u) => `<li class="small muted">${esc(u)}</li>`).join('')}</ul>` : ''}
-      <h3>Provenance</h3>${provHtml(flow.provenance)}
+      <h3>Provenance</h3>${provHtml(flow.provenance, flow.repo)}
     `;
   }
 

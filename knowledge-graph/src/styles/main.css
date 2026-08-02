@@ -265,7 +265,13 @@ body {
   padding: 5px 8px; margin: 6px 0; color: var(--text-muted); background: rgba(15,23,42,.035);
 }
 .prov .loc { color: var(--accent); font-family: ui-monospace, monospace; font-size: 11px; }
+.prov .loc a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.prov .loc a:hover { color: var(--text); }
 .prov blockquote { margin: 4px 0 0; font-style: italic; color: var(--text); }
+.prov .claim-id { color: var(--text-muted); }
+/* The outbound link to the primary source: the end of the provenance chain. */
+.prov-source { margin-top: 5px; font-size: 11px; }
+.prov-source a { color: var(--accent-2); font-weight: 600; }
 
 .amount { color: var(--accent-2); font-variant-numeric: tabular-nums; font-weight: 600; }
 .amount.unknown { color: var(--warn); font-weight: 400; }
