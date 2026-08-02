@@ -16,7 +16,7 @@ export const MODE_HELP: Record<string, string> = {
   money: `<strong>Money Flow mode.</strong> Click any fund, budget, grant, program, or project to
     highlight every downstream financial path: intermediaries, amounts at each stage, restrictions,
     and unknown endpoints. Money direction is animated; step through stages in the panel.`,
-  beneficiary: `<strong>Beneficiary mode.</strong> Click a population or group (yellow spheres) to see
+  beneficiary: `<strong>Beneficiary mode.</strong> Click a population or group (amber spheres) to see
     which programs claim to serve them, who administers and funds those programs, how much is
     documented vs proposed, and which of their needs remain unfunded.`,
   problem: `<strong>Problem-Space mode.</strong> Click a problem (red icosahedra) to unfold its needs,
@@ -24,10 +24,12 @@ export const MODE_HELP: Record<string, string> = {
     and open research questions.`,
   timeline: `<strong>Timeline mode.</strong> Scrub the year slider to see CIP projects appear by their
     estimated completion date. Projects with no documented date are dimmed, never hidden silently.`,
-  fog: `<strong>Fog of War mode.</strong> The graph shows the shape of our <em>ignorance</em>:
-    documented knowledge glows, unverified claims recede into haze, disputed items smolder red,
-    and unknown funding endpoints are dark voids that money emerges from. Yellow
-    <b style="color:#ffd76b">?</b> markers sit exactly where an open research question attaches.`,
+  fog: `<strong>Fog of War mode.</strong> The graph shows the shape of our <em>ignorance</em>.
+    Certainty is drawn as ink on paper: documented facts stay solid and saturated, unverified
+    claims bleach out toward the background, disputed items burn red, and undocumented endpoints
+    become pale ghosts ringed in violet — that is where money arrives from or disappears to with
+    no source on record. Amber <b style="color:#a15c00">?</b> markers sit exactly where an open
+    research question attaches. The fainter a thing looks, the less we actually know about it.`,
   needs: `<strong>Needs vs Money board.</strong> Every documented need on the left; the corpus's
     funding flows on the right; a line wherever money is connected to a need through a funded
     intervention. Click any card for details and provenance.`,

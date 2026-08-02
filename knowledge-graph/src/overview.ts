@@ -5,19 +5,19 @@ import { fmtUSD, fmtUSDFull, escapeHtml } from './data';
 
 const esc = escapeHtml;
 
-// A stable, legible palette keyed by spending category so the treemap and the
-// ranked bars agree on color.
+// A stable palette keyed by spending category so the treemap and the ranked
+// bars agree on color. Held dark enough to carry white tile labels.
 const CATEGORY_COLORS: Record<string, string> = {
-  'Road Improvements': '#5aa2ff',
-  'Bridge Repair': '#38c8a8',
-  'New Facility Construction': '#e0a83c',
-  'Pedestrian and Bike': '#b57bff',
-  'Water': '#4fc3f7',
-  'Parks & Recreation': '#7cd97c',
-  'Stormwater': '#5fd0e0',
-  'Sewer': '#c98a5a',
+  'Road Improvements': '#1f6feb',
+  'Bridge Repair': '#0f8a72',
+  'New Facility Construction': '#a86a00',
+  'Pedestrian and Bike': '#7a3fd0',
+  'Water': '#1287ac',
+  'Parks & Recreation': '#3f8f3f',
+  'Stormwater': '#0e7f92',
+  'Sewer': '#96603a',
 };
-const FALLBACK_COLORS = ['#8b98ad', '#d0687f', '#a0c85a', '#e0806b', '#6b8cff'];
+const FALLBACK_COLORS = ['#5b6980', '#a83a56', '#5f7d1f', '#b0552f', '#4356b8'];
 
 const colorFor = (category: string, i: number): string =>
   CATEGORY_COLORS[category] ?? FALLBACK_COLORS[i % FALLBACK_COLORS.length];
@@ -104,11 +104,15 @@ export class Overview {
         <div class="ov-grid">
           <section class="ov-card ov-col-wide">
             <h3>Capital spending by category</h3>
+            <p class="ov-note">Each block is one spending category, sized by its share of the
+            ${fmtUSD(total)} program. Click a block to filter the project list below to it.</p>
             <div class="ov-treemap" data-ov-treemap style="height:260px"></div>
           </section>
 
           <section class="ov-card">
             <h3>Where it is in the pipeline</h3>
+            <p class="ov-note">Bar length is the share of program dollars sitting in each phase —
+            dollars, not project counts.</p>
             ${this.pipeline(byPhase, total)}
             <p class="muted small" style="margin-top:10px">Only <b>${fmtUSD(completed)}</b> of the
             ${fmtUSD(total)} program is documented complete — most capital is still upstream of the ground.</p>
@@ -118,11 +122,16 @@ export class Overview {
         <div class="ov-grid">
           <section class="ov-card ov-col-wide">
             <h3>Biggest projects${this.activeCategory ? ` · <span class="ov-filter">${esc(this.activeCategory)} <button class="linkish" data-ov-cat="">clear</button></span>` : ''}</h3>
+            <p class="ov-note">The 12 costliest projects. Bar length is cost relative to the
+            largest one shown; bar color repeats its category above. Click a row to open it in
+            the network.</p>
             ${this.topProjects(projects)}
           </section>
 
           <section class="ov-card ${unfunded.length ? 'ov-card-alert' : ''}">
             <h3>Documented needs with no funding</h3>
+            <p class="ov-note">Needs recorded in the corpus for which no intervention with
+            attached money exists anywhere in the graph.</p>
             ${unfunded.length ? `
               <ul class="ov-needs">
                 ${unfunded.map((n) => `<li><button class="linkish" data-ov-node="${n.id}">${esc(n.label)}</button></li>`).join('')}

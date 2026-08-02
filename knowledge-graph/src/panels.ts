@@ -42,8 +42,11 @@ export class DetailPanel {
       html = this.pathHtml(selection.pathNodeIds);
       a11y = `Path traced through ${selection.pathNodeIds.length} entities.`;
     } else {
-      html = `<p class="muted">Select a node or edge to see its details, evidence, and funding
-        paths. Shift-click a second node to trace a path between them.</p>`;
+      // Only promise a funding trail in corpora that actually carry one.
+      const trail = this.state.data.graph.edges.some((e) => e.financial)
+        ? 'evidence, and funding paths' : 'evidence, and provenance';
+      html = `<p class="muted">Select a node or edge to see its details, ${trail}.
+        Shift-click a second node to trace a path between them.</p>`;
     }
     this.el.innerHTML = html;
     this.a11yEl.textContent = a11y;

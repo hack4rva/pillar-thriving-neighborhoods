@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import type { AppState } from './state';
 import type { GraphEdge, GraphNode } from './types';
 import { styleFor, EVIDENCE_EDGE_STYLES, edgeBaseColor, edgeWidth } from './visual';
+import { CANVAS } from './theme';
 import { fmtUSD, escapeHtml } from './data';
 
 interface SimNode { id: string; node: GraphNode; x?: number; y?: number; z?: number }
@@ -46,7 +47,7 @@ export class Graph3D {
       new (element: HTMLElement, config?: object): ForceGraph3DInstance<SimNode, SimLink>;
     };
     this.fg = new Ctor(el, { controlType: 'orbit' })
-      .backgroundColor('#10141c')
+      .backgroundColor(CANVAS.background)
       .showNavInfo(false)
       .nodeId('id')
       .linkSource('source')
@@ -109,8 +110,8 @@ export class Graph3D {
     if (this.state.mode !== 'fog') return normal;
     switch (fogTier(edge.evidenceStatus)) {
       case 'lit': return normal;
-      case 'disputed': return '#8a3030';
-      default: return '#222b3c'; // haze/void: recede into the fog
+      case 'disputed': return CANVAS.disputed;
+      default: return CANVAS.hazeLink; // haze/void: bleach out toward the paper
     }
   }
 
@@ -166,42 +167,46 @@ export class Graph3D {
     const tier = fogTier(node.evidenceStatus, node.type);
 
     let color = new THREE.Color(style.color);
-    let opacity = dim ? 0.13 : (node.evidenceStatus === 'disputed' ? 0.85 : 0.95);
-    let emissive = selected ? new THREE.Color('#ffffff')
-      : (node.evidenceStatus === 'disputed' ? new THREE.Color('#5a1717') : new THREE.Color('#000000'));
-    let emissiveIntensity = selected ? 0.45 : 0.9;
+    let opacity = dim ? 0.18 : (node.evidenceStatus === 'disputed' ? 0.85 : 0.95);
+    // Selection reads as intensified rather than brightened: on a light canvas a
+    // white glow would bleach the node into the background instead of lifting it.
+    let emissive = selected ? color.clone()
+      : (node.evidenceStatus === 'disputed' ? new THREE.Color(CANVAS.disputedGlow) : new THREE.Color('#000000'));
+    let emissiveIntensity = selected ? 0.5 : 0.9;
 
     if (fog && !selected && !dim) {
-      // Documented knowledge glows; everything else recedes into the dark.
+      // Inverted for the light canvas: documented material stays solid ink,
+      // everything less certain bleaches toward the paper.
       switch (tier) {
         case 'lit':
           emissive = color.clone();
-          emissiveIntensity = 0.5;
+          emissiveIntensity = 0.25;
+          opacity = 1;
           break;
         case 'haze':
-          color = new THREE.Color('#39445a');
-          opacity = 0.3;
+          color = new THREE.Color(CANVAS.hazeNode);
+          opacity = 0.35;
           break;
         case 'disputed':
-          color = new THREE.Color('#4a1d1d');
-          emissive = new THREE.Color('#e06666');
-          emissiveIntensity = 0.35;
-          opacity = 0.8;
+          color = new THREE.Color(CANVAS.disputedFill);
+          emissive = new THREE.Color(CANVAS.disputed);
+          emissiveIntensity = 0.3;
+          opacity = 0.9;
           break;
         case 'void':
-          color = new THREE.Color('#05070d');
-          emissive = new THREE.Color('#2b1a4d');
-          emissiveIntensity = 1.0;
+          color = new THREE.Color(CANVAS.voidFill);
+          emissive = new THREE.Color(CANVAS.voidGlow);
+          emissiveIntensity = 0.28;
           opacity = 0.95;
           break;
       }
     }
     if (fog && selected && tier === 'void' && !dim) {
-      // Selection must not un-void the void: stay dark, glow purple.
-      color = new THREE.Color('#0a0d18');
-      emissive = new THREE.Color('#8a6bff');
-      emissiveIntensity = 0.9;
-      opacity = 0.98;
+      // Selection must not resolve the void: it stays a ghost, aura turned up.
+      color = new THREE.Color(CANVAS.voidFill);
+      emissive = new THREE.Color(CANVAS.voidGlow);
+      emissiveIntensity = 0.6;
+      opacity = 1;
     }
 
     const material = new THREE.MeshLambertMaterial({
@@ -227,11 +232,11 @@ export class Graph3D {
     group.add(mesh);
 
     if (fog && tier === 'void' && !dim) {
-      // Dark halo shell: money emerges from (or vanishes into) this void.
+      // Violet aura: money emerges from (or vanishes into) this undocumented end.
       const halo = new THREE.Mesh(
         new THREE.SphereGeometry(size * 2.2, 12, 10),
         new THREE.MeshBasicMaterial({
-          color: new THREE.Color('#1a0f33'), transparent: true, opacity: 0.35,
+          color: new THREE.Color(CANVAS.voidHalo), transparent: true, opacity: 0.55,
           side: THREE.BackSide,
         }));
       group.add(halo);
@@ -240,9 +245,9 @@ export class Graph3D {
     const question = fog && this.hasOpenQuestion(node.id) && !dim;
     if (question) {
       const q = new SpriteText('?');
-      q.color = '#ffd76b';
+      q.color = CANVAS.questionMarker;
       q.fontWeight = 'bold';
-      q.strokeColor = '#3d2e00';
+      q.strokeColor = CANVAS.questionStroke;
       q.strokeWidth = 0.5;
       q.textHeight = Math.max(5.5, size * 1.1);
       q.position.set(0, size + (tier === 'void' ? size * 1.6 : 2.5) + 3.5, 0);
@@ -260,8 +265,8 @@ export class Graph3D {
     if (showLabel) {
       const label = node.label.length > 42 ? node.label.slice(0, 40) + '…' : node.label;
       const sprite = new SpriteText(style.shape === 'wiresphere' ? `? ${label}` : label);
-      sprite.color = selected ? '#ffffff' : '#c9d4e4';
-      sprite.backgroundColor = 'rgba(16,20,28,0.55)';
+      sprite.color = selected ? CANVAS.labelTextSelected : CANVAS.labelText;
+      sprite.backgroundColor = selected ? CANVAS.labelBackgroundSelected : CANVAS.labelBackground;
       sprite.padding = 1.5;
       sprite.borderRadius = 2;
       sprite.textHeight = selected ? 3.4 : 2.6;
@@ -271,20 +276,22 @@ export class Graph3D {
     return group;
   }
 
+  private tooltipShell(maxWidth: number, body: string): string {
+    return `<div style="max-width:${maxWidth}px;background:${CANVAS.tooltipBackground};border:1px solid ${CANVAS.tooltipBorder};border-radius:6px;padding:6px 9px;font-size:12px;color:${CANVAS.tooltipText};box-shadow:0 2px 8px rgba(15,23,42,.12)">${body}</div>`;
+  }
+
   private nodeTooltip(node: GraphNode): string {
-    return `<div style="max-width:280px;background:#171d29;border:1px solid #2c3648;border-radius:6px;padding:6px 9px;font-size:12px;color:#dfe6f1">
+    return this.tooltipShell(280, `
       <b>${escapeHtml(node.label)}</b><br/>
-      <span style="color:#8b98ad">${node.type} · ${node.evidenceStatus.replace(/_/g, ' ')}</span>
-    </div>`;
+      <span style="color:${CANVAS.tooltipMuted}">${node.type} · ${node.evidenceStatus.replace(/_/g, ' ')}</span>`);
   }
 
   private linkTooltip(edge: GraphEdge): string {
-    const amt = edge.financial ? ` · <span style="color:#68d16f">${fmtUSD(edge.financial.amountUSD)}</span>` : '';
-    return `<div style="max-width:300px;background:#171d29;border:1px solid #2c3648;border-radius:6px;padding:6px 9px;font-size:12px;color:#dfe6f1">
+    const amt = edge.financial ? ` · <span style="color:${CANVAS.tooltipMoney}">${fmtUSD(edge.financial.amountUSD)}</span>` : '';
+    return this.tooltipShell(300, `
       <b>${edge.type}</b>${amt}<br/>
-      <span style="color:#8b98ad">${escapeHtml(edge.description.slice(0, 140))}</span><br/>
-      <span style="color:#8b98ad">${edge.evidenceStatus.replace(/_/g, ' ')}</span>
-    </div>`;
+      <span style="color:${CANVAS.tooltipMuted}">${escapeHtml(edge.description.slice(0, 140))}</span><br/>
+      <span style="color:${CANVAS.tooltipMuted}">${edge.evidenceStatus.replace(/_/g, ' ')}</span>`);
   }
 
   /** Re-derive the rendered subset from state; keeps node positions stable. */
@@ -321,9 +328,10 @@ export class Graph3D {
       .linkColor(this.fg.linkColor())
       .linkThreeObject(this.fg.linkThreeObject());
 
-    // Fog of War atmosphere: deeper black, dimmer connective tissue.
+    // Fog of War atmosphere: a bleached canvas and fainter connective tissue.
     const fog = this.state.mode === 'fog';
-    this.fg.backgroundColor(fog ? '#04060b' : '#10141c').linkOpacity(fog ? 0.35 : 0.55);
+    this.fg.backgroundColor(fog ? CANVAS.backgroundFog : CANVAS.background)
+      .linkOpacity(fog ? 0.32 : 0.62);
 
     const animate = this.state.animateFlows;
     const highlights = this.state.highlightedEdgeIds;
@@ -335,7 +343,7 @@ export class Graph3D {
       })
       .linkDirectionalParticleWidth((l: SimLink) => Math.min(3, edgeWidth(l.edge) * 0.9 + 0.6))
       .linkDirectionalParticleSpeed(0.006)
-      .linkDirectionalParticleColor(() => '#9fe8a4');
+      .linkDirectionalParticleColor(() => CANVAS.moneyParticle);
   }
 
   isLarge(): boolean {

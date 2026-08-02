@@ -1,5 +1,6 @@
 import type { AppState } from './state';
-import { TYPE_STYLES, EVIDENCE_EDGE_STYLES, FINANCIAL_STATUS_LABELS } from './visual';
+import { TYPE_STYLES, EVIDENCE_EDGE_STYLES, EDGE_FAMILY_COLORS, FINANCIAL_STATUS_LABELS } from './visual';
+import { CANVAS } from './theme';
 import { escapeHtml } from './data';
 
 const esc = escapeHtml;
@@ -128,26 +129,64 @@ export class Sidebar {
     const nodeRows = [...groups.entries()].map(([group, items]) => `
       <div class="lg-row" style="font-weight:600;color:var(--text)">${esc(group)}</div>
       ${items.map((it) => `
-        <div class="lg-row"><span class="swatch" style="background:${it.color};${it.shape === 'wiresphere' ? 'background:transparent;border:1px dashed #98a2b3;color:#98a2b3' : ''}">${it.icon}</span>
+        <div class="lg-row"><span class="swatch" style="background:${it.color};${it.shape === 'wiresphere' ? `background:transparent;border:1px dashed ${TYPE_STYLES.UnknownEntity.color};color:${TYPE_STYLES.UnknownEntity.color}` : ''}">${it.icon}</span>
         ${esc(it.type)} <span class="muted">(${it.shape})</span></div>`).join('')}
     `).join('');
 
     const edgeRows = Object.entries(EVIDENCE_EDGE_STYLES).map(([status, style]) => `
       <div class="lg-row">
-        <span class="edge-sample" style="border-top-style:${style.dash ? (style.dash[0] < 2 ? 'dotted' : 'dashed') : 'solid'};border-top-color:${style.colorOverride ?? '#8b98ad'}"></span>
+        <span class="edge-sample" style="border-top-style:${style.dash ? (style.dash[0] < 2 ? 'dotted' : 'dashed') : 'solid'};border-top-color:${style.colorOverride ?? 'var(--text-muted)'}"></span>
         ${esc(status.replace(/_/g, ' '))}
       </div>`).join('');
 
+    // Only describe encodings this graph actually uses; several pillars carry no
+    // financial layer, and advertising one would misrepresent the corpus.
+    const edges = this.state.data.graph.edges;
+    const has = (fn: (e: typeof edges[number]) => boolean) => edges.some(fn);
+    const hasMoney = has((e) => !!e.financial);
+    const hasAffects = has((e) => ['AFFECTS', 'EXPERIENCES_NEED', 'FAILS_TO_REACH'].includes(e.type));
+    const hasEvidence = has((e) =>
+      ['HAS_EVIDENCE', 'SUPPORTED_BY', 'CONTRADICTED_BY', 'INFERRED_FROM', 'CITED_BY'].includes(e.type));
+
+    const familyRows = [
+      hasMoney ? `<div class="lg-row"><span class="edge-sample" style="border-top-color:${EDGE_FAMILY_COLORS.money};border-top-width:3px"></span> money (thicker = larger amount)</div>` : '',
+      hasAffects ? `<div class="lg-row"><span class="edge-sample" style="border-top-color:${EDGE_FAMILY_COLORS.affects}"></span> affects / needs</div>` : '',
+      hasEvidence ? `<div class="lg-row"><span class="edge-sample" style="border-top-color:${EDGE_FAMILY_COLORS.evidence}"></span> evidence links</div>` : '',
+      `<div class="lg-row"><span class="edge-sample" style="border-top-color:${EDGE_FAMILY_COLORS.structural}"></span> structural relationships</div>`,
+    ].filter(Boolean).join('');
+
+    const sizeRule = hasMoney
+      ? 'Node size = number of connections plus attached documented money.'
+      : 'Node size = number of connections. A large node is well connected, not more important.';
+
+    const swatch = (bg: string, extra = '') =>
+      `<span class="swatch" style="background:${bg};${extra}"></span>`;
+
+    // Fog of War re-purposes color to mean certainty rather than type, so its
+    // key only earns sidebar space while that mode is open.
+    const fogRows = this.state.mode !== 'fog' ? '' : `
+      <hr/>
+      <div class="lg-row" style="font-weight:600;color:var(--text)">Fog of War — color means certainty</div>
+      <div class="lg-row">${swatch(TYPE_STYLES.GovernmentAgency.color)} documented — solid, saturated</div>
+      <div class="lg-row">${swatch(CANVAS.hazeNode)} unverified, inferred or proposed — bleached out</div>
+      <div class="lg-row">${swatch(CANVAS.disputedFill, `border:1px solid ${CANVAS.disputed}`)} disputed</div>
+      <div class="lg-row">${swatch(CANVAS.voidFill, `border:2px solid ${CANVAS.voidHalo}`)} undocumented endpoint</div>
+      <div class="lg-row"><span class="swatch" style="background:transparent;color:${CANVAS.questionMarker}">?</span> an open research question attaches here</div>`;
+
     this.legendEl.innerHTML = `
+      <div class="lg-row" style="font-weight:600;color:var(--text)">Node type — color &amp; shape</div>
       ${nodeRows}
       <hr/>
-      <div class="lg-row" style="font-weight:600;color:var(--text)">Edge evidence status</div>
+      <div class="lg-row" style="font-weight:600;color:var(--text)">Edge evidence status — line style</div>
       ${edgeRows}
       <hr/>
-      <div class="lg-row"><span class="edge-sample" style="border-top-color:#68d16f;border-top-width:3px"></span> money (thicker = larger amount)</div>
-      <div class="lg-row"><span class="edge-sample" style="border-top-color:#e69a50"></span> affects / needs</div>
-      <div class="lg-row"><span class="edge-sample" style="border-top-color:#9ab8a4"></span> evidence links</div>
-      <div class="lg-row muted">Node size = connections + attached documented money. Moving particles show money direction (optional).</div>
+      <div class="lg-row" style="font-weight:600;color:var(--text)">Edge meaning — line color</div>
+      ${familyRows}
+      ${fogRows}
+      <hr/>
+      <div class="lg-row muted">A node keeps its type color whatever its evidence status; the
+        status is spelled out on the badge in the details panel. ${sizeRule}
+        ${hasMoney ? 'Moving particles show the direction money travels (optional, under Forces &amp; display).' : ''}</div>
     `;
   }
 

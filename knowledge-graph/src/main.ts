@@ -149,6 +149,9 @@ async function boot() {
     });
     if (mode !== 'timeline') state.timelineYear = null;
     state.clearHighlights();
+    // Fog of War re-purposes color to mean certainty, so the legend gains a
+    // section there and drops it everywhere else.
+    sidebar.buildLegend();
     applyModeLayout();
     state.notify();
   };
@@ -185,7 +188,7 @@ async function boot() {
       const needs = data.graph.nodes.filter((n) => n.type === 'Need').length;
       hint.textContent = `Needs vs Money board — ${needs} documented needs vs ${data.graph.financialFlows.length} funding flows.`;
     } else if (state.mode === 'fog') {
-      hint.textContent = 'Fog of War — bright = documented · haze = unverified · red = disputed · dark voids = explicit unknowns · ? = open question.';
+      hint.textContent = 'Fog of War — solid = documented · faded = unverified · red = disputed · violet ghosts = explicit unknowns · ? = open question.';
     } else if (visible.size === 0) {
       hint.textContent = 'No nodes match the current filters — relax filters or press Reset.';
     } else if (state.focusNodeId) {

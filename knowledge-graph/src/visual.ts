@@ -17,58 +17,64 @@ export interface TypeStyle {
 const T = (group: string, color: string, shape: TypeStyle['shape'], icon: string): TypeStyle =>
   ({ group, color, shape, icon });
 
+/**
+ * Hues carry the semantic group (red problems, amber people, blue government,
+ * teal organizations, green money, violet interventions, slate knowledge).
+ * Values are held dark enough to stay legible as filled shapes against the
+ * light canvas and as legend swatches carrying white text.
+ */
 export const TYPE_STYLES: Record<string, TypeStyle> = {
-  Problem: T('Problems & needs', '#e06666', 'icosahedron', 'P!'),
-  Need: T('Problems & needs', '#e69a50', 'octahedron', 'N'),
-  Risk: T('Problems & needs', '#c9564d', 'cone', 'R!'),
+  Problem: T('Problems & needs', '#d13b3b', 'icosahedron', 'P!'),
+  Need: T('Problems & needs', '#c26a12', 'octahedron', 'N'),
+  Risk: T('Problems & needs', '#a8322a', 'cone', 'R!'),
 
-  Population: T('People & communities', '#e8c752', 'sphere', 'Po'),
-  Community: T('People & communities', '#e8c752', 'sphere', 'Co'),
-  ConstituentGroup: T('People & communities', '#d9b23e', 'sphere', 'G'),
-  Person: T('People & communities', '#f0e3a1', 'sphere', 'Pe'),
+  Population: T('People & communities', '#c8901a', 'sphere', 'Po'),
+  Community: T('People & communities', '#c8901a', 'sphere', 'Co'),
+  ConstituentGroup: T('People & communities', '#a97400', 'sphere', 'G'),
+  Person: T('People & communities', '#d9ad4a', 'sphere', 'Pe'),
 
-  GovernmentAgency: T('Government', '#5aa2ff', 'box', 'Gv'),
-  LegislativeBody: T('Government', '#3f7fd4', 'box', 'Lg'),
-  DecisionPoint: T('Government', '#9fc3ff', 'tetrahedron', 'D?'),
+  GovernmentAgency: T('Government', '#1f6feb', 'box', 'Gv'),
+  LegislativeBody: T('Government', '#14509c', 'box', 'Lg'),
+  DecisionPoint: T('Government', '#5b90e0', 'tetrahedron', 'D?'),
 
-  Organization: T('Organizations', '#45c4b0', 'box', 'O'),
-  Nonprofit: T('Organizations', '#2ea88b', 'box', 'Np'),
-  Foundation: T('Organizations', '#2ea88b', 'box', 'F'),
-  University: T('Organizations', '#57b8d8', 'box', 'U'),
-  Vendor: T('Organizations', '#8fb3a9', 'box', 'V'),
-  Employer: T('Organizations', '#45c4b0', 'box', 'E'),
-  TrainingProvider: T('Organizations', '#45c4b0', 'box', 'T'),
-  Investor: T('Organizations', '#45c4b0', 'box', 'I'),
-  Donor: T('Organizations', '#45c4b0', 'box', 'Dn'),
+  Organization: T('Organizations', '#128a78', 'box', 'O'),
+  Nonprofit: T('Organizations', '#0f7a63', 'box', 'Np'),
+  Foundation: T('Organizations', '#0f7a63', 'box', 'F'),
+  University: T('Organizations', '#1a8fb0', 'box', 'U'),
+  Vendor: T('Organizations', '#5f8c80', 'box', 'V'),
+  Employer: T('Organizations', '#128a78', 'box', 'E'),
+  TrainingProvider: T('Organizations', '#128a78', 'box', 'T'),
+  Investor: T('Organizations', '#128a78', 'box', 'I'),
+  Donor: T('Organizations', '#128a78', 'box', 'Dn'),
 
-  Fund: T('Money', '#68d16f', 'cylinder', '$'),
-  Grant: T('Money', '#8fd668', 'cylinder', '$G'),
-  Budget: T('Money', '#68d16f', 'cylinder', '$B'),
-  Contract: T('Money', '#a5cf5f', 'cylinder', '$C'),
-  Donation: T('Money', '#8fd668', 'cylinder', '$D'),
-  Investment: T('Money', '#8fd668', 'cylinder', '$I'),
-  TaxIncentive: T('Money', '#8fd668', 'cylinder', '$T'),
-  Legislation: T('Money', '#4fae8a', 'tetrahedron', 'L§'),
+  Fund: T('Money', '#1f8a3f', 'cylinder', '$'),
+  Grant: T('Money', '#4d9420', 'cylinder', '$G'),
+  Budget: T('Money', '#1f8a3f', 'cylinder', '$B'),
+  Contract: T('Money', '#6b8f14', 'cylinder', '$C'),
+  Donation: T('Money', '#4d9420', 'cylinder', '$D'),
+  Investment: T('Money', '#4d9420', 'cylinder', '$I'),
+  TaxIncentive: T('Money', '#4d9420', 'cylinder', '$T'),
+  Legislation: T('Money', '#187a5c', 'tetrahedron', 'L§'),
 
-  Program: T('Interventions', '#a678e8', 'torus', 'Pg'),
-  Project: T('Interventions', '#8f6fd8', 'sphere', 'Pj'),
-  Proposal: T('Interventions', '#c9a2f5', 'cone', 'Pr'),
-  Policy: T('Interventions', '#7e8ff0', 'tetrahedron', 'Pl'),
-  Service: T('Interventions', '#b56fc4', 'torus', 'Sv'),
-  Credential: T('Interventions', '#a678e8', 'torus', 'Cr'),
-  JobFamily: T('Interventions', '#a678e8', 'sphere', 'J'),
-  Outcome: T('Interventions', '#6fd8c0', 'octahedron', 'Ou'),
+  Program: T('Interventions', '#7a3fd0', 'torus', 'Pg'),
+  Project: T('Interventions', '#6242c4', 'sphere', 'Pj'),
+  Proposal: T('Interventions', '#9a63e0', 'cone', 'Pr'),
+  Policy: T('Interventions', '#4f5fd4', 'tetrahedron', 'Pl'),
+  Service: T('Interventions', '#94409f', 'torus', 'Sv'),
+  Credential: T('Interventions', '#7a3fd0', 'torus', 'Cr'),
+  JobFamily: T('Interventions', '#7a3fd0', 'sphere', 'J'),
+  Outcome: T('Interventions', '#199e80', 'octahedron', 'Ou'),
 
-  GeographicRegion: T('Knowledge & context', '#7d97b8', 'sphere', 'Ge'),
-  Dataset: T('Knowledge & context', '#56c3e8', 'box', 'Ds'),
-  Evidence: T('Knowledge & context', '#9ab8a4', 'octahedron', 'Ev'),
-  Claim: T('Knowledge & context', '#b8b09a', 'octahedron', 'Cl'),
-  ResearchQuestion: T('Knowledge & context', '#e0c33c', 'tetrahedron', '?'),
+  GeographicRegion: T('Knowledge & context', '#4f6c8f', 'sphere', 'Ge'),
+  Dataset: T('Knowledge & context', '#1287ac', 'box', 'Ds'),
+  Evidence: T('Knowledge & context', '#5c8168', 'octahedron', 'Ev'),
+  Claim: T('Knowledge & context', '#7d7458', 'octahedron', 'Cl'),
+  ResearchQuestion: T('Knowledge & context', '#9c8100', 'tetrahedron', '?'),
 
-  UnknownEntity: T('Unknown', '#98a2b3', 'wiresphere', '??'),
+  UnknownEntity: T('Unknown', '#6b7688', 'wiresphere', '??'),
 };
 
-export const DEFAULT_STYLE: TypeStyle = T('Other', '#8b98ad', 'sphere', '·');
+export const DEFAULT_STYLE: TypeStyle = T('Other', '#5f6b7e', 'sphere', '·');
 
 export const styleFor = (node: GraphNode): TypeStyle => TYPE_STYLES[node.type] ?? DEFAULT_STYLE;
 
@@ -86,17 +92,25 @@ export const EVIDENCE_EDGE_STYLES: Record<EvidenceStatus, EdgeStyle> = {
   reported_but_unverified: { dash: [1.2, 2.2], colorOverride: null, opacity: 0.6, label: 'reported, unverified (dotted)' },
   inferred: { dash: [1.2, 2.2], colorOverride: null, opacity: 0.55, label: 'inferred (dotted)' },
   hypothetical: { dash: [1.2, 3.2], colorOverride: null, opacity: 0.5, label: 'hypothetical (sparse dotted)' },
-  disputed: { dash: [5, 2], colorOverride: '#e06666', opacity: 0.8, label: 'disputed (red dashed)' },
-  unknown: { dash: [2.5, 2.5], colorOverride: '#98a2b3', opacity: 0.55, label: 'unknown (gray dashed)' },
+  disputed: { dash: [5, 2], colorOverride: '#c62828', opacity: 0.8, label: 'disputed (red dashed)' },
+  unknown: { dash: [2.5, 2.5], colorOverride: '#7b8798', opacity: 0.55, label: 'unknown (gray dashed)' },
 };
 
 /** Base edge color by semantic family (financial = money green, evidential = sage, structural = slate). */
 export function edgeBaseColor(edge: GraphEdge): string {
-  if (edge.financial) return '#68d16f';
-  if (['HAS_EVIDENCE', 'SUPPORTED_BY', 'CONTRADICTED_BY', 'INFERRED_FROM', 'CITED_BY'].includes(edge.type)) return '#9ab8a4';
-  if (['AFFECTS', 'EXPERIENCES_NEED', 'FAILS_TO_REACH'].includes(edge.type)) return '#e69a50';
-  return '#6b7c96';
+  if (edge.financial) return EDGE_FAMILY_COLORS.money;
+  if (['HAS_EVIDENCE', 'SUPPORTED_BY', 'CONTRADICTED_BY', 'INFERRED_FROM', 'CITED_BY'].includes(edge.type)) return EDGE_FAMILY_COLORS.evidence;
+  if (['AFFECTS', 'EXPERIENCES_NEED', 'FAILS_TO_REACH'].includes(edge.type)) return EDGE_FAMILY_COLORS.affects;
+  return EDGE_FAMILY_COLORS.structural;
 }
+
+/** Shared by the renderer and the legend so the two never drift apart. */
+export const EDGE_FAMILY_COLORS = {
+  money: '#1f8a3f',
+  evidence: '#5c8168',
+  affects: '#c26a12',
+  structural: '#6b7c96',
+} as const;
 
 export function edgeWidth(edge: GraphEdge): number {
   const amount = edge.financial?.amountUSD;
