@@ -1,0 +1,383 @@
+{
+  "run_id": "trun_1848795af0f24b80ad6233fa6ed10107",
+  "interaction_id": "trun_1848795af0f24b80ad6233fa6ed10107",
+  "result_url": "https://platform.parallel.ai/play/deep-research/trun_1848795af0f24b80ad6233fa6ed10107",
+  "status": "completed",
+  "output": {
+    "basis": [
+      {
+        "field": "output_report",
+        "reasoning": "The most relevant content directly supports the core findings in the output_report about a fragmented information ecosystem for Richmond residents: information is scattered across multiple city systems (the Online Permit Portal for permits, Legistar for agendas and documents, and separate GIS tools), with brittle search behavior and non-intuitive query requirements that impede discovery. This aligns with the report\u2019s emphasis on a non-unified, resident-facing information landscape and the need for a centralized, map-based or plain-language solution. Excerpts describing how the Online Permit Portal functions, its search limitations, and the explicit guidance to use Legistar for meeting documents illustrate the concrete barriers residents face. Excerpts that discuss the Legistar calendar and the multi-step process to locate agendas provide direct evidence of the non-integrated workflow residents must navigate. These pieces together substantiate the claims of fragmentation and poor discoverability in the summary. Public-notice mechanics, including Virginia Code requirements and the reliance on newspaper ads and mailed notices to property owners with short lead times, support the finding that incumbent notice methods exclude renters and others and create a barrier to early engagement, echoing the output_report\u2019s emphasis on inequitable access and delayed participation. Excerpts detailing local planning and zoning information sources (Code Refresh, Planning Commission, and related portals) reinforce the theme of entrenched processes contributing to opacity. The inclusion of proactive notification examples from Durham and Raleigh and Pittsburgh\u2019s integrated public-notice approaches provides concrete, real-world context for possible improvements and supports the solution-oriented parts of the summary. Excerpts about digital equity, language access plans, and LEP considerations underpin the cross-cutting equity analysis in the output_report, validating the need to address language barriers and the digital divide as part of any proposed improvements. The later excerpts citing the City\u2019s Code Refresh and digital equity initiatives further support the report\u2019s equity and reform-oriented recommendations. Overall, the most relevant content presents a coherent chain from current fragmented systems and brittle search/navigation problems to inequitable public-notice practices, and finally to forward-looking, comparative models that could inform Richmond\u2019s improvements.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from",
+              "**Why can't I find my address when I search for it?**\n**\u25cb** When entering an address, do not use punctuation, do not spell out the street name completely, nor the street type. **\u25cb** In addition, you may encounter a problem when searching single digit address numbers, such as ' *1 W Broad* '. Should this occur we ask that you come into the office until this problem is resolved.",
+              "Quick Links\nRichmond 300\n[Online Permit Portal](https://energov.richmondgov.com/energov_prod/selfservice#/home)\n[RVA 311](https://www.rva311.com/rvaone/Home/Index)\n[Legistar Calendar](https://richmondva.legistar.com/Calendar.aspx)\n[Zoning Ordinance](https://library.municode.com/va/richmond/codes/code_of_ordinances?nodeId=CH30ZO)\nGIS Mapping Tools",
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from their computer or phone."
+            ],
+            "title": "Online Permit Portal | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar",
+              "To view the agendas and minutes for the City Planning Commission meetings, please [**click here**](https://richmondva.legistar.com/Calendar.aspx) to view the Legistar calendar.  Within the 'Legistar Calendar' feature under the 'List View' feature click on the 'Search Calendar' feature using preset values you select from the 'drop down lists' for fields 'current year' and department 'Planning Commission' to identify specific meeting dates, meeting times, and meeting documents."
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Online Permit Portal: The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical",
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond"
+          },
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "Budget Work Session To access the meeting via Microsoft Teams, please use the following link: https://go.rva.gov/FY27BudgetWS or dial *67-804-316-9457 and enter\u00a0..."
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2204/",
+            "excerpts": [
+              "D. When (i) a proposed comprehensive plan or amendment thereto, (ii) a proposed change in zoning map classification, or (iii) an application for special exception for a change in use involves any parcel of land located within 3,000 feet of a boundary of a military base, military installation, military airport, excluding armories operated by the Virginia National Guard, or licensed public-use airport then, in addition to the advertising and written notification as required by this section, written notice shall also be given by the local planning commission, or its representative, at least 30 days before the hearing to the commander of the military base, military installation, military airport, or owner of such public-use airport, and the notice shall advise the military commander or owner of such public-use airport of the opportunity to submit comments or recommendations."
+            ],
+            "title": "15.2-2204. Advertisement of plans, ordinances, etc."
+          },
+          {
+            "url": "https://www.durhamnc.gov/411/Planning-Public-Notification-Service",
+            "excerpts": [
+              "The Department sends email notification of all upcoming Planning public hearings and other public meetings to anyone (individuals, neighborhood organizations,",
+              "The Planning & Development Department's email Public Notification Service is a continuation and expansion of the previous neighborhood notification mail-outs for zoning and other land use public hearings. These notifications go beyond state law requirements and have been determined by Durham\u2019s elected officials to be a necessary method to help citizens stay informed about upcoming zoning and other land use public hearings. Notification will NOT be restricted to a certain distance from a site -- any individual or entity that requests this notification will receive notification for ALL scheduled hearings.",
+              "Email notifications will be sent approximately every week, but at least once a month, and will provide basic information about upcoming Planning-related public or quasi-judicial hearings by the following boards or commissions. Expect to see the dates of upcoming meetings and their locations, with a list of cases that are scheduled at the time the email is sent. The case listing will include the case number and name of the project for the following:\nBoard of Adjustment (special use permits, variances, appeals, reasonable accommodation requests). Historic Preservation Commission (certificates of appropriateness, new or expanding local historic districts). Planning Commission (rezonings, comprehensive plan amendments, future land use map amendments, ordinance text amendments)."
+            ],
+            "title": "Planning & Development Public Notification Service | Durham, NC"
+          },
+          {
+            "url": "https://rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "A Community Ambassador is a stakeholder interested in making a positive impact and supporting city-wide engagement as part of the Code Refresh process. As part",
+              "These roundtables were designed to create a space for historically underrepresented stakeholders, such as Latino residents, renters, African American residents, youth, low-income residents, and 9th District constituents, to share their perspectives on how zoning impacts them."
+            ],
+            "title": "Code Refresh | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "output_report.solutions_from_comparable_cities",
+        "reasoning": "The field value cites concrete comparable-city models to address Richmond\u2019s pain points: a proactive, geo-agnostic public notification service (Durham), a centralized engagement portal with plain-language summaries and two-way feedback (Raleigh), and a centralized development-review workflow (Pittsburgh). The excerpt describing Durham\u2019s Planning & Development Public Notification Service explains that notifications are sent by email to anyone interested, covering all upcoming hearings and going beyond minimum requirements, which supports the idea of an accessible, non-distance-restricted notification system. The follow-up excerpts further detail that this public notification approach is implemented via an ongoing email service with regular cadence (weekly to monthly), illustrating a low-burden, proactive information channel for residents. The excerpts collectively provide the core components called for in the fine-grained field value: a public-facing, inclusive notification mechanism that keeps residents informed about planning activities, with simple language and regular updates, as demonstrated by the Durham example and its expansion characteristics. While the exact Raleigh and Pittsburgh implementations are not described in-depth in the provided excerpts, their mention in the field value helps frame the Durham example as a tangible, comparable model and supports the recommended direction for Richmond\u2019s rva-neighborhood-watch project.\n",
+        "citations": [
+          {
+            "url": "https://www.durhamnc.gov/411/Planning-Public-Notification-Service",
+            "excerpts": [
+              "Email notifications will be sent approximately every week, but at least once a month, and will provide basic information about upcoming Planning-related public or quasi-judicial hearings by the following boards or commissions. Expect to see the dates of upcoming meetings and their locations, with a list of cases that are scheduled at the time the email is sent. The case listing will include the case number and name of the project for the following:\nBoard of Adjustment (special use permits, variances, appeals, reasonable accommodation requests). Historic Preservation Commission (certificates of appropriateness, new or expanding local historic districts). Planning Commission (rezonings, comprehensive plan amendments, future land use map amendments, ordinance text amendments).",
+              "The Planning & Development Department's email Public Notification Service is a continuation and expansion of the previous neighborhood notification mail-outs for zoning and other land use public hearings. These notifications go beyond state law requirements and have been determined by Durham\u2019s elected officials to be a necessary method to help citizens stay informed about upcoming zoning and other land use public hearings. Notification will NOT be restricted to a certain distance from a site -- any individual or entity that requests this notification will receive notification for ALL scheduled hearings.",
+              "The Department sends email notification of all upcoming Planning public hearings and other public meetings to anyone (individuals, neighborhood organizations,"
+            ],
+            "title": "Planning & Development Public Notification Service | Durham, NC"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "output_report.resident_persona_analysis",
+        "reasoning": "The most relevant content points to concrete, Richmond-specific information architecture and user experience challenges: instructions to navigate the Legistar calendar demonstrate the multiple, non-unified sources residents must consult and the complexity of finding meeting dates and documents. Descriptions of the Online Permit Portal and its use for submitting plans, applying for permits, and checking statuses illustrate the fragmentation of systems a resident must navigate to stay informed. References to search usability issues (such as address search problems and punctuation handling) illustrate the difficulty of extracting information from the city\u2019s portals. Mentions of public notification practices and the need for improved, proactive awareness (even if described in a broader or different jurisdiction) support the claim that current approaches are reactive and may miss non-abutting stakeholders. Citations noting Code Refresh and accessibility discussions further reinforce the theme that materials are not yet in plain language or resident-friendly formats. The combination of portal fragmentation, brittle searches, and lack of geo-targeted alerts directly aligns with the described pain points and the need for a map-based, centralized information source for Richmond residents.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please [**click here**](https://richmondva.legistar.com/Calendar.aspx) to view the Legistar calendar.  Within the 'Legistar Calendar' feature under the 'List View' feature click on the 'Search Calendar' feature using preset values you select from the 'drop down lists' for fields 'current year' and department 'Planning Commission' to identify specific meeting dates, meeting times, and meeting documents.",
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from",
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from their computer or phone.",
+              "**Why can't I find my address when I search for it?**\n**\u25cb** When entering an address, do not use punctuation, do not spell out the street name completely, nor the street type. **\u25cb** In addition, you may encounter a problem when searching single digit address numbers, such as ' *1 W Broad* '. Should this occur we ask that you come into the office until this problem is resolved."
+            ],
+            "title": "Online Permit Portal | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Online Permit Portal: The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical",
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond"
+          },
+          {
+            "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2204/",
+            "excerpts": [
+              "D. When (i) a proposed comprehensive plan or amendment thereto, (ii) a proposed change in zoning map classification, or (iii) an application for special exception for a change in use involves any parcel of land located within 3,000 feet of a boundary of a military base, military installation, military airport, excluding armories operated by the Virginia National Guard, or licensed public-use airport then, in addition to the advertising and written notification as required by this section, written notice shall also be given by the local planning commission, or its representative, at least 30 days before the hearing to the commander of the military base, military installation, military airport, or owner of such public-use airport, and the notice shall advise the military commander or owner of such public-use airport of the opportunity to submit comments or recommendations."
+            ],
+            "title": "15.2-2204. Advertisement of plans, ordinances, etc."
+          },
+          {
+            "url": "https://rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "A Community Ambassador is a stakeholder interested in making a positive impact and supporting city-wide engagement as part of the Code Refresh process. As part",
+              "These roundtables were designed to create a space for historically underrepresented stakeholders, such as Latino residents, renters, African American residents, youth, low-income residents, and 9th District constituents, to share their perspectives on how zoning impacts them."
+            ],
+            "title": "Code Refresh | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "output_report.cross_cutting_equity_analysis",
+        "reasoning": "The most relevant content shows formal outreach strategies aimed at correcting inequities in engagement. One excerpt notes that Code Refresh roundtables were designed to create a space for historically underrepresented stakeholders, explicitly naming Latino residents, renters, African American residents, youth, and low-income residents as groups to consider in outreach. This directly supports the fine-grained field value\u2019s emphasis on equity-focused engagement in Richmond\u2019s development review. Another Code Refresh item confirms the need for outreach to historically underrepresented groups, reinforcing the same point. Together, these excerpts provide concrete evidence of intentional equity-oriented engagement gates within the process. The other excerpts describe information-access channels (the Online Permit Portal, Legistar calendar, planning commissions, and public notices) which establish what tools residents might use to access information, but they do not themselves establish or discuss the equity dimensions in depth. They provide contextual support for how information is disseminated, which is relevant to access but less directly tied to the specific equity dimensions highlighted in the field value.",
+        "citations": [
+          {
+            "url": "https://rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "A Community Ambassador is a stakeholder interested in making a positive impact and supporting city-wide engagement as part of the Code Refresh process. As part",
+              "These roundtables were designed to create a space for historically underrepresented stakeholders, such as Latino residents, renters, African American residents, youth, low-income residents, and 9th District constituents, to share their perspectives on how zoning impacts them."
+            ],
+            "title": "Code Refresh | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please [**click here**](https://richmondva.legistar.com/Calendar.aspx) to view the Legistar calendar.  Within the 'Legistar Calendar' feature under the 'List View' feature click on the 'Search Calendar' feature using preset values you select from the 'drop down lists' for fields 'current year' and department 'Planning Commission' to identify specific meeting dates, meeting times, and meeting documents."
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Online Permit Portal: The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical"
+            ],
+            "title": "Permits and Inspections | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "output_report.renter_persona_analysis",
+        "reasoning": "The renter persona analysis centers on the need for clear, centralized, and accessible information about local development. Excerpts describing the Online Permit Portal as the primary channel for submitting plans, paying for permits, and checking status illustrate the centralized-yet-complex surface through which residents must navigate. This supports the point that information is spread across multiple systems (OPP, Legistar, GIS) and is not presented in plain-language, contributing to opacity and reduced trust. Related excerpts underscore usability and search challenges within the portal (for example, address search quirks) and point to additional official channels (Legistar calendar, agendas, and meeting materials) that residents must consult to stay informed, highlighting fragmentation that erodes trust and participation. Other excerpts emphasize the existence of notification and engagement mechanisms (though not perfectly equitable) and signal the broader context of outreach and inclusion efforts within city processes. The inclusion of community-engagement and equity-focused discussions in related materials reinforces the importance of improving transparency and access for renters and LEP communities, aligning with the pain points described (plain-language summaries, centralized access, and inclusive notification). Overall, the most compelling support comes from explicit references to the centralized Online Permit Portal for core information, followed by mentions of additional official sources that residents must use to understand development activity, and finally by equity-oriented engagement discussions that echo the need for more inclusive communication.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from",
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from their computer or phone.",
+              "**Why can't I find my address when I search for it?**\n**\u25cb** When entering an address, do not use punctuation, do not spell out the street name completely, nor the street type. **\u25cb** In addition, you may encounter a problem when searching single digit address numbers, such as ' *1 W Broad* '. Should this occur we ask that you come into the office until this problem is resolved."
+            ],
+            "title": "Online Permit Portal | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Online Permit Portal: The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical"
+            ],
+            "title": "Permits and Inspections | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar",
+              "To view the agendas and minutes for the City Planning Commission meetings, please [**click here**](https://richmondva.legistar.com/Calendar.aspx) to view the Legistar calendar.  Within the 'Legistar Calendar' feature under the 'List View' feature click on the 'Search Calendar' feature using preset values you select from the 'drop down lists' for fields 'current year' and department 'Planning Commission' to identify specific meeting dates, meeting times, and meeting documents."
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "A Community Ambassador is a stakeholder interested in making a positive impact and supporting city-wide engagement as part of the Code Refresh process. As part",
+              "These roundtables were designed to create a space for historically underrepresented stakeholders, such as Latino residents, renters, African American residents, youth, low-income residents, and 9th District constituents, to share their perspectives on how zoning impacts them."
+            ],
+            "title": "Code Refresh | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "output_report.summary_of_findings",
+        "reasoning": "The requested fine-grained field value describes a fragmented, hard-to-navigate information ecosystem for Richmond residents tracking neighborhood development. It emphasizes multiple, non-integrated city systems (Online Permit Portal, Legistar, GIS mapping tools) with difficult search behavior, a lack of proactive geo-targeted alerts, reliance on statutory notices with short lead times, and language barriers created by bureaucratic terminology. The most supportive excerpts point to the existence and scope of the separate systems residents must contend with (the Online Permit Portal for permits and inspections, and the Legistar calendar for legislative documents), and to the presence of mapping tools that indicate multiple data sources rather than a single integrated platform. Additional excerpts touch on user-facing search problems and hard-to-navigate interfaces, such as address search quirks, which illustrate the non-intuitive, brittle search experiences that worsen information access. Another excerpt references how public notices are used, including short notice windows, which aligns with the described limited early engagement opportunities. Finally, a pair of excerpts related to equity efforts and public notification practices hint at ongoing attempts to address access disparities, reinforcing the broader context of an information ecosystem that may exclude renters and nearby residents without targeted outreach. In combination, these excerpts collectively support the core claim of fragmentation, non-integrated systems, poor searchability, limited proactive alerts, and accessibility barriers in Richmond\u2019s neighborhood development information landscape.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from",
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from their computer or phone.",
+              "Quick Links\nRichmond 300\n[Online Permit Portal](https://energov.richmondgov.com/energov_prod/selfservice#/home)\n[RVA 311](https://www.rva311.com/rvaone/Home/Index)\n[Legistar Calendar](https://richmondva.legistar.com/Calendar.aspx)\n[Zoning Ordinance](https://library.municode.com/va/richmond/codes/code_of_ordinances?nodeId=CH30ZO)\nGIS Mapping Tools",
+              "**Why can't I find my address when I search for it?**\n**\u25cb** When entering an address, do not use punctuation, do not spell out the street name completely, nor the street type. **\u25cb** In addition, you may encounter a problem when searching single digit address numbers, such as ' *1 W Broad* '. Should this occur we ask that you come into the office until this problem is resolved."
+            ],
+            "title": "Online Permit Portal | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Online Permit Portal: The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical",
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar",
+              "To view the agendas and minutes for the City Planning Commission meetings, please [**click here**](https://richmondva.legistar.com/Calendar.aspx) to view the Legistar calendar.  Within the 'Legistar Calendar' feature under the 'List View' feature click on the 'Search Calendar' feature using preset values you select from the 'drop down lists' for fields 'current year' and department 'Planning Commission' to identify specific meeting dates, meeting times, and meeting documents."
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2204/",
+            "excerpts": [
+              "D. When (i) a proposed comprehensive plan or amendment thereto, (ii) a proposed change in zoning map classification, or (iii) an application for special exception for a change in use involves any parcel of land located within 3,000 feet of a boundary of a military base, military installation, military airport, excluding armories operated by the Virginia National Guard, or licensed public-use airport then, in addition to the advertising and written notification as required by this section, written notice shall also be given by the local planning commission, or its representative, at least 30 days before the hearing to the commander of the military base, military installation, military airport, or owner of such public-use airport, and the notice shall advise the military commander or owner of such public-use airport of the opportunity to submit comments or recommendations."
+            ],
+            "title": "15.2-2204. Advertisement of plans, ordinances, etc."
+          },
+          {
+            "url": "https://rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "A Community Ambassador is a stakeholder interested in making a positive impact and supporting city-wide engagement as part of the Code Refresh process. As part",
+              "These roundtables were designed to create a space for historically underrepresented stakeholders, such as Latino residents, renters, African American residents, youth, low-income residents, and 9th District constituents, to share their perspectives on how zoning impacts them."
+            ],
+            "title": "Code Refresh | Richmond"
+          },
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "Budget Work Session To access the meeting via Microsoft Teams, please use the following link: https://go.rva.gov/FY27BudgetWS or dial *67-804-316-9457 and enter\u00a0..."
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://www.durhamnc.gov/411/Planning-Public-Notification-Service",
+            "excerpts": [
+              "The Department sends email notification of all upcoming Planning public hearings and other public meetings to anyone (individuals, neighborhood organizations,",
+              "The Planning & Development Department's email Public Notification Service is a continuation and expansion of the previous neighborhood notification mail-outs for zoning and other land use public hearings. These notifications go beyond state law requirements and have been determined by Durham\u2019s elected officials to be a necessary method to help citizens stay informed about upcoming zoning and other land use public hearings. Notification will NOT be restricted to a certain distance from a site -- any individual or entity that requests this notification will receive notification for ALL scheduled hearings.",
+              "Email notifications will be sent approximately every week, but at least once a month, and will provide basic information about upcoming Planning-related public or quasi-judicial hearings by the following boards or commissions. Expect to see the dates of upcoming meetings and their locations, with a list of cases that are scheduled at the time the email is sent. The case listing will include the case number and name of the project for the following:\nBoard of Adjustment (special use permits, variances, appeals, reasonable accommodation requests). Historic Preservation Commission (certificates of appropriateness, new or expanding local historic districts). Planning Commission (rezonings, comprehensive plan amendments, future land use map amendments, ordinance text amendments)."
+            ],
+            "title": "Planning & Development Public Notification Service | Durham, NC"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "output_report.key_sources",
+        "reasoning": "The specific field value lists several foundational sources the report relies on: an Online Permit Portal with its functions and limitations; Planning Commission materials and Legistar navigation for agendas and documents; the Virginia Code provision on public notice; a proactive public notification approach exemplified by Durham; and the Code Refresh initiative addressing equity and stakeholder engagement. Excerpts that describe the Online Permit Portal and its use (including its accessibility and how to access permits and status) directly support the first set of sources. Likewise, passages detailing how to view Planning Commission agendas and Legistar calendars substantiate the Planning Commission source. The Virginia Code notice requirement is evidenced by the inclusion of a legal excerpt describing advertisement and notice rules. Public notification practices from Durham are represented in excerpts outlining how residents can receive notices and stay informed, which aligns with the field value\u2019s emphasis on proactive notification. Finally, excerpts about Code Refresh describe targeted engagement with underrepresented stakeholders, matching the equity and engagement themes cited in the field value. Collectively, these excerpts cover the named source categories and illustrate how the report aggregates information from each source to justify its findings. ",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from",
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from their computer or phone.",
+              "**Why can't I find my address when I search for it?**\n**\u25cb** When entering an address, do not use punctuation, do not spell out the street name completely, nor the street type. **\u25cb** In addition, you may encounter a problem when searching single digit address numbers, such as ' *1 W Broad* '. Should this occur we ask that you come into the office until this problem is resolved.",
+              "Quick Links\nRichmond 300\n[Online Permit Portal](https://energov.richmondgov.com/energov_prod/selfservice#/home)\n[RVA 311](https://www.rva311.com/rvaone/Home/Index)\n[Legistar Calendar](https://richmondva.legistar.com/Calendar.aspx)\n[Zoning Ordinance](https://library.municode.com/va/richmond/codes/code_of_ordinances?nodeId=CH30ZO)\nGIS Mapping Tools"
+            ],
+            "title": "Online Permit Portal | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Online Permit Portal: The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical",
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar",
+              "To view the agendas and minutes for the City Planning Commission meetings, please [**click here**](https://richmondva.legistar.com/Calendar.aspx) to view the Legistar calendar.  Within the 'Legistar Calendar' feature under the 'List View' feature click on the 'Search Calendar' feature using preset values you select from the 'drop down lists' for fields 'current year' and department 'Planning Commission' to identify specific meeting dates, meeting times, and meeting documents."
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://law.lis.virginia.gov/vacode/title15.2/chapter22/section15.2-2204/",
+            "excerpts": [
+              "D. When (i) a proposed comprehensive plan or amendment thereto, (ii) a proposed change in zoning map classification, or (iii) an application for special exception for a change in use involves any parcel of land located within 3,000 feet of a boundary of a military base, military installation, military airport, excluding armories operated by the Virginia National Guard, or licensed public-use airport then, in addition to the advertising and written notification as required by this section, written notice shall also be given by the local planning commission, or its representative, at least 30 days before the hearing to the commander of the military base, military installation, military airport, or owner of such public-use airport, and the notice shall advise the military commander or owner of such public-use airport of the opportunity to submit comments or recommendations."
+            ],
+            "title": "15.2-2204. Advertisement of plans, ordinances, etc."
+          },
+          {
+            "url": "https://www.durhamnc.gov/411/Planning-Public-Notification-Service",
+            "excerpts": [
+              "The Department sends email notification of all upcoming Planning public hearings and other public meetings to anyone (individuals, neighborhood organizations,",
+              "The Planning & Development Department's email Public Notification Service is a continuation and expansion of the previous neighborhood notification mail-outs for zoning and other land use public hearings. These notifications go beyond state law requirements and have been determined by Durham\u2019s elected officials to be a necessary method to help citizens stay informed about upcoming zoning and other land use public hearings. Notification will NOT be restricted to a certain distance from a site -- any individual or entity that requests this notification will receive notification for ALL scheduled hearings.",
+              "Email notifications will be sent approximately every week, but at least once a month, and will provide basic information about upcoming Planning-related public or quasi-judicial hearings by the following boards or commissions. Expect to see the dates of upcoming meetings and their locations, with a list of cases that are scheduled at the time the email is sent. The case listing will include the case number and name of the project for the following:\nBoard of Adjustment (special use permits, variances, appeals, reasonable accommodation requests). Historic Preservation Commission (certificates of appropriateness, new or expanding local historic districts). Planning Commission (rezonings, comprehensive plan amendments, future land use map amendments, ordinance text amendments)."
+            ],
+            "title": "Planning & Development Public Notification Service | Durham, NC"
+          },
+          {
+            "url": "https://rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "A Community Ambassador is a stakeholder interested in making a positive impact and supporting city-wide engagement as part of the Code Refresh process. As part",
+              "These roundtables were designed to create a space for historically underrepresented stakeholders, such as Latino residents, renters, African American residents, youth, low-income residents, and 9th District constituents, to share their perspectives on how zoning impacts them."
+            ],
+            "title": "Code Refresh | Richmond"
+          }
+        ],
+        "confidence": "high"
+      }
+    ],
+    "type": "json",
+    "beta_fields": null,
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "output_report": {
+          "type": "object",
+          "properties": {
+            "summary_of_findings": {
+              "type": "string",
+              "description": "A high-level summary of the core problems identified, such as fragmented systems, difficult-to-search records, and lack of proactive alerts."
+            },
+            "resident_persona_analysis": {
+              "type": "string",
+              "description": "Detailed analysis for the general 'Richmond resident' persona, outlining their specific pain points, current workarounds, and the cost of the status quo, with supporting evidence."
+            },
+            "renter_persona_analysis": {
+              "type": "string",
+              "description": "Detailed analysis for the 'long-time resident/renter' persona, focusing on the need for trust, transparency, and plain-language information, with supporting evidence."
+            },
+            "cross_cutting_equity_analysis": {
+              "type": "string",
+              "description": "Analysis of equity dimensions, detailing how issues like the digital divide, language barriers, and lack of outreach disproportionately affect certain populations."
+            },
+            "solutions_from_comparable_cities": {
+              "type": "string",
+              "description": "A summary of successful solutions from comparable cities like Raleigh's engagement portal and Durham's email notification service."
+            },
+            "key_sources": {
+              "type": "string",
+              "description": "A list of key sources and citations referenced in the report, such as the Virginia state code on public notices and Richmond's Language Access Plan."
+            }
+          },
+          "required": [
+            "summary_of_findings",
+            "resident_persona_analysis",
+            "renter_persona_analysis",
+            "cross_cutting_equity_analysis",
+            "solutions_from_comparable_cities",
+            "key_sources"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "output_report"
+      ],
+      "additionalProperties": false
+    },
+    "content_file": "pain_points.md"
+  }
+}
