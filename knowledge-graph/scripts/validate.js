@@ -3,21 +3,35 @@
  * Validates generated data/ files against data/schema/graph.schema.json and
  * runs referential-integrity checks that a JSON Schema cannot express.
  * Exits non-zero on any violation.
+ *
+ *   node scripts/validate.js                 this pillar's data/
+ *   node scripts/validate.js --data <dir>    any directory of generated files
+ *
+ * The --data form exists so derived graphs built outside a pillar repo (the
+ * merged Richmond graph in rvahacks, for one) are held to these same rules
+ * rather than to a second, drifting copy of them.
  */
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 
 const ROOT = resolve(import.meta.dirname, '..');
+const argIdx = process.argv.indexOf('--data');
+const DATA = argIdx > -1 ? resolve(process.argv[argIdx + 1]) : resolve(ROOT, 'data');
 const read = (p) => JSON.parse(readFileSync(resolve(ROOT, p), 'utf8'));
+const readData = (name) => JSON.parse(readFileSync(resolve(DATA, name), 'utf8'));
 
 const schema = read('data/schema/graph.schema.json');
-const graph = read('data/graph.json');
-const flows = read('data/financial_flows.json');
-const evidence = read('data/evidence.json');
-const questions = read('data/unanswered_questions.json');
-const reviewQueue = read('data/review_queue.json');
+const graph = readData('graph.json');
+// Flows are also embedded in the graph; the standalone file is a build
+// convenience that derived data sets do not necessarily produce.
+const flows = existsSync(resolve(DATA, 'financial_flows.json'))
+  ? readData('financial_flows.json')
+  : graph.financialFlows;
+const evidence = readData('evidence.json');
+const questions = readData('unanswered_questions.json');
+const reviewQueue = readData('review_queue.json');
 
 const ajv = new Ajv({ allErrors: true, strict: false });
 addFormats(ajv);

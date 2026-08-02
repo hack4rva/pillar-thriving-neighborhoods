@@ -47,7 +47,10 @@ export class AppState {
     const { filters } = this;
     const out = new Set<string>();
     for (const n of this.data.graph.nodes) {
-      if (!filters.repos.has(n.repo)) continue;
+      // In a merged graph an entity can belong to several pillars at once, and
+      // attrs.pillars carries the full list; repo alone is only its first.
+      const pillars = (n.attrs?.pillars as string[] | undefined) ?? [n.repo];
+      if (!pillars.some((r) => filters.repos.has(r))) continue;
       if (!filters.nodeTypes.has(n.type)) continue;
       if (!filters.evidenceStatuses.has(n.evidenceStatus)) continue;
       if (this.timelineYear != null && n.type === 'Project') {

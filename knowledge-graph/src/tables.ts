@@ -67,9 +67,15 @@ export class Drawer {
       <p class="small muted">This pillar's corpus contains no financial dataset, so the graph has no funding layer
       and the money-based views are hidden.</p>`;
 
+    // A merged graph spans every pillar repo, so naming repos[0] would credit
+    // the whole corpus to whichever one sorted first.
+    const heading = meta.repos.length > 1
+      ? `Richmond Civic Hackathon — all ${meta.repos.length} pillars`
+      : `Repository: ${esc(meta.repos[0] ?? '')}${
+          meta.pillarName ? ` (Richmond Civic Hackathon — ${esc(meta.pillarName)} pillar)` : ''}`;
+
     return `
-      <h3 style="margin:2px 0 6px">Repository: ${esc(meta.repos[0] ?? '')}${
-        meta.pillarName ? ` (Richmond Civic Hackathon — ${esc(meta.pillarName)} pillar)` : ''}</h3>
+      <h3 style="margin:2px 0 6px">${heading}</h3>
       ${meta.description ? `<p class="small muted" style="max-width:900px">${esc(meta.description)}</p>` : ''}
       <div>
         ${chip('Nodes', String(m.totalNodes))}

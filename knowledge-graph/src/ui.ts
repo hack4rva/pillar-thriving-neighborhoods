@@ -24,6 +24,15 @@ export class Sidebar {
     for (const e of d.graph.edges) edgeTypeCounts.set(e.type, (edgeTypeCounts.get(e.type) ?? 0) + 1);
     const statusCounts = new Map<string, number>();
     for (const r of [...d.graph.nodes, ...d.graph.edges]) statusCounts.set(r.evidenceStatus, (statusCounts.get(r.evidenceStatus) ?? 0) + 1);
+    // Counted per repo rather than reported as the graph total, which was
+    // invisibly wrong with one repo and plainly wrong with seven. A merged
+    // entity counts once for every pillar it belongs to, so these sum high.
+    const repoCounts = new Map<string, number>();
+    for (const n of d.graph.nodes) {
+      for (const r of (n.attrs?.pillars as string[] | undefined) ?? [n.repo]) {
+        repoCounts.set(r, (repoCounts.get(r) ?? 0) + 1);
+      }
+    }
 
     const checkboxes = (name: string, entries: [string, number][], checkedSet: Set<string>) =>
       entries.map(([value, count]) => `
@@ -52,8 +61,8 @@ export class Sidebar {
 
     this.filtersEl.innerHTML = `
       <div class="filter-group">
-        <div class="ft">Repository</div>
-        ${checkboxes('repos', d.graph.meta.repos.map((r) => [r, d.graph.nodes.length]), this.state.filters.repos)}
+        <div class="ft">${d.graph.meta.repos.length > 1 ? 'Pillar' : 'Repository'}</div>
+        ${checkboxes('repos', d.graph.meta.repos.map((r) => [r, repoCounts.get(r) ?? 0]), this.state.filters.repos)}
       </div>
       <div class="filter-group">
         <div class="ft">Node types ${groupToggle('nodeTypes')}</div>
