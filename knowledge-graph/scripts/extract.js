@@ -202,9 +202,17 @@ const ORG_TYPES = new Set(['Organization', 'GovernmentAgency', 'Nonprofit', 'Fou
  * exceptions worth keeping: brands that begin on a lowercase letter (eVA, iCal,
  * mRelief) and bare hostnames (data.census.gov, richmondva.legistar.com).
  */
-const isProperName = (name) => /^[^a-z]/.test(name)
+const isProperName = (name) => (/^[^a-z]/.test(name)
   || /^[a-z][A-Z]/.test(name)
-  || /^[a-z0-9-]+(\.[a-z0-9-]+)+(\/|$|\s)/i.test(name);
+  || /^[a-z0-9-]+(\.[a-z0-9-]+)+(\/|$|\s)/i.test(name))
+  && !GENERIC_INITIALISM.test(name);
+
+/**
+ * Capitalization alone lets a bare discipline through: "IT" became an
+ * Organization and "AI" a Dataset, each from a sentence listing departments or
+ * technologies. These name a field of work, never a particular thing in it.
+ */
+const GENERIC_INITIALISM = /^(AI|ML|IT|HR|PR|UX|UI|QA|API|LLM|CRM|ERP|ETL|KPI|ROI|PDF|CSV|JSON|XML|SQL|SaaS|FAQ)$|^(AI|ML|LLM) (extraction|research|analysis|tooling|models?)$/i;
 
 function buildCorpusGraph(record, rc, warnings) {
   const claimById = new Map(rc.claims.map((c) => [c.id, c]));

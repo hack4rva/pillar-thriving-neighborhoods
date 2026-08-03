@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-03T01:24:02.907Z",
+ "generatedAt": "2026-08-03T02:19:55.019Z",
  "repo": "pillar-thriving-neighborhoods",
  "filesExamined": [
   "admin/evidence_log.md",
@@ -199,8 +199,8 @@
   "disputedRelationships": 0,
   "reportedButUnverifiedRelationships": 522,
   "brokenReferences": 0,
-  "duplicateCandidates": 16,
-  "reviewQueueSize": 16,
+  "duplicateCandidates": 14,
+  "reviewQueueSize": 14,
   "evidenceRecords": 650,
   "provenanceCoverage": 100,
   "provenanceVerification": {

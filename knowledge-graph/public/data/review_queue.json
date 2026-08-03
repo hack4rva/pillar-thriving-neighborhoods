@@ -28,34 +28,6 @@
   "decisionRequested": "Decide whether these are the same entity."
  },
  {
-  "id": "r:dup-city-of-richmond-calendar",
-  "itemType": "node",
-  "proposed": "n:source:richmondva-legistar-com-e5700df9 vs n:source:richmondva-legistar-com-969833bc",
-  "sourceExcerpt": "City of Richmond - Calendar",
-  "sourceLocation": "label comparison across extraction sources",
-  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
-  "confidence": "medium",
-  "alternatives": [
-   "Merge via extraction/aliases.json",
-   "Keep separate"
-  ],
-  "decisionRequested": "Decide whether these are the same entity."
- },
- {
-  "id": "r:dup-fair-market-rents-introductory-overview",
-  "itemType": "node",
-  "proposed": "n:source:huduser-gov-36c8390d vs n:source:huduser-gov-ee32753f",
-  "sourceExcerpt": "Fair Market Rents Introductory Overview",
-  "sourceLocation": "label comparison across extraction sources",
-  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
-  "confidence": "medium",
-  "alternatives": [
-   "Merge via extraction/aliases.json",
-   "Keep separate"
-  ],
-  "decisionRequested": "Decide whether these are the same entity."
- },
- {
   "id": "r:dup-webapi-legistar-com-v1-richmondva-events-top-1",
   "itemType": "node",
   "proposed": "n:source:webapi-legistar-com-c37fdf87 vs n:source:webapi-legistar-com-d6c33a36",

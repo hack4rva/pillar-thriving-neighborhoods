@@ -87,6 +87,31 @@ function unslug(title) {
 }
 
 /**
+ * Give sources that share a page title something to tell them apart.
+ *
+ * Distinct URLs legitimately carry the same title — four separate pages are all
+ * called "Search | Richmond" — and as nodes they read as one thing repeated.
+ * Only the collisions are touched, so the common case keeps its clean title.
+ */
+function disambiguate(nodes) {
+  const byLabel = new Map();
+  for (const n of nodes) byLabel.set(n.label, [...(byLabel.get(n.label) ?? []), n]);
+  for (const group of byLabel.values()) {
+    if (group.length < 2) continue;
+    for (const n of group) {
+      let tail = '';
+      try {
+        const u = new URL(n.attrs.url);
+        tail = (u.pathname + u.search).replace(/\/+$/, '');
+      } catch { /* keep the label as-is */ }
+      if (!tail || tail === '/') tail = n.attrs.host;
+      if (tail.length > 40) tail = `…${tail.slice(-39)}`;
+      n.label = `${n.label} (${tail})`;
+    }
+  }
+}
+
+/**
  * Where a source lives, for citations that came with no title. The hostname
  * alone is not an identity: fourteen distinct Open Data datasets were all
  * labelled "data.richmondgov.com" and read as one repeated node.
@@ -296,6 +321,8 @@ export function parseResearchCorpus() {
       })),
     }));
   }
+
+  disambiguate(nodes);
 
   return {
     claims,

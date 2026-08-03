@@ -2,6 +2,7 @@ import { parse } from 'csv-parse/sync';
 import {
   readRepoFile, makeNode, makeEdge, nodeId, parseMoney, parseLooseDate, slug,
 } from '../lib.js';
+import { isPlaceholder } from './post_event_research.js';
 
 const CSV_PATH = 'research/COR_CIP_Dashboard_projects.csv';
 
@@ -162,8 +163,10 @@ export function parseCipCsv() {
     });
 
     // Project manager (public organizational role; contact info withheld).
+    // The column carries "TBD" where no manager is assigned yet, which became a
+    // person by that name managing three projects.
     const manager = (row.Manager || '').trim();
-    if (manager) {
+    if (manager && !isPlaceholder(manager)) {
       const personId = nodeId('person', manager);
       if (!seenPeople.has(personId)) {
         seenPeople.set(personId, true);
