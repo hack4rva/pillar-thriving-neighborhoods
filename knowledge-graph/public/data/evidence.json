@@ -11361,7 +11361,7 @@
  },
  {
   "id": "ev:P-35",
-  "claim": "The reliance on a suite of online-only tools for accessing development information systematically excludes residents who lack reliable, affordable, and high-speed internet. As of September 2024, Richmond's City Council was still actively pressing for a concrete plan to close the city's digital divide, a goal first established in a 2021 resolution. This ongoing gap means that residents without adequate digital access are unable to participate in the development process, track projects in their neighborhoods, or access vital documents, creating a significant equity risk where civic engagement is predicated on internet connectivity.",
+  "claim": "Despite the City of Richmond having a formal Language Access Plan (2020) and an Administrative Regulation (2023) that designates public hearing notices as 'vital documents' requiring translation, there is a risk of inconsistent execution. These policies commit the city to providing meaningful access for Limited English Proficiency (LEP) residents through translated materials and multilingual web tools. However, the research suggests that if these policies are not consistently implemented and monitored across all departments and platforms (like EnerGov, ArcGIS, and Legistar), LEP communities are effectively excluded from understanding and participating in development decisions that directly impact their lives.",
   "status": "unverified",
   "source": "post-event research",
   "url": null,
@@ -11370,7 +11370,7 @@
    {
     "sourceDoc": "post-event-research/rva-plotlines/pain_points.md",
     "sourceLocation": "lines 210-210",
-    "excerpt": "The reliance on a suite of online-only tools for accessing development information systematically excludes residents who lack reliable, affordable, and high-speed internet. As of September 2024, Richmond's City Council was still actively pressing for a concrete plan to close the city's digital divide, a goal first established in a 2021 resolution. This ongoing gap means that residents without adequate digital access are unable to participate in the development process, track projects in their neighborhoods, or access vital documents, creating a significant equity risk where civic engagement is predicated on internet connectivity."
+    "excerpt": "Despite the City of Richmond having a formal Language Access Plan (2020) and an Administrative Regulation (2023) that designates public hearing notices as 'vital documents' requiring translation, there is a risk of inconsistent execution. These policies commit the city to providing meaningful access for Limited English Proficiency (LEP) residents through translated materials and multilingual web tools. However, the research suggests that if these policies are not consistently implemented and monitored across all departments and platforms (like EnerGov, ArcGIS, and Legistar), LEP communities are effectively excluded from understanding and participating in development decisions that directly impact their lives."
    },
    {
     "sourceDoc": "https://rva.gov/sites/default/files/2022-05/LANGUAGE%20ACCESS%20PLAN%20FINAL-%20APR2020.pdf",

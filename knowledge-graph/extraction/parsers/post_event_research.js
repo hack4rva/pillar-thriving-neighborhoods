@@ -19,8 +19,45 @@ import { readOrganizations } from './organizations.js';
  */
 
 const headingToKey = (s) => s.toLowerCase().trim().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
-const titleize = (key) => key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const titleize = (key) => key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()).trim();
 const trim = (s, n) => (s.length > n ? `${s.slice(0, n - 3)}…` : s);
+
+/**
+ * Initialisms that a word-by-word title case would otherwise mangle, turning
+ * "rva-plotlines" into "Rva-Plotlines" and "hud-rent-cap-validator" into
+ * "Hud-Rent-Cap-Validator".
+ */
+const INITIALISMS = new Set(['rva', 'ai', 'hud', 'sms', 'gis', 'cip', 'dpw', 'rfp',
+  'api', 'mbe', 'swam', 'ombd', 'wioa', 'jtbd', 'crm', 'us', 'uk', 'nyc', 'sr', 'ada']);
+
+/** Abbreviations the research filenames use for their own subject matter. */
+const EXPANSIONS = {
+  svc: 'Service', nav: 'Navigation', proc: 'Procurement', dev: 'Development',
+  mgmt: 'Management', sn: 'Service Navigation', jtbd: 'JTBD', gov: 'Government',
+};
+
+/** Best-effort display name for a directory whose real name we were not given. */
+const renderSlug = (dir) => dir.replace(/^_+/, '').split(/[-_\s]+/).filter(Boolean)
+  .map((w) => EXPANSIONS[w.toLowerCase()]
+    ?? (/^q\d$/i.test(w) ? w.toUpperCase() : null)
+    ?? (INITIALISMS.has(w.toLowerCase())
+      ? w.toUpperCase()
+      : w.charAt(0).toUpperCase() + w.slice(1)))
+  .join(' ');
+
+/**
+ * Display names for the demo projects, exported from the ideas marketplace,
+ * which is where they are actually written down. Without it the only name
+ * available is the directory slug, and "ExploreRVA" comes out "Explorerva".
+ */
+function loadProjectNames(rel) {
+  const path = `${rel}/project-names.json`;
+  try {
+    return JSON.parse(readRepoFile(path));
+  } catch {
+    return {};
+  }
+}
 
 /** Split a research markdown file into `# Section` blocks, keeping line numbers. */
 function splitSections(md) {
@@ -115,9 +152,15 @@ export function parsePostEventResearch() {
     return true;
   };
 
-  // `_shared-*` directories hold research common to several projects and are
-  // included; `_research-answers` is a different question/answer shape.
-  const projects = readdirSync(root)
+  const names = loadProjectNames(rel);
+
+  // An underscore marks a directory that is not a project: `_shared-*` holds
+  // research spanning several demos, `_parallel-research` is raw tool output.
+  // Their findings are real and are kept, but naming a Proposal after the
+  // folder invented a civic project called "Parallel-Research" that nobody
+  // proposed. Those directories get an evidence hub instead, named for the
+  // report. `_research-answers` is a question/answer shape this cannot read.
+  const dirs = readdirSync(root)
     .filter((d) => !d.startsWith('.') && d !== '_research-answers')
     .filter((d) => statSync(join(root, d)).isDirectory())
     // A directory named for a failed run ("unknown-corrupted") has no project
@@ -125,7 +168,9 @@ export function parsePostEventResearch() {
     // from being emitted as edges to a proposal that was never created.
     .filter((d) => !isPlaceholder(d));
 
-  for (const project of projects) {
+  const projects = dirs.map((d) => ({ dir: d, isProject: !d.startsWith('_') }));
+
+  for (const { dir: project, isProject } of projects) {
     const projectId = `n:proposal:${slug(project)}`;
     const projectDir = join(root, project);
     // Markdown carries the values; a sibling JSON adds citations and confidence
@@ -150,19 +195,43 @@ export function parsePostEventResearch() {
       const basis = indexBasis(output?.basis);
       const sections = splitSections(readRepoFile(mdRel));
 
-      // The project itself, described by whichever summary section exists.
-      if (!projectCreated) {
-        const summary = sections.find((s) => /summary$/.test(s.key));
-        const text = summary ? readProse(summary) : '';
-        projectCreated = addNode(makeNode({
-          id: projectId,
-          type: 'Proposal',
-          label: titleize(project),
-          description: text,
-          evidenceStatus: 'proposed',
-          provenance: provenanceFor(mdRel, summary?.lineNo ?? 1, text.slice(0, 200), null),
-          attrs: { origin: 'post-event research', project },
-        })) || projectCreated;
+      const summary = sections.find((s) => /summary$/.test(s.key));
+      const summaryText = summary ? readProse(summary) : '';
+
+      // What the findings in this file hang off. For a demo it is the proposal;
+      // for shared or raw research it is the report, which is what the file
+      // actually is.
+      let hubId = projectId;
+      let hubIsReport = false;
+      if (isProject) {
+        if (!projectCreated) {
+          const named = names[project];
+          projectCreated = addNode(makeNode({
+            id: projectId,
+            type: 'Proposal',
+            label: named?.name ?? renderSlug(project),
+            description: [named?.fullTitle, summaryText].filter(Boolean).join(' — '),
+            evidenceStatus: 'proposed',
+            provenance: provenanceFor(mdRel, summary?.lineNo ?? 1, summaryText.slice(0, 200), null),
+            attrs: { origin: 'post-event research', project },
+          })) || projectCreated;
+        }
+      } else {
+        hubId = `n:evidence:${slug(project)}-${slug(base)}`;
+        hubIsReport = true;
+        addNode(makeNode({
+          id: hubId,
+          type: 'Evidence',
+          // Named for its subject, not for the tool that produced it: the
+          // directory can be called "_parallel-research", which describes how
+          // the report was generated and nothing about what it says.
+          label: trim(renderSlug(base), 90),
+          description: [`Post-event research report (${project}/${mdFile}).`, summaryText]
+            .filter(Boolean).join(' '),
+          evidenceStatus: 'reported_but_unverified',
+          provenance: provenanceFor(mdRel, summary?.lineNo ?? 1, summaryText.slice(0, 200), null),
+          attrs: { origin: 'post-event research', report: `${project}/${mdFile}` },
+        }));
       }
 
       for (const section of sections) {
@@ -175,7 +244,7 @@ export function parsePostEventResearch() {
         const items = structured ? readFields(section) : null;
 
         const emit = (opts) => emitFinding({
-          ...opts, section, mdRel, basis, projectId, addNode, edges, questions,
+          ...opts, section, mdRel, basis, hubId, hubIsReport, addNode, edges, questions,
         });
 
         // Pain points: scoped to the population named in the section key.
@@ -208,7 +277,7 @@ export function parsePostEventResearch() {
           if (items?.length) {
             items.forEach((item, i) => emit({
               index: i, type: 'Problem', kind: 'systemic',
-              label: item.values.systemic_barrier ?? item.values.barrier ?? Object.values(item.values)[0],
+              label: problemLabel(item),
               item, notes: ['impact', 'evidence_source', 'evidence'],
             }));
           } else {
@@ -241,7 +310,7 @@ export function parsePostEventResearch() {
                 question: item.values.question ?? Object.values(item.values)[0] ?? '',
                 category: section.key.replace(/_questions$/, ''),
                 repo: REPO_ID,
-                relatedNodeIds: [q, projectId],
+                relatedNodeIds: [q, hubId],
                 provenance: provenanceFor(mdRel, section.lineNo, item.values.question ?? '', null),
               });
             }
@@ -318,15 +387,31 @@ export function parsePostEventResearch() {
   }
 
   // Some repos write their post-event research as free-form prose rather than
-  // the schema-mirrored format. Those yield no findings, so drop the project
-  // node rather than leave an unconnected placeholder in the graph.
-  const linked = new Set(edges.map((e) => e.source));
-  const kept = nodes.filter((n) => !(n.attrs?.project && !linked.has(n.id)));
+  // the schema-mirrored format. Those yield no findings, so drop the hub rather
+  // than leave an unconnected placeholder in the graph. A proposal hub is the
+  // source of its edges; a report hub is their target.
+  const linked = new Set(edges.flatMap((e) => [e.source, e.target]));
+  const kept = nodes.filter((n) => !((n.attrs?.project || n.attrs?.report) && !linked.has(n.id)));
 
   const byId = new Map();
   for (const e of edges) if (!byId.has(e.id)) byId.set(e.id, e);
 
   return { nodes: kept, edges: [...byId.values()], questions, filesExamined };
+}
+
+/**
+ * The field naming the problem in a barriers/limitations section.
+ *
+ * Falling through to the first field wrote a Problem called "SeeClickFix Sample
+ * Data Aug 2014 to Aug 2015", because the section led with the name of the
+ * dataset. A name field is the subject a problem is about, never the problem.
+ */
+function problemLabel(item) {
+  const keys = Object.keys(item.values);
+  const named = keys.find((k) => /(^|_)(systemic_barrier|barrier|limitation|challenge|gap|issue|problem)s?$/.test(k));
+  if (named) return item.values[named];
+  const notAName = keys.find((k) => !/(^|_)name$/.test(k));
+  return item.values[notAName ?? keys[0]];
 }
 
 /**
@@ -368,7 +453,7 @@ export function isPlaceholder(text) {
  */
 function emitFinding({
   index, type, kind, label, item, notes = [], linkType = 'ADDRESSES',
-  section, mdRel, basis, projectId, addNode, edges,
+  section, mdRel, basis, hubId, hubIsReport, addNode, edges,
 }) {
   const text = (label ?? '').trim();
   if (!text || isPlaceholder(text)) return null;
@@ -402,9 +487,20 @@ function emitFinding({
   // by more than one project, and each link is real. Duplicates are collapsed
   // by edge id before the parser returns.
   void created;
-  {
-    edges.push(makeEdge({
-      source: projectId,
+  // A proposal addresses its findings; a report only evidences them, so the
+  // edge runs the other way and says the weaker thing.
+  edges.push(makeEdge(hubIsReport
+    ? {
+      source: id,
+      target: hubId,
+      type: 'HAS_EVIDENCE',
+      description: `${titleize(kind)} documented by this post-event research report`,
+      evidenceStatus: 'reported_but_unverified',
+      confidence: 'medium',
+      provenance: [{ sourceDoc: mdRel, sourceLocation: `lines ${section.lineNo}-${section.lineNo}`, excerpt: text }],
+    }
+    : {
+      source: hubId,
       target: id,
       type: linkType,
       description: `${titleize(kind)} identified by post-event research for this project`,
@@ -412,6 +508,5 @@ function emitFinding({
       confidence: 'medium',
       provenance: [{ sourceDoc: mdRel, sourceLocation: `lines ${section.lineNo}-${section.lineNo}`, excerpt: text }],
     }));
-  }
   return id;
 }

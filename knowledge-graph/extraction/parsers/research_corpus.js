@@ -77,6 +77,31 @@ const STATUS_BY_TIER = {
 /** Scraper placeholders that show up in reference lists instead of real titles. */
 const GENERIC_TITLE = /^(fetched web page|pdf|untitled|home|document|web page|link|no title)$/i;
 
+/**
+ * A title lifted from a URL or filename, e.g.
+ * "the-usability-and-content-accessibility-of-the-e-government".
+ */
+function unslug(title) {
+  if (!/^[a-z0-9]+(-[a-z0-9]+){3,}$/.test(title)) return title;
+  return title.replace(/-/g, ' ').replace(/^./, (c) => c.toUpperCase());
+}
+
+/**
+ * Where a source lives, for citations that came with no title. The hostname
+ * alone is not an identity: fourteen distinct Open Data datasets were all
+ * labelled "data.richmondgov.com" and read as one repeated node.
+ */
+function locate(url, host) {
+  let tail = '';
+  try {
+    const u = new URL(url);
+    tail = (u.pathname + u.search).replace(/\/+$/, '');
+  } catch { return host; }
+  if (!tail || tail === '/') return host;
+  if (tail.length > 48) tail = `…${tail.slice(-47)}`;
+  return `${host}${tail}`;
+}
+
 function tierFor(url) {
   let host = '';
   try { host = new URL(url).hostname; } catch { return 'other'; }
@@ -239,15 +264,18 @@ export function parseResearchCorpus() {
     let host = s.url;
     try { host = new URL(s.url).hostname.replace(/^www\./, ''); } catch { /* keep raw */ }
     // Some reference entries carry a scraper placeholder instead of a title.
-    const usable = s.title && s.title.length > 3 && !GENERIC_TITLE.test(s.title);
-    const label = usable ? s.title : host;
+    const title = s.title?.trim();
+    const usable = title && title.length > 3 && !GENERIC_TITLE.test(title);
+    const label = usable ? unslug(title) : locate(s.url, host);
     nodes.push(makeNode({
       // Hash the URL rather than slugging it: slug() truncates at 80 chars, and
       // deep .gov and ArcGIS URLs share long prefixes, so slugs collided and
       // silently merged distinct sources.
       id: `n:source:${slug(host)}-${createHash('sha256').update(s.url).digest('hex').slice(0, 8)}`,
       type: 'Evidence',
-      label: label.slice(0, 120),
+      // Trimmed after the cut, not before: slicing a long page title lands
+      // mid-word as often as not, and left the label ending in a space.
+      label: label.length > 120 ? `${label.slice(0, 119).trimEnd()}…` : label,
       description: `${s.tier} source cited by ${s.citedBy.size} research report${s.citedBy.size === 1 ? '' : 's'} (${s.claimIds.length} claim${s.claimIds.length === 1 ? '' : 's'}).`,
       evidenceStatus: STATUS_BY_TIER[s.tier],
       attrs: {
