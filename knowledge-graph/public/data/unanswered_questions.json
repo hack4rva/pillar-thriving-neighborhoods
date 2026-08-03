@@ -795,40 +795,6 @@
   ]
  },
  {
-  "id": "q:participation-analytics-dashboard-equity-questions-1",
-  "question": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?",
-  "category": "equity",
-  "repo": "pillar-thriving-neighborhoods",
-  "relatedNodeIds": [
-   "n:question:what-protections-are-required-to-avoid-exposing-personally-identifiable-informat",
-   "n:proposal:participation-analytics-dashboard"
-  ],
-  "provenance": [
-   {
-    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
-    "sourceLocation": "lines 216-216",
-    "excerpt": "What protections are required to avoid exposing personally identifiable information while still reporting equity participation gaps (e.g., small-n suppression)?"
-   }
-  ]
- },
- {
-  "id": "q:participation-analytics-dashboard-equity-questions-2",
-  "question": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes “success” before entitlement milestones?",
-  "category": "equity",
-  "repo": "pillar-thriving-neighborhoods",
-  "relatedNodeIds": [
-   "n:question:which-richmond-300-priority-neighborhoods-and-big-moves-should-have-elevated-eng",
-   "n:proposal:participation-analytics-dashboard"
-  ],
-  "provenance": [
-   {
-    "sourceDoc": "post-event-research/participation-analytics-dashboard/jtbd_analysis.md",
-    "sourceLocation": "lines 216-216",
-    "excerpt": "Which Richmond 300 Priority Neighborhoods and Big Moves should have elevated engagement KPIs, and what constitutes “success” before entitlement milestones?"
-   }
-  ]
- },
- {
   "id": "q:participation-analytics-dashboard-prior-art-questions-0",
   "question": "Which comparable cities’ participation-equity dashboards or equity-mapping practices does Richmond want to emulate (metrics, visualization, governance)?",
   "category": "prior_art",

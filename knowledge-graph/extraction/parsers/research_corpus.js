@@ -138,6 +138,8 @@ export function parseResearchCorpus() {
   let seq = 0;
 
   const offTopic = [];
+  /** Reports that produced claims, named so the extraction report can list them. */
+  const reportsRead = [];
 
   for (const file of readdirSync(dir).filter((f) => f.endsWith('.md')).sort()) {
     const rel = `${RESEARCH_DIR}/${file}`;
@@ -193,10 +195,10 @@ export function parseResearchCorpus() {
         source: primary?.title ?? null,
         url: primary?.url ?? null,
         repo: REPO_ID,
-                        provenance: [{
-                          sourceDoc: rel,
-                          sourceLocation: `lines ${i + 1}-${i + 1}`,
-                          excerpt: raw.slice(0, 400),
+        provenance: [{
+          sourceDoc: rel,
+          sourceLocation: `lines ${i + 1}-${i + 1}`,
+          excerpt: raw.slice(0, 400),
           ...(primary?.url ? { url: primary.url } : {}),
           ...(primary?.title ? { sourceTitle: primary.title } : {}),
         }],
@@ -206,13 +208,14 @@ export function parseResearchCorpus() {
         // Not part of the evidenceRecord schema; stripped before writing and
         // used to wire claims to their source nodes and to the LLM pass.
         _evidenceStatus: status,
-                        _sources: withUrl,
-                        _report: rel,
-                        _line: i + 1,
-                        _raw: raw,
+        _sources: withUrl,
+        _report: rel,
+        _line: i + 1,
+        _raw: raw,
       });
     }
 
+    if (pending.length) reportsRead.push(rel);
     for (const c of pending) {
       c.id = `ev:R-${++seq}`;
       claims.push(c);
@@ -266,5 +269,14 @@ export function parseResearchCorpus() {
     }));
   }
 
-  return { claims, nodes, sources, stats: { reports, skipped, offTopic, claimCount: claims.length, sourceCount: nodes.length } };
+  return {
+    claims,
+    nodes,
+    sources,
+    stats: {
+      reports, skipped, offTopic, reportsRead,
+      claimCount: claims.length,
+      sourceCount: nodes.length,
+    },
+  };
 }

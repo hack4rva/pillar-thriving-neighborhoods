@@ -10,9 +10,15 @@ import type {
  * host several pillars side by side under `data/<slug>/` and pick between them
  * with `?pillar=<slug>`, which avoids shipping a copy of the whole bundle per
  * pillar. The slug is restricted to a flat name so it cannot escape `data/`.
+ *
+ * A multi-pillar deployment sets VITE_KG_DEFAULT_PILLAR so that the bare URL
+ * lands somewhere deliberate. Without it the root `data/` would have to hold a
+ * second copy of some pillar, which is duplicated bytes that go stale the first
+ * time that pillar is re-extracted.
  */
 function dataDir(): string {
-  const pillar = new URLSearchParams(location.search).get('pillar');
+  const pillar = new URLSearchParams(location.search).get('pillar')
+    || import.meta.env.VITE_KG_DEFAULT_PILLAR;
   return pillar && /^[a-z0-9-]+$/.test(pillar) ? `data/${pillar}/` : 'data/';
 }
 

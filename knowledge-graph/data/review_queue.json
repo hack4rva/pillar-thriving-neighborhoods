@@ -334,19 +334,5 @@
    "Keep separate"
   ],
   "decisionRequested": "Decide whether these are the same entity."
- },
- {
-  "id": "r:dup-zoning-ordinance",
-  "itemType": "node",
-  "proposed": "n:source:rva-gov-8fd67411 vs n:policy:zoning-ordinance",
-  "sourceExcerpt": "zoning ordinance",
-  "sourceLocation": "label comparison across extraction sources",
-  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
-  "confidence": "medium",
-  "alternatives": [
-   "Merge via extraction/aliases.json",
-   "Keep separate"
-  ],
-  "decisionRequested": "Decide whether these are the same entity."
  }
 ]

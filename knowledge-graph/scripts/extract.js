@@ -140,15 +140,77 @@ function linkSourcesToInventory(rc, inv) {
  * instead of being given provenance that does not resolve. That keeps this
  * script's output a pure function of the repository, model output included.
  */
+/**
+ * Reduce the open-question list to questions that are open, and to one entry
+ * each. Mutates in place; returns what it removed, for the report.
+ *
+ * Two sources feed this list — the evidence log's "Missing" section and the
+ * per-project gap lists in post-event research — and they overlap, so the same
+ * gap can be written twice under different ids. The graph deduplicates by id
+ * and so never showed it; the published count came from the list and did.
+ *
+ * A question the corpus has since struck through and marked resolved is also
+ * not open. It is dropped here rather than in the source file, because the
+ * strikethrough is the record of it having been answered.
+ */
+const RESOLVED = /~~.*~~|\b(RESOLVED|ANSWERED)\b/;
+
+function tidyQuestions(questions) {
+  const seen = new Map(); // normalized text -> kept question
+  const removed = { duplicates: 0, resolved: 0, resolvedTexts: [] };
+  const kept = [];
+  for (const q of questions) {
+    if (RESOLVED.test(q.question)) {
+      removed.resolved++;
+      removed.resolvedTexts.push(q.question);
+      continue;
+    }
+    // Identity follows the graph's: a question is the one its node is. Two
+    // sections of the same project can ask one thing in two wordings, which
+    // reads as two entries in the list and has always been one node. Falls back
+    // to the text where a question has no node of its own.
+    const qNode = (q.relatedNodeIds ?? []).find((id) => id.startsWith('n:question:'));
+    const norm = qNode ?? q.question.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const prior = seen.get(norm);
+    if (prior) {
+      // The duplicate can name related entities the first one did not.
+      prior.relatedNodeIds = [...new Set([...(prior.relatedNodeIds ?? []), ...(q.relatedNodeIds ?? [])])];
+      removed.duplicates++;
+      continue;
+    }
+    seen.set(norm, q);
+    kept.push(q);
+  }
+  questions.length = 0;
+  questions.push(...kept);
+  return removed;
+}
+
 /** Entity types whose names have to read like the name of a body. */
 const ORG_TYPES = new Set(['Organization', 'GovernmentAgency', 'Nonprofit', 'Foundation',
   'University', 'Employer', 'Vendor', 'TrainingProvider', 'LegislativeBody']);
+
+/**
+ * Whether a name is the name of something, rather than a word for a kind of
+ * thing. The model is asked for durable nameable entities and mostly obliges,
+ * but roughly one in six of what it returns is a concept lifted from the
+ * sentence — "asset_id", "geometry types", "diagnostic fields", "equipment",
+ * "existing 311 datasets". Those are what a claim is *about*; as nodes they
+ * accumulate edges while identifying nothing.
+ *
+ * English capitalizes proper names, which separates them cleanly, with two
+ * exceptions worth keeping: brands that begin on a lowercase letter (eVA, iCal,
+ * mRelief) and bare hostnames (data.census.gov, richmondva.legistar.com).
+ */
+const isProperName = (name) => /^[^a-z]/.test(name)
+  || /^[a-z][A-Z]/.test(name)
+  || /^[a-z0-9-]+(\.[a-z0-9-]+)+(\/|$|\s)/i.test(name);
 
 function buildCorpusGraph(record, rc, warnings) {
   const claimById = new Map(rc.claims.map((c) => [c.id, c]));
   const nodes = [];
   const edges = [];
-  const dropped = { staleClaim: 0, unknownEndpoint: 0, notAnOrg: 0 };
+  const dropped = { staleClaim: 0, unknownEndpoint: 0, notAnOrg: 0, notAName: 0 };
 
   // Provenance for anything derived from claims: the report line that said it,
   // plus the primary source that line cites. Two hops, both checkable.
@@ -181,14 +243,16 @@ function buildCorpusGraph(record, rc, warnings) {
   const byNorm = new Map(); // normalized name -> node id
 
   const skipped = new Set();
+  const skip = (name) => skipped.add(name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim());
   for (const e of record.entities) {
     const live = e.claimIds.filter((id) => claimById.has(id));
     if (!live.length) { dropped.staleClaim++; continue; }
+    if (!isProperName(e.name)) { skip(e.name); dropped.notAName++; continue; }
     // The model occasionally lifts a contact address or a URL out of a claim
     // and types it as an organization. An inbox is a way to reach a body, not
     // the body itself, so it does not get to be a node.
     if (ORG_TYPES.has(e.type) && !readOrganizations(e.name).length) {
-      skipped.add(e.name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim());
+      skip(e.name);
       dropped.notAnOrg++;
       continue;
     }
@@ -254,10 +318,10 @@ function buildCorpusGraph(record, rc, warnings) {
     }
   }
 
-  if (dropped.staleClaim || dropped.unknownEndpoint || dropped.notAnOrg) {
+  if (Object.values(dropped).some(Boolean)) {
     warnings.push(`[corpus] dropped ${dropped.staleClaim} stale-anchor, `
-      + `${dropped.unknownEndpoint} unresolved-endpoint and `
-      + `${dropped.notAnOrg} not-an-organization records`);
+      + `${dropped.unknownEndpoint} unresolved-endpoint, ${dropped.notAnOrg} not-an-organization `
+      + `and ${dropped.notAName} not-a-name records`);
   }
   return { nodes, edges };
 }
@@ -404,6 +468,8 @@ function main() {
       provenance: q.provenance,
     });
   }
+
+  const questionStats = tidyQuestions(questions);
 
   // External research: evidence records + Evidence nodes (mirrors the
   // evidence-log parser), new entities/relationships/flows, updates to
@@ -553,6 +619,24 @@ function main() {
     q.answer = qa.answer;
   }
 
+  // A question the corpus struck through is no longer open, so its node goes
+  // with its list entry. Matched on text because the node id is derived from
+  // the source section rather than from the question.
+  if (questionStats.resolvedTexts.length) {
+    const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const resolved = questionStats.resolvedTexts.map(norm);
+    const gone = new Set(nodes
+      .filter((n) => n.type === 'ResearchQuestion'
+        && resolved.some((r) => r.startsWith(norm(n.description || n.label).slice(0, 60))))
+      .map((n) => n.id));
+    if (gone.size) {
+      for (let i = nodes.length - 1; i >= 0; i--) if (gone.has(nodes[i].id)) nodes.splice(i, 1);
+      for (let i = edges.length - 1; i >= 0; i--) {
+        if (gone.has(edges[i].source) || gone.has(edges[i].target)) edges.splice(i, 1);
+      }
+    }
+  }
+
   // Stamp extraction time (IDs stay deterministic; only timestamps vary).
   for (const n of nodes) n.extractedAt = RUN_TS;
   for (const e of edges) e.extractedAt = RUN_TS;
@@ -565,6 +649,8 @@ function main() {
 
   // 4. Metrics ---------------------------------------------------------------
   const metrics = computeMetrics(nodes, edges, flows, evidenceRecords, reviewQueue, brokenEdges, verification);
+  metrics.questionsDeduplicated = questionStats.duplicates;
+  metrics.questionsResolvedSinceLogged = questionStats.resolved;
   metrics.externalResearch = {
     researchedAt: external.researchedAt,
     evidenceRecords: external.evidence.length,
@@ -600,7 +686,21 @@ function main() {
   write('extraction_report.json', {
     generatedAt: RUN_TS,
     repo: REPO_ID,
-    filesExamined: collectFilesExamined(cip, ev, inv, per.nodes, entityRecords, relationshipRecords, curatedFlows, curatedQuestions),
+    // The research reports are named individually rather than counted, because
+    // the corpus is the largest input by far and which of it was read — and
+    // which was set aside as off brief — is the first thing anyone auditing
+    // this graph needs to know.
+    filesExamined: [
+      ...collectFilesExamined(cip, ev, inv, per.nodes, entityRecords, relationshipRecords, curatedFlows, curatedQuestions),
+      ...rc.stats.reportsRead,
+    ],
+    researchCorpus: {
+      reportsRead: rc.stats.reportsRead.length,
+      reportsOffBrief: rc.stats.offTopic,
+      reportsWithoutReferences: rc.stats.skipped,
+      claimsIndexed: rc.claims.length,
+      primarySourcesCited: rc.nodes.length,
+    },
     provenanceVerification: verification,
     warnings,
     metrics,

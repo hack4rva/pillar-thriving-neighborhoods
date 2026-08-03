@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-02T21:03:47.883Z",
+ "generatedAt": "2026-08-02T23:12:19.197Z",
  "repo": "pillar-thriving-neighborhoods",
  "filesExamined": [
   "admin/evidence_log.md",
@@ -20,8 +20,123 @@
   "post-event-research/rva-transformers/jtbd_analysis.md",
   "post-event-research/rva-transformers/pain_points.md",
   "post-event-research/simby/jtbd_analysis.md",
-  "post-event-research/simby/pain_points.md"
+  "post-event-research/simby/pain_points.md",
+  "research/00_pillar_summary_context.md",
+  "research/91_top_10_hypotheses_to_test.md",
+  "research/92_red_flags.md",
+  "research/93_missing_information_gaps.md",
+  "research/A1_problem_landscape_housing_compliance.md",
+  "research/A4_problem_landscape_root_causes.md",
+  "research/B1_users_residents_development.md",
+  "research/B2_users_housing_staff.md",
+  "research/B3_users_planning_commission.md",
+  "research/B4_users_stakeholders_map.md",
+  "research/C1_services_legistar_landscape.md",
+  "research/C3_services_housing_programs.md",
+  "research/C5_services_digital.md",
+  "research/D1_data_legistar.md",
+  "research/D2_data_gis_development.md",
+  "research/D3_data_housing_programs.md",
+  "research/D4_data_hud_rental.md",
+  "research/D5_data_quality.md",
+  "research/E1_prior_art_dev_trackers.md",
+  "research/E2_prior_art_legistar_tools.md",
+  "research/E3_prior_art_housing_compliance.md",
+  "research/E4_prior_art_failures.md",
+  "research/E5_prior_art_weekend_viable.md",
+  "research/F1_opportunities_ranked.md",
+  "research/F2_opportunities_development_notify.md",
+  "research/G3_risks_inclusion.md",
+  "research/G4_risks_data_gaps.md",
+  "research/G5_risks_guardrails.md",
+  "research/H1_mvp_48hr_framework.md",
+  "research/H2_mvp_development_tracker.md",
+  "research/H4_mvp_data_constraints.md",
+  "research/H5_mvp_scope_boundaries.md",
+  "research/I1_demo_archetypes.md",
+  "research/I2_demo_development_tracker_pitch.md"
  ],
+ "researchCorpus": {
+  "reportsRead": 34,
+  "reportsOffBrief": [
+   {
+    "file": "research/A2_problem_landscape_development_transparency.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/A3_problem_landscape_compare_statements.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/A5_problem_landscape_neighborhood_change.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/B5_users_digital_equity.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/C2_services_planning_process.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/C4_services_gaps.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/F3_opportunities_compliance_monitor.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/F4_opportunities_where_software.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/F5_opportunities_do_not_build.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/G1_risks_inaccurate_summaries.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/G2_risks_compliance_overreach.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/H3_mvp_compliance_dashboard.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/I3_demo_compliance_dashboard_pitch.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/I4_demo_credibility.md",
+    "localMentionsPerKWord": 0
+   },
+   {
+    "file": "research/I5_demo_framing.md",
+    "localMentionsPerKWord": 0
+   }
+  ],
+  "reportsWithoutReferences": [
+   {
+    "file": "research/01_master_research_prompt.md",
+    "reason": "corpus scaffolding, not findings"
+   },
+   {
+    "file": "research/INDEX.md",
+    "reason": "corpus scaffolding, not findings"
+   },
+   {
+    "file": "research/validation_report.md",
+    "reason": "corpus scaffolding, not findings"
+   }
+  ],
+  "claimsIndexed": 576,
+  "primarySourcesCited": 290
+ },
  "provenanceVerification": {
   "exact": 0,
   "moved": 0,
@@ -31,12 +146,12 @@
  },
  "warnings": [
   "[demote] 52 sentence-shaped Problem/Need nodes moved to the evidence layer",
-  "[corpus] dropped 0 stale-anchor, 5 unresolved-endpoint and 3 not-an-organization records",
+  "[corpus] dropped 0 stale-anchor, 63 unresolved-endpoint, 2 not-an-organization and 55 not-a-name records",
   "[merge] duplicate node id n:geographicregion:richmond: provenance merged"
  ],
  "metrics": {
-  "totalNodes": 1004,
-  "totalEdges": 2137,
+  "totalNodes": 950,
+  "totalEdges": 1962,
   "financialFlows": 0,
   "financialEdges": 0,
   "totalDocumentedFundingUSD": 0,
@@ -46,8 +161,8 @@
   "flowsWithUnknownDestination": 0,
   "flowsWithUnknownSource": 0,
   "fundingWithUnknownDestinationUSD": 0,
-  "intendedBeneficiaryNodes": 20,
-  "needsTotal": 27,
+  "intendedBeneficiaryNodes": 19,
+  "needsTotal": 26,
   "needsWithNoFunding": [
    "n:need:a-development-proposal-is-submitted",
    "n:need:a-new-development-is-proposed-in-my-neighborhood",
@@ -67,7 +182,6 @@
    "n:need:no-consolidated-view-across-different-funding-layers",
    "n:need:onerous-and-inequitable-information-discovery-process",
    "n:need:reliance-on-labor-intensive-and-ineffective-outreach-methods",
-   "n:need:resource-limits",
    "n:need:shifting-year-end-requirements-and-changes-to-compliance-portals",
    "n:need:split-workflows-across-systems",
    "n:need:status-timeliness-uncertainty",
@@ -83,10 +197,10 @@
   "claimsLackingPrimaryEvidence": [],
   "inferredRelationships": 0,
   "disputedRelationships": 0,
-  "reportedButUnverifiedRelationships": 580,
+  "reportedButUnverifiedRelationships": 522,
   "brokenReferences": 0,
-  "duplicateCandidates": 25,
-  "reviewQueueSize": 25,
+  "duplicateCandidates": 24,
+  "reviewQueueSize": 24,
   "evidenceRecords": 650,
   "provenanceCoverage": 100,
   "provenanceVerification": {
@@ -96,6 +210,8 @@
    "missing": 0,
    "external": 0
   },
+  "questionsDeduplicated": 2,
+  "questionsResolvedSinceLogged": 0,
   "externalResearch": {
    "researchedAt": null,
    "evidenceRecords": 0,
