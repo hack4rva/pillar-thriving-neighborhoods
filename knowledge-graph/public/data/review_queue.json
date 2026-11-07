@@ -1,0 +1,198 @@
+[
+ {
+  "id": "r:dup-city-of-richmond",
+  "itemType": "node",
+  "proposed": "n:org:city-of-richmond vs n:source:governmentjobs-com-2874f9df",
+  "sourceExcerpt": "City of Richmond",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-webapi-legistar-com-v1-richmondva-matters-top-1",
+  "itemType": "node",
+  "proposed": "n:source:webapi-legistar-com-f1365693 vs n:source:webapi-legistar-com-6b0c9294",
+  "sourceExcerpt": "webapi.legistar.com/v1/richmondva/Matters?$top=1",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-webapi-legistar-com-v1-richmondva-events-top-1",
+  "itemType": "node",
+  "proposed": "n:source:webapi-legistar-com-c37fdf87 vs n:source:webapi-legistar-com-d6c33a36",
+  "sourceExcerpt": "webapi.legistar.com/v1/richmondva/Events?$top=1",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-city-of-richmond",
+  "itemType": "node",
+  "proposed": "n:org:city-of-richmond vs n:governmentagency:city-of-richmond",
+  "sourceExcerpt": "City of Richmond",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-hud",
+  "itemType": "node",
+  "proposed": "n:org:hud vs n:governmentagency:hud",
+  "sourceExcerpt": "HUD",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-walking-skeleton",
+  "itemType": "node",
+  "proposed": "n:source:wiki-c2-com-97c14532 vs n:policy:walking-skeleton",
+  "sourceExcerpt": "Walking Skeleton",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-city-data-services",
+  "itemType": "node",
+  "proposed": "n:source:citydataservices-net-3b5f4ad0 vs n:dataset:city-data-services",
+  "sourceExcerpt": "City Data Services",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-richmond-geohub",
+  "itemType": "node",
+  "proposed": "n:source:richmond-geo-hub-cor-hub-arcgis-com-9886ad7f vs n:dataset:richmond-geohub",
+  "sourceExcerpt": "Richmond GeoHub",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-cpd-maps",
+  "itemType": "node",
+  "proposed": "n:source:egis-hud-gov-4858bbbb vs n:dataset:cpd-maps",
+  "sourceExcerpt": "CPD Maps",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-gbfs",
+  "itemType": "node",
+  "proposed": "n:source:bcycle-com-ae3dd8d1 vs n:dataset:gbfs",
+  "sourceExcerpt": "GBFS",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-mjumbe-poe",
+  "itemType": "node",
+  "proposed": "n:source:about-mjumbepoe-com-63734886 vs n:organization:mjumbe-poe",
+  "sourceExcerpt": "Mjumbe Poe",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-nyc-dataportal-terms-of-use",
+  "itemType": "node",
+  "proposed": "n:source:nyc-gov-46fd96a6 vs n:policy:nyc-dataportal-terms-of-use",
+  "sourceExcerpt": "NYC DataPortal Terms of Use",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-richmond-zoning-map",
+  "itemType": "node",
+  "proposed": "n:source:richmond-geo-hub-cor-hub-arcgis-com-c8095760 vs n:dataset:richmond-zoning-map",
+  "sourceExcerpt": "Richmond Zoning Map",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ },
+ {
+  "id": "r:dup-virginia-code-15-2-2204",
+  "itemType": "node",
+  "proposed": "n:org:virginia-code-15-2-2204 vs n:policy:virginia-code-15-2-2204",
+  "sourceExcerpt": "Virginia Code § 15.2-2204",
+  "sourceLocation": "label comparison across extraction sources",
+  "rationale": "Two nodes share the same normalized label; they may be the same entity and need alias resolution.",
+  "confidence": "medium",
+  "alternatives": [
+   "Merge via extraction/aliases.json",
+   "Keep separate"
+  ],
+  "decisionRequested": "Decide whether these are the same entity."
+ }
+]

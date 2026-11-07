@@ -1,0 +1,28 @@
+Opportunities F1 — Ranked Opportunity Spaces for Thriving Neighborhoods
+
+Rank the buildable opportunity spaces for this pillar from most to least hackathon-viable, using the following criteria:
+- Clarity of user and problem
+- Availability and accessibility of required data
+- Buildability in 48 hours by a mixed team
+- Demo credibility for judges
+- Risk of misleading users or overclaiming
+- Continuation pathway
+
+Rank at minimum:
+1. Neighborhood development notifier (address-based Legistar + GeoHub lookup)
+2. Legistar plain-language translator
+3. Development proposal map
+4. Affordable housing portfolio tracker (staff tool)
+5. Housing investment dashboard (public-facing)
+6. Neighborhood change visualizer
+
+For each, provide:
+- Estimated build hours for a core demo
+- Primary data dependency and risk
+- User value in one sentence
+- Whether it should be pursued, modified, or deprioritized
+
+Output
+- Ranked list with rationale
+- Top recommendation with scoping advice
+- "Do not build" list with brief reason for each

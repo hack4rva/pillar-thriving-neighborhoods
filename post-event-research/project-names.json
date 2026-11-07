@@ -1,0 +1,38 @@
+{
+  "affordable-housing-dashboard": {
+    "name": "Affordable Housing Compliance Dashboard",
+    "fullTitle": "Affordable Housing Compliance Dashboard"
+  },
+  "hud-rent-cap-validator": {
+    "name": "HUD Rent Cap Validator",
+    "fullTitle": "HUD Rent Cap Validator"
+  },
+  "participation-analytics-dashboard": {
+    "name": "Participation Analytics Dashboard",
+    "fullTitle": "Participation Analytics Dashboard"
+  },
+  "renter-aware-notifications": {
+    "name": "Renter-Aware Notifications",
+    "fullTitle": "Renter-Aware Notifications"
+  },
+  "rva-development-tracker": {
+    "name": "RVA Development Tracker",
+    "fullTitle": "RVA Development Tracker"
+  },
+  "rva-neighborhood-watch": {
+    "name": "RVA Neighborhood Watch",
+    "fullTitle": "RVA Neighborhood Watch"
+  },
+  "rva-plotlines": {
+    "name": "RVA Plotlines",
+    "fullTitle": "RVA Plotlines — Zoning & Legislative Change Discovery"
+  },
+  "rva-transformers": {
+    "name": "RVA Transformers",
+    "fullTitle": "RVA Transformers — Unified City Navigation Platform"
+  },
+  "simby": {
+    "name": "SIMBY",
+    "fullTitle": "SIMBY — Soon In My Backyard"
+  }
+}

@@ -1,0 +1,18 @@
+Risks G2 — Risk of Compliance Determination Overreach
+
+Analyze the specific risks of a housing compliance monitoring tool making or implying compliance determinations about funded developments.
+
+Cover:
+- What a "compliance determination" is and why it is a City official function, not a software function
+- How a tool might inadvertently imply compliance or non-compliance: language choices, color coding (red/green flags), thresholds without context
+- The legal and reputational consequences if a tool incorrectly flags a development as non-compliant
+- How developer and City relationships could be damaged by a public-facing compliance tool
+- What the difference is between "surfacing information for staff review" and "making a compliance determination"
+- Required disclaimer language for any compliance-adjacent tool
+- How to design a staff-support tool that helps without overreaching
+
+Output
+- Risk assessment with severity and likelihood
+- Language guardrails: what words and UI patterns to avoid
+- Mitigations for each overreach risk
+- Safe framing: how to present compliance-adjacent information without implying determinations

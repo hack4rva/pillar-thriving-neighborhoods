@@ -1,0 +1,20 @@
+User & Stakeholder B5 — Digital Access and Equity in Affected Richmond Neighborhoods
+
+Investigate the digital access landscape in Richmond neighborhoods most affected by development pressure and housing affordability challenges.
+
+Focus on:
+- Smartphone ownership and broadband access rates in neighborhoods like Church Hill, Jackson Ward, Gilpin Court area, Southside Richmond
+- Digital literacy and comfort with web-based civic tools among lower-income and older residents
+- Language access: what languages are spoken in affected neighborhoods beyond English
+- Existing digital equity programs in Richmond (FCC Affordable Connectivity Program, library access, etc.)
+- What device and connectivity assumptions are safe for a neighborhood development tool
+- How the digital equity gap affects who can benefit from a Legistar-based tool
+
+Use available public data sources: FCC broadband maps, Census ACS, Richmond Open Data Portal.
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Design implications for a neighborhood development tool that aims to reach all affected residents
+- What offline or phone-based alternatives should be mentioned in a responsible prototype

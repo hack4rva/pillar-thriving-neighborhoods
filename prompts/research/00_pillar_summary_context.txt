@@ -1,0 +1,16 @@
+Pillar Summary (Context Only)
+
+Core challenge
+Pillar 2, Thriving Neighborhoods, centers on two practical Richmond problems: making it easier for residents to discover and understand development proposals in their neighborhoods, and helping the City track and verify compliance with affordable housing agreements. The first problem is stronger for hackathon teams (rubric score 26/32, public data path exists via Legistar and GeoHub). The second has a data-readiness flag and requires careful scoping to avoid depending on confidential internal City data.
+
+Likely users
+Richmond residents who want to know about development near their homes; City housing staff who monitor affordable housing compliance; nonprofit organizations that support residents in the planning process; Planning Commission staff who manage development review. Secondary users include journalists covering neighborhood change, housing advocates, and neighborhood association leaders.
+
+Likely civic opportunity areas
+Development proposal discovery and notification tools, plain-language translation of Legistar records and Planning Commission staff reports, affordable housing portfolio trackers for staff, development proposal maps, neighborhood change visualizers, housing investment dashboards using public data.
+
+Major constraints
+The official Legistar record system must remain the source of truth. No tool should imply official City approval or endorsement. Affordable housing compliance data is primarily internal; teams should scope to publicly available records (Legistar ordinances, HUD data) rather than internal City databases. Legistar API access must be confirmed before building. Plain-language summaries must be clearly labeled as interpretations and linked back to official records.
+
+Likely categories of viable hackathon solutions
+Weekend-buildable prototypes include: address-based development lookup tools using Legistar and GeoHub; plain-language agenda translators using LLM-assisted summarization; staff-facing compliance dashboards seeded with public data; development proposal maps using GeoHub layers. Less viable: real-time notification systems requiring push infrastructure; tools requiring confidential housing contract data; systems that determine compliance or predict planning outcomes.

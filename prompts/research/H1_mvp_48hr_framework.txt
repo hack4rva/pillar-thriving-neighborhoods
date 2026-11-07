@@ -1,0 +1,17 @@
+MVP Feasibility H1 — 48-Hour Build Framework for Thriving Neighborhoods
+
+Produce a practical framework for what can be built in 48 hours for this pillar, given typical hackathon team compositions (2–5 people, mixed technical and non-technical skills).
+
+Cover:
+- What can be prototyped in 48 hours vs. what takes a month
+- Typical team role breakdown for a neighborhood development tool: data wrangler, frontend dev, UX/content designer, product lead
+- Hour-by-hour rough schedule for a 48-hour build: discovery, data access, core flow, content, styling, demo prep
+- What must be pre-seeded or mocked for the demo vs. what can be live data
+- How to scope for reliability: prefer static pre-fetched data over live API calls for the demo
+- What stretch goals are realistic if the core is done early
+
+Output
+- 48-hour framework (table or timeline)
+- Role assignments for different MVP shapes
+- Pre-seeded vs. live data decision guide
+- What must be done by hour 12, 24, and 36 to ensure a demo-ready product by hour 48

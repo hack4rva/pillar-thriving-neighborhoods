@@ -1,0 +1,1312 @@
+{
+  "run_id": "trun_1848795af0f24b80ba428b70806c0238",
+  "interaction_id": "trun_1848795af0f24b80ba428b70806c0238",
+  "result_url": "https://platform.parallel.ai/play/deep-research/trun_1848795af0f24b80ba428b70806c0238",
+  "status": "completed",
+  "output": {
+    "basis": [
+      {
+        "field": "legistar_api_client_details",
+        "reasoning": "The specified fine-grained field value includes that the API client slug is richmondva and that it is publicly accessible without a token, with an OData URL to access Matters. There are excerpts that show the Richmond VA Legistar endpoint under the Legistar Web API, including attempts to access v1/richmondva/ (which confirms the slug and the target path) and companion notes indicating access to Matter endpoints via the v1 client path. There is additional general guidance that some Legistar clients require API tokens, and that GET requests may return only publicly visible items, which supports the possibility of public access without a token for at least some endpoints. The exposed OData URL format for Matters aligns with the OData-style querying guidance, demonstrating how the endpoint would be constructed and paged. While some excerpts show error responses (404s) when hitting the Richmond VA slug, other excerpts provide enough direct context to support the stated slug and public-accessable OData URL as a valid configuration for the client, with token usage being optional depending on the client. Therefore, the assembled evidence supports the components of the fine-grained field value, though actual runtime accessibility may vary by server state. ",
+        "citations": [
+          {
+            "url": "https://webapi.legistar.com/v1/richmondva/",
+            "excerpts": [
+              "Server Error in '/' Application.",
+              "The resource cannot be found.",
+              "scription:** HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly",
+              "equested URL:** /v1/richmondv"
+            ],
+            "title": "The resource cannot be found."
+          },
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "To view all agenda matters, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters",
+              "GET requests return only the items marked as public and visible on InSite.",
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0"
+            ],
+            "title": "Legistar Web API"
+          },
+          {
+            "url": "https://webapi.legistar.com/Home/Examples",
+            "excerpts": [
+              "The basics of the ODATA URL setup are here: https://www. odata .org/ documentation / odata -version-3-0/url-conventions/. The ODATA documentation does not cover"
+            ],
+            "title": "Examples - Legistar Web API - Granicus"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "energov_permit_system_data_access",
+        "reasoning": "The very strongest signal is that the EnerGov system is discussed in the context of an Online Permit Portal with a login URL, which demonstrates that access is mediated through a web portal. This supports the notion that public interaction is via the portal rather than a documented public API or data export endpoint. Additional excerpts describe the Online Permit Portal capabilities (submitting plans, applying and paying for permits, requesting inspections, and checking status), reinforcing the interpretation that EnerGov access is portal-based. There is no excerpt that provides a public API URL, export format, or API documentation for EnerGov, which aligns with the field value claim that there is no public API or data export capability. Taken together, the excerpts cumulatively support the view that EnerGov access is via the portal rather than an exposed public API, though they do not contain an explicit negative assertion statement. The connection to EnerGov\u2019s public API absence is inferred from the portal-centric content rather than direct API confirmation.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf",
+            "excerpts": [
+              "Navigate to the Online Permit portal: https://energov.richmondgov.com/EnerGov_Prod/selfservice#/login. Click the Log In option on the Online Permit Portal Home"
+            ],
+            "title": "[PDF] City Of Richmond Online Permit Portal User Guide - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential\u00a0..."
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers",
+        "reasoning": "The most relevant content directly provides an ArcGIS REST endpoint for a Plan of Development layer, matching one of the items in the finegrained field value. Specifically, the raw REST URL for the PlanOfDevelopment service is presented, which aligns with the field's rest_endpoint_url entry for that layer. Additional highly relevant excerpts describe Plans of Development in the Richmond GeoHub context and outline that Plans of Development involve related project types, framing the same dataset family and its accessibility through ArcGIS REST endpoints. Supporting context about other planning/zoning layers (Special Use Permits and Board of Zoning Appeals) appears in excerpts that discuss their presence in ArcGIS portals or ArcGIS Online pages and in one case explicitly notes that a direct REST endpoint is not provided in the source material but can be reached by navigating the item page to access the REST endpoint, which mirrors the rest_endpoint_url field that may be derived via the source page. A related excerpt confirms the existence of a Board of Zoning Appeals dataset and notes how to locate the REST endpoint by first finding the relevant item page and then accessing the FeatureServer REST endpoint, which corresponds to the idea of an endpoint being accessible though not directly stated in a single line. Another excerpt catalogs a Special Use Permits item with a page that shows the data sources; it suggests that the endpoint may be accessible after engaging with the source data page, which supports the notion of access without a hard-coded URL in the body of the excerpt but still confirms its presence in the ArcGIS portal. Collectively, these excerpts corroborate the presence of the requested planning/zoning layers (Plans of Development, Special Use Permits, Board of Zoning Appeals) and the pattern of retrieving REST endpoints via ArcGIS items/pages, matching the structure seen in the finegrained field value. ",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0",
+              "Plan of development for a 17-story office complex with ground floor retail at 10th and Canal. 10/9/2008, 5:00 PM, richard.morton_cor, 6/29/2022",
+              "Plans of Development in the city of Richmond, Virginia.",
+              "View Data Source Select to open in a new tab",
+              "Open in ArcGIS Online Select to open in a new tab",
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6",
+              "June 29, 2022 at 1:13:50 PM GMTInfo Updated",
+              "June 29, 2022 at 1:13:38 PM GMTData Updated",
+              "April 17, 2018 at 6:54:37 PM GMTPublished Date",
+              "Records: 2,109"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/search.html?q=tags:%22Richmond%22",
+            "excerpts": [
+              "Board of Zoning Appeals. \u202dFeature layer Mar 23, 2026. RM Richard Morton\u202c ... Special Use Permit; SUP; Commercial; Priority Street; basemap; Richmond GIS; 3DEP"
+            ],
+            "title": "Richmond - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          },
+          {
+            "url": "https://www.arcgis.com/apps/dashboards/cc2d02a414e840db91c400f5cfcd38fe",
+            "excerpts": [
+              "Layers. Basemaps. Expand. More. Esri, CGIAR, USGS | City of Richmond, VGIN, Esri, TomTom, Garmin, SafeGraph, FAO, METI/NASA, USGS, EPA, NPS, USFWS. Powered by"
+            ],
+            "title": "Development Tracker"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=33d85d258540436db2a8305ae634d34c",
+            "excerpts": [
+              "Sep 29, 2023 \u2014 Shows development projects in the Richmond Region visualizing amount of residential units included in a project. Data is 2019\u2013Present."
+            ],
+            "title": "Development Tracking Footprint - Residential Units"
+          },
+          {
+            "url": "https://experience.arcgis.com/experience/7963b39b52124a5082eeca70e7dcaa99",
+            "excerpts": [
+              "Richmond Regional Development Tracker. This mapping tool displays development projects in the Richmond Region, which includes the City of Richmond and its"
+            ],
+            "title": "Development Map"
+          },
+          {
+            "url": "https://richmondbizsense.com/new-bizsense-development-tracker/",
+            "excerpts": [
+              "A robust GIS-based interactive mapping system to help you keep track of all the latest real estate developments in the Richmond region."
+            ],
+            "title": "BizSense Development Tracker"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "geohub_development_tracker_details",
+        "reasoning": "The finegrained field seeks the update cadence, any documented SLA, and the last-updated date for the GeoHub Development Tracker layer. The strongest corroboration comes from excerpts that directly reference the Development Tracker resources: one excerpt points to the Development Tracker dashboard on ArcGIS, and another describes the Richmond Regional Development Tracker as a mapping tool showing development projects. These show the existence and context of the tracker layer but do not specify cadence or SLA, aligning with the observation that there is no formal cadence or SLA documented in the visible public metadata. Related GeoHub items about Plans of Development provide explicit metadata cues (data updated, published date, and record counts) for closely connected datasets; while these do not answer the tracker cadence directly, they offer a proxy indication of how update timestamps are represented for related layers and demonstrate that some datasets have dated metadata, unlike the tracker itself in the provided sources. Consequently, we can assert that there is no explicit documented cadence or SLA for the GeoHub Development Tracker in the cited sources, and the most concrete date-related information comes from the Plans of Development dataset metadata, which indicates data freshness but not the tracker\u2019s update cadence.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/apps/dashboards/cc2d02a414e840db91c400f5cfcd38fe",
+            "excerpts": [
+              "Layers. Basemaps. Expand. More. Esri, CGIAR, USGS | City of Richmond, VGIN, Esri, TomTom, Garmin, SafeGraph, FAO, METI/NASA, USGS, EPA, NPS, USFWS. Powered by"
+            ],
+            "title": "Development Tracker"
+          },
+          {
+            "url": "https://experience.arcgis.com/experience/7963b39b52124a5082eeca70e7dcaa99",
+            "excerpts": [
+              "Richmond Regional Development Tracker. This mapping tool displays development projects in the Richmond Region, which includes the City of Richmond and its"
+            ],
+            "title": "Development Map"
+          },
+          {
+            "url": "https://geohub-vadeq.hub.arcgis.com/pages/69217a67dd8a4f95aca2ee5ada797853",
+            "excerpts": [
+              "Virginia REST and Basemap Services. Contact Us. Mailing Address: Street Address: P.O. Box 1105 1111 East Main St. Suite 1400. Richmond, VA 23218 Richmond, VA"
+            ],
+            "title": "External Agency Resources and Links | Virginia Environmental Data ..."
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "Plan of development for a 17-story office complex with ground floor retail at 10th and Canal. 10/9/2008, 5:00 PM, richard.morton_cor, 6/29/2022",
+              "June 29, 2022 at 1:13:38 PM GMTData Updated",
+              "Records: 2,109"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "unconfirmed_information_summary",
+        "reasoning": "The most directly relevant information comes from segments that explicitly describe paging and limits as well as public visibility constraints. For example, the statement that query replies are limited to 1000 responses directly supports the notion that there are known paging or result-size limits, even though the exact numbers for a broad dataset (like total legislative matters or the oldest record date) require live queries. The fact that GET responses return only items marked as public and visible on InSite supports the claim that public accessibility without tokens may be constrained by visibility rules. The guidance to use paging and filtering to limit queries reinforces the need for iterative data retrieval to approach the full dataset, aligning with the claim that a precise total count and date range require multiple requests. Documentation or examples showing how to construct OData URLs (e.g., using $top and $skip) corroborate the method to retrieve data incrementally, which is consistent with the need to perform live API calls to determine exact counts or extents. Mentions that some clients require API tokens and how tokens can be supplied as URL parameters speak to token-based access, which is relevant to assessing whether the Richmond Legistar instance is publicly accessible without a token. References to OData URL conventions and filtering illustrate the mechanism to access data rather than confirm a fully token-free public endpoint. There are also references to specific endpoints and examples, which are supportive of understanding the available API surface, though they do not resolve the exact counts or age range without live queries. Finally, some results indicate error conditions such as resource-not-found messages, which can imply API availability issues or endpoint-specific problems, but these are not definitive about the general state of accessibility or SLA. Taken together, these excerpts support the high-level observation that certain operational details (totals, oldest record dates, SLA for GeoHub, and precise CORS/rate-limit policies) are not definitively documented in the provided material, while they do provide practical guidance on how to query and paginate data and on token-based access expectations.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "Query replies are limited to 1000 responses. Despite this limit, some calls can still return large amounts of data.",
+              "GET requests return only the items marked as public and visible on InSite.",
+              "Use paging and filtering to limit queries. Following this approach reduces server load and speeds up responses.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "To view all agenda matters using the ODATA parameters by limiting larger set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=10",
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "If you have a token, add it as a URL parameter to your API request.\nFor example: https://webapi.legistar.com/v1/{ Client}/matters?token=verylongbase64token"
+            ],
+            "title": "Legistar Web API"
+          },
+          {
+            "url": "https://webapi.legistar.com/Home/Examples",
+            "excerpts": [
+              "The basics of the ODATA URL setup are here: https://www. odata .org/ documentation / odata -version-3-0/url-conventions/. The ODATA documentation does not cover",
+              "These examples will help you get started with the Legistar Web API. To use the URLs below, replace {Client} with your client name. Some clients require use of an API Token .",
+              "To see all agenda matters, the endpoint is:\n```\nhttps://webapi.legistar.com/v1/{Client}/matters\n```"
+            ],
+            "title": "Examples - Legistar Web API - Granicus"
+          },
+          {
+            "url": "https://webapi.legistar.com/v1/richmondva/",
+            "excerpts": [
+              "Server Error in '/' Application.",
+              "The resource cannot be found.",
+              "scription:** HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly",
+              "equested URL:** /v1/richmondv"
+            ],
+            "title": "The resource cannot be found."
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "legistar_api_technical_parameters",
+        "reasoning": "- The statement about a hard limit of 1000 items per API response is directly supported by the excerpt noting that query replies are limited to 1000 responses, which aligns with the claimed 1000-item maximum and the need to paginate to retrieve more items.\n- To retrieve more than 1000 records, the Legistar API documented approach is to use ODATA parameters such as $top and $skip, which matches the cited rate-limiting/pagination pattern. This corroborates the pagination mechanism implied by the fine-grained field value.\n- The use of ODATA for filtering and paging is further reinforced by examples showing endpoints with $top and $skip, and guidance on using ODATA parameters to page output.\n- Some excerpts mention the option of including an API token in requests, which relates to access control in practice and may influence how rate limits or access controls are enforced in real deployments. This supports the notion that authentication considerations exist alongside rate-limiting/paging, though it does not directly confirm CORS behavior.\n- There is no explicit evidence in the provided excerpts that CORS restrictions are enforced or not enforced for browser-based fetches. Since no excerpt documents CORS policy, the false/true CORS assertion cannot be conclusively supported from the supplied material.\n- The excerpts that discuss HTTP vs HTTPS support for GET requests indicate transport-level support, which is tangential but relevant to how clients access the API and could relate to how cross-origin requests are handled in practice, though they do not state CORS status themselves.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "Query replies are limited to 1000 responses. Despite this limit, some calls can still return large amounts of data.",
+              "Use paging and filtering to limit queries. Following this approach reduces server load and speeds up responses.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "To view all agenda matters using the ODATA parameters by limiting larger set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=10",
+              "We support both HTTP and HTTPS for GET requests. Choose the request that is appropriate for your data and consumer.",
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "To view all agenda matters, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters"
+            ],
+            "title": "Legistar Web API"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "legistar_api_client_details.requires_token",
+        "reasoning": "The most directly relevant excerpt states that some clients require API tokens for access, which introduces the possibility that token requirements are not universal across all Legistar clients. This helps gauge whether token usage is client-specific rather than a blanket rule. Another excerpt notes that GET requests return only items marked as public and visible on InSite, which implies potential accessibility without a token for public data. The remaining excerpts discuss endpoints, examples, and general API behavior (including OData usage and possible 404 errors for the Richmond endpoint) and thus provide contextual evidence about how the API is structured and accessed, but do not contradict the notion of token-free public data or refine token requirements beyond the explicit token policy mentioned. Specifically, the statement about token policy and token requirements in different clients is relevant to assessing whether Richmond\u2019s client would require a token, while the public-data note supports the idea that at least some data may be accessible without authentication. The endpoint example and general API guidance help corroborate typical access patterns (e.g., using OData parameters and public visibility) but do not by themselves confirm tokenlessness for Richmond, so they\u2019re considered supportive context rather than definitive proof. The 404-like Richmond endpoint excerpts illustrate potential access issues or misconfigurations rather than explicit authentication behavior, and thus are less directly informative about the token requirement itself.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "GET requests return only the items marked as public and visible on InSite.",
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "To view all agenda matters, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters"
+            ],
+            "title": "Legistar Web API"
+          },
+          {
+            "url": "https://webapi.legistar.com/Home/Examples",
+            "excerpts": [
+              "The basics of the ODATA URL setup are here: https://www. odata .org/ documentation / odata -version-3-0/url-conventions/. The ODATA documentation does not cover"
+            ],
+            "title": "Examples - Legistar Web API - Granicus"
+          },
+          {
+            "url": "https://webapi.legistar.com/v1/richmondva/",
+            "excerpts": [
+              "Server Error in '/' Application.",
+              "The resource cannot be found.",
+              "scription:** HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly",
+              "equested URL:** /v1/richmondv"
+            ],
+            "title": "The resource cannot be found."
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "legistar_api_client_details.is_publicly_accessible",
+        "reasoning": "Evidence that items are returned which are marked as public and visible on InSite supports the idea that public access is possible for some data via the Legistar API. This directly relates to the notion that the API can return publicly accessible items without additional gating, which is central to the field value is_publicly_accessible = True. However, the presence of a token policy in another excerpt indicates that some clients require API tokens for access, which complicates the blanket assertion of public accessibility for all clients or all endpoints. Therefore, while there is direct support that public items exist, there is also evidence that token-based access controls may apply to some clients, so the overall assertion remains nuanced rather than absolute. Additionally, the mention of endpoints to view agenda matters using ODATA parameters demonstrates that the API provides structured access paths, which could be leveraged publicly under the right policies, further supporting a public-access interpretation for certain use cases. Taken together, the strongest support comes from language indicating that public items exist and are returned by the API, with token requirements representing potential exceptions rather than universal rules.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "GET requests return only the items marked as public and visible on InSite.",
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0"
+            ],
+            "title": "Legistar Web API"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "executive_summary",
+        "reasoning": "To substantiate the executive summary point that Legistar\u2019s public client slug is richmondva and the API is accessible publicly via OData without a mandatory token, the primary source states that Legistar Web API exposes data over HTTPS and provides example public endpoints, including mentions of matters under a client, with token usage described as client-specific. The presence of explicit public endpoints and token guidance supports the claim about token requirements and public accessibility. The specific OData-style endpoint for matters is shown in examples and supports the notion that the base URL pattern is https://webapi.legistar.com/v1/{Client}/matters, with paging and OData parameters available to constrain results. The paging/limit guidance corroborates a 1000-item per call limit and the need to page results to retrieve more items. The Plan of Development REST endpoint is confirmed with a direct ArcGIS REST path, which is part of the GeoHub/ArcGIS data publishing landscape for development planning. For EnerGov, the user-facing portal URL is provided, and the documentation note indicates no public API/export capability is documented, which is relevant to the API availability claim. The ArcGIS/GeoHub lines show published layers and REST endpoints for planning/development datasets, including SUP and BZA overlays, with Plan of Development having a precise REST service URL. Excerpts indicating ArcGIS item pages or REST endpoints suggest that while direct REST endpoints for SUP and BZA aren\u2019t explicitly quoted as endpoints, their items exist on ArcGIS Online and can be navigated to retrieve endpoints. Several excerpts also show ArcGIS Online results for SUP and development-related layers, corroborating the existence of those layers in the Richmond GeoHub ecosystem. The presence of 404 resource-not-found messages for https://webapi.legistar.com/v1/richmondva/ provides a counterpoint indicating that at least some requests may fail or that specific resource paths may be unavailable, which is important for a cautious executive summary that notes potential unreliability or changes in public endpoints over time. Taken together, these excerpts robustly support the core statements about Legistar slug usage, the public nature of the API with paging and 1000-item limits, the explicit Plan of Development REST endpoint, EnerGov portal access with no clear public API, and GeoHub/ArcGIS layering for planning data, while also signaling that some Legistar endpoints may return 404s in certain contexts.",
+        "citations": [
+          {
+            "url": "https://webapi.legistar.com/",
+            "excerpts": [
+              "Legistar Web API exposes Legistar data to the web directly over HTTPS . \u00a9 2026 - Granicus. Version: 26.1.28.0."
+            ],
+            "title": "Legistar Web API - Granicus"
+          },
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "Query replies are limited to 1000 responses. Despite this limit, some calls can still return large amounts of data.",
+              "GET requests return only the items marked as public and visible on InSite."
+            ],
+            "title": "Legistar Web API"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf",
+            "excerpts": [
+              "Navigate to the Online Permit portal: https://energov.richmondgov.com/EnerGov_Prod/selfservice#/login. Click the Log In option on the Online Permit Portal Home"
+            ],
+            "title": "[PDF] City Of Richmond Online Permit Portal User Guide - RVA.gov"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://webapi.legistar.com/v1/richmondva/",
+            "excerpts": [
+              "Server Error in '/' Application.",
+              "The resource cannot be found.",
+              "scription:** HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly",
+              "equested URL:** /v1/richmondv"
+            ],
+            "title": "The resource cannot be found."
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "legistar_api_client_details.client_slug",
+        "reasoning": "Direct evidence shows a Legistar API base path that includes the slug 'richmondva' in the URL (https://webapi.legistar.com/v1/richmondva/), indicating that this slug is used to access Richmond's Legistar data. The presence of multiple excerpts stating similar 404-related messages for the same URL indicates that attempts to access that slug may fail in certain contexts (resource not found or temporarily unavailable), but this does not negate the fact that the slug itself is the correct client identifier in the endpoint. Additionally, documentation describes a general Legistar API pattern using a client placeholder (https://webapi.legistar.com/v1/{ Client}/matters), which supports the interpretation that a concrete client slug like 'richmondva' would be substituted in place of {Client} to retrieve matters for Richmond. Taken together, these excerpts support that the confirmed API client slug for Richmond\u2019s Legistar instance is 'richmondva'; however, the accessible/public nature and stability over time are not definitively established by the excerpts provided, given the error responses observed.",
+        "citations": [
+          {
+            "url": "https://webapi.legistar.com/v1/richmondva/",
+            "excerpts": [
+              "Server Error in '/' Application.",
+              "The resource cannot be found.",
+              "scription:** HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly",
+              "equested URL:** /v1/richmondv"
+            ],
+            "title": "The resource cannot be found."
+          },
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0"
+            ],
+            "title": "Legistar Web API"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "legistar_api_client_details.odata_api_url",
+        "reasoning": "The target field value points to a specific Legistar Matters endpoint under the Richmond VA client, following the standard ODATA-based pattern for matters: the general guidance shows how to view all agenda matters via an endpoint like https://webapi.legistar.com/v1/{ Client}/matters and demonstrates how ODATA parameters can be used to fetch subsets. One excerpt explicitly presents the generic endpoint pattern for matters, which corroborates that an official Matters endpoint exists under the Legistar Web API. Another excerpt notes that GET requests return only items marked as public and visible on InSite, which aligns with expectations for a publicly accessible Matters endpoint and supports the notion of a publicly accessible API surface. A further excerpt discusses the ODATA URL construction and points to the established practice around the Matters endpoint and ODATA conventions, which is consistent with the finegrained field representing a specific Matters URL. An additional excerpt references the general endpoint for matters with the client placeholder, reinforcing that the Matters endpoint is the canonical resource to query for agenda items, which is what the specified URL would target in a concrete Richmond VA context. Collectively, these excerpts support the idea that the Matters endpoint exists under the Legistar Web API, that ODATA-based URLs are used, and that public visibility and token requirements are relevant considerations; this aligns with the provided field value as a concrete instance of the Matters endpoint pattern.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "To view all agenda matters, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters",
+              "GET requests return only the items marked as public and visible on InSite."
+            ],
+            "title": "Legistar Web API"
+          },
+          {
+            "url": "https://webapi.legistar.com/Home/Examples",
+            "excerpts": [
+              "The basics of the ODATA URL setup are here: https://www. odata .org/ documentation / odata -version-3-0/url-conventions/. The ODATA documentation does not cover"
+            ],
+            "title": "Examples - Legistar Web API - Granicus"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "energov_permit_system_data_access.api_documentation_url",
+        "reasoning": "The target field value points to the API documentation URL for the EnerGov permit system data access. The most directly supportive information comes from the excerpt that explicitly references EnerGov and includes a concrete portal URL related to EnerGov (the login portal for EnerGov). This strongly indicates the existence of a web-accessible entry point for EnerGov documentation or access, which could include an API documentation URL. The remaining EnerGov-related excerpts further corroborate that the Richmond EnerGov permit system is in use and provide additional portal-related URLs and general descriptions of what the EnerGov portal offers (e.g., submitting plans, applying for permits, and checking status). While these do not provide the exact API documentation URL, they corroborate the context that EnerGov is the system in question and that web-based access exists, which is compatible with an API documentation endpoint being part of the broader EnerGov portal ecosystem. Consequently, the excerpt with the explicit EnerGov portal URL is the strongest direct support for the field value, while the other EnerGov-related excerpts provide supportive context about the system in question.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf",
+            "excerpts": [
+              "Navigate to the Online Permit portal: https://energov.richmondgov.com/EnerGov_Prod/selfservice#/login. Click the Log In option on the Online Permit Portal Home"
+            ],
+            "title": "[PDF] City Of Richmond Online Permit Portal User Guide - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential\u00a0..."
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "energov_permit_system_data_access.access_method_details",
+        "reasoning": "The stated field value asserts that EnerGov does not expose a public API or direct data export and that access is via the EnerGov Online Permit Portal (Citizen Self Service). Excerpts describing the EnerGov Online Permit Portal and its web-based functions directly support this by illustrating UI-centric interactions (submission, payment, status checks) rather than API calls or data export endpoints. The existence of a customer-facing portal URL further corroborates that data access is mediated through a browser-based UI, not through programmatic API access. While none of the excerpts explicitly declares the absence of an API, the emphasis on portal-based workflows and login access aligns with the field value\u2019s claim about the lack of a public API or export capability.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf",
+            "excerpts": [
+              "Navigate to the Online Permit portal: https://energov.richmondgov.com/EnerGov_Prod/selfservice#/login. Click the Log In option on the Online Permit Portal Home"
+            ],
+            "title": "[PDF] City Of Richmond Online Permit Portal User Guide - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential\u00a0..."
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "energov_permit_system_data_access.has_public_api_or_export",
+        "reasoning": "The targeted field asks whether the EnerGov permit system has a public API or data export capability. The excerpts reference the EnerGov portal URL and describe user interactions such as logging in, submitting permits, and checking status, but they do not provide any explicit information about an API, data export features, CORS, rate limits, or token requirements. Because there is no clear statement confirming a public API or data export, the excerpts neither substantively confirm nor contradict the field value. They do demonstrate that EnerGov is in use and accessible via a portal, which is tangential but not directly relevant to API/public export details. As such, the most accurate stance based on these excerpts is that evidence is insufficient to robustly support the field value being False, and the connection remains weak.\n\nIn citing these excerpts in support of the field value, you would point to the explicit mentions of EnerGov in the portal context (the portal URL and login/submission capabilities) as context that EnerGov exists in Richmond, but you would avoid claiming anything about API/public export capabilities since the excerpts do not address that aspect directly.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf",
+            "excerpts": [
+              "Navigate to the Online Permit portal: https://energov.richmondgov.com/EnerGov_Prod/selfservice#/login. Click the Log In option on the Online Permit Portal Home"
+            ],
+            "title": "[PDF] City Of Richmond Online Permit Portal User Guide - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential\u00a0..."
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "legistar_api_technical_parameters.rate_limit_details",
+        "reasoning": "The most directly relevant evidence notes a hard cap of 1000 items per API response and the necessity to implement paging to fetch additional records, which directly addresses the rate-limit/detail in the field value. The paging guidance shown in the excerpts demonstrates how to structure requests to exceed the 1000-item boundary using OData parameters, which is central to understanding practical usage when the limit is hit. Example endpoints illustrate how a client constructs requests to retrieve matters in pages, reinforcing the same paging mechanism. References mentioning API token requirements are tangential but helpful for understanding access controls that can interact with rate limiting in practice. Notes about choosing HTTP vs HTTPS also relate to general API usage but do not specify rate limits themselves. Collectively, these excerpts support the core claim that a 1000-item per-response limit exists and that pagination is required to retrieve larger datasets, while explicit formal rate limits are not publicly documented, which aligns with the field value statement.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "Query replies are limited to 1000 responses. Despite this limit, some calls can still return large amounts of data.",
+              "Use paging and filtering to limit queries. Following this approach reduces server load and speeds up responses.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "To view all agenda matters, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters",
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "We support both HTTP and HTTPS for GET requests. Choose the request that is appropriate for your data and consumer."
+            ],
+            "title": "Legistar Web API"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "geohub_development_tracker_details.last_updated_date",
+        "reasoning": "The target field represents the last_updated_date for geohub_development_tracker_details. The only excerpt that directly provides a concrete update timestamp is the one stating: \"June 29, 2022 at 1:13:38 PM GMT Data Updated\" for the Plans of Development dataset on the Richmond GeoHub. This offers a concrete data point indicating a recent update date within the GeoHub development data context. Other excerpts mention the existence of the Development Tracker, development maps, and datasets, but they do not contain a specific last_updated_date for the development tracker or its related layers. Therefore, the cited update timestamp is the strongest-supported evidence linking to the requested field value, while the rest provide contextual background but no direct date claim for the field in question.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "June 29, 2022 at 1:13:38 PM GMTData Updated"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.0",
+        "reasoning": "The finegrained field value identifies a REST endpoint for the Plans of Development layer and its metadata: the layer is named 'Plans of Development', and the REST endpoint URL is the ArcGIS FeatureServer path ending with /PlanOfDevelopment/FeatureServer/0. Excerpts that directly reference Plans of Development as a planning/zoning dataset and/or provide the corresponding REST endpoints align closest with this field value. Specifically, the excerpt opening with a title about Plans of Development and providing a direct REST endpoint URL matches the exact endpoint in the field value. Additional excerpts describe Plans of Development in the Richmond GeoHub context, confirm that the dataset covers plans of development projects in the city, and include related ArcGIS Online item links, which corroborate the dataset's identity and source. Other excerpts touching related planning layers (such as Special Use Permits or Board of Zoning Appeals) provide contextual support about what planning/zoning layers exist in the same ecosystem but do not directly confirm the exact REST endpoint or the named layer from the field value. The combination of a direct endpoint URL, explicit layer naming, and accompanying source references collectively supports the finegrained field value about the Plans of Development layer and its REST service. Therefore, the most informative excerpts are those that state the Plans of Development layer and provide or imply the specific REST endpoint, followed by excerpts that describe the broader Plans of Development dataset and its sources, and finally contextual planning layers that are related but not the exact endpoint in question. ",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0",
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6",
+              "Plans of Development in the city of Richmond, Virginia.",
+              "Open in ArcGIS Online Select to open in a new tab"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "geohub_development_tracker_details.update_cadence",
+        "reasoning": "To determine update cadence for the GeoHub Development Tracker, the most directly relevant excerpts are those that reference the Development Tracker or related GeoHub datasets, since cadence details would logically appear in descriptions or documentation about those trackers. Excerpt describing the Development Tracker dashboard points to an official data visualization tied to City/Regional development data, making it the primary source to infer how updates are handled. The Development Map excerpt similarly references a live mapping tool used for development projects in the Richmond region, which is likely to be governed by the same data update practices. Excerpts about plans of development (and their GeoHub entries) provide important context about the data ecosystem that feeds the tracker but do not specify cadence themselves; they will be considered for supporting context about data sources and update timing after cadence is determined. Excerpts mentioning historical records and data update timestamps in their descriptions (e.g., \u201cData Updated\u201d) offer indirect clues about update practices but do not state a formal cadence. The external Virginia REST links are peripheral to cadence of Richmond\u2019s GeoHub tracker. Overall, none of the excerpts provide an explicit cadence or SLA, so we can only infer that cadence is not formally documented based on the absence of a clear statement in these sources. The most supportive evidence, in order of relevance, comes from the tracker-related excerpts, followed by the development plan and data update context, then peripheral sources, with the least relevance being general external links or historical record notes.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/apps/dashboards/cc2d02a414e840db91c400f5cfcd38fe",
+            "excerpts": [
+              "Layers. Basemaps. Expand. More. Esri, CGIAR, USGS | City of Richmond, VGIN, Esri, TomTom, Garmin, SafeGraph, FAO, METI/NASA, USGS, EPA, NPS, USFWS. Powered by"
+            ],
+            "title": "Development Tracker"
+          },
+          {
+            "url": "https://experience.arcgis.com/experience/7963b39b52124a5082eeca70e7dcaa99",
+            "excerpts": [
+              "Richmond Regional Development Tracker. This mapping tool displays development projects in the Richmond Region, which includes the City of Richmond and its"
+            ],
+            "title": "Development Map"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "June 29, 2022 at 1:13:38 PM GMTData Updated",
+              "Records: 2,109",
+              "Plan of development for a 17-story office complex with ground floor retail at 10th and Canal. 10/9/2008, 5:00 PM, richard.morton_cor, 6/29/2022"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://geohub-vadeq.hub.arcgis.com/pages/69217a67dd8a4f95aca2ee5ada797853",
+            "excerpts": [
+              "Virginia REST and Basemap Services. Contact Us. Mailing Address: Street Address: P.O. Box 1105 1111 East Main St. Suite 1400. Richmond, VA 23218 Richmond, VA"
+            ],
+            "title": "External Agency Resources and Links | Virginia Environmental Data ..."
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "legistar_api_technical_parameters.cors_restrictions_enforced",
+        "reasoning": "To determine if CORS restrictions are enforced for the Legistar API, we examine the provided excerpts for any explicit statements about cross-origin restrictions, headers like Access-Control-Allow-Origin, or browser-based fetch limitations. The excerpts mention that some clients may require API tokens for access, that HTTP and HTTPS are both supported for GET requests, and provide general guidance on paging and endpoints to view agenda matters. However, none of these excerpts state whether CORS is enabled or blocked, nor do they describe any CORS-related rate limits. The token-related excerpt indicates authentication considerations but does not address cross-origin access controls. The HTTP/HTTPS note confirms transport protocols but does not imply CORS behavior. There is no explicit evidence either confirming or contradicting CORS enforcement, so the target field value (cors_restrictions_enforced = False) cannot be confidently supported by these excerpts alone. The reasoning thus centers on the absence of CORS information and highlights related but non-definitive hints (tokens, transport), leading to a low confidence assessment.",
+        "citations": [
+          {
+            "url": "https://support.granicus.com/s/article/Legistar-Web-API",
+            "excerpts": [
+              "Some clients require API tokens for access. If you receive an unauthorised response when you make read-only requests, refer to your token policy.",
+              "We support both HTTP and HTTPS for GET requests. Choose the request that is appropriate for your data and consumer.",
+              "To view all agenda matters, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters",
+              "Query replies are limited to 1000 responses. Despite this limit, some calls can still return large amounts of data.",
+              "Use paging and filtering to limit queries. Following this approach reduces server load and speeds up responses.",
+              "To view all agenda matters using the ODATA parameters by limiting smaller set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=0",
+              "To view all agenda matters using the ODATA parameters by limiting larger set of items, use the following endpoint:\nhttps://webapi.legistar.com/v1/{ Client}/matters?$top=10&$skip=10"
+            ],
+            "title": "Legistar Web API"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "energov_permit_system_data_access.public_portal_url",
+        "reasoning": "The finegrained field value is the EnerGov public portal login URL for Richmond, which is explicitly shown in the first excerpt as the EnerGov_Prod selfservice login page. The second excerpt describes the Online Permit Portal and its capabilities, including submitting plans, applying and paying for permits, and checking request status, which confirms the presence and role of the EnerGov portal in Richmond's permitting workflow, though it does not repeat the exact URL. The third excerpt discusses the general Permits and Inspections page, reinforcing that the Online Permit Portal is the correct entry point for permits, again consistent with EnerGov usage, but with less direct URL evidence. Taken together, the first excerpt provides the exact URL, while the other two corroborate that this portal is the correct EnerGov public access point and is associated with permit activities in Richmond.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/sites/default/files/2019-12/OPP%20User%20Guide.pdf",
+            "excerpts": [
+              "Navigate to the Online Permit portal: https://energov.richmondgov.com/EnerGov_Prod/selfservice#/login. Click the Log In option on the Online Permit Portal Home"
+            ],
+            "title": "[PDF] City Of Richmond Online Permit Portal User Guide - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential\u00a0..."
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.0.category",
+        "reasoning": "The target field value is 'Plans of Development', which is a specific category within Richmond's planning and zoning data layers. Excerpts that explicitly present 'Plans of Development' as a dataset or as a project type are directly aligned with this category, providing clear evidence that the Richmond GeoHub dataset includes or references this exact term. In the strongest sources, the phrase appears in the title or description of the dataset (for example, a dataset entry labeled Plans of Development and a direct link to a feature service for that layer), which confirms the existence and definition of the category within the Richmond planning/geospatial data ecosystem. Excerpts that mention that Plans of Development is among the types of projects represented (including Plan of Development as a variant) further corroborate that this category is a recognized item in the Richmond planning data, matching the target value or its close variants. Other excerpts that reference the Plans of Development dataset and provide URLs or metadata about the same dataset reinforce the connection, even if they are slightly less explicit about the category name in every sentence. Excerpts that are more peripheral (e.g., general ArcGIS Online references) still relate to the same data domain and thus provide supportive context, though they do not directly name the exact field value in every line. Taken together, the most direct evidence comes from items that clearly label Plans of Development in Richmond GeoHub, followed by items that describe related Plan of Development concepts, then supportive links and contextual mentions.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0",
+              "Plans of Development in the city of Richmond, Virginia.",
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6",
+              "Open in ArcGIS Online Select to open in a new tab"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.0.rest_endpoint_url",
+        "reasoning": "The finegrained field value corresponds to the REST endpoint URL for the Plan of Development feature layer. The excerpt that directly includes the exact URL https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0 provides the precise endpoint needed. This establishes the concrete source for the endpoint within Richmond\u2019s Planning and Zoning ArcGIS layers. Other excerpts discuss the existence of Plans of Development and related project types but do not supply the exact REST endpoint URL, so they offer context but not direct evidence for the specific field value.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.0.layer_name",
+        "reasoning": "The finegrained field value is the exact layer name used for the Plans of Development dataset within Richmond\u2019s planning and zoning context. Excerpts that describe Plans of Development as a category of projects in Richmond\u2019s GeoHub/ArcGIS environment directly support this field value. Specifically, the excerpts that state Plans of Development exists in Richmond, Virginia, and identify the Plans of Development as part of the dataset collection and its representation in ArcGIS Online provide direct corroboration of the layer name. Additionally, excerpts that mention the REST endpoints and ArcGIS Online pages associated with Plans of Development reinforce that this is a named, publicly accessible layer within Richmond\u2019s planning/zoning data offerings. In combination, these excerpts consistently corroborate that the layer_name element for the first (index 0) item in the arcgis_planning_and_zoning_layers array is indeed Plans of Development, aligning with the specified field value.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan",
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "Plans of Development in the city of Richmond, Virginia.",
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0",
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6",
+              "Open in ArcGIS Online Select to open in a new tab"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.2",
+        "reasoning": "To support the fine-grained field value regarding the Board of Zoning Appeals overlay and its REST endpoints, the most directly relevant material points to the existence of BZA-related layers in ArcGIS Online, as well as related planning/zoning layers. The Board of Zoning Appeals entry confirms that such a zoning-related layer exists within the ArcGIS ecosystem for Richmond. The Special Use Permits material shows a SUP-related dataset with parcel joins, illustrating how zoning overlay data can be structured and accessed through ArcGIS-derived data products. The SUP-derived dataset indicates there are related data services and endpoints in practice, even if the exact endpoint for the BZA layer is not given. The Plans of Development entries demonstrate the broader context of planning-related layers (including Plan of Development and Special Use Permits) accessible through ArcGIS services, reinforcing that Richmond maintains a family of planning/zoning layers within ArcGIS Online/GeoHub ecosystems. A direct REST endpoint for the BZA overlay is not explicitly provided in the excerpts, and the field value\u2019s claim that the explicit REST endpoint is not provided and that the source materials require locating the relevant item page first to reach a FeatureServer REST endpoint is consistent with the absence of a clearly stated endpoint in the excerpts. However, because the excerpts do not contain a line explicitly stating \u201cthe direct REST endpoint is not provided\u201d for the BZA overlay, the support for that exact claim is inferred rather than confirmed. Taken together, the material supports the existence and accessibility of BZA-related and planning/zoning layers, and indicates the typical ArcGIS REST-based pattern, but does not definitively prove the precise REST endpoint status or the mandated search-first access for the BZA layer as described in the field value.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/search.html?q=tags:%22Richmond%22",
+            "excerpts": [
+              "Board of Zoning Appeals. \u202dFeature layer Mar 23, 2026. RM Richard Morton\u202c ... Special Use Permit; SUP; Commercial; Priority Street; basemap; Richmond GIS; 3DEP"
+            ],
+            "title": "Richmond - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0",
+              "Plans of Development in the city of Richmond, Virginia.",
+              "Open in ArcGIS Online Select to open in a new tab",
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6",
+              "June 29, 2022 at 1:13:50 PM GMTInfo Updated",
+              "June 29, 2022 at 1:13:38 PM GMTData Updated",
+              "April 17, 2018 at 6:54:37 PM GMTPublished Date",
+              "Records: 2,109"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/apps/dashboards/cc2d02a414e840db91c400f5cfcd38fe",
+            "excerpts": [
+              "Layers. Basemaps. Expand. More. Esri, CGIAR, USGS | City of Richmond, VGIN, Esri, TomTom, Garmin, SafeGraph, FAO, METI/NASA, USGS, EPA, NPS, USFWS. Powered by"
+            ],
+            "title": "Development Tracker"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=33d85d258540436db2a8305ae634d34c",
+            "excerpts": [
+              "Sep 29, 2023 \u2014 Shows development projects in the Richmond Region visualizing amount of residential units included in a project. Data is 2019\u2013Present."
+            ],
+            "title": "Development Tracking Footprint - Residential Units"
+          },
+          {
+            "url": "https://experience.arcgis.com/experience/7963b39b52124a5082eeca70e7dcaa99",
+            "excerpts": [
+              "Richmond Regional Development Tracker. This mapping tool displays development projects in the Richmond Region, which includes the City of Richmond and its"
+            ],
+            "title": "Development Map"
+          },
+          {
+            "url": "https://richmondbizsense.com/new-bizsense-development-tracker/",
+            "excerpts": [
+              "A robust GIS-based interactive mapping system to help you keep track of all the latest real estate developments in the Richmond region."
+            ],
+            "title": "BizSense Development Tracker"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.0.source_url",
+        "reasoning": "The finegrained field value is the ArcGIS item URL for the Richmond Plans of Development dataset. The excerpt that contains exactly the ArcGIS item URL https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6 directly supports this field value. Several other excerpts describe the Plans of Development data in Richmond and reference the same ArcGIS item identifier (3d63de08ef924513bbfa9448e6b66dd6), which corroborates that this item represents the Richmond planning/zoning layer and is the source referenced by the field value. Taken together, these excerpts establish both the specific ArcGIS item URL and its association with Plans of Development in Richmond, providing coherent and supportive evidence for the field value.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6",
+              "Plans of Development in the city of Richmond, Virginia.",
+              "Open in ArcGIS Online Select to open in a new tab"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.1",
+        "reasoning": "The most pertinent excerpt explicitly notes that there is a derived feature class of the city's Special Use Permit data (pdr_SpecialUsePermitPoint) with parcel geometry, which directly supports the notion of a Special Use Permits layer and its data structure within ArcGIS. This aligns with the field value\u2019s layer_name and category being Special Use Permits and confirms that such a data layer exists and is tied to Special Use Permit case data. A closely related excerpt describes Richmond\u2019s Special Use Permit process in ArcGIS Online as a distinct layer or data resource, reinforcing that Special Use Permits are an established planning/zoning layer in the Richmond GIS ecosystem. While another excerpt discusses Plans of Development, it mentions the broader ArcGIS Online presence and multiple planning-related datasets, providing contextual support that planning/zoning layers are published and accessible through ArcGIS. Additional excerpts confirm the existence of data sources and datasets related to development planning (Plans of Development), which helps situate the Special Use Permits layer within the same data ecosystem. However, the precise REST endpoint URL for the Special Use Permits layer is not explicitly provided in the sources; the field value itself notes that the direct REST endpoint is not provided in the source material, though it can be accessed from the source by user actions. This is consistent with the gathered excerpts, which confirm the layer's existence and its data lineage but do not enumerate a concrete REST endpoint in the texts provided.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.2.layer_name",
+        "reasoning": "The finegrained field value is the name of a specific ArcGIS planning/zoning layer: 'Board of Zoning Appeals'. The excerpt that directly references a 'Board of Zoning Appeals' feature layer in the Richmond ArcGIS context provides a direct match to the field value, showing that this layer exists among the ArcGIS planning/zoning overlays. Other excerpts discuss related layers (such as Special Use Permits or Plans of Development) but do not name the Board of Zoning Appeals layer, so they offer only contextual relevance. Therefore, the most relevant excerpt precisely supports the field value by naming the exact layer as a feature layer in the ArcGIS dataset.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/search.html?q=tags:%22Richmond%22",
+            "excerpts": [
+              "Board of Zoning Appeals. \u202dFeature layer Mar 23, 2026. RM Richard Morton\u202c ... Special Use Permit; SUP; Commercial; Priority Street; basemap; Richmond GIS; 3DEP"
+            ],
+            "title": "Richmond - ArcGIS Online"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.1.rest_endpoint_url",
+        "reasoning": "The most directly relevant excerpt states a concrete REST service URL for a planning-related dataset: it provides a REST endpoint for PlanOfDevelopment via a FeatureServer URL which directly supports the idea that a REST endpoint exists and can be accessed programmatically. Other planning/zoning related excerpts discuss the existence of planning datasets and their descriptions within the Richmond GeoHub environment, which corroborates that REST endpoints or service endpoints are present for planning layers, even if the exact endpoint URL isn\u2019t shown in those excerpts. The remaining excerpts confirm the presence of planning/zoning data (Special Use Permits, Plans of Development, and overlays) and ArcGIS Online references, which provide necessary context that REST endpoints are used to expose these datasets, even if no direct endpoint is listed. The combination of a concrete REST URL for development plans and the contextual mentions of related planning layers supports the field\u2019s premise that the direct REST endpoint URL is not explicitly provided in the source material but is accessible via the listed source URL\u2019s data/resources, aligning with the stated value.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.1.layer_name",
+        "reasoning": "The field value seeks occurrences of 'Special Use Permits' within planning/zoning ArcGIS layers, specifically referencing the arcgis_planning_and_zoning_layers.1.layer_name. The most directly relevant excerpt describes a derived feature class of Special Use Permit data with parcel geometry, explicitly tying to Special Use Permit features in ArcGIS and indicating a data relationship to parcels. A second excerpt explicitly mentions Special Use Permits within the overview of a planning/zoning process, confirming the term as a distinct dataset category in the ArcGIS context. A third excerpt lists project types that include Special Use Permits among planning-related categories, reinforcing the presence of an entity labeled as Special Use Permits in the Richmond planning dataset. Additional excerpts mention plans of development and related planning layers that can encompass Special Use Permits as part of broader zoning and development datasets, providing contextual relevance to the same ArcGIS planning layers. The remaining excerpts reference related legal or planning topics (e.g., legislation or other permit processes) which are tangential to the specific layer name but help situate the data ecosystem around Special Use Permits within planning and zoning.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.2.category",
+        "reasoning": "The field value we are validating is the 'Board of Zoning Appeals' category within Richmond's planning/zoning ArcGIS layers. The most relevant excerpt directly references the Board of Zoning Appeals as a feature layer within an ArcGIS context (explicit mention of 'Board of Zoning Appeals' alongside ArcGIS-related content), which strongly supports the existence of a planning/zoning layer categorized under BZA. A second, supporting excerpt discusses the Board of Zoning Appeals within the Richmond legislation portal, indicating governance and case-related content tied to BZA\u2014this corroborates the presence and relevance of BZA-related material in the broader Richmond planning/zoning ecosystem. Excerpts focusing on Special Use Permits or Plans of Development do not mention the Board of Zoning Appeals category and thus are less relevant to this specific field value.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/search.html?q=tags:%22Richmond%22",
+            "excerpts": [
+              "Board of Zoning Appeals. \u202dFeature layer Mar 23, 2026. RM Richard Morton\u202c ... Special Use Permit; SUP; Commercial; Priority Street; basemap; Richmond GIS; 3DEP"
+            ],
+            "title": "Richmond - ArcGIS Online"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.1.category",
+        "reasoning": "The field value corresponds to a planning/zoning category for Special Use Permits within ArcGIS-based datasets. An excerpt explicitly titled or described as a Special Use Permits item or dataset provides the strongest alignment to this category. The items describing Special Use Permits in the overview of the Special Use Permit process directly validate the existence and relevance of this category within Richmond\u2019s ArcGIS planning-related materials. Additional items reference Special Use Permits as part of broader planning/development project types, which still supports the inclusion of Special Use Permits as a recognized category in the spatial planning context, even if they are discussed alongside other project types like Plans of Development. A dataset that mentions a derived feature class of the Special Use Permit data (with parcel geometry) further corroborates that Special Use Permits are indeed a tracked category in the ArcGIS ecosystem for this locality. Items that focus on general legislation or other topics (without tying back to the Special Use Permits category) contribute less directly but help establish the surrounding data infrastructure and naming conventions used for planning-related layers.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.1.source_url",
+        "reasoning": "The field value is a direct URL to a Richmond ArcGIS Online item related to Special Use Permits in the planning/zoning domain. The strongest support comes from the excerpt that explicitly lists the exact ArcGIS item URL, confirming the specific source for the planning/zoning layers. A secondary source corroborates the ArcGIS Online context for planning and zoning data, reinforcing that these layers are hosted on ArcGIS Online and pertain to planning/zoning categories like Special Use Permits. Additional excerpts mention related ArcGIS Online planning-layer items and services that, while not the exact URL, provide contextual evidence that Richmond maintains multiple ArcGIS Online planning/zoning layers (such as plans of development and associated services). These connections help validate that the URL points to a Richmond ArcGIS Online planning/zoning resource and that the domain and item type are consistent with the target field value.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              ""
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=e0031868653445ac894a3827d1725572&sublayer=0",
+            "excerpts": [
+              "This is a derived feature class of the city's Special Use Permit case data (pdr_SpecialUsePermitPoint) with parcel geometry (cads_Parcel)."
+            ],
+            "title": "cads_ParcelSUPJoin_Test - Overview - ArcGIS"
+          },
+          {
+            "url": "https://richmondva.legistar.com/Legislation.aspx",
+            "excerpts": [
+              "All Types; Application for a Certificate of Appropriateness; Board of Zoning Appeals Case; Citizen Comment; City Planning Commission Resolution"
+            ],
+            "title": "City of Richmond - Legislation"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.2.source_url",
+        "reasoning": "The target value is a precise ArcGIS Online search URL aimed at locating Board of Zoning Appeals information for the City of Richmond. The most relevant excerpt explicitly references Board of Zoning Appeals within ArcGIS Online and even notes a feature layer that aligns with municipal zoning overlays, making it the strongest direct match to the field value. Related excerpts that discuss Special Use Permits and planning/development layers from ArcGIS Online/publisher contexts provide supportive context about the broader planning and zoning data environment in Richmond, which helps corroborate that a Board of Zoning Appeals layer and other zoning-related layers exist in the ArcGIS Online ecosystem. Additional excerpts that describe Plans of Development and general ArcGIS Online portals for Richmond further contextualize the data landscape, though they do not directly mention the Board of Zoning Appeals search URL, they reinforce that such planning/zoning layers are published and indexed in ArcGIS Online. Collectively, these excerpts map onto the field value by confirming the existence of ArcGIS Online planning/zoning layers for Richmond and the presence of Board of Zoning Appeals related content within that ecosystem.",
+        "citations": [
+          {
+            "url": "https://www.arcgis.com/home/search.html?q=tags:%22Richmond%22",
+            "excerpts": [
+              "Board of Zoning Appeals. \u202dFeature layer Mar 23, 2026. RM Richard Morton\u202c ... Special Use Permit; SUP; Commercial; Priority Street; basemap; Richmond GIS; 3DEP"
+            ],
+            "title": "Richmond - ArcGIS Online"
+          },
+          {
+            "url": "https://www.arcgis.com/home/item.html?id=07a2463eaf27479e87262d3db5e2c1c1",
+            "excerpts": [
+              "Richmond's version of the special use permit process may authorize any use at any location subject to specified conditions. This power is unique"
+            ],
+            "title": "Special Use Permits - Overview - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use",
+              "Plans of Development in the city of Richmond, Virginia. Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "Plans of Development in the city of Richmond, Virginia.",
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://www.arcgis.com/apps/dashboards/cc2d02a414e840db91c400f5cfcd38fe",
+            "excerpts": [
+              "Layers. Basemaps. Expand. More. Esri, CGIAR, USGS | City of Richmond, VGIN, Esri, TomTom, Garmin, SafeGraph, FAO, METI/NASA, USGS, EPA, NPS, USFWS. Powered by"
+            ],
+            "title": "Development Tracker"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "arcgis_planning_and_zoning_layers.2.rest_endpoint_url",
+        "reasoning": "The most relevant excerpt explicitly identifies a direct REST endpoint for the Plans of Development layer as a REST service URL (FeatureServer/0), which confirms that an endpoint exists but is accessed via a REST URL once located. The second excerpt points to an ArcGIS item page URL that hosts the Plans of Development dataset, which is the kind of page one would visit to then derive or discover the actual REST endpoint, matching the described workflow in the field value. The third excerpt reinforces that the broader Planning/Zoning data is present in the Richmond GeoHub context, supporting that REST endpoints are associated with those datasets, but does not itself provide an endpoint, aligning with the notion that the direct REST endpoint is not provided in the immediate field value and must be discovered via the item page. Taken together, these excerpts support the claim that a direct REST endpoint is not readily exposed and must be found through the dataset page, while also illustrating the existence of REST endpoints for related planning datasets when discovered via the proper pages.",
+        "citations": [
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/plans-of-development-3",
+            "excerpts": [
+              "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/PlanOfDevelopment/FeatureServer/0",
+              "https://www.arcgis.com/home/item.html?id=3d63de08ef924513bbfa9448e6b66dd6"
+            ],
+            "title": "Plans of Development | Richmond GeoHub"
+          },
+          {
+            "url": "https://richmond-geo-hub-cor.hub.arcgis.com/datasets/3d63de08ef924513bbfa9448e6b66dd6_0/about",
+            "excerpts": [
+              "Represents the following types of projects: Rezoning, Conditional Rezoning, Plan of Development, Plan of Development Amendment, Special Use Permits, Special Use"
+            ],
+            "title": "Plans of Development | Richmond GeoHub - ArcGIS Online"
+          }
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "type": "json",
+    "beta_fields": null,
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "executive_summary": {
+          "type": "string",
+          "description": "A high-level summary of the key findings regarding Richmond, Virginia's Legistar, GeoHub, and EnerGov data systems, directly addressing the user's main questions."
+        },
+        "legistar_api_client_details": {
+          "type": "object",
+          "properties": {
+            "client_slug": {
+              "type": "string",
+              "description": "The confirmed API client slug for Richmond's Legistar instance."
+            },
+            "is_publicly_accessible": {
+              "type": "boolean",
+              "description": "Confirms if the API is publicly accessible without special permissions."
+            },
+            "requires_token": {
+              "type": "boolean",
+              "description": "Indicates whether an authentication token is required for API access."
+            },
+            "odata_api_url": {
+              "type": "string",
+              "description": "The full OData API URL for accessing the Legistar data."
+            }
+          },
+          "required": [
+            "client_slug",
+            "is_publicly_accessible",
+            "requires_token",
+            "odata_api_url"
+          ],
+          "additionalProperties": false
+        },
+        "legistar_legislative_data_scope": {
+          "type": "object",
+          "properties": {
+            "total_matters_count": {
+              "type": "number",
+              "description": "The total number of legislative matters available in the Legistar system."
+            },
+            "oldest_record_date": {
+              "type": "string",
+              "description": "The date of the oldest legislative record accessible via the API."
+            }
+          },
+          "required": [
+            "total_matters_count",
+            "oldest_record_date"
+          ],
+          "additionalProperties": false
+        },
+        "legistar_api_technical_parameters": {
+          "type": "object",
+          "properties": {
+            "cors_restrictions_enforced": {
+              "type": "boolean",
+              "description": "Indicates if Cross-Origin Resource Sharing (CORS) restrictions are enforced for browser-based fetches."
+            },
+            "rate_limit_details": {
+              "type": "string",
+              "description": "Information regarding the effective rate limits for the Legistar API."
+            }
+          },
+          "required": [
+            "cors_restrictions_enforced",
+            "rate_limit_details"
+          ],
+          "additionalProperties": false
+        },
+        "geohub_development_tracker_details": {
+          "type": "object",
+          "properties": {
+            "update_cadence": {
+              "type": "string",
+              "description": "The actual update frequency of the GeoHub Development Tracker layer."
+            },
+            "documented_sla": {
+              "type": "string",
+              "description": "Details of any documented Service Level Agreement (SLA) for the layer's data freshness."
+            },
+            "last_updated_date": {
+              "type": "string",
+              "description": "The most recent date the data layer was updated."
+            }
+          },
+          "required": [
+            "update_cadence",
+            "documented_sla",
+            "last_updated_date"
+          ],
+          "additionalProperties": false
+        },
+        "arcgis_planning_and_zoning_layers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "layer_name": {
+                "type": "string",
+                "description": "The official name of the ArcGIS Feature Service layer."
+              },
+              "category": {
+                "type": "string",
+                "description": "The planning category the layer belongs to, e.g., 'Special Use Permits', 'Plans of Development', 'Board of Zoning Appeals'."
+              },
+              "rest_endpoint_url": {
+                "type": "string",
+                "description": "The full REST endpoint URL for the feature service layer."
+              },
+              "source_url": {
+                "type": "string",
+                "description": "The URL of the source page on the Richmond GeoHub or ArcGIS portal providing information about the layer."
+              }
+            },
+            "required": [
+              "layer_name",
+              "category",
+              "rest_endpoint_url",
+              "source_url"
+            ],
+            "additionalProperties": false
+          },
+          "description": "A list of ArcGIS Feature Service layers that Richmond, VA publishes for planning, zoning, and development. Each item should detail the layer name and its corresponding REST endpoint, specifically for Special Use Permits, Plans of Development, and Board of Zoning Appeals."
+        },
+        "energov_permit_system_data_access": {
+          "type": "object",
+          "properties": {
+            "has_public_api_or_export": {
+              "type": "boolean",
+              "description": "Indicates whether the EnerGov permit system exposes any public API or data export capability."
+            },
+            "access_method_details": {
+              "type": "string",
+              "description": "A description of the available data access methods, if any."
+            },
+            "public_portal_url": {
+              "type": "string",
+              "description": "The URL for the public-facing EnerGov Online Permit Portal."
+            },
+            "api_documentation_url": {
+              "type": "string",
+              "description": "A link to any available API documentation for the EnerGov system."
+            }
+          },
+          "required": [
+            "has_public_api_or_export",
+            "access_method_details",
+            "public_portal_url",
+            "api_documentation_url"
+          ],
+          "additionalProperties": false
+        },
+        "unconfirmed_information_summary": {
+          "type": "string",
+          "description": "A summary of any questions that could not be definitively answered based on the provided research, such as precise rate limits, the exact total count of legislative matters, or documented SLAs."
+        }
+      },
+      "required": [
+        "executive_summary",
+        "legistar_api_client_details",
+        "legistar_legislative_data_scope",
+        "legistar_api_technical_parameters",
+        "geohub_development_tracker_details",
+        "arcgis_planning_and_zoning_layers",
+        "energov_permit_system_data_access",
+        "unconfirmed_information_summary"
+      ],
+      "additionalProperties": false
+    },
+    "content_file": "dd_q1_system_data.md"
+  }
+}

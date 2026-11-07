@@ -1,0 +1,18 @@
+Demo Strategy I1 — Demo Archetypes for Thriving Neighborhoods Judges
+
+Identify the demo archetypes that work best for neighborhood development and housing transparency projects in a civic hackathon judging context.
+
+Cover:
+- What judges in a civic hackathon are typically looking for: problem clarity, user empathy, data credibility, civic impact, technical execution
+- Which demo structure works best for development discovery tools: the "resident who was shut out" narrative
+- Which demo structure works best for housing compliance tools: the "staff workflow before and after" narrative
+- How to anchor the demo in a specific Richmond neighborhood and a specific user story
+- What makes a judge think "this is real" vs. "this is a toy"
+- The role of data source labels, source links, and disclaimers in building judge credibility
+- How to address the "what happens after the hackathon?" question
+
+Output
+- 2–3 demo archetypes with narrative structure
+- Opening sentence templates for each archetype
+- What to show on screen at each moment in the demo
+- How to close the demo with a credible continuation ask

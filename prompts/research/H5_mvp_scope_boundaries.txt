@@ -1,0 +1,17 @@
+MVP Feasibility H5 — Scope Boundaries for Thriving Neighborhoods MVPs
+
+Define the scope boundaries that keep a Thriving Neighborhoods prototype achievable, honest, and valuable.
+
+Cover:
+- What is in scope for a neighborhood development notifier: what features are required, what can be cut
+- What is out of scope for a neighborhood development notifier: push notifications, email subscriptions, exhaustive data coverage, official City endorsement
+- What is in scope for a housing compliance tool: portfolio view, expiration tracking, HUD FMR comparison, staff notes
+- What is out of scope for a housing compliance tool: automated compliance findings, access to internal City data, developer penalty recommendations
+- How to write the scope boundary statement for a demo: the "by Sunday we will show" sentence
+- How to handle feature creep in a 48-hour build: decision criteria for adding vs. cutting a feature
+
+Output
+- In-scope feature list for each recommended MVP shape
+- Out-of-scope list with brief reasoning for each exclusion
+- "By Sunday we will show" sentence template for each shape
+- Feature prioritization framework (must-have vs. nice-to-have vs. cut)

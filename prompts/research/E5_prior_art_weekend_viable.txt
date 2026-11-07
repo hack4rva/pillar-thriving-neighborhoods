@@ -1,0 +1,18 @@
+Prior Art E5 — Weekend-Viable Civic Tech Projects in Housing and Planning
+
+Identify civic tech projects in housing and planning transparency that were built in hackathon or sprint contexts (24–72 hours) and were successful enough to be continued or deployed.
+
+Focus on:
+- Projects that used Legistar, municipal GIS, or HUD open data as their core data source
+- Projects built at Code for America hackathons, civic tech jams, or similar events
+- What technical choices made them buildable in a weekend (static data, pre-fetched JSON, no real-time API dependency)
+- What scope decisions made them demoable in 48 hours
+- What made judges or partners value them
+- Which ones continued beyond the hackathon and why
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Top 3 weekend-viable patterns directly applicable to Richmond Thriving Neighborhoods
+- What a Richmond team should copy, adapt, or avoid based on this scan

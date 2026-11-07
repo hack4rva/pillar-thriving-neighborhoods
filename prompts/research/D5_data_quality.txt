@@ -1,0 +1,22 @@
+Data Inventory D5 — Data Quality Issues and Gaps for Thriving Neighborhoods
+
+Assess the data quality challenges teams will face when using Legistar, Richmond GeoHub, HUD data, and other sources for Thriving Neighborhoods projects.
+
+Cover:
+- Legistar data quality: consistency of matter type classifications, reliability of address fields, completeness of records, update latency after Council actions
+- GeoHub data quality: how current the development activity layers are, known gaps or errors in parcel data, projection and coordinate system notes
+- HUD data quality: data lag in CHAS (2–3 year lag from census), FMR geographic granularity limitations, coverage gaps in preservation databases
+- Cross-source join quality: challenges in linking Legistar records to GeoHub parcels (address format mismatches, non-geocodable addresses)
+- PDF attachment quality: variability in staff report format and content that affects plain-language summarization
+
+For each quality issue, describe:
+- The severity of the impact on a hackathon prototype
+- A practical mitigation strategy
+- Whether the issue can be worked around or is a blocker
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Ranked list of data quality risks by severity for hackathon teams
+- Mitigations for each risk

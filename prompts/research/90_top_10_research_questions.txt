@@ -1,0 +1,27 @@
+Top 10 Research Questions
+
+1) Which of the two targeted Pillar 2 statements reflects the clearest, most research-ready Richmond problem for a weekend software prototype?
+
+2) Where exactly do Richmond residents get stuck when trying to find and understand development proposals in their neighborhoods — what do they encounter on Legistar, the City website, and Planning Commission materials?
+
+3) What is the actual structure and accessibility of Richmond's Legistar data — is the Granicus Web API available, what fields are populated, and how reliable is address data for geocoding?
+
+4) What GIS layers on the Richmond GeoHub most directly support a development proposal lookup tool — which layers are current, which are static snapshots, and how does access work?
+
+5) What does the City's affordable housing compliance monitoring workflow look like today — what systems, spreadsheets, and manual processes are involved, and where are the biggest inefficiencies?
+
+6) What public data exists to support housing compliance monitoring without relying on confidential contract data — Legistar ordinances, HUD property databases, public rental listings?
+
+7) Which Richmond institutions and organizations currently help residents navigate the planning process, and where are the gaps between their capacity and resident need?
+
+8) What comparable tools from other cities — Councilmatic, Lookout SF, NLIHC preservation tools, or others — offer patterns Richmond teams could realistically adapt in a weekend?
+
+9) What minimum viable prototype could meaningfully reduce resident confusion about neighborhood development within 48 hours, without pretending to be an official government system?
+
+10) What evidence and framing would make a Thriving Neighborhoods prototype feel credible, community-centered, and continuation-worthy to judges, City staff, and neighborhood organizations?
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Priority ranking of questions by research urgency

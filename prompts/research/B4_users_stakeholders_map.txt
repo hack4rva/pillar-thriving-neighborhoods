@@ -1,0 +1,21 @@
+User & Stakeholder B4 — Full Stakeholder Map for Thriving Neighborhoods
+
+Map the full ecosystem of stakeholders who interact with neighborhood development and housing compliance in Richmond.
+
+Produce a stakeholder map covering:
+- Primary users: residents affected by development proposals; City housing compliance staff
+- Secondary users: Planning Commission staff and commissioners; neighborhood association leaders; housing advocates; journalists
+- Enablers: City IT (Legistar system owners); GIS staff (GeoHub); HUD regional office
+- Partners: PlanRVA; 1717 Collective; community development organizations; legal aid
+- Decision-makers: Sharon Ebert (DCAO); City Planning Director; City Housing Director; City Council members
+- Potential champions: who has both interest and institutional authority to support continued development
+
+For each stakeholder group, identify:
+- Their relationship to the core problems
+- What they would need from a hackathon prototype to find it useful
+- Any concerns or risks they might have about a new tool
+
+Output
+- Stakeholder map (table or narrative)
+- 2–3 most important stakeholders for a hackathon team to understand
+- Who to contact post-hackathon for continuation

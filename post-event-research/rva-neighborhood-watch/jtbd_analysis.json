@@ -1,0 +1,2257 @@
+{
+  "run_id": "trun_1848795af0f24b80a45ae97aaace6bf7",
+  "interaction_id": "trun_1848795af0f24b80a45ae97aaace6bf7",
+  "result_url": "https://platform.parallel.ai/play/deep-research/trun_1848795af0f24b80a45ae97aaace6bf7",
+  "status": "completed",
+  "output": {
+    "basis": [
+      {
+        "field": "prior_art_questions",
+        "reasoning": "To address prior-art questions, I focus on geographic data tools and governance/engagement mechanisms already in Richmond. The mapping tools excerpt highlights that layers in the zoning map include city boundary, parcels, and zoning districts, and that there is a parcel mapper capable of querying and displaying parcels in Richmond. This provides direct precedent for geography-based tracking of development or permits, which informs whether to extend existing tools rather than build anew. The companion excerpt about infrastructure for parcel mapping reinforces that parcel-level data can be queried and displayed, supporting the notion that geography-based tracking exists and could be extended. The planning governance excerpt references agendas and minutes through a Legistar calendar, illustrating how residents can subscribe to and receive case-and-meeting updates, which is highly relevant to how residents currently receive alerts about development activity and how onboarding messaging might leverage existing notification channels. The code-refresh related excerpts describe a city-led outreach and updating process, including opportunities to learn from outreach approaches and adjust communications, which directly informs onboarding copy and how to frame notifications or guidance to users. The land-use administration excerpt notes that the office provides advice and analysis for proposed developments, which adds context on the type of information residents might expect or seek, and can guide what prior-art to consider when designing user-facing alerts and summaries. In combination, these excerpts collectively establish that geography-aware data tools, governance notification practices, and outreach methods are present in Richmond\u2019s civic tech landscape and should be considered as prior art when designing a JTBD-oriented research agenda and onboarding experience.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "Nov 18, 2025 \u00b7 Attend an upcoming event to speak to the project team directly. If you're unable to attend an event or have a pressing question, then you can reach out to the"
+            ],
+            "title": "Code Refresh | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.vpm.org/news/2025-11-25/rva-code-refresh-draft-two-zoning-housing-city-planning",
+            "excerpts": [
+              "Nov 25, 2025 \u00b7 Richmond planners rolled out a revised version of the city's Code Refresh zoning map on Nov. 18, pulling back on several proposals from the first version"
+            ],
+            "title": "New Richmond Code Refresh draft pulls back on upzoning proposals"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "project_summary",
+        "reasoning": "The most relevant excerpt explicitly references the pillar related to thriving neighborhoods as a top-level civic priority, which directly aligns with the project\u2019s pillar. The second excerpt outlines city-wide goals, objectives, and strategies that frame the environment in which neighborhood development monitoring would occur, thereby supporting the project context. The third excerpt discusses land use administration and advisory roles for proposed developments, which is directly connected to understanding and communicating development proposals near residents, a core aspect of the project\u2019s problem statement. The fourth excerpt highlights interactive mapping tools and parcel-level querying capabilities, which are essential for a civic tech project aiming to inform residents about local development activity. Together, these excerpts provide the governance context, planning framework, administrative processes, and technical tools that collectively support the described neighborhood-focused monitoring project.",
+        "citations": [
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "systems_job_to_be_done",
+        "reasoning": "The core of the requested JTBD is a need for a single, cohesive data feed that combines parcels, permits, staff reports, agendas, and meeting logistics to enable timely outreach and coordinated participation. Excerpts describing practical, user-facing data integrations and interfaces align best with this need. The 'Interactive Mapping Tools' exposes a parcel-based data layer and real estate parcel querying that could serve as a backbone for linking parcels with related development activity, which is essential for a unified feed. Planning Commission-related content that provides agendas and minutes demonstrates a concrete locus where schedules and staff reports accumulate, reinforcing the notion of a centralized workflow for meeting logistics. Permit-related portals illustrate existing data streams (permits, statuses) that would need to be connected into the feed to support timely outreach around development activity. Additional mapping and GIS resources indicate broader geographic data availability that would support boundary-aware segmentation and targeted communication. While high-level planning documents establish a purpose and direction for thriving neighborhoods, the more concrete data sources and interfaces described in the mapping tools, parcel data, planning agendas, and permit portals directly support the mechanics of delivering a unified feed and coordination capability. Collectively, these excerpts provide the building blocks for the JTBD: a central, boundary-aware data view that ties parcels, permits, staff reports, and meeting logistics to enable coordinated outreach across neighborhoods.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/commission-architectural-review",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 Commission of Architectural Review. New applications for certificates of appropriateness can be submitted via email or via Microsoft OneDrive."
+            ],
+            "title": "Commission of Architectural Review | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "richmond_systems_overview",
+        "reasoning": "The most directly relevant portions describe concrete city systems that residents must use to access development information. Content about the Online Permit Portal shows a dedicated, but separate, system for plans, permits, and status checks, illustrating one silo in the fragmentation. Descriptions of mapping tools highlight GIS layers and parcel mapping that residents must consult to understand location and zoning contexts, another distinct information stream. References to the Legistar system for agendas and minutes of multiple authorities (Planning Commission, Board of Zoning Appeals, and CAR) demonstrate yet another separate platform where hearings and decisions are tracked. Together, these excerpts reflect a multi-system landscape rather than a single unified source, which aligns with the field value describing fragmentation and the need to navigate several platforms. Additional excerpts touching on city planning goals and architecture review corroborate the broader ecosystem in which these systems operate, reinforcing the theme of multiple, disparate sources. The combination of portals for permits, interactive maps for location context, and formal meeting records supports the view that residents currently must piece together information from several distinct channels, leading to complexity and potential information gaps.\n",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "user_questions",
+        "reasoning": "Directly supporting the exact user_questions content is not found in the excerpts. The most relevant items are those that touch on resident-facing information access and equity considerations in Richmond. For example, an excerpt discussing housing and health in Richmond highlights equity and access issues that could inform an equity-focused portion of the questions. An excerpt describing Interactive Mapping Tools for Richmond points to how residents might access or visualize development-related data, which relates to data presentation, visualization, and user interaction questions. Other excerpts about planning processes, permits, and land-use administration provide contextual backbone for how residents might interact with regulatory processes, which can influence questions about how to gather user feedback, submission workflows, and channels. Although these excerpts do not quote or confirm the exact JTBD statements or the specified open question categories, they offer context that could inform the framing and development of the JTBD deliverables and questions in a Richmond-specific civic-tech setting. None of the excerpts directly confirm the exact field value content, so their support is partial and indirect rather than explicit.\n",
+        "citations": [
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "5 days ago \u2014 Planning Commission, 3/17/2026, Export to iCalendar, 6:00 PM, 5th Floor Conference Room To access the meeting via Microsoft Teams: https://go.rva.gov/CPC2026"
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/commission-architectural-review",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 Commission of Architectural Review. New applications for certificates of appropriateness can be submitted via email or via Microsoft OneDrive."
+            ],
+            "title": "Commission of Architectural Review | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The",
+              "The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The May 1, 2020 \u2014 Open Data. Inspector General. Home \u00b7 IG Reports. Justice Services. Adult ... Richmond, VA 23219 USA. Hours of Operation Monday \u2013 Friday 8:00 AM \u2013 5:00 PM."
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "Nov 18, 2025 \u00b7 Attend an upcoming event to speak to the project team directly. If you're unable to attend an event or have a pressing question, then you can reach out to the"
+            ],
+            "title": "Code Refresh | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.vpm.org/news/2025-11-25/rva-code-refresh-draft-two-zoning-housing-city-planning",
+            "excerpts": [
+              "Nov 25, 2025 \u00b7 Richmond planners rolled out a revised version of the city's Code Refresh zoning map on Nov. 18, pulling back on several proposals from the first version"
+            ],
+            "title": "New Richmond Code Refresh draft pulls back on upzoning proposals"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "emotional_job_to_be_done",
+        "reasoning": "The strongest support comes from a focus on equity and the broader housing context in Richmond, which aligns with ensuring trustworthy, sensitive handling of neighborhood development information. This is complemented by planning goals and master planning guidance that frame how neighborhoods are guided by city strategies, which supports the need for transparent, accessible information flows to residents. References to Thriving Neighborhoods and housing- and health-related storytelling illustrate concerns around community impact and trust, reinforcing the emotional aspect of needing reliable information. Tools that help residents understand development activity, such as mapping tools and parcel queries, provide practical means to achieve the desired transparency and accessibility. Descriptions of land-use administration and the existence of permit and online portal processes show the institutional mechanisms residents would rely on for plain-language, trustworthy updates, even if the sources may be more process-oriented than user-facing. Overall, these excerpts collectively support the need for transparent, accessible information from official channels and the infrastructure that enables residents to stay informed, which directly maps to the emotional, trust, and systems/coordination facets of the JTBD.",
+        "citations": [
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "equity_questions",
+        "reasoning": "The equity-focused field seeks to surface questions about reaching residents with limited connectivity, language access for summaries and notifications, safeguards for under-resourced neighborhoods, and the contextualization of impacts using overlays. The most relevant excerpt discusses housing inequity and community health in Richmond, providing a concrete basis for questions about equity in access to housing and related development information. A closely related excerpt outlines broader themes of thriving neighborhoods and housing needs, offering context for why inclusive outreach and accessible information are critical. Another excerpt describes overarching planning goals and objectives that guide city efforts, which helps ground equity questions in official priorities. Mapping and interactive tools are particularly relevant for understanding how to reach residents through digital channels and how to present accessible, layered information (parcels, zoning, and overlays) to support equitable awareness. Additional excerpts on land use administration and planning processes provide background for questions about ensuring visibility and participation in development decisions for under-resourced areas. Lastly, references to planning commissions and online portals help frame questions about alternative communication channels and timely access to information, reinforcing the need for multi-channel outreach and accessible summaries.",
+        "citations": [
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "functional_job_to_be_done",
+        "reasoning": "To support a map-based JTBD for neighborhood rezoning and major permits, the most valuable information comes from excerpts explicitly describing interactive mapping capabilities and parcel-level mapping tools that residents could use to visualize where developments are proposed and to locate parcels affected by rezonings. Excerpts showing the existence of an Interactive Mapping Tool and a Parcel Mapper indicate infrastructure that could be leveraged to generate a map-based summary and facilitate timely awareness of development activity near a resident\u2019s home. The land-use administration excerpt provides policy-adjacent context about how development proposals are analyzed and communicated, which helps justify the need for accessible, geo-referenced summaries. Excerpts about Planning Commission agendas and broader permit portals offer relevant ancillary pathways a resident might use to follow timelines, hearings, and decisions, but they are less directly about a map-based summary and more about procedural access. Pulling these together suggests that a practical JTBD solution would rely on integrated map-based tools augmented by accessible planning and timing information, aligning with the described pain around fragmented systems and the lack of geo-targeted alerts. The map-centric excerpts directly support the core desire for a clear, location-aware summary of proposals and timelines, while the planning/permit excerpts provide necessary context for how timelines and engagement opportunities might be surfaced to residents. ",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal-0",
+            "excerpts": [
+              "Sep 10, 2021 \u00b7 The City of Richmond is pleased to announce the launch of our new Online Permit Portal (OPP). Title Redirect. https://www.rva.gov/planning-development-review/\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/commission-architectural-review",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 Commission of Architectural Review. New applications for certificates of appropriateness can be submitted via email or via Microsoft OneDrive."
+            ],
+            "title": "Commission of Architectural Review | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The",
+              "The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The May 1, 2020 \u2014 Open Data. Inspector General. Home \u00b7 IG Reports. Justice Services. Adult ... Richmond, VA 23219 USA. Hours of Operation Monday \u2013 Friday 8:00 AM \u2013 5:00 PM."
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "5 days ago \u2014 Planning Commission, 3/17/2026, Export to iCalendar, 6:00 PM, 5th Floor Conference Room To access the meeting via Microsoft Teams: https://go.rva.gov/CPC2026"
+            ],
+            "title": "City of Richmond - Calendar"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "data_questions",
+        "reasoning": "Direct evidence about data endpoints, GIS data layers, and data governance appears in excerpts describing the Parcel Mapper and GIS/mapping capabilities, which are essential for mapping case records to parcels, addresses, and zoning layers. These excerpts support the need to identify canonical IDs (parcel ID/GPIN) and to understand what GIS layers exist (e.g., parcels, zoning districts, and related map data). Additional excerpts discuss the Online Permit Portal and permit workflows, which are relevant to data endpoints, cadences, and how permit data is surfaced, updated, or scraped. Other governance-oriented excerpts (Land Use Administration, Zoning Administration) provide context on who administers data and what data sources may be available or updated, which informs integration considerations across systems like Legistar and PDR. The overall connection is that these excerpts collectively address data access points, identifiers, and data cadence necessary to answer the listed data questions about APIs, parity between systems, and update frequency. The strongest support comes from explicit mentions of mapping tools and GIS data capabilities, followed by permit portals and administration-related data governance references, with high-level planning documents offering broader context.\n",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "user_questions.3",
+        "reasoning": "The finegrained field value asks about how residents prefer to submit comments or sign up to speak, with a focus on deep links into Legistar, forms, or guided instructions. Excerpts that mention the public-facing process for planning meetings and engagement channels are most informative here. One excerpt references the Legistar calendar for Planning Commission meetings and provides a path to access agendas and minutes, which is closely related to civic participation and how residents can engage with the process (knowing when meetings occur and where to find meeting materials). Another excerpt similarly points to the Legistar calendar as the portal to view agendas and minutes for city planning activities, reinforcing that Legistar is a primary channel through which residents can learn about opportunities to comment or sign up for speaking at meetings. While other excerpts discuss zoning, permits, or mapping tools, they do not directly address the mechanism for submitting comments or signing up to speak, or provide explicit guidance on deep links or forms for public participation. Therefore, these two excerpts together most directly support understanding of the user\u2019s question about participation pathways, especially through Legistar in the Richmond planning context.",
+        "citations": [
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "5 days ago \u2014 Planning Commission, 3/17/2026, Export to iCalendar, 6:00 PM, 5th Floor Conference Room To access the meeting via Microsoft Teams: https://go.rva.gov/CPC2026"
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "user_questions.0",
+        "reasoning": "The most relevant excerpts reference online portals and digital interaction with city services, which can inform channel considerations for residents engaging with development information. Specifically, the online permit portal entries discuss submitting plans and tracking requests digitally, implying a user expectation for online, self-service interactions, which is tangentially related to how residents might prefer to receive information. The neighborhood-focused planning reference (Thriving Neighborhoods) signals a context where community members are a stakeholder group, albeit without explicit segmentation. Together, these excerpts provide a plausible, though indirect, bridge to thinking about who to target (neighborhood residents and stakeholders) and how they might be engaged (digital/online channels), but they do not provide concrete, explicit data about specific user segments or preferred channels required by the field value.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "systems_job_to_be_done.situation",
+        "reasoning": "The target field value centers on the trigger of a scheduling event for a civic process (CAR, BZA, Planning Commission, or City Council). The most relevant excerpt explicitly references viewing agendas and minutes for the City Planning Commission and highlights the Legistar calendar as the means to access these scheduled items. This shows a direct connection to the scheduling context described by the field value, demonstrating when such a case would be scheduled and how stakeholders access the schedule. Other excerpts discuss planning tools and permit portals, which are related to planning activity but do not directly confirm the scheduling trigger described in the field value.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "prior_art_questions.1",
+        "reasoning": "To address the field about historical sharing of case alerts by Richmond civic groups, we look for excerpts that discuss notification mechanisms, channels, or outreach relevant to development or planning cases. The excerpt describing the Planning Commission and its Legistar calendar points to an official calendar-based channel for agendas and minutes, which is a formal notification method residents could rely on for alerts about meetings and cases. The excerpt mentioning code refresh invites the public to attend events or contact the project team, highlighting live outreach and direct communication as ways residents can engage, which is closely related to alert mechanisms, even if not a historical compendium of how alerts were shared. The excerpt about Land Use Administration hints at advisory processes for proposed developments, suggesting contexts where residents might receive insights or guidance, which can relate to how information was disseminated. Other excerpts focus on mapping tools and general planning information, which provide context but do not specifically address how civic groups historically shared alerts or the pain points therein. Collectively, these excerpts support a partial understanding of formal notification channels and outreach opportunities that could inform design, but they do not provide explicit historical methods, platforms, or failure analyses for alert sharing. The most directly relevant elements are the Legistar calendar (formal notification channel for activities) and the invitation/point-of-contact approach (outreach for questions), with the others serving as contextual background rather than direct evidence of historical alert-sharing practices.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "Nov 18, 2025 \u00b7 Attend an upcoming event to speak to the project team directly. If you're unable to attend an event or have a pressing question, then you can reach out to the"
+            ],
+            "title": "Code Refresh | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.vpm.org/news/2025-11-25/rva-code-refresh-draft-two-zoning-housing-city-planning",
+            "excerpts": [
+              "Nov 25, 2025 \u00b7 Richmond planners rolled out a revised version of the city's Code Refresh zoning map on Nov. 18, pulling back on several proposals from the first version"
+            ],
+            "title": "New Richmond Code Refresh draft pulls back on upzoning proposals"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "project_summary.problem_statement",
+        "reasoning": "The most relevant content directly supports finding and understanding development proposals near residents. The excerpt describing Interactive Mapping Tools explicitly mentions a map with layers for parcels and zoning, which aligns with enabling residents to locate development projects. The Land Use Administration excerpt describes advisory analysis for proposed developments that may not fit current zoning, which is directly connected to understanding proposals. The Master Plan excerpt outlines guiding goals and strategies for planning work, providing contextual backing to the broader objective of neighborhood development. Lastly, the Thriving Neighborhoods framing in the mayoral action plan touches on housing and neighborhood-focused goals, which supports the overall context but is less specific to discovering proposals. Taken together, these excerpts build a chain from practical discovery tools to governance context for neighborhood development proposals near residents.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "project_summary.pillar",
+        "reasoning": "A direct mention of the pillar is found in the first excerpt, which cites Thriving Neighborhoods as a goal within a broader civic agenda and links it to housing needs. This directly aligns with the requested fine-grained field value and confirms that the pillar image in city strategy includes neighborhood-focused objectives. The second excerpt describes master plan goals, objectives, and strategies; while it does not quote the exact pillar phrase, it provides context that neighborhood-scale planning is a deliberate part of city guidance, which is relevant to understanding how neighborhood thriving is operationalized. The fourth excerpt discusses interactive mapping tools for land use, which supports neighborhood-level awareness and development monitoring by enabling parcel and zoning visibility, thus tangentially supporting the pillar\u2019s intent. The third excerpt about land use administration references evaluating developments that may affect neighborhoods; it is somewhat less directly tied to the pillar phrase but remains relevant to neighborhood-focused development monitoring and governance. Overall, the strongest support comes from the explicit pillar mention, with the remaining excerpts providing contextual, policy-level and tool-level relevance to neighborhood thriving.",
+        "citations": [
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "project_summary.description",
+        "reasoning": "The most relevant excerpt discusses a toolset for examining development-related data in Richmond: it describes the Richmond Parcel Mapper for Land Use Projects that permits querying and displaying parcels, which aligns with enabling residents to observe development activity and stay informed. The next most relevant excerpt describes how the Land Use Administration provides advice and analysis for proposed developments, which relates to monitoring and understanding development processes, albeit less directly framed as resident-facing information. The third excerpt explicitly mentions Thriving Neighborhoods as a planning framing, which tangentially supports the project\u2019s focus on neighborhood-level outcomes but does not directly describe monitoring or information dissemination. The least directly relevant excerpt references the Interactive Mapping Tools and layers for zoning, which supports the ability to view development-related data but is more about general mapping capabilities than resident-focused monitoring. Overall, the set suggests mechanisms for observing and understanding development activity (mapping and analysis tools) and a planning context that frames neighborhood-focused goals, which together support the description of neighborhood development monitoring for residents.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "emotional_job_to_be_done.situation",
+        "reasoning": "The most directly relevant information comes from excerpts describing practical tools and processes for monitoring and managing development activity. An interactive mapping tool with zoning and parcel data supports residents\u2019 ability to observe where development is occurring and query related parcels and zoning actions. Land use administration guidance highlights how proposed developments are analyzed, which informs residents about the decision-making flow and potential impacts near their block. Information about permits, inspections, and the Online Permit Portal provides concrete channels residents can use to track permits, approvals, and status, directly aligning with the need to stay informed as development ramps up. While planning documents and strategies (such as master plans and city-wide Thriving Neighborhoods initiatives) offer important context about goals and priorities, they are less specific to the routine, real-time observation and understanding of local development activity. Similarly, broader housing and health narratives provide background but do not directly operationalize monitoring of ramping development near a specific block.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "systems_job_to_be_done.outcome",
+        "reasoning": "The most relevant excerpt reinforces a broad planning framework that explicitly targets neighborhood-oriented outcomes and coordination: it details a city-wide master plan with goals, objectives, and strategies that guide collaboration across city staff, local businesses, developers, nonprofits, and residents. This aligns with coordinating outreach and organizing neighborhood participation by providing an overarching structure for how neighborhood goals are pursued and how various stakeholders align around coordinated actions. The second relevant excerpt discusses housing and health in Richmond, highlighting equity considerations and community health\u2014this supports the need for inclusive outreach and ensuring that engagement and comments reflect diverse neighborhood needs, which is central to coordinating timely outreach across a community. The third relevant item references the Thriving Neighborhoods pillar in the mayoral action plan, which directly situates neighborhood-focused initiatives within a formal governance framework, again supporting a system-level coordination rationale for outreach and comment processes. The remaining excerpts describe mapping tools and parcel data portals that facilitate resident access to development information. These tools can enable residents to identify development proposals near them and participate in outreach, thereby underpinning the mechanics of coordinating attendance or comments across neighborhoods, even if they do not state a JTBD-style outcome explicitly. Together, these excerpts collectively support the idea of a coordinated, informed, and inclusive neighborhood outreach system, which underpins the requested outcome of coordinating timely outreach and organizing attendance or comments across the neighborhood.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "equity_questions.3",
+        "reasoning": "To support incorporating overlays such as transit access, tree canopy, floodplain, and displacement risk into contextualizing impacts, we can rely on mapping and data-layer capabilities described in Richmond\u2019s planning tools. The Interactive Mapping Tools describe layers such as City Boundary, Parcels, Zoning Districts, and tools to query and display parcels, which demonstrates the practical ability to stack multiple overlays for analysis and visualization in an area-based context. This directly aligns with creating contextual overlays for vulnerable neighborhoods.\n\nEquity-oriented context is underscored by discussions of housing inequity and community health, highlighting that planning analyses should consider historical and present disparities when evaluating neighborhood impacts. This supports the need to index overlays that reveal how developments intersect with vulnerable populations.\n\nStrategic guidance from the Master Plan emphasizes goals, objectives, and strategies to coordinate planning efforts among staff, developers, and non-profits. This broader framework supports incorporating overlays as a means to meet equity-related objectives and to communicate context to stakeholders.\n\nLand Use Administration emphasizes providing analytical advice for developments that may not fit existing zoning, which reinforces the value of overlay data to assess and explain potential impacts beyond current regulatory constraints, particularly for vulnerable areas.\n\nIn summary, the excerpts collectively argue that robust mapping capabilities (overlaying diverse data layers), an equity-aware planning lens, and a governance framework exist to support the requested overlays in vulnerable neighborhoods. The most direct support comes from mapping tools and their data layers, while the equity narrative and planning guidance provide context and justification for integrating these overlays into the JTBD and associated questions.\n",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "user_questions.2",
+        "reasoning": "The most relevant content connects residents to accessible, map-based information about development and planning processes in Richmond. Excerpts describing interactive mapping tools and parcel mapping indicate the existence of user-facing visualization and parcel-level detail that can be translated into plain-language summaries and visuals for first-time users. References to the Online Permit Portal and general GIS/Mapping services show existing channels through which residents can access, understand, and engage with development information, which is directly aligned with creating clear explanations and visuals. Other sources discuss governance structures, planning commissions, and zoning administration; these provide important context for what kinds of data exist (heights, units, land use changes, parking) but are less directly about user-friendly presentation. Overall, the strongest support comes from pieces that emphasize practical, map-based access to planning data, which are essential for crafting plain-language summaries and visuals. The surrounding items offer context on data availability and civic tools that can be leveraged to design intuitive visuals and explanations for first-time users.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The",
+              "The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The May 1, 2020 \u2014 Open Data. Inspector General. Home \u00b7 IG Reports. Justice Services. Adult ... Richmond, VA 23219 USA. Hours of Operation Monday \u2013 Friday 8:00 AM \u2013 5:00 PM."
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/commission-architectural-review",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 Commission of Architectural Review. New applications for certificates of appropriateness can be submitted via email or via Microsoft OneDrive."
+            ],
+            "title": "Commission of Architectural Review | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "5 days ago \u2014 Planning Commission, 3/17/2026, Export to iCalendar, 6:00 PM, 5th Floor Conference Room To access the meeting via Microsoft Teams: https://go.rva.gov/CPC2026"
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "Nov 18, 2025 \u00b7 Attend an upcoming event to speak to the project team directly. If you're unable to attend an event or have a pressing question, then you can reach out to the"
+            ],
+            "title": "Code Refresh | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.vpm.org/news/2025-11-25/rva-code-refresh-draft-two-zoning-housing-city-planning",
+            "excerpts": [
+              "Nov 25, 2025 \u00b7 Richmond planners rolled out a revised version of the city's Code Refresh zoning map on Nov. 18, pulling back on several proposals from the first version"
+            ],
+            "title": "New Richmond Code Refresh draft pulls back on upzoning proposals"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "emotional_job_to_be_done.persona",
+        "reasoning": "The emotional JTBD for a long-time resident/renter centers on how neighborhood development affects their sense of stability, safety, and trust in local governance. Excerpt describing housing inequity and community health in Richmond directly aligns with concerns a long-time resident may have about development proposals and their impact on living conditions and neighborhood well-being. References to neighborhood goals and planning processes provide context on the systemic environment the resident navigates, including how development is guided and communicated. Tools and portals mentioned (e.g., permit portals) are relevant insofar as they influence how easily the resident can access information and track development activity, which in turn affects trust and perceived transparency. Taken together, these excerpts support the persona\u2019s need to understand development near them, address housing-related concerns, and have reliable channels to obtain information, thereby informing the JTBD\u2019s emotional/trust dimension and the broader systems/coordination and functional aspects of the job. Specifically, mentions of housing oppression, racial inequity, community health, and city planning guidance demonstrate the lived impact on residents; references to interactive mapping tools and permit portals illustrate how residents interact with development information and processes, which influence perceived transparency and trust.",
+        "citations": [
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "systems_job_to_be_done.core_pain",
+        "reasoning": "The field value points to four intertwined problems across multiple systems and data silos: (1) duplicative effort across tools that may perform overlapping tasks (e.g., multiple portals and mapping tools), (2) missed deadlines or delayed workflows due to fragmented processes and lack of streamlined coordination, (3) inconsistent identifiers across different systems (for parcels, permits, approvals, etc.), and (4) no straightforward way to segment or align information by boundaries like HOA/Civic Association/City Council district. Excerpts describing online permit portals, interactive mapping tools, and GIS/mapping efforts illustrate a landscape of multiple, potentially overlapping systems that could generate duplication of work and misaligned data if not integrated. For instance, references to an online permit portal that handles plan submissions, payments, inspections, and status checks indicate a separate, process-specific system that could diverge from other planning or mapping tools, contributing to duplication and delays. Similarly, mentions of mapping tools and parcel mappers imply data from different sources that may need harmonization, increasing the risk of inconsistent identifiers unless unified standards exist. The existence of planning bodies and plans (planning commissions, master plans) underscores ongoing coordination across entities, which, without integrated data workflows, can suffer from timing and boundary-framing challenges. Taken together, these excerpts support the idea that systemic pains arise from multiple, potentially siloed systems lacking coherent identifiers and boundary-based segmentation, leading to duplication, delays, and coordination hurdles. The excerpts most directly touching on cross-system toolsets and data coordination are the strongest matches, while those focused on individual features or historical documents illustrate the broader context but do not directly demonstrate the systemic frictions.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/commission-architectural-review",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 Commission of Architectural Review. New applications for certificates of appropriateness can be submitted via email or via Microsoft OneDrive."
+            ],
+            "title": "Commission of Architectural Review | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "functional_job_to_be_done.situation",
+        "reasoning": "The target field value describes a trigger event in which a major development action (rezoning, special use permit, or major building permit) is initiated in proximity to a resident. Excerpts detailing the permitting process, such as the Online Permit Portal and the Permits and Inspections page, directly map to the motivation and outcome of a resident wanting to understand and monitor such actions near their home. Content that explains how zoning administration handles developments that may not align with existing zoning regulations provides direct support for the idea that residents are affected by and interested in how these decisions are evaluated and communicated. References to parcel mapping and land-use tools show how residents could locate and observe parcels near their residence, which is a practical means to identify when such actions could occur. Planning commission agendas and calendars demonstrate the procedural visibility of development proposals, matching the emotional/trust and systems/coordination aspects of the JTBD by showing how residents can stay informed and participate in processes. While some items focus on violations or general mapping, they still relate to the broader theme of monitoring and understanding neighborhood development activity from a resident perspective.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal-0",
+            "excerpts": [
+              "Sep 10, 2021 \u00b7 The City of Richmond is pleased to announce the launch of our new Online Permit Portal (OPP). Title Redirect. https://www.rva.gov/planning-development-review/\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "5 days ago \u2014 Planning Commission, 3/17/2026, Export to iCalendar, 6:00 PM, 5th Floor Conference Room To access the meeting via Microsoft Teams: https://go.rva.gov/CPC2026"
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "prior_art_questions.2",
+        "reasoning": "The most relevant excerpt notes that Code Refresh invites the public to attend an upcoming event to speak with the project team, and also provides a direct contact option if attendance is not possible. This directly informs onboarding and copy by highlighting accessible engagement channels and opportunities for real-time dialogue. The next excerpt discusses a revised Code Refresh draft and contextual changes to zoning proposals, which can seed copy about ongoing updates, transparency, and responsiveness to stakeholder input. The third excerpt references Planning Commission agendas and the Legistar calendar, which can be used to surface authoritative schedules and formal public input touchpoints in onboarding materials, ensuring users understand where to find official meeting information. Together, these excerpts suggest embedding clear pathways for engagement (events, direct contact, updates) and providing access to official planning processes in onboarding and copy for the project\u2019s civic tech audience.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "Nov 18, 2025 \u00b7 Attend an upcoming event to speak to the project team directly. If you're unable to attend an event or have a pressing question, then you can reach out to the"
+            ],
+            "title": "Code Refresh | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.vpm.org/news/2025-11-25/rva-code-refresh-draft-two-zoning-housing-city-planning",
+            "excerpts": [
+              "Nov 25, 2025 \u00b7 Richmond planners rolled out a revised version of the city's Code Refresh zoning map on Nov. 18, pulling back on several proposals from the first version"
+            ],
+            "title": "New Richmond Code Refresh draft pulls back on upzoning proposals"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "functional_job_to_be_done.motivation",
+        "reasoning": "The target field value envisions a map-centric synopsis of development proposals plus an understanding of the review timeline. Excerpts describing interactive mapping tools and the Richmond Parcel Mapper directly support the map-based aspect by indicating there are systems to query, display parcels, and view zoning-related layers, which are essential components of a map-based summary of proposals. That same category of content (GIS/mapping) reinforces the feasibility of producing a map-driven overview. Excerpts about planning commission agendas and the Legistar calendar connect to the review timeline, showing where proposals are discussed and scheduled, thereby addressing the timeline component of the field value.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal-0",
+            "excerpts": [
+              "Sep 10, 2021 \u00b7 The City of Richmond is pleased to announce the launch of our new Online Permit Portal (OPP). Title Redirect. https://www.rva.gov/planning-development-review/\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "systems_job_to_be_done.current_workaround",
+        "reasoning": "The finegrained field concerns a current workaround in a JTBD system context. Excerpts describing the Online Permit Portal and interactive mapping tools indicate established digital channels through which residents can access and share information about development activity. These tools reflect potential mechanisms for coordinating information flow and facilitating user trust and integration with other systems. For example, the Online Permit Portal describes a centralized place for submitting plans, paying for permits, requesting inspections, and tracking requests, which exemplifies a digital workflow and coordination touchpoint that could relate to a current workaround of distributing information via electronic channels. Interactive mapping tools and parcel mapping discussions show how residents can visualize parcels and zoning-related data, which is relevant to understanding how information is disseminated and consumed in Richmond. While these excerpts do not confirm the exact workaround of copying links into newsletters or maintaining ad-hoc spreadsheets, they provide the contextual foundation of digital infrastructure that could support or replace such a workaround in a JTBD systems/coordination scenario. Therefore, these excerpts are the most relevant for assessing how the current workaround might fit within the broader digital ecosystem of civic tech in Richmond, VA.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "user_questions.1",
+        "reasoning": "The most relevant information comes from excerpts that describe how the City of Richmond provides mapping and GIS capabilities, which are essential to defining a geographic radius for a near-me query. One excerpt explains that the Land Use Administration provides analysis for proposed developments and mentions how tools exist to support planning decisions, implying spatial awareness and proximity considerations in their analyses. Another excerpt directly discusses interactive mapping tools and explicitly mentions a parcel mapper for land use projects, which is a concrete geospatial tool for querying parcels within the city. This is highly relevant because defining a radius or boundary for what constitutes \u201cnear me\u201d would rely on the ability to query parcels and visualize proximity to a resident\u2019s location. Additional excerpts focus on GIS/mapping resources and open data, which are foundational for implementing any distance- or boundary-based feature in a civic tech solution. Taken together, these excerpts indicate that Richmond has mapping and parcel-based querying capabilities that could support a radius definition, but none explicitly prescribe a single standard radius. Therefore, they provide structural and contextual support for implementing and testing radius options (e.g., by distance, by neighborhood boundary, or by council district) in the JTBD deliverable, rather than providing a final, authoritative radius value.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The",
+              "The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The May 1, 2020 \u2014 Open Data. Inspector General. Home \u00b7 IG Reports. Justice Services. Adult ... Richmond, VA 23219 USA. Hours of Operation Monday \u2013 Friday 8:00 AM \u2013 5:00 PM."
+            ],
+            "title": "GIS/Mapping | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "systems_job_to_be_done.motivation",
+        "reasoning": "The target motivation describes a need for a single, integrated stream that connects parcels, permits, staff reports, agendas, and meeting logistics. Excerpts that discuss a centralized or workflow-oriented access point for planning activities directly support this aim by showing precedence for aggregating planning data, schedules, and case information. The planning commission excerpt references agendas and a Legistar calendar, illustrating how meeting-related materials are organized and accessed, which aligns with the \u2018meeting logistics\u2019 and \u2018agendas\u2019 components of the motivation. Parcel-related excerpts describe mapping tools and parcel data access, which map to the \u2018parcels\u2019 component of the motivation. Permit-focused excerpts describe online permit portals and permit-tracking capabilities, which correspond to the \u2018permits\u2019 component. GIS/mapping and master plan references provide ecosystem context, underscoring that such a unified feed would be embedded within a broader planning information landscape rather than existing as a single silo. Together, these excerpts collectively support the feasibility and components of a unified data feed that links parcels, permits, staff reports, agendas, and meeting logistics.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "emotional_job_to_be_done.motivation",
+        "reasoning": "The field value expresses a need for information that is transparent, in plain language, and drawn from trustworthy sources. Excerpts that describe an online permit portal and public-facing mapping tools illustrate how residents can directly access government information in a transparent, centralized manner. The online permit portal is designed for residents to submit, apply, pay for permits, request inspections, and check status, which embodies transparency and accessibility from an official source. The interactive mapping tools describe layers and querying capabilities for parcels and zoning, enabling residents to understand the spatial aspects of development activity. Land use administration materials emphasize guidance and analysis offered by City staff, framing development information as something residents can rely on from a credible authority. The Mayoral Action Plan references neighborhood-focused goals within the city framework, signaling a credible, strategic source for context about neighborhoods and development initiatives. The Permits and Inspections content reinforces practical access to information, including hours and channels for obtaining updates, further supporting transparent, public-facing information channels. Collectively, these excerpts map onto the motivation by showing concrete, trustworthy, and accessible information pathways that a resident would expect to use to learn about development proposals in Richmond. ",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "emotional_job_to_be_done.outcome",
+        "reasoning": "The user's finegrained field value expresses a desire for confidence that no decisions affecting affordability, parking, trees, and neighborhood character are missed. Excerpts describing city planning priorities and governance provide direct context for what decisions exist and how they are tracked. Specifically, the action-focused plan emphasizing Thriving Neighborhoods and housing needs signals a policy environment where affordability, parking, trees, and neighborhood character are central concerns. The master plan that lists numerous goals, objectives, and strategies further clarifies the complex decision space and what quality-of-life factors planners aim to impact, which underpins the user\u2019s need to monitor for implications on affordability, parking, trees, and neighborhood character. The interactive mapping tools excerpt highlights practical mechanisms (zoning maps, parcels, and development-related queries) that enable residents or analysts to observe proposals and their potential impact on the neighborhood, aligning with the idea of not missing relevant decisions. The remaining excerpts provide contextual basis about land-use administration and permitting processes, which establish additional channels through which decisions are communicated or implemented, thus contributing to the overall ability to detect decisions affecting the targeted factors. Together, these excerpts support the notion that Richmond\u2019s planning framework and transparency tools exist to help ensure residents are informed about decisions that affect affordability, parking, trees, and neighborhood character, thereby contributing to the requested emotional JTBD outcome.",
+        "citations": [
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "data_questions.0",
+        "reasoning": "The most directly relevant excerpts describe the Online Permit Portal's functionalities, which are the closest signals to data endpoints. One excerpt states that the Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request. This shows there is an integrated portal that handles permit-related actions, but it does not confirm the existence of a public API or data endpoints. A second closely related excerpt reiterates the portal context and its permit-related capabilities, reinforcing the focus on portal-based interactions rather than documented API access. A third excerpt about Permits and Inspections indicates ongoing and structured permit workflow processes managed by the city, which may imply structured data exposure internally, but again does not specify an API. The remaining excerpts provide broader context about mapping, zoning, land use administration, and planning documents that establish the domain but do not address data endpoints or API access. Taken together, these excerpts support that there is a functioning Online Permit Portal with permit data handling, but there is no explicit evidence of a public API in the excerpts themselves; scraping and API availability remain unconfirmed by these sources. The analysis, therefore, centers on identifying portal-related evidence and acknowledging the lack of explicit API details.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "emotional_job_to_be_done.core_pain",
+        "reasoning": "The target field value describes a core emotional pain involving anxiety and distrust stemming from late notice, jargon-heavy documents, and a perception that decisions are made before community input. The most relevant excerpts directly touch on governance processes and how information is communicated to the public. The land use administration excerpt indicates that developments may be advised or analyzed in ways that could bypass expected transparency if not clearly explained to residents. This supports the idea that decisions may feel made without input, contributing to distrust. The interactive mapping tools excerpt demonstrates that residents can access parcel and land-use information, which is a mechanism to reduce jargon and opacity when presented well. The master plan excerpt and the mayoral action plan excerpt reference planning goals and strategies, outlining a formalized process that can feel distant to residents if not accompanied by clear timelines and opportunities for input. The online permit portal excerpt highlights a channel for submitting and tracking plans, which can improve perceived participation and reduce anxiety around unobserved activity. Taken together, these excerpts illustrate the components that influence emotional trust: transparency of process, clarity of information, and accessible participation channels. When these elements are weakened, the described anxiety and distrust are more likely to occur; when strengthened, they would mitigate the emotional pain described in the field value.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "equity_questions.2",
+        "reasoning": "To support the finegrained field value about safeguards ensuring equal visibility for under-resourced neighborhoods, we look for excerpts that discuss equity-oriented planning, access to information, and tools that influence who can discover and understand development activity. The excerpt describing interactive mapping tools highlights how querying and displaying parcels can enable residents to see land-use information, which is a direct mechanism for visibility. The excerpt about the Online Permit Portal demonstrates a digital access channel for submitting and tracking permits, which relates to inclusive access and reducing barriers to information and processes. The excerpt on Land Use Administration references advisory support for developments and potential regulatory barriers, which can inform safeguards to ensure equitable interpretation and access. Excerpts referencing broader equity aspirations or historical context provide critical background: one notes a history of racial oppression and housing inequity, reinforcing why safeguards are necessary; another references Thriving Neighborhoods as a policy aim, indicating institutional commitments to equity in neighborhood development; and the Master Plan outlines goals and strategies that can be leveraged to design safeguards for visibility. Collectively, these sources suggest concrete channels and policy framing that can implement or justify safeguards for equal visibility and access for under-resourced neighborhoods.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "equity_questions.0",
+        "reasoning": "To support the finegrained field value, we look for evidence about digital access channels and how residents typically engage with civic processes. The Online Permit Portal excerpt describes a portal where customers submit plans, apply/pay for permits, request inspections, and check request status, which directly relates to online engagement and potential barriers for residents with limited internet. The Interactive Mapping Tools excerpt discusses layers and querying/display of parcels for land-use projects, indicating the availability and use of digital tools to access information about development, which is relevant to informing residents who might rely on online data. The Mayoral Action Plan excerpt mentions Thriving Neighborhoods and housing needs, providing contextual alignment to equity-driven outreach goals, though it is less specific about digital channels; it still supports the broader objective of reaching diverse neighborhoods and ensuring information is accessible. Overall, the most relevant pieces show existence of online engagement channels and digital tools that could influence how SMS-based or low-bandwidth outreach might be integrated, while the contextual planning document informs equity considerations for outreach strategies.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "functional_job_to_be_done.current_workaround",
+        "reasoning": "The most relevant information directly supports the stated workaround components: use of the Online Permit Portal for plans, reviews, and status checks is explicitly described, making it a primary source of current practice. Multiple excerpts confirm the existence and purpose of the Online Permit Portal. The Legistar agendas/calendar is another concrete channel residents use to stay informed about planning activities and meetings, aligning with the stated workaround of consulting Legistar calendars. Parcel and zoning maps appear as a separate but related information source; the Parcel Mapper and mentions of zoning maps show how residents would access property and zoning information to understand development proposals, matching the cited manual checking of parcel/zoning maps. Together, these sources map onto the components of the described workaround (digital portals, meetings calendars, and spatial information/maps) and corroborate the pattern of manual, self-serve information gathering via these tools. The other sources (land use administration, zoning administration, planning commission pages, and architectural review) provide context about the broader development information ecosystem but are less directly cited as the specific current workaround tools, though they reinforce the channels through which residents might learn about development activities. ",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal-0",
+            "excerpts": [
+              "Sep 10, 2021 \u00b7 The City of Richmond is pleased to announce the launch of our new Online Permit Portal (OPP). Title Redirect. https://www.rva.gov/planning-development-review/\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/commission-architectural-review",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 Commission of Architectural Review. New applications for certificates of appropriateness can be submitted via email or via Microsoft OneDrive."
+            ],
+            "title": "Commission of Architectural Review | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "data_questions.4",
+        "reasoning": "The most relevant excerpts discuss the Online Permit Portal and status visibility, which are directly connected to how quickly and publicly information about permits is updated and shown to residents: the Online Permit Portal enables submitting plans, paying for permits, requesting inspections, and checking the status of a request, which implies a public-facing timeline from submission to visibility. Similarly, the Online Permit Portal entry reinforces that users can check statuses, which is essential to understanding latency to public visibility. The Permits and Inspections entry adds context about the Permit Center operations and support channels, which can influence cadence through office hours and staffing, even though it does not specify exact times. Other excerpts describe mapping tools, zoning administration, and master plans; these are informative for general civic processes but do not directly address permit/land-use cadences or public visibility timelines, so they are less relevant to the specific field value. Overall, the strongest support comes from references to online submission, status checks, and public-facing status visibility, with supporting context from operations that could affect cadence (like permit center availability).",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "data_questions.2",
+        "reasoning": "The most directly relevant excerpt explicitly describes layers contained in the zoning map, which indicates which datasets may be exposed as GIS layers (e.g., City Boundary; Parcels; Zoning Districts; Special \u2026). This directly touches on whether datasets like BZA cases or Special Use Permits could be available as GIS layers, and whether such layers are part of a documented layer scheme. The second excerpt documents that there is a Richmond Parcel Mapper for land use projects, reinforcing that parcel data are exposed as GIS layers and queried/displayed, which supports the notion of GIS-exposed datasets. The third excerpt describes the broader GIS Mapping and Mapping Division responsibilities, signaling that GIS data and mapping are central to the office's duties; this supports the idea that GIS layers for official datasets exist and could be updated, though it does not specify which particular datasets (BZA, Special Use Permits, CAR certificates) or update frequencies. However, none of the excerpts provide explicit update frequency documentation for these datasets, so while GIS-layer exposure is supported, frequency details are not present in the cited material.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "prior_art_questions.0",
+        "reasoning": "The most relevant excerpt explicitly describes the Richmond Parcel Mapper for Land Use Projects, which permits querying and displaying real estate parcels in the city of Richmond. This demonstrates a geo-referenced, object-level data tool that tracks parcels in a geographic context, aligning with the inquiry about tools that track permits or cases by geography. A closely related excerpt details the Interactive Mapping Tools and notes zoning map layers including Parcels, which reinforces the existence of geography-aware, map-based data layers that could underpin geo-tracking of development activity or permits. A planning-committee-focused excerpt points to agendas/minutes through a Legistar calendar, indicating formal tracking of planning actions, which is related to cases but less clearly geo-enabled. Other excerpts mention the Code Refresh process and general land-use administration; these relate more to workflows or administrative advice than to geo-spatial tracking of permits by geography, but still touch on development activity data. Collectively, the strongest support is for geo-enabled mapping and parcel-level data tools; secondary support exists for geography-anchored planning actions and land-use context that could inform or be extended to geo-tracking of permits/cases by geography.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.vpm.org/news/2025-11-25/rva-code-refresh-draft-two-zoning-housing-city-planning",
+            "excerpts": [
+              "Nov 25, 2025 \u00b7 Richmond planners rolled out a revised version of the city's Code Refresh zoning map on Nov. 18, pulling back on several proposals from the first version"
+            ],
+            "title": "New Richmond Code Refresh draft pulls back on upzoning proposals"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/code-refresh",
+            "excerpts": [
+              "Nov 18, 2025 \u00b7 Attend an upcoming event to speak to the project team directly. If you're unable to attend an event or have a pressing question, then you can reach out to the"
+            ],
+            "title": "Code Refresh | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "data_questions.1",
+        "reasoning": "The most directly relevant information describes the Parcel Mapper as a tool for querying and displaying real estate parcels within Richmond, which is central to mapping case records to parcels and addresses. This establishes that parcel data and mapping capabilities exist and are used to relate parcels to land-use projects. Supporting details from the GIS Mapping excerpt describe the broader responsibilities of the GIS and Mapping Division, which reinforces that parcel data, mapping layers, and identifiers are part of official city processes. The Land Use Administration excerpt notes that the department provides analysis for proposed developments, which can involve mapping developments to parcels and assessing impacts by parcel. Zoning Administration discusses handling zoning-related processes and potential violations, indicating the existence of zoning layers that would be part of any canonical identification scheme. The Master Plan and Thriving Neighborhoods action plan offer contextual goals but are less directly about the technical mapping IDs. Together, these excerpts suggest that parcel identifiers (such as parcel IDs or GPINs) are used within Richmond\u2019s parcel mapper and related GIS/zoning layers to connect case records to parcels, and that canonical identifiers would be drawn from parcel and zoning data layers, though explicit statements listing the exact canonical IDs are not provided in the excerpts.\n",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/zoning-administration",
+            "excerpts": [
+              "Jan 15, 2021 \u2014 Possible violations of the Zoning Ordinance can be reported to the Zoning Administrator. File a zoning violation using the automated request process at RVA 311."
+            ],
+            "title": "Zoning Administration | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/master-plan",
+            "excerpts": [
+              "The 17 goals, 73 objectives, and 415 strategies outlined in this plan provide guidance for City staff, local businesses, the development community, non-profits,"
+            ],
+            "title": "Master Plan - Richmond 300 - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "functional_job_to_be_done.core_pain",
+        "reasoning": "The core pains describe a system where information is scattered across multiple portals and formats, making it hard to locate, interpret, and act upon. The most relevant excerpts describe an Online Permit Portal that enables submitting plans, paying for permits, requesting inspections, and checking request statuses, highlighting a centralized but potentially siloed system where users still must navigate multiple steps and interfaces. This exemplifies a fragmented digital ecosystem where users must hunt across portals to complete tasks. Related excerpts discuss GIS/Mapping and Parcels/Interactive Mapping Tools, which indicate the existence of geographic data layers and parcel-level information. While useful, these tools suggest that residents would need to translate or interpret technical map data to understand development near them, pointing to potential language and usability barriers. Additional references to Land Use Administration and Permits/Inspections emphasize procedural and regulatory information across diverse channels, underscoring coordination challenges between different agencies and platforms. The combination of centralized portals for certain tasks (permits/inspections) and broader GIS/mapping tools (parcels, zoning, planning) supports the concept of fragmented, multi-source information flows that can be hard to search and understand for laypeople, aligning with the described core pains. The absence of explicit, geo-targeted alert features in these excerpts suggests a gap in direct, location-based notifications, reinforcing the need for improved targeted communication. Taken together, these excerpts illustrate a digital environment where information is distributed across multiple interfaces with varying levels of accessibility and translation, which maps well onto the stated pains of fragmentation, hard-to-search case records, and non-user-friendly language.",
+        "citations": [
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal",
+            "excerpts": [
+              "Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from Jan 8, 2021 \u00b7 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from\u00a0...",
+              "Jan 8, 2021 \u2014 The Online Permit Portal allows customers to submit plans for review, apply and pay for permits, request inspections, and check the status of a request from"
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/online-permit-portal-0",
+            "excerpts": [
+              "Sep 10, 2021 \u00b7 The City of Richmond is pleased to announce the launch of our new Online Permit Portal (OPP). Title Redirect. https://www.rva.gov/planning-development-review/\u00a0..."
+            ],
+            "title": "Online Permit Portal | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/permits-and-inspections",
+            "excerpts": [
+              "Jul 26, 2024 \u00b7 Planning & Development Review ... Permit Center Open for Walk-in: Monday-Friday 8:00 a.m. - 1:00 p.m.. Phone Line Open: Monday-Friday 8:00 a.m. - 5:00 p.m.. Jul 26, 2024 \u00b7 The Online Permit Portal (OPP) should be used for Commercial and Residential Building permits, Commercial, Electrical and Mechanical permits, all Residential"
+            ],
+            "title": "Permits and Inspections | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "functional_job_to_be_done.outcome",
+        "reasoning": "To understand impacts early and decide whether to engage, the most actionable information is about formal engagement channels and schedules. Excerpts that describe planning commission meetings, agendas, minutes, and official calendars provide direct pathways to learn about proposals ahead of time and determine whether to participate. This includes explicit mentions of viewing agendas and minutes and access to the Legistar calendar, which enables residents to anticipate items for discussion and decide on commenting or attendance. Additionally, information about a city calendar specific to planning activities, such as planning commission events, further supports timely engagement decisions. Complementary to engagement channels, excerpts describing interactive mapping tools and GIS/open data give residents the means to visualize development-related data (e.g., parcels, zoning, land-use projects). This supports early assessment of which proposals may affect a neighborhood, informing whether to engage. Information about the Online Permit Portal and other planning-control portals, while primarily about permit processes, underscores available official touchpoints for monitoring development activity. Finally, broader planning context materials (like master plans or action plans) provide a framework that helps interpret proposals within long-term neighborhood goals, reinforcing the basis for deciding if and how to engage. In short, these excerpts collectively show both how to access timely information about development and how to visualize or analyze that information to determine engagement needs.",
+        "citations": [
+          {
+            "url": "https://richmondva.legistar.com/",
+            "excerpts": [
+              "5 days ago \u2014 Planning Commission, 3/17/2026, Export to iCalendar, 6:00 PM, 5th Floor Conference Room To access the meeting via Microsoft Teams: https://go.rva.gov/CPC2026"
+            ],
+            "title": "City of Richmond - Calendar"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/planning-commission",
+            "excerpts": [
+              "To view the agendas and minutes for the City Planning Commission meetings, please click here to view the Legistar calendar. Within the 'Legistar Calendar'"
+            ],
+            "title": "Planning Commission | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/interactive-mapping-tools",
+            "excerpts": [
+              "Jan 8, 2021 \u2014 Layers contained in the Zoning map are as follows: City Boundary; Parcels; Zoning Districts; Zoning Confirmation Letters; Board of Zoning Appeals Cases; Special Jan 8, 2021 \u2014 The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond.",
+              "The Richmond Parcel Mapper for Land Use Projects permits querying and display of real estate parcels found in the city of Richmond."
+            ],
+            "title": "Interactive Mapping Tools | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/assessor-real-estate/gismapping",
+            "excerpts": [
+              "May 1, 2020 \u2014 The GIS (Geographic Information Systems) and Mapping Division of the Assessor's Office is responsible for a variety of duties in the Assessor's Office. The"
+            ],
+            "title": "GIS/Mapping | Richmond"
+          },
+          {
+            "url": "https://www.rva.gov/planning-development-review/land-use-administration",
+            "excerpts": [
+              "Jan 7, 2021 \u00b7 The Land Use Administration provides advice and analysis for proposed developments that may not be permitted by current underlying zoning regulations. Land Use"
+            ],
+            "title": "Land Use Administration | Richmond - RVA.gov"
+          },
+          {
+            "url": "https://rva.gov/sites/default/files/2025-10/2025-MAP-Oct15_F.pdf",
+            "excerpts": [
+              "A Thriving City Hall (that gets things done). 2. Thriving Neighborhoods (that meet our housing needs). 3. Thriving Families (where every child succeeds)."
+            ],
+            "title": "[PDF] Mayoral Action Plan | 2025 - RVA.gov"
+          },
+          {
+            "url": "https://storymaps.arcgis.com/stories/c65689bef6e646a294c8c26b9863c310",
+            "excerpts": [
+              "May 1, 2020 \u2014 A story of racial oppression, housing inequity, and community health."
+            ],
+            "title": "Housing and Health in Richmond, Virginia"
+          }
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "type": "json",
+    "beta_fields": null,
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "project_summary": {
+          "type": "object",
+          "properties": {
+            "pillar": {
+              "type": "string",
+              "description": "The strategic pillar from the Richmond 300 plan that the project aligns with."
+            },
+            "problem_statement": {
+              "type": "string",
+              "description": "The specific problem the project aims to solve for Richmond residents."
+            },
+            "project_name": {
+              "type": "string",
+              "description": "The designated name of the civic tech project."
+            },
+            "description": {
+              "type": "string",
+              "description": "A brief description of the project's purpose and functionality."
+            }
+          },
+          "required": [
+            "pillar",
+            "problem_statement",
+            "project_name",
+            "description"
+          ],
+          "additionalProperties": false
+        },
+        "functional_job_to_be_done": {
+          "type": "object",
+          "properties": {
+            "situation": {
+              "type": "string",
+              "description": "The context or situation that triggers the need for the job."
+            },
+            "persona": {
+              "type": "string",
+              "description": "The user persona performing the job, e.g., 'a concerned resident'."
+            },
+            "motivation": {
+              "type": "string",
+              "description": "The core task the user wants to accomplish."
+            },
+            "outcome": {
+              "type": "string",
+              "description": "The desired result or goal the user wants to achieve."
+            },
+            "current_workaround": {
+              "type": "string",
+              "description": "The current, often inefficient, method the user employs to get the job done."
+            },
+            "core_pain": {
+              "type": "string",
+              "description": "The primary frustration or problem with the current workaround."
+            }
+          },
+          "required": [
+            "situation",
+            "persona",
+            "motivation",
+            "outcome",
+            "current_workaround",
+            "core_pain"
+          ],
+          "additionalProperties": false
+        },
+        "emotional_job_to_be_done": {
+          "type": "object",
+          "properties": {
+            "situation": {
+              "type": "string",
+              "description": "The context or situation that triggers the need for the job."
+            },
+            "persona": {
+              "type": "string",
+              "description": "The user persona performing the job, e.g., 'a long-time homeowner'."
+            },
+            "motivation": {
+              "type": "string",
+              "description": "The core task the user wants to accomplish."
+            },
+            "outcome": {
+              "type": "string",
+              "description": "The desired result or goal the user wants to achieve."
+            },
+            "current_workaround": {
+              "type": "string",
+              "description": "The current, often inefficient, method the user employs to get the job done."
+            },
+            "core_pain": {
+              "type": "string",
+              "description": "The primary frustration or problem with the current workaround."
+            }
+          },
+          "required": [
+            "situation",
+            "persona",
+            "motivation",
+            "outcome",
+            "current_workaround",
+            "core_pain"
+          ],
+          "additionalProperties": false
+        },
+        "systems_job_to_be_done": {
+          "type": "object",
+          "properties": {
+            "situation": {
+              "type": "string",
+              "description": "The context or situation that triggers the need for the job."
+            },
+            "persona": {
+              "type": "string",
+              "description": "The user persona performing the job, e.g., 'a neighborhood association leader'."
+            },
+            "motivation": {
+              "type": "string",
+              "description": "The core task the user wants to accomplish."
+            },
+            "outcome": {
+              "type": "string",
+              "description": "The desired result or goal the user wants to achieve."
+            },
+            "current_workaround": {
+              "type": "string",
+              "description": "The current, often inefficient, method the user employs to get the job done."
+            },
+            "core_pain": {
+              "type": "string",
+              "description": "The primary frustration or problem with the current workaround."
+            }
+          },
+          "required": [
+            "situation",
+            "persona",
+            "motivation",
+            "outcome",
+            "current_workaround",
+            "core_pain"
+          ],
+          "additionalProperties": false
+        },
+        "data_questions": {
+          "type": "array",
+          "description": "A list of open questions related to data sources, availability, quality, and format for development proposals in Richmond, VA.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "user_questions": {
+          "type": "array",
+          "description": "A list of open questions about the target users (Richmond residents), their needs, technical literacy, and how they would interact with the tool.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "integration_questions": {
+          "type": "array",
+          "description": "A list of open questions concerning the technical integration of the project with existing City of Richmond systems like the Online Permit Portal (EnerGov), Legistar, and GIS mapping tools.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "equity_questions": {
+          "type": "array",
+          "description": "A list of open questions focused on ensuring equitable access, addressing the digital divide, and preventing bias in how development information is presented and distributed to Richmond's diverse neighborhoods.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prior_art_questions": {
+          "type": "array",
+          "description": "A list of open questions about similar civic tech projects in other cities, or any previous attempts to solve this problem in Richmond (e.g., by Code for RVA or other groups).",
+          "items": {
+            "type": "string"
+          }
+        },
+        "richmond_systems_overview": {
+          "type": "string",
+          "description": "A summary of the current systems and processes residents must navigate to find development information in Richmond, VA, based on research findings. This includes the Online Permit Portal, Legistar for meeting agendas, and various interactive GIS maps."
+        }
+      },
+      "required": [
+        "project_summary",
+        "functional_job_to_be_done",
+        "emotional_job_to_be_done",
+        "systems_job_to_be_done",
+        "data_questions",
+        "user_questions",
+        "integration_questions",
+        "equity_questions",
+        "prior_art_questions",
+        "richmond_systems_overview"
+      ],
+      "additionalProperties": false
+    },
+    "content_file": "jtbd_analysis.md"
+  }
+}

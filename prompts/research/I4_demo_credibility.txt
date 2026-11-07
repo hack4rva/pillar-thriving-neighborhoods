@@ -1,0 +1,19 @@
+Demo Strategy I4 — Building Demo Credibility for Thriving Neighborhoods
+
+Identify the specific elements that make a Thriving Neighborhoods prototype feel credible and trustworthy to judges, City staff, and community members.
+
+Cover:
+- The role of real data: using real Richmond addresses, real Legistar case numbers, real neighborhood names
+- The role of source transparency: displaying "from Legistar" or "from HUD" on every data element
+- The role of limitation statements: acknowledging what the tool does not cover increases rather than decreases credibility
+- The role of local specificity: naming specific Richmond neighborhoods and using local context
+- The role of user story grounding: opening with a real type of resident (not a fictional generic user)
+- The role of official links: every piece of information should have a path back to an official source
+- The role of data freshness: showing when data was last updated signals responsibility
+- How to avoid the common credibility killers: lorem ipsum data, generic addresses, vague impact claims
+
+Output
+- Credibility checklist for demo day
+- Top 5 credibility builders for this pillar
+- Top 5 credibility killers to avoid
+- Required on-screen elements (source labels, disclaimers, official links)

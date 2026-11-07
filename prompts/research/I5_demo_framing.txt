@@ -1,0 +1,17 @@
+Demo Strategy I5 — Framing Language for Thriving Neighborhoods Demos
+
+Produce a guide to the language and framing that works and does not work when presenting a Thriving Neighborhoods prototype to judges.
+
+Cover:
+- What to say about the problem: framing language that conveys urgency and resident impact without overstating
+- What to say about the solution: framing that is accurate about capability and honest about limitations
+- What to say about the data: how to explain Legistar, GeoHub, and HUD data to a non-technical judge in 10 seconds
+- What to say about the continuation pathway: how to make the "what happens next?" answer concrete and credible
+- Language that signals credibility: "data from Richmond's public records system," "we link back to the official City Council record," "this is a staff-support prototype"
+- Language that triggers skepticism: "this will solve displacement," "real-time alerts," "official City tool"
+- How to answer the hard judge questions: "what if the AI summary is wrong?", "what about data privacy?", "would the City actually use this?"
+
+Output
+- Word-for-word framing for the opening, solution description, data explanation, and close
+- Avoid-use-instead table: problem phrases and better alternatives
+- Answers to the 5 most likely hard judge questions

@@ -1,0 +1,19 @@
+MVP Feasibility H2 — Neighborhood Development Tracker Build Feasibility
+
+Assess the build feasibility of the neighborhood development notifier / tracker in detail.
+
+Cover:
+- Technical architecture: Legistar API → geocoding → map display → summary cards
+- Minimum viable version: what 5 features are absolutely needed for a credible demo
+- Data access path: how to get Legistar data, how to geocode it against Richmond parcel data
+- Front-end tech choice: Leaflet vs. Mapbox, React vs. vanilla JS, static vs. dynamic
+- Estimated build hours for each component: data pipeline, geocoding, map display, card UI, plain-language summaries
+- What can be pre-seeded for reliability: a static JSON of 10–20 curated Legistar records
+- What must be live for credibility: linking to current Legistar records
+
+Output
+- Build feasibility assessment (High / Medium / Low with rationale)
+- Recommended tech stack for a 48-hour build
+- Hour estimates for each major component
+- What to pre-seed vs. what to pull live
+- Definition of "done" for this MVP

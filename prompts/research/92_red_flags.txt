@@ -1,0 +1,28 @@
+Red Flags — Thriving Neighborhoods
+
+Identify the top risks and red flags for Pillar 2 hackathon projects. These are patterns that have caused civic tech projects to fail, mislead users, or cause harm.
+
+1) Claiming a development summary is official or authoritative when it is AI-generated and may contain errors. The risk: residents act on wrong information and miss comment deadlines or misunderstand what is proposed.
+
+2) Building a tool that implies a development proposal will be approved or denied. Planning outcomes depend on Commission votes and Council decisions that software cannot predict.
+
+3) Using Legistar data without confirming that Richmond's instance has API access enabled. A tool built assuming API access that is not available will fail during the demo and cannot be built without scraping.
+
+4) Building a housing compliance tool that implies it can monitor real compliance, when actual compliance data (rent rolls, developer reports, contract terms) is not publicly available.
+
+5) Overpromising notification or alert features that require server infrastructure, user accounts, or email delivery systems that cannot be built and tested in 48 hours.
+
+6) Including real tenant, resident, or property owner personal data in a demo without consent and appropriate data handling.
+
+7) Implying that a neighborhood change visualization shows causal relationships (e.g., "this development caused displacement") when the data only shows correlation or association.
+
+8) Building affordability calculators that claim to tell users whether they qualify for housing programs — eligibility is complex and varies by program; incorrect guidance could cause harm.
+
+9) Presenting a tool as "the City's development tracker" or giving it a name that implies official City endorsement without a City partner.
+
+10) Failing to include last-updated dates and data source labels on any displayed information — stale data without timestamps misleads users about current status.
+
+Output
+- Red flags confirmed as real risks for this pillar
+- Mitigations for each flag
+- Red flags that are less severe with simple guardrails

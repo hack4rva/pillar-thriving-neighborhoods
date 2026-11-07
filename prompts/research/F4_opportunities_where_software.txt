@@ -1,0 +1,17 @@
+Opportunities F4 — Where Software Genuinely Helps in Thriving Neighborhoods
+
+Identify the parts of the neighborhood development and housing compliance problems where software can make a real difference vs. where the core issue is organizational, political, or resource-based.
+
+Focus on:
+- Where the problem is primarily one of information access: residents cannot find what exists
+- Where the problem is primarily one of information comprehension: residents cannot understand what they find
+- Where the problem is primarily one of information organization: staff cannot manage what they have
+- Where software can make a meaningful improvement without requiring policy change or new data
+- Where software would address a symptom but not the underlying problem
+- What would be more valuable than software (more staff, policy change, community organizing, etc.)
+
+Output
+- Software-addressable problems: ranked list
+- Not-software-addressable problems: ranked list with brief explanation
+- Where a hackathon prototype offers genuine value vs. a band-aid
+- Honest framing for a judge: what this prototype does and does not solve

@@ -1,0 +1,19 @@
+Data Inventory D3 — Publicly Accessible Housing Investment Data for Richmond
+
+Inventory the publicly accessible data sources that document affordable housing investments in Richmond, including both City-administered and federally subsidized programs.
+
+Cover:
+- What Legistar contains related to housing funding: grant approvals, loan authorizations, affordability agreements approved by City Council
+- How to search Legistar for housing-related ordinances and resolutions
+- HUD Affordable Housing Preservation catalog: what properties it covers, how to filter for Richmond, field structure
+- NLIHC National Housing Preservation Database: coverage, access method, reliability for Richmond
+- HUD CHAS data: what it measures, how to access Richmond-specific tables, known limitations
+- VHDA (Virginia Housing) data: what's publicly available for Richmond, access method
+- Any other publicly accessible sources that document Richmond's affordable housing inventory
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Inventory table: source, coverage, access method, fields, limitations
+- Which sources are most useful for a housing investment dashboard vs. a compliance monitoring tool

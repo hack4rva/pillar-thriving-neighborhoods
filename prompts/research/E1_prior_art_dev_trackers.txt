@@ -1,0 +1,18 @@
+Prior Art E1 — Development Tracking Tools Nationally
+
+Catalog development tracking and notification tools from other U.S. cities and civic tech organizations. Focus on tools that help residents discover and understand development proposals using public legislative or planning data.
+
+Include:
+- Councilmatic (Chicago and others): architecture, data source, open source availability, what it does well and poorly
+- Lookout SF / SPUR development notification tools: how they work, what data they use, resident adoption
+- Development tracker apps in Boston, Seattle, Los Angeles, or other cities: what patterns are common
+- Civic tech organizations that have built in this space: Code for America brigades, mySociety, OpenPlans, Urban Institute
+- What patterns are most commonly reused vs. what each city has had to build from scratch
+- Known failures: tools that were built but not adopted, tools that went stale, tools that caused harm
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Top 3 patterns most applicable to Richmond
+- What Richmond could adapt vs. what would need to be built from scratch

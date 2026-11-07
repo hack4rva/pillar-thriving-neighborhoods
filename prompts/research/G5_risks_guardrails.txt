@@ -1,0 +1,19 @@
+Risks G5 — Practical Guardrails for Thriving Neighborhoods Prototypes
+
+Produce a practical guardrail checklist for hackathon teams building Thriving Neighborhoods prototypes. These are the non-negotiable design choices that make a prototype safe to demo and responsible to show to judges and community members.
+
+Include guardrails for:
+- Source transparency: every piece of information must show where it came from and when it was last updated
+- AI summary labeling: any AI-generated content must be labeled as an interpretation and linked to the original official document
+- Scope claims: tools must state explicitly what they do and do not cover
+- Compliance neutrality: no tool should imply a development is compliant or non-compliant without official City determination
+- Eligibility neutrality: no tool should imply a person qualifies or does not qualify for housing programs
+- Data completeness: tools must state explicitly that data may not be complete or current
+- Official deference: all tools must direct users to official City sources for authoritative information
+
+Format the guardrail checklist as a pre-demo review that teams can walk through before presenting.
+
+Output
+- Guardrail checklist (pass/fail format)
+- For each guardrail: the risk if violated and the fix if failing
+- Required disclaimer language templates

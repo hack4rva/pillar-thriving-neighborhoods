@@ -1,0 +1,17 @@
+Services Landscape C4 — Where Residents Are Excluded from Development Awareness
+
+Investigate the specific service and information gaps that prevent Richmond residents from learning about and participating in development review.
+
+Focus on:
+- What services Richmond currently provides to help residents learn about development proposals (neighborhood liaisons, notification mailings, Planning Commission website, social media)
+- Where these services fall short: reach limitations, language barriers, digital access gaps, timing of notifications
+- Whether Richmond has a neighborhood association notification system and how reliable it is
+- What other cities do to fill these gaps (email subscription services, neighborhood portals, planning staff outreach)
+- Whether Richmond Planning has the staff capacity or systems to provide better proactive notification
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Gap analysis: what is missing that software could address vs. what requires staffing or policy changes
+- Specific services a hackathon prototype should complement rather than replace

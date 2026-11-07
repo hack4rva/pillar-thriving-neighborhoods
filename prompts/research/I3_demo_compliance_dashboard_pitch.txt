@@ -1,0 +1,24 @@
+Demo Strategy I3 — Compliance Dashboard Demo and Pitch Script
+
+Write a 3–5 minute demo script and pitch narrative for the affordable housing compliance monitoring tool concept.
+
+The script should:
+- Open with a specific City staff scenario: a housing compliance officer managing 17 funded developments with a spreadsheet and a Legistar search bar
+- Frame the problem: manual cross-referencing, no alerts for expiring affordability periods, no easy way to compare committed rents to HUD FMR
+- Transition to showing the tool: a portfolio dashboard with expiration dates, a filter for upcoming expirations, a HUD FMR comparison for one development
+- Be explicit about data source: "seeded from Legistar ordinances and HUD data; this is a workflow prototype, not a compliance system"
+- Show the "drill into one property" flow: original Legistar ordinance link, committed rent levels, current HUD FMR, status notes
+- Address a common judge question: "what data is this using and is it real?"
+- State what the tool does not do: it does not make compliance determinations or access internal City data
+- Close with a continuation ask: City housing department as partner, data access, workflow validation
+
+Include:
+- Exact opening sentence
+- Screen state at each narrative beat
+- How to handle the synthetic data question honestly
+- Timing guide
+
+Output
+- Full demo script
+- Timing breakdown
+- How to frame the data-readiness limitation as a feature, not a bug

@@ -1,0 +1,17 @@
+Prior Art E2 — Tools Built on Legistar Data
+
+Catalog tools that use Legistar (Granicus) data as their primary source. Focus on open-source projects, civic apps, and legislative transparency tools that hackathon teams could adapt.
+
+Include:
+- django-councilmatic (DataMade): how it works, what data it pulls from Legistar, active deployments
+- Other open-source Legistar clients or wrappers: language, API coverage, maintenance status
+- City-built tools that use Legistar data: examples of cities that have built better public interfaces on top of their Legistar instances
+- Granicus's own product ecosystem: do they provide any public-facing apps or SDKs?
+- Known limitations of building on Legistar: what the API does not expose, what requires scraping
+
+Output
+- Facts (with URLs)
+- Inferences (clearly labeled)
+- Unknowns
+- Recommended starting point for a Richmond team wanting to build on Legistar
+- What can be reused vs. what must be built

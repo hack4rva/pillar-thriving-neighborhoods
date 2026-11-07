@@ -1,0 +1,24 @@
+Missing Information Gaps — Thriving Neighborhoods
+
+Identify the information gaps that most affect hackathon teams for this pillar. For each gap, describe what is missing, why it matters, and what would be needed to fill it.
+
+1) Legistar API availability for Richmond. Missing: confirmation that the Granicus Web API is enabled for Richmond's Legistar instance. Matters because the development notifier and translator both depend on this. To fill: contact City IT or Planning and request the API endpoint.
+
+2) Development case address structure in Legistar. Missing: whether Richmond's Legistar records include structured address fields or only free-text descriptions. Matters because geocoding requires a parseable address. To fill: manually inspect several Legistar records or query the API.
+
+3) Richmond GeoHub layer freshness and access terms. Missing: confirmation that the Land Use Project Mapper and Development Activity Mapper are current and accessible via REST API. To fill: inspect the ArcGIS service metadata for last-update dates and confirm API access.
+
+4) Affordable housing portfolio. Missing: a publicly available list of developments that have received City affordable housing grants, loans, or incentives. Matters because the compliance tool needs a known portfolio to monitor. To fill: extract from Legistar housing funding ordinances (labor-intensive) or request from City Housing department.
+
+5) Housing compliance monitoring workflow. Missing: a description of how City housing staff currently monitors compliance — what systems they use, what data they have, where the bottlenecks are. Matters for scoping the compliance tool. To fill: interview or survey City housing staff.
+
+6) Resident digital access and literacy in affected neighborhoods. Missing: data on smartphone ownership, broadband access, and digital literacy in Richmond neighborhoods most affected by development activity. Matters for designing accessible tools. To fill: use HUD CHAS and FCC broadband data as proxies.
+
+7) Named departmental champion. Missing: a confirmed City contact willing to be the owner and champion for continued development of a prototype. Matters for continuation pathway. To fill: engage Sharon Ebert (DCAO) and Planning/Housing department heads.
+
+8) Plain-language summary accuracy benchmarks. Missing: a standard for how accurate AI-generated planning summaries need to be before they are safe to publish. Matters for the translator tool. To fill: test summaries against real staff reports with a planner reviewer.
+
+Output
+- Gaps ranked by impact on hackathon team decision-making
+- Suggested mitigations for each gap
+- Gaps that must be filled before building vs. gaps that can be worked around

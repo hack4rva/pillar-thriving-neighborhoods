@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Built Environment Knowledge Graph — Funding Explorer</title>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="toolbar">
+      <h1><span id="pillar-name">Built Environment</span> <span class="sub" id="app-subtitle">Knowledge Graph &amp; Funding Explorer</span></h1>
+      <nav id="mode-switch" role="tablist" aria-label="Explorer mode">
+        <button role="tab" data-mode="overview" class="active" aria-selected="true">Overview</button>
+        <button role="tab" data-mode="money" aria-selected="false">Money Flow</button>
+        <button role="tab" data-mode="beneficiary" aria-selected="false">Beneficiary</button>
+        <button role="tab" data-mode="problem" aria-selected="false">Problem Space</button>
+        <button role="tab" data-mode="timeline" aria-selected="false">Timeline</button>
+        <button role="tab" data-mode="explore" aria-selected="false">Network</button>
+        <button role="tab" data-mode="fog" aria-selected="false">Fog of War</button>
+        <button role="tab" data-mode="needs" aria-selected="false">Needs vs Money</button>
+      </nav>
+      <div id="toolbar-actions">
+        <input id="search" type="search" placeholder="Search entities, programs, funds…"
+               aria-label="Search graph" list="search-suggestions" />
+        <datalist id="search-suggestions"></datalist>
+        <button id="btn-2d" title="Toggle 2D fallback view" aria-pressed="false">2D</button>
+        <button id="btn-reset-camera" title="Reset camera">⌂ Camera</button>
+        <button id="btn-reset-all" title="Reset all filters and selection">Reset</button>
+      </div>
+    </header>
+
+    <aside id="sidebar" aria-label="Filters and legend">
+      <div id="mode-help" class="box"></div>
+      <details open class="box"><summary>Filters</summary><div id="filters"></div></details>
+      <details open class="box"><summary>Legend</summary><div id="legend"></div></details>
+      <details class="box"><summary>Forces &amp; display</summary><div id="display-controls"></div></details>
+      <div id="stats" class="box" aria-live="off"></div>
+    </aside>
+
+    <main id="graph-container" aria-label="3D knowledge graph">
+      <div id="graph3d"></div>
+      <div id="graph2d" hidden></div>
+      <div id="needsboard" hidden aria-label="Needs vs Money board"></div>
+      <div id="overview" role="region" aria-label="Funding overview dashboard"></div>
+      <div id="graph-hint"></div>
+      <div id="timeline-bar" hidden>
+        <button id="timeline-play" aria-label="Play or pause timeline">▶</button>
+        <input id="timeline-slider" type="range" min="2024" max="2032" step="0.25" value="2032"
+               aria-label="Timeline year" />
+        <span id="timeline-label">All time</span>
+      </div>
+      <div id="perf-warning" hidden role="alert"></div>
+    </main>
+
+    <aside id="detail-panel" aria-label="Selection details" tabindex="-1">
+      <div id="detail-content"><p class="muted">Select a node or edge to see its details,
+      evidence, and provenance. Shift-click a second node to trace a path between them.</p></div>
+    </aside>
+
+    <section id="bottom-drawer" aria-label="Data tables and reports">
+      <nav id="drawer-tabs" role="tablist" aria-label="Data views">
+        <button role="tab" data-tab="summary" class="active" aria-selected="true">Summary</button>
+        <button role="tab" data-tab="entities" aria-selected="false">Entities</button>
+        <button role="tab" data-tab="flows" aria-selected="false">Funding Flows</button>
+        <button role="tab" data-tab="questions" aria-selected="false">Open Questions</button>
+        <button role="tab" data-tab="quality" aria-selected="false">Data Quality</button>
+        <button role="tab" data-tab="review" aria-selected="false">Review Queue</button>
+      </nav>
+      <div id="drawer-content" role="tabpanel"></div>
+    </section>
+
+    <div id="a11y-summary" class="visually-hidden" aria-live="polite"></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
